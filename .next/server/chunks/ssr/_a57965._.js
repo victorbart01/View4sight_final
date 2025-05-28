@@ -1916,38 +1916,38 @@ function Brands() {
         ...__TURBOPACK__imported__module__$5b$project$5d2f$data$2f$brands$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["brands"]
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-dd6610f4677f30ae" + " " + "brands-container overflow-hidden",
+        className: "jsx-1d41b9b0e8a57c9e" + " " + "brands-container overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-dd6610f4677f30ae" + " " + "brands-scroll",
+                className: "jsx-1d41b9b0e8a57c9e" + " " + "brands-scroll",
                 children: duplicatedBrands.map((brand, index)=>{
-                    // Réduire la taille du logo brand-06.svg de 20%
+                    // Réduire la taille de tous les logos de 20%
                     const isBrand06 = brand.src.includes('brand-06.svg');
-                    const logoWidth = isBrand06 ? 132 : 165; // 165 * 0.8 = 132
-                    const logoHeight = isBrand06 ? 38 : 48; // 48 * 0.8 = 38.4 ≈ 38
+                    const baseWidth = isBrand06 ? 165 : 165; // Taille de base uniforme
+                    const baseHeight = isBrand06 ? 48 : 48; // Taille de base uniforme
+                    // Réduction de 20% pour tous les logos
+                    const logoWidth = Math.round(baseWidth * 0.8); // 165 * 0.8 = 132
+                    const logoHeight = Math.round(baseHeight * 0.8); // 48 * 0.8 = 38
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             minWidth: '200px',
                             marginRight: '40px'
                         },
-                        className: "jsx-dd6610f4677f30ae" + " " + "brand-item d-inline-flex align-items-center justify-content-center",
+                        className: "jsx-1d41b9b0e8a57c9e" + " " + "brand-item d-inline-flex align-items-center justify-content-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            className: "brand-item-image h-40px",
+                            className: "brand-item-image h-32px",
                             src: brand.src,
                             width: logoWidth,
                             height: logoHeight,
-                            alt: brand.alt,
-                            style: isBrand06 ? {
-                                transform: 'scale(0.8)'
-                            } : {}
+                            alt: brand.alt
                         }, void 0, false, {
                             fileName: "[project]/components/common/Brands.jsx",
-                            lineNumber: 24,
+                            lineNumber: 28,
                             columnNumber: 15
                         }, this)
                     }, index, false, {
                         fileName: "[project]/components/common/Brands.jsx",
-                        lineNumber: 19,
+                        lineNumber: 23,
                         columnNumber: 13
                     }, this);
                 })
@@ -1957,8 +1957,8 @@ function Brands() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "dd6610f4677f30ae",
-                children: ".brands-container.jsx-dd6610f4677f30ae{white-space:nowrap;width:100%}.brands-scroll.jsx-dd6610f4677f30ae{animation:30s linear infinite scroll-left;display:inline-flex}@keyframes scroll-left{0%{transform:translate(0)}to{transform:translate(-50%)}}.brands-container.jsx-dd6610f4677f30ae:hover .brands-scroll.jsx-dd6610f4677f30ae{animation-play-state:paused}"
+                id: "1d41b9b0e8a57c9e",
+                children: ".brands-container.jsx-1d41b9b0e8a57c9e{white-space:nowrap;width:100%}.brands-scroll.jsx-1d41b9b0e8a57c9e{animation:45s linear infinite scroll-left;display:inline-flex}@keyframes scroll-left{0%{transform:translate(0)}to{transform:translate(-50%)}}.brands-container.jsx-1d41b9b0e8a57c9e:hover .brands-scroll.jsx-1d41b9b0e8a57c9e{animation-play-state:paused}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {

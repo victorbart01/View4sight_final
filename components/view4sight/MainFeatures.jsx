@@ -97,8 +97,9 @@ export default function MainFeatures() {
                       </p>
                     </div>
                     <Link
-                      href="/fonctionnalites"
-                      className="btn btn-sm btn-secondary text-primary px-2 mt-2"
+                      href="#faq"
+                      className="text-secondary fw-medium text-decoration-none d-inline-flex align-items-center gap-1 mt-2"
+                      style={{ fontSize: '14px' }}
                     >
                       <span>See all formats</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
@@ -136,17 +137,18 @@ export default function MainFeatures() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <div className="content vstack items-start gap-2">
-                      <h4 className="h4 m-0">BIM + Survey Fusion</h4>
+                      <h4 className="h4 m-0">Secure Data. Simple Sharing.</h4>
                       <p className="fs-6 lg:fs-5 dark:text-white">
-                        Overlay point clouds with BIM models for perfect as-built comparisons. 
-                        See exactly what was built vs. what was planned.
+                        Share projects instantly with clients and stakeholders—no software installation required. 
+                        Control exactly who sees what with granular permissions and secure project links.
                       </p>
                     </div>
                     <Link
                       href="/fonctionnalites"
-                      className="btn btn-sm btn-secondary text-primary px-2 mt-2"
+                      className="text-secondary fw-medium text-decoration-none d-inline-flex align-items-center gap-1 mt-2"
+                      style={{ fontSize: '14px' }}
                     >
-                      <span>See comparison</span>
+                      <span>See sharing options</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </Link>
                   </div>

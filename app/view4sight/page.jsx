@@ -1,12 +1,13 @@
 import Hero from "@/components/view4sight/Hero";
 import PainBenefits from "@/components/view4sight/PainBenefits";
 import MainFeatures from "@/components/view4sight/MainFeatures";
-import KpiStrip from "@/components/view4sight/KpiStrip";
 import ClientLogos from "@/components/view4sight/ClientLogos";
 import Testimonials from "@/components/view4sight/Testimonials";
 import SecurityBlock from "@/components/view4sight/SecurityBlock";
 import FaqShort from "@/components/view4sight/FaqShort";
 import CtaFinal from "@/components/view4sight/CtaFinal";
+import VideoComponent from "@/components/homes/home-6/VideoComponent";
+import KeyFeatures from "@/components/homes/home-6/KeyFeatures";
 
 export const metadata = {
   title: "View4Sight - Visualisation 3D et Partage de Nuages de Points",
@@ -25,22 +26,25 @@ export default function View4SightHomepage() {
       {/* 3. Main Features x3 */}
       <MainFeatures />
       
-      {/* 4. KPI Strip */}
-      <KpiStrip />
+      {/* 4. Video Component */}
+      <VideoComponent />
       
-      {/* 5. Testimonials */}
+      {/* 5. Key Features */}
+      <KeyFeatures />
+      
+      {/* 6. Testimonials */}
       <Testimonials />
       
-      {/* 6. Security Block */}
+      {/* 7. Security Block */}
       <SecurityBlock />
       
-      {/* 7. Pain/Benefits Section */}
+      {/* 8. Pain/Benefits Section */}
       <PainBenefits />
       
-      {/* 8. FAQ Short */}
+      {/* 9. FAQ Short */}
       <FaqShort />
       
-      {/* 9. CTA Final */}
+      {/* 10. CTA Final */}
       <CtaFinal />
     </>
   );

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function OrbitingIcons() {
@@ -8,9 +8,50 @@ export default function OrbitingIcons() {
     { name: "E57", icon: "unicon-cube", delay: "1s", color: "#7FC2C8" },
     { name: "IFC", icon: "unicon-building", delay: "2s", color: "#C54E34" },
     { name: "DXF", icon: "unicon-ruler-combined", delay: "3s", color: "#F6B44C" },
-    { name: "Orthophoto", icon: "unicon-map", delay: "4s", color: "#E4DCCA" },
+    { name: "Ortho", icon: "unicon-map", delay: "4s", color: "#E4DCCA" },
     { name: "PLY", icon: "unicon-layers-alt", delay: "5s", color: "#7FC2C8" }
   ];
+
+  const [rotation, setRotation] = useState(0);
+  const [orbitRadius, setOrbitRadius] = useState(150);
+  const orbitRef = useRef(null);
+
+  useEffect(() => {
+    // Ajuster le rayon en fonction de la largeur d'écran
+    const updateRadius = () => {
+      setOrbitRadius(window.innerWidth <= 768 ? 100 : 150);
+    };
+
+    updateRadius();
+    window.addEventListener('resize', updateRadius);
+
+    let animationId;
+    const startTime = Date.now();
+    const duration = 30000; // 30 seconds for full rotation
+
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = (elapsed % duration) / duration;
+      const currentRotation = progress * 360;
+      
+      setRotation(currentRotation);
+      
+      if (orbitRef.current) {
+        orbitRef.current.style.transform = `rotate(${currentRotation}deg)`;
+      }
+      
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      window.removeEventListener('resize', updateRadius);
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
+  }, []);
 
   return (
     <div className="orbiting-container position-relative d-flex align-items-center justify-content-center">
@@ -20,141 +61,160 @@ export default function OrbitingIcons() {
           <Image
             src="/assets/images/logo_v4s.svg"
             alt="View4Sight Logo"
-            width="50"
-            height="50"
+            width="65"
+            height="65"
             className="d-block"
           />
         </div>
       </div>
 
-      {/* Icônes en orbite */}
-      <div className="orbit-ring position-absolute">
-        {formats.map((format, index) => (
-          <div
-            key={format.name}
-            className="orbit-item position-absolute"
-            style={{
-              "--delay": format.delay,
-              "--rotation": `${(360 / formats.length) * index}deg`
-            }}
-          >
+      {/* Anneaux radar */}
+      <div className="radar-ring-inner position-absolute top-50 start-50 translate-middle"></div>
+      <div className="radar-ring-outer position-absolute top-50 start-50 translate-middle"></div>
+
+      {/* Icônes en orbite avec contre-rotation */}
+      <div className="orbit-ring position-absolute" ref={orbitRef}>
+        {formats.map((format, index) => {
+          const angle = (360 / formats.length) * index;
+          const radians = (angle * Math.PI) / 180;
+          const x = Math.cos(radians) * orbitRadius;
+          const y = Math.sin(radians) * orbitRadius;
+          
+          return (
             <div
-              className="format-icon rounded-circle d-flex align-items-center justify-content-center shadow"
-              style={{ backgroundColor: format.color }}
+              key={format.name}
+              className="orbit-item position-absolute"
+              style={{
+                left: '50%',
+                top: '50%',
+                transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`
+              }}
             >
-              <i className={`icon ${format.icon} text-white`} style={{ fontSize: '16px' }}></i>
+              <div 
+                className="orbit-content d-flex flex-column align-items-center"
+                style={{
+                  transform: `rotate(-${rotation}deg)`,
+                  transition: 'none'
+                }}
+              >
+                <div
+                  className="format-icon rounded-circle d-flex align-items-center justify-content-center shadow"
+                  style={{ backgroundColor: format.color }}
+                >
+                  <i className={`icon ${format.icon} text-white`} style={{ fontSize: '20px' }}></i>
+                </div>
+                <span className="format-label fs-8 fw-medium text-center mt-1 d-block">
+                  {format.name}
+                </span>
+              </div>
             </div>
-            <span className="format-label fs-8 fw-medium text-center mt-1 d-block">
-              {format.name}
-            </span>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <style jsx>{`
         .orbiting-container {
-          width: 300px;
-          height: 300px;
+          width: 400px;
+          height: 400px;
           margin: 2rem auto;
+          margin-left: calc(50% + 20px);
+          transform: translateX(-50%);
         }
 
         .central-logo .logo-wrapper {
-          width: 70px;
-          height: 70px;
+          width: 90px;
+          height: 90px;
           display: flex;
           align-items: center;
           justify-content: center;
           background-color: #2c2c2c !important;
         }
 
+        .radar-ring-inner {
+          width: 200px;
+          height: 200px;
+          border: 1px solid rgba(255, 255, 255, 0.03);
+          border-radius: 50%;
+          z-index: 0;
+        }
+
+        .radar-ring-outer {
+          width: 300px;
+          height: 300px;
+          border: 1px solid rgba(255, 255, 255, 0.02);
+          border-radius: 50%;
+          z-index: 0;
+        }
+
         .orbit-ring {
           width: 100%;
           height: 100%;
           border-radius: 50%;
-          animation: rotate 20s linear infinite;
+          z-index: 1;
+          will-change: transform;
         }
 
         .orbit-item {
-          top: 50%;
-          left: 50%;
-          transform-origin: 0 0;
-          transform: 
-            translate(-50%, -50%) 
-            rotate(var(--rotation)) 
-            translateX(80px);
-          animation-delay: var(--delay);
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        .orbit-content {
+          will-change: transform;
         }
 
         .format-icon {
-          width: 28px;
-          height: 28px;
-          font-size: 12px;
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
           display: flex;
           align-items: center;
           justify-content: center;
-          transform: rotate(calc(-1 * var(--rotation)));
-          animation: counter-rotate 20s linear infinite;
+          pointer-events: auto;
         }
 
         .format-label {
           color: #fff;
           opacity: 0.9;
           white-space: nowrap;
-          transform: rotate(calc(-1 * var(--rotation)));
-          animation: counter-rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes counter-rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(-360deg);
-          }
         }
 
         /* Responsive */
         @media (max-width: 768px) {
           .orbiting-container {
-            width: 220px;
-            height: 220px;
-          }
-          
-          .orbit-item {
-            transform: 
-              translate(-50%, -50%) 
-              rotate(var(--rotation)) 
-              translateX(80px);
+            width: 280px;
+            height: 280px;
+            margin-left: calc(50% + 15px);
+            transform: translateX(-50%);
           }
           
           .format-icon {
-            width: 28px;
-            height: 28px;
-            font-size: 12px;
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transform: rotate(calc(-1 * var(--rotation)));
-            animation: counter-rotate 20s linear infinite;
           }
           
           .central-logo .logo-wrapper {
-            width: 55px;
-            height: 55px;
+            width: 70px;
+            height: 70px;
           }
           
           .central-logo .logo-wrapper img {
-            width: 35px;
-            height: 35px;
+            width: 50px;
+            height: 50px;
+          }
+          
+          .radar-ring-inner {
+            width: 140px;
+            height: 140px;
+          }
+
+          .radar-ring-outer {
+            width: 200px;
+            height: 200px;
           }
         }
       `}</style>

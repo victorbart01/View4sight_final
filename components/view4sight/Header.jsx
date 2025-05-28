@@ -91,7 +91,7 @@ export default function View4SightHeader() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-none" href="/tarifs">
+                  <Link className="text-none" href="/page-pricing">
                     <span>Tarifs</span>
                   </Link>
                 </li>

@@ -6,7 +6,11 @@
     "[project]/app/(homes)/home-2/page": [],
     "[project]/app/(homes)/home-4/page": [],
     "[project]/app/(innerPages)/page-pricing/page": [],
-    "[project]/app/fonctionnalites/page": []
+    "[project]/app/fonctionnalites/page": [],
+    "[project]/app/(homes)/home-6/page": [],
+    "[project]/app/ressources/page": [],
+    "[project]/app/tarifs/page": [],
+    "[project]/app/(othersPages)/sign-in/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
