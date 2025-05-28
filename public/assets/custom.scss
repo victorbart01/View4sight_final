@@ -402,3 +402,149 @@ html:not(.uc-dark) {
   will-change: transform, opacity;
   backface-visibility: hidden;
 }
+
+// Mode sombre - couleur de fond personnalisée
+html.uc-dark,
+.uc-dark {
+  background-color: #222222 !important;
+}
+
+body.uc-dark,
+html.uc-dark body {
+  background-color: #222222 !important;
+}
+
+// Hero Section - Améliorations typographiques
+.hero-header {
+  .h2,
+  .display-5 {
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+  }
+  
+  // Amélioration des boutons CTA
+  .btn-lg {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    padding: 0.875rem 2rem !important;
+    border-width: 2px !important;
+    transition: all 0.3s ease !important;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .btn-primary {
+    &:hover {
+      box-shadow: 0 8px 25px rgba(var(--bs-primary-rgb), 0.4);
+    }
+  }
+  
+  .btn-outline-primary {
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(var(--bs-primary-rgb), 0.2);
+    }
+  }
+  
+  // Icônes check-circle avec couleur primaire
+  img[src*="check-circle.svg"] {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  }
+  
+  // Mode sombre - ajustement des icônes
+  .uc-dark & {
+    img[src*="check-circle.svg"] {
+      filter: brightness(0) saturate(100%) invert(64%) sepia(88%) saturate(3151%) hue-rotate(326deg) brightness(101%) contrast(107%);
+    }
+  }
+  
+  // Points clés avec style amélioré
+  .w-4px {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  
+  // Espacement amélioré pour mobile
+  @media (max-width: 991px) {
+    .h2,
+    .display-5 {
+      font-size: 2rem !important;
+      line-height: 1.1 !important;
+    }
+    
+    // Points clés en colonne sur mobile
+    .hstack.gap-4.flex-wrap {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 0.75rem !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .h2,
+    .display-5 {
+      font-size: 1.75rem !important;
+      line-height: 1.1 !important;
+    }
+    
+    .btn-lg {
+      font-size: 1rem !important;
+      padding: 0.75rem 1.5rem !important;
+    }
+  }
+}
+
+/* View4Sight - Pastille discrète pour la hero section */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  background-color: rgba(254, 85, 46, 0.06);
+  border: 1px solid rgba(254, 85, 46, 0.15);
+  border-radius: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(254, 85, 46, 0.85);
+  width: fit-content;
+  margin-bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.hero-badge:hover {
+  background-color: rgba(254, 85, 46, 0.08);
+  border-color: rgba(254, 85, 46, 0.2);
+  color: #FE552E;
+}
+
+/* Mode sombre */
+.uc-dark .hero-badge {
+  background-color: rgba(254, 85, 46, 0.08);
+  border-color: rgba(254, 85, 46, 0.2);
+  color: rgba(254, 85, 46, 0.9);
+}
+
+.uc-dark .hero-badge:hover {
+  background-color: rgba(254, 85, 46, 0.12);
+  border-color: rgba(254, 85, 46, 0.3);
+  color: #FE552E;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-badge {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

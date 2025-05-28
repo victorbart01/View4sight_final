@@ -85,13 +85,13 @@ export default function Context({ children }) {
   useEffect(() => {
     const getBooleanValue = (key) => {
       const value = localStorage.getItem(key);
-      return value ? JSON.parse(value) : false; // Default to false if the value is not found
+      return value ? JSON.parse(value) : true; // Default to true for dark mode
     };
     // for default dark mode
-    // const savedValue = getBooleanValue("isDark") ? getBooleanValue("isDark") : true;
+    const savedValue = getBooleanValue("isDark");
 
     //for default light mode
-    const savedValue = getBooleanValue("isDark");
+    // const savedValue = getBooleanValue("isDark") ? getBooleanValue("isDark") : false;
 
     toggleDark(savedValue);
     setisDark(savedValue);
