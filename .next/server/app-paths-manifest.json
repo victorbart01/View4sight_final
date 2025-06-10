@@ -1,14 +1,6 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/view4sight/page": "app/view4sight/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(homes)/home-2/page": "app/(homes)/home-2/page.js",
-  "/(homes)/home-4/page": "app/(homes)/home-4/page.js",
-  "/(innerPages)/page-pricing/page": "app/(innerPages)/page-pricing/page.js",
-  "/fonctionnalites/page": "app/fonctionnalites/page.js",
-  "/(homes)/home-6/page": "app/(homes)/home-6/page.js",
-  "/ressources/page": "app/ressources/page.js",
-  "/tarifs/page": "app/tarifs/page.js",
-  "/(othersPages)/sign-in/page": "app/(othersPages)/sign-in/page.js"
+  "/(othersPages)/sign-in/page": "app/(othersPages)/sign-in/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

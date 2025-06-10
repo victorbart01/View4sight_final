@@ -7,7 +7,6 @@ import SecurityBlock from "@/components/view4sight/SecurityBlock";
 import FaqShort from "@/components/view4sight/FaqShort";
 import CtaFinal from "@/components/view4sight/CtaFinal";
 import VideoComponent from "@/components/homes/home-6/VideoComponent";
-import KeyFeatures from "@/components/homes/home-6/KeyFeatures";
 
 export const metadata = {
   title: "View4Sight - Visualisation 3D et Partage de Nuages de Points",
@@ -29,22 +28,19 @@ export default function View4SightHomepage() {
       {/* 4. Video Component */}
       <VideoComponent />
       
-      {/* 5. Key Features */}
-      <KeyFeatures />
-      
-      {/* 6. Testimonials */}
+      {/* 5. Testimonials */}
       <Testimonials />
       
-      {/* 7. Security Block */}
+      {/* 6. Security Block */}
       <SecurityBlock />
       
-      {/* 8. Pain/Benefits Section */}
+      {/* 7. Pain/Benefits Section */}
       <PainBenefits />
       
-      {/* 9. FAQ Short */}
+      {/* 8. FAQ Short */}
       <FaqShort />
       
-      {/* 10. CTA Final */}
+      {/* 9. CTA Final */}
       <CtaFinal />
     </>
   );

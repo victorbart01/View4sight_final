@@ -39,7 +39,7 @@ function Hero() {
                             className: "row child-cols justify-center lg:justify-between items-center g-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 sm:col-10 md:col-8 lg:col-5",
+                                    className: "col-12 sm:col-10 md:col-8 lg:col-6",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "panel vstack gap-5 sm:text-center lg:text-start rtl:lg:text-end py-4",
                                         "data-anime": "targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});",
@@ -103,8 +103,22 @@ function Hero() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 lh-base mb-0 pe-lg-4",
-                                                children: "Turn massive point clouds into collaborative workspaces. Real-time measurements, smart annotations, instant sharing—zero software required."
-                                            }, void 0, false, {
+                                                children: [
+                                                    "Turn massive point clouds into collaborative workspaces.",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                        fileName: "[project]/components/view4sight/Hero.jsx",
+                                                        lineNumber: 44,
+                                                        columnNumber: 77
+                                                    }, this),
+                                                    "Real-time measurements, smart annotations, instant sharing.",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                        fileName: "[project]/components/view4sight/Hero.jsx",
+                                                        lineNumber: 45,
+                                                        columnNumber: 80
+                                                    }, this),
+                                                    "Zero software required."
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Hero.jsx",
                                                 lineNumber: 43,
                                                 columnNumber: 19
@@ -118,23 +132,23 @@ function Hero() {
                                                         children: "Get started"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                                        lineNumber: 49,
+                                                        lineNumber: 51,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         onClick: __TURBOPACK__imported__module__$5b$project$5d2f$utlis$2f$toggleContactModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["openContactModal"],
                                                         className: "btn btn-lg btn-outline-primary rounded-pill px-5 py-3 fw-medium fs-6 cursor-pointer",
                                                         role: "button",
-                                                        children: "Book a demo"
+                                                        children: "See how it works"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                                        lineNumber: 55,
+                                                        lineNumber: 57,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                lineNumber: 48,
+                                                lineNumber: 50,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -151,7 +165,7 @@ function Hero() {
                                                                 className: "flex-shrink-0 text-primary"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 67,
+                                                                lineNumber: 69,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -159,13 +173,13 @@ function Hero() {
                                                                 children: "30-day free trial"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 74,
+                                                                lineNumber: 76,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                                        lineNumber: 66,
+                                                        lineNumber: 68,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -179,7 +193,7 @@ function Hero() {
                                                                 className: "flex-shrink-0 text-primary"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 79,
+                                                                lineNumber: 81,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -187,13 +201,13 @@ function Hero() {
                                                                 children: "No credit card required"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 86,
+                                                                lineNumber: 88,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 80,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -207,7 +221,7 @@ function Hero() {
                                                                 className: "flex-shrink-0 text-primary"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 91,
+                                                                lineNumber: 93,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -215,19 +229,19 @@ function Hero() {
                                                                 children: "150GB storage included"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                                lineNumber: 98,
+                                                                lineNumber: 100,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 92,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                lineNumber: 65,
+                                                lineNumber: 67,
                                                 columnNumber: 19
                                             }, this)
                                         ]
@@ -244,7 +258,7 @@ function Hero() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "col-12 lg:col-6",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "expand-container mt-4 lg:mt-4 ltr:ms-n2 rtl:me-n2",
+                                        className: "expand-container mt-4 lg:mt-4 ltr:ms-2 rtl:me-2",
                                         "data-anime": "translateX: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -255,7 +269,7 @@ function Hero() {
                                                 height: "1250"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                lineNumber: 111,
+                                                lineNumber: 113,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -266,18 +280,18 @@ function Hero() {
                                                 height: "1250"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/Hero.jsx",
-                                                lineNumber: 118,
+                                                lineNumber: 120,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/Hero.jsx",
-                                        lineNumber: 106,
+                                        lineNumber: 108,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/Hero.jsx",
-                                    lineNumber: 105,
+                                    lineNumber: 107,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -332,32 +346,48 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function PainBenefits() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "section panel overflow-hidden bg-light dark:bg-gray-900",
+        className: "section panel overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "section-outer panel py-6 xl:py-9",
+            className: "section-outer panel py-8 xl:py-12 bg-gray-900",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container max-w-xl",
+                className: "container max-w-7xl",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "section-inner panel",
                     "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel vstack items-center gap-2 xl:gap-3 mb-6 xl:mb-8 max-w-800px mx-auto text-center",
+                            className: "panel vstack items-center gap-2 xl:gap-3 mb-8 xl:mb-12 max-w-4xl mx-auto text-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "h2 xl:h1 m-0 text-dark dark:text-white",
-                                    children: "Vos données 3D méritent mieux que des PDF statiques"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hero-badge mx-auto",
+                                    children: "Pain Points"
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                     lineNumber: 16,
                                     columnNumber: 15
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70 max-w-600px",
-                                    children: "VOUS RECONNAISSEZ-VOUS DANS CES SITUATIONS ?"
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "h3 lg:h2 xl:h1 m-0 text-white",
+                                    children: [
+                                        "Your 3D Data Deserves Better",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                            lineNumber: 20,
+                                            columnNumber: 45
+                                        }, this),
+                                        "Than Static Screenshots"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                     lineNumber: 19,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "fs-6 xl:fs-5 text-white text-opacity-70 max-w-lg mx-auto",
+                                    children: "Sound familiar? Transform these daily frustrations into competitive advantages."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -367,339 +397,822 @@ function PainBenefits() {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "row g-4 xl:g-6 mb-6 xl:mb-8",
+                            className: "position-relative",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-white dark:bg-gray-800 rounded-3 p-4 xl:p-6 h-100 text-center shadow-sm",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-danger bg-opacity-10 rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-desktop text-danger"
-                                                    }, void 0, false, {
+                                    className: "row g-6 xl:g-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "col-12 lg:col-6",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "panel",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "d-flex align-items-center justify-content-center gap-3 mb-6 xl:mb-8",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-4px h-32px bg-danger rounded-pill"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 36,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                className: "h4 xl:h3 text-danger m-0 fw-bold",
+                                                                children: "Current Challenges"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 37,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-4px h-32px bg-danger rounded-pill"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 38,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 32,
-                                                        columnNumber: 23
+                                                        lineNumber: 35,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel mb-5 xl:mb-6 p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.08) 0%, rgba(220, 53, 69, 0.03) 100%)',
+                                                            border: '2px solid rgba(220, 53, 69, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-danger"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 43,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-danger rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-desktop text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 46,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 45,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Juggling Multiple Desktop Tools"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 49,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-danger rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 52,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 48,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 44,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-danger rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "10",
+                                                                            height: "10",
+                                                                            viewBox: "0 0 12 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 1L11 11M11 1L1 11",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 58,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 57,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 56,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "You're switching between expensive desktop software, managing licenses, and wasting time on complex installations for every new project."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 61,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 55,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 42,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel mb-5 xl:mb-6 p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.08) 0%, rgba(220, 53, 69, 0.03) 100%)',
+                                                            border: '2px solid rgba(220, 53, 69, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-danger"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 69,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-danger rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-user-exclamation text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 72,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 71,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Clients Can't Open Your Deliverables"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 75,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-danger rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 78,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 74,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 70,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-danger rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "10",
+                                                                            height: "10",
+                                                                            viewBox: "0 0 12 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 1L11 11M11 1L1 11",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 84,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 83,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 82,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "Your clients don't understand your 3D surveys through static PDFs. They need special software to see your data and miss the full value of your work."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 87,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 81,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 68,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.08) 0%, rgba(220, 53, 69, 0.03) 100%)',
+                                                            border: '2px solid rgba(220, 53, 69, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-danger"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 95,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-danger rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-clock text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 98,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 97,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Team Collaboration is Broken"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 101,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-danger rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 104,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 100,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 96,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-danger rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "10",
+                                                                            height: "10",
+                                                                            viewBox: "0 0 12 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 1L11 11M11 1L1 11",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 110,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 109,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 108,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 113,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 107,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 94,
+                                                        columnNumber: 21
                                                     }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 31,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Logiciels lourds et coûteux"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 34,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Vous jongler entre plusieurs logiciels desktop, gérez des licences coûteuses et perdez du temps en installations complexes pour chaque nouveau projet."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 37,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                lineNumber: 34,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 30,
-                                            columnNumber: 19
+                                            lineNumber: 33,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "col-12 lg:col-6",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "panel",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "d-flex align-items-center justify-content-center gap-3 mb-6 xl:mb-8",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-4px h-32px bg-success rounded-pill"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 125,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                className: "h4 xl:h3 text-success m-0 fw-bold",
+                                                                children: "View4Sight Solutions"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 126,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-4px h-32px bg-success rounded-pill"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 127,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 124,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel mb-5 xl:mb-6 p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.08) 0%, rgba(25, 135, 84, 0.03) 100%)',
+                                                            border: '2px solid rgba(25, 135, 84, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-success"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 132,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-success rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-globe text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 135,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 134,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Instant Browser-Based Viewing"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 138,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-success rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 141,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 137,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 133,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-success rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "12",
+                                                                            height: "9",
+                                                                            viewBox: "0 0 16 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 6L5.5 10.5L15 1",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round",
+                                                                                strokeLinejoin: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 147,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 146,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 145,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "Upload your point clouds once. Your team and clients navigate in 3D directly in their browser, no installation required."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 150,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 144,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 131,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel mb-5 xl:mb-6 p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.08) 0%, rgba(25, 135, 84, 0.03) 100%)',
+                                                            border: '2px solid rgba(25, 135, 84, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-success"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 158,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-success rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-users-alt text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 161,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 160,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Live Team Collaboration"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 164,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-success rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 167,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 163,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 159,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-success rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "12",
+                                                                            height: "9",
+                                                                            viewBox: "0 0 16 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 6L5.5 10.5L15 1",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round",
+                                                                                strokeLinejoin: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 173,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 172,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 171,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "Shared annotations, collaborative measurements, direct feedback. Your entire team works on the same data, in real-time."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 176,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 157,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "panel p-5 xl:p-6 rounded-3 position-relative overflow-hidden",
+                                                        style: {
+                                                            background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.08) 0%, rgba(25, 135, 84, 0.03) 100%)',
+                                                            border: '2px solid rgba(25, 135, 84, 0.2)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "position-absolute top-0 start-0 w-100 h-4px bg-success"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 184,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-4 mb-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-56px h-56px bg-success rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center shadow-sm",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "icon icon-2 unicon-heart text-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 187,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 186,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "vstack gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "h5 xl:h4 m-0 text-white fw-bold",
+                                                                                children: "Clients Love the Experience"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 190,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-32px h-2px bg-success rounded-pill"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 193,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 189,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 185,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "hstack gap-3 align-items-start",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "icon-box w-20px h-20px bg-success rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center mt-1",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                            width: "12",
+                                                                            height: "9",
+                                                                            viewBox: "0 0 16 12",
+                                                                            fill: "none",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                d: "M1 6L5.5 10.5L15 1",
+                                                                                stroke: "white",
+                                                                                strokeWidth: "2",
+                                                                                strokeLinecap: "round",
+                                                                                strokeLinejoin: "round"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                                lineNumber: 199,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                            lineNumber: 198,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 197,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-6 xl:fs-5 text-white text-opacity-85 m-0 lh-relaxed",
+                                                                        children: "Your clients finally understand the value of your surveys. They navigate like Google Street View and validate projects faster."
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                        lineNumber: 202,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                                lineNumber: 196,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                        lineNumber: 183,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                lineNumber: 123,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                            lineNumber: 122,
+                                            columnNumber: 17
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 29,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 30,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
+                                    className: "position-absolute top-50 start-50 translate-middle d-none lg:block z-index-1",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-white dark:bg-gray-800 rounded-3 p-4 xl:p-6 h-100 text-center shadow-sm",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-danger bg-opacity-10 rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-user-exclamation text-danger"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 49,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 48,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Clients frustrés par les livrables"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 51,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Vos clients ne comprennent pas vos relevés 3D à travers des PDF statiques. Ils ont besoin d'installer des logiciels pour voir vos données et perdent la valeur de votre travail."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 54,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        className: "w-80px h-80px bg-primary rounded-circle d-flex align-items-center justify-content-center shadow-lg",
+                                        style: {
+                                            background: 'linear-gradient(45deg, #FE552E, #C54E34)'
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            width: "24",
+                                            height: "20",
+                                            viewBox: "0 0 24 20",
+                                            fill: "none",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                d: "M13 4L21 10M21 10L13 16M21 10H3",
+                                                stroke: "white",
+                                                strokeWidth: "2.5",
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/view4sight/PainBenefits.jsx",
+                                                lineNumber: 216,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 47,
+                                            lineNumber: 215,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 214,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 45,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-white dark:bg-gray-800 rounded-3 p-4 xl:p-6 h-100 text-center shadow-sm",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-danger bg-opacity-10 rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-clock text-danger"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 66,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 65,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Collaboration impossible"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 68,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Votre équipe perd du temps à échanger des fichiers volumineux par email. Les annotations se perdent, les versions se mélangent et la collaboration devient un cauchemar."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 71,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 64,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 63,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 213,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                            lineNumber: 25,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "row g-4 xl:g-6",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-primary bg-opacity-5 border border-primary border-opacity-20 rounded-3 p-4 xl:p-6 h-100 text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-primary rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-globe text-white"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 88,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 87,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Visualisation web instantanée"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 90,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Uploadez vos nuages de points une fois. Votre équipe et vos clients naviguent en 3D directement dans leur navigateur, sans installation."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 93,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 86,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 85,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 84,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-primary bg-opacity-5 border border-primary border-opacity-20 rounded-3 p-4 xl:p-6 h-100 text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-primary rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-users-alt text-white"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 105,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 104,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Collaboration en temps réel"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 107,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Annotations partagées, mesures collaboratives, commentaires en direct. Toute votre équipe travaille sur les mêmes données, en même temps."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 110,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 103,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 102,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-12 lg:col-4",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel bg-primary bg-opacity-5 border border-primary border-opacity-20 rounded-3 p-4 xl:p-6 h-100 text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-3 h-100",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon-box w-80px h-80px bg-primary rounded-circle mx-auto d-flex align-items-center justify-content-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-3 unicon-heart text-white"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 121,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "h5 xl:h4 m-0 text-dark dark:text-white",
-                                                    children: "Clients impressionnés"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 124,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 text-dark dark:text-white text-opacity-70 flex-grow-1",
-                                                    children: "Vos clients comprennent enfin la valeur de vos relevés. Ils naviguent en 3D comme sur Google Street View et valident vos projets plus rapidement."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                                    lineNumber: 127,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                            lineNumber: 120,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                        lineNumber: 119,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                                    lineNumber: 118,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/view4sight/PainBenefits.jsx",
-                            lineNumber: 81,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, this)
                     ]
@@ -754,39 +1267,33 @@ function OrbitingIcons() {
     const formats = [
         {
             name: "LAS",
-            icon: "unicon-file-alt",
-            delay: "0s",
-            color: "#FE552E"
+            svgPath: "/assets/images/file formats/LAS.svg",
+            delay: "0s"
         },
         {
             name: "E57",
-            icon: "unicon-cube",
-            delay: "1s",
-            color: "#7FC2C8"
+            svgPath: "/assets/images/file formats/E57.svg",
+            delay: "1s"
         },
         {
             name: "IFC",
-            icon: "unicon-building",
-            delay: "2s",
-            color: "#C54E34"
+            svgPath: "/assets/images/file formats/IFC.svg",
+            delay: "2s"
         },
         {
             name: "DXF",
-            icon: "unicon-ruler-combined",
-            delay: "3s",
-            color: "#F6B44C"
+            svgPath: "/assets/images/file formats/DXF.svg",
+            delay: "3s"
         },
         {
-            name: "Ortho",
-            icon: "unicon-map",
-            delay: "4s",
-            color: "#E4DCCA"
+            name: "ORTHO",
+            svgPath: "/assets/images/file formats/ORTHO.svg",
+            delay: "4s"
         },
         {
             name: "PLY",
-            icon: "unicon-layers-alt",
-            delay: "5s",
-            color: "#7FC2C8"
+            svgPath: "/assets/images/file formats/PLY.svg",
+            delay: "5s"
         }
     ];
     const [rotation, setRotation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -829,17 +1336,17 @@ function OrbitingIcons() {
         }
     }["OrbitingIcons.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-f88f2c7f76b2c2b5" + " " + "orbiting-container position-relative d-flex align-items-center justify-content-center",
+        className: "jsx-3f1dfd7abf2a8b28" + " " + "orbiting-container position-relative d-flex align-items-center justify-content-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-f88f2c7f76b2c2b5" + " " + "central-logo position-absolute top-50 start-50 translate-middle z-index-2",
+                className: "jsx-3f1dfd7abf2a8b28" + " " + "central-logo position-absolute top-50 start-50 translate-middle z-index-2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-f88f2c7f76b2c2b5" + " " + "logo-wrapper bg-dark rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center",
+                    className: "jsx-3f1dfd7abf2a8b28" + " " + "logo-wrapper bg-dark rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "/assets/images/logo_v4s.svg",
                         alt: "View4Sight Logo",
-                        width: "65",
-                        height: "65",
+                        width: "55",
+                        height: "55",
                         className: "d-block"
                     }, void 0, false, {
                         fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
@@ -857,14 +1364,14 @@ function OrbitingIcons() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-f88f2c7f76b2c2b5" + " " + "radar-ring-inner position-absolute top-50 start-50 translate-middle"
+                className: "jsx-3f1dfd7abf2a8b28" + " " + "radar-ring-inner position-absolute top-50 start-50 translate-middle"
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
                 lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-f88f2c7f76b2c2b5" + " " + "radar-ring-outer position-absolute top-50 start-50 translate-middle"
+                className: "jsx-3f1dfd7abf2a8b28" + " " + "radar-ring-outer position-absolute top-50 start-50 translate-middle"
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
                 lineNumber: 73,
@@ -872,7 +1379,7 @@ function OrbitingIcons() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: orbitRef,
-                className: "jsx-f88f2c7f76b2c2b5" + " " + "orbit-ring position-absolute",
+                className: "jsx-3f1dfd7abf2a8b28" + " " + "orbit-ring position-absolute",
                 children: formats.map((format, index)=>{
                     const angle = 360 / formats.length * index;
                     const radians = angle * Math.PI / 180;
@@ -884,44 +1391,32 @@ function OrbitingIcons() {
                             top: '50%',
                             transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`
                         },
-                        className: "jsx-f88f2c7f76b2c2b5" + " " + "orbit-item position-absolute",
+                        className: "jsx-3f1dfd7abf2a8b28" + " " + "orbit-item position-absolute",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             style: {
                                 transform: `rotate(-${rotation}deg)`,
                                 transition: 'none'
                             },
-                            className: "jsx-f88f2c7f76b2c2b5" + " " + "orbit-content d-flex flex-column align-items-center",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    style: {
-                                        backgroundColor: format.color
-                                    },
-                                    className: "jsx-f88f2c7f76b2c2b5" + " " + "format-icon rounded-circle d-flex align-items-center justify-content-center shadow",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        style: {
-                                            fontSize: '20px'
-                                        },
-                                        className: "jsx-f88f2c7f76b2c2b5" + " " + `icon ${format.icon} text-white`
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
-                                        lineNumber: 104,
-                                        columnNumber: 19
-                                    }, this)
+                            className: "jsx-3f1dfd7abf2a8b28" + " " + "orbit-content d-flex flex-column align-items-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-3f1dfd7abf2a8b28" + " " + "format-svg-container",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: format.svgPath,
+                                    alt: `${format.name} file format`,
+                                    width: "50",
+                                    height: "55",
+                                    className: "format-svg"
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
-                                    lineNumber: 100,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "jsx-f88f2c7f76b2c2b5" + " " + "format-label fs-8 fw-medium text-center mt-1 d-block",
-                                    children: format.name
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
-                                    lineNumber: 106,
-                                    columnNumber: 17
+                                    lineNumber: 101,
+                                    columnNumber: 19
                                 }, this)
-                            ]
-                        }, void 0, true, {
+                            }, void 0, false, {
+                                fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
+                                lineNumber: 100,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/components/view4sight/OrbitingIcons.jsx",
                             lineNumber: 93,
                             columnNumber: 15
@@ -938,8 +1433,8 @@ function OrbitingIcons() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "f88f2c7f76b2c2b5",
-                children: ".orbiting-container.jsx-f88f2c7f76b2c2b5{width:400px;height:400px;margin:2rem auto 2rem calc(50% + 20px);transform:translate(-50%)}.central-logo.jsx-f88f2c7f76b2c2b5 .logo-wrapper.jsx-f88f2c7f76b2c2b5{justify-content:center;align-items:center;width:90px;height:90px;display:flex;background-color:#2c2c2c!important}.radar-ring-inner.jsx-f88f2c7f76b2c2b5{z-index:0;border:1px solid #ffffff08;border-radius:50%;width:200px;height:200px}.radar-ring-outer.jsx-f88f2c7f76b2c2b5{z-index:0;border:1px solid #ffffff05;border-radius:50%;width:300px;height:300px}.orbit-ring.jsx-f88f2c7f76b2c2b5{z-index:1;will-change:transform;border-radius:50%;width:100%;height:100%}.orbit-item.jsx-f88f2c7f76b2c2b5{z-index:2;pointer-events:none}.orbit-content.jsx-f88f2c7f76b2c2b5{will-change:transform}.format-icon.jsx-f88f2c7f76b2c2b5{pointer-events:auto;justify-content:center;align-items:center;width:50px;height:50px;font-size:20px;display:flex}.format-label.jsx-f88f2c7f76b2c2b5{color:#fff;opacity:.9;white-space:nowrap}@media (width<=768px){.orbiting-container.jsx-f88f2c7f76b2c2b5{width:280px;height:280px;margin-left:calc(50% + 15px);transform:translate(-50%)}.format-icon.jsx-f88f2c7f76b2c2b5{justify-content:center;align-items:center;width:35px;height:35px;font-size:16px;display:flex}.central-logo.jsx-f88f2c7f76b2c2b5 .logo-wrapper.jsx-f88f2c7f76b2c2b5{width:70px;height:70px}.central-logo.jsx-f88f2c7f76b2c2b5 .logo-wrapper.jsx-f88f2c7f76b2c2b5 img.jsx-f88f2c7f76b2c2b5{width:50px;height:50px}.radar-ring-inner.jsx-f88f2c7f76b2c2b5{width:140px;height:140px}.radar-ring-outer.jsx-f88f2c7f76b2c2b5{width:200px;height:200px}}"
+                id: "3f1dfd7abf2a8b28",
+                children: ".orbiting-container.jsx-3f1dfd7abf2a8b28{width:400px;height:400px;margin:2rem auto 2rem calc(50% + 20px);transform:translate(-50%)}.central-logo.jsx-3f1dfd7abf2a8b28 .logo-wrapper.jsx-3f1dfd7abf2a8b28{justify-content:center;align-items:center;width:110px;height:110px;display:flex;background-color:#2c2c2c1a!important}.radar-ring-inner.jsx-3f1dfd7abf2a8b28{z-index:0;border:1px solid #ffffff08;border-radius:50%;width:200px;height:200px}.radar-ring-outer.jsx-3f1dfd7abf2a8b28{z-index:0;border:1px solid #ffffff05;border-radius:50%;width:300px;height:300px}.orbit-ring.jsx-3f1dfd7abf2a8b28{z-index:1;will-change:transform;border-radius:50%;width:100%;height:100%}.orbit-item.jsx-3f1dfd7abf2a8b28{z-index:2;pointer-events:none}.orbit-content.jsx-3f1dfd7abf2a8b28{will-change:transform}.format-svg-container.jsx-3f1dfd7abf2a8b28{pointer-events:auto;justify-content:center;align-items:center;transition:transform .3s;display:flex}.format-svg-container.jsx-3f1dfd7abf2a8b28:hover{transform:scale(1.1)}.format-svg.jsx-3f1dfd7abf2a8b28{filter:drop-shadow(0 4px 8px #0000004d);transition:filter .3s}.format-svg.jsx-3f1dfd7abf2a8b28:hover{filter:drop-shadow(0 6px 12px #0006)}@media (width<=768px){.orbiting-container.jsx-3f1dfd7abf2a8b28{width:280px;height:280px;margin-left:calc(50% + 15px);transform:translate(-50%)}.format-svg.jsx-3f1dfd7abf2a8b28{width:35px;height:auto}.central-logo.jsx-3f1dfd7abf2a8b28 .logo-wrapper.jsx-3f1dfd7abf2a8b28{width:70px;height:70px}.central-logo.jsx-3f1dfd7abf2a8b28 .logo-wrapper.jsx-3f1dfd7abf2a8b28 img.jsx-3f1dfd7abf2a8b28{width:45px;height:45px}.radar-ring-inner.jsx-3f1dfd7abf2a8b28{width:140px;height:140px}.radar-ring-outer.jsx-3f1dfd7abf2a8b28{width:200px;height:200px}}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
@@ -991,25 +1486,9 @@ function MainFeatures() {
                             "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "cstack gap-1 py-1 px-2 border rounded-pill",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 18,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "fs-8 fw-bold text-uppercase",
-                                            children: "Main features"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 19,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: "hero-badge mx-auto",
+                                    children: "Main features"
+                                }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
                                     lineNumber: 17,
                                     columnNumber: 15
@@ -1017,28 +1496,25 @@ function MainFeatures() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "h3 lg:h2 xl:h1 m-0 px-2",
                                     children: [
-                                        "Everything You Need in",
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5",
-                                            children: "One Platform"
-                                        }, void 0, false, {
+                                        "Everything You Need",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 25,
-                                            columnNumber: 17
-                                        }, this)
+                                            lineNumber: 21,
+                                            columnNumber: 36
+                                        }, this),
+                                        "in One Platform"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 23,
-                                    columnNumber: 15
+                                    lineNumber: 20,
+                                    columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "fs-6 xl:fs-5 text-black dark:text-white text-opacity-70",
                                     children: "View4Sight handles the complete workflow from data upload to client delivery. Support for all major formats with advanced coordinate system handling that actually works."
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 29,
+                                    lineNumber: 24,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -1057,7 +1533,7 @@ function MainFeatures() {
                                         "data-anime": "onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 0;",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "panel vstack items-start gap-2 p-3 lg:p-4 xl:p-6",
+                                                className: "panel vstack items-start gap-3 p-3 lg:p-4 xl:p-6",
                                                 "data-anime": "onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1065,15 +1541,24 @@ function MainFeatures() {
                                                         children: "Web-based 3D Viewer"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 47,
+                                                        lineNumber: 42,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "fs-6 md:fs-5 lg:fs-4 m-0",
-                                                        children: "Navigate massive point clouds smoothly in any browser—no plugins required. Your clients just need a web browser to explore your 3D data."
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                opacity: 0.7
+                                                            },
+                                                            children: "Navigate massive point clouds smoothly in any browser—no plugins required. Your clients just need a web browser to explore your 3D data."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                            lineNumber: 44,
+                                                            columnNumber: 23
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 48,
+                                                        lineNumber: 43,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1084,26 +1569,26 @@ function MainFeatures() {
                                                                 children: "Try it now"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 53,
+                                                                lineNumber: 50,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                                 className: "icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 54,
+                                                                lineNumber: 51,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 52,
+                                                        lineNumber: 49,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 43,
+                                                lineNumber: 38,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1116,23 +1601,23 @@ function MainFeatures() {
                                                     height: "837"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 59,
+                                                    lineNumber: 56,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 57,
+                                                lineNumber: 54,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 39,
+                                        lineNumber: 34,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 38,
+                                    lineNumber: 33,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1149,62 +1634,71 @@ function MainFeatures() {
                                                 "data-uc-img": ""
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 76,
+                                                lineNumber: 73,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 82,
+                                                lineNumber: 79,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "position-absolute d-inline-block w-500px h-500px rounded-circle bg-gradient-45 from-primary to-white start-50 blur-10 translate-middle blend-soft-light"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 83,
+                                                lineNumber: 80,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel p-3",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$view4sight$2f$OrbitingIcons$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 83,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 84,
+                                                lineNumber: 81,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "panel vstack items-start justify-between gap-2 p-3 lg:p-4 xl:p-6 pt-0 lg:pt-0 xl:pt-0",
+                                                className: "panel vstack items-start justify-between gap-3 p-3 lg:p-4 xl:p-6 pt-0 lg:pt-0 xl:pt-0",
                                                 "data-anime": "onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "content vstack items-start gap-2",
+                                                        className: "content vstack items-start gap-3",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "h4 m-0",
+                                                                className: "h4 lg:h3 m-0",
                                                                 children: "All Your Geospatial Files in One Place"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 93,
+                                                                lineNumber: 90,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "fs-6 lg:fs-5 dark:text-white",
-                                                                children: "Native support for LAS, E57, IFC, DXF, and orthophotos with advanced coordinate system handling that actually works. No more juggling between incompatible tools."
+                                                                className: "fs-6 md:fs-5 lg:fs-4 dark:text-white",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    style: {
+                                                                        opacity: 0.7
+                                                                    },
+                                                                    children: "Native support for LAS, E57, IFC, DXF, and orthophotos with advanced coordinate system handling that actually works. No more juggling between incompatible tools."
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                                    lineNumber: 92,
+                                                                    columnNumber: 25
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 94,
+                                                                lineNumber: 91,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 89,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1218,37 +1712,37 @@ function MainFeatures() {
                                                                 children: "See all formats"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 104,
+                                                                lineNumber: 103,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                                 className: "icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 105,
+                                                                lineNumber: 104,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 98,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 88,
+                                                lineNumber: 85,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 72,
+                                        lineNumber: 69,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 68,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1265,112 +1759,120 @@ function MainFeatures() {
                                                 "data-uc-img": ""
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 117,
+                                                lineNumber: 116,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 123,
+                                                lineNumber: 122,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "position-absolute d-inline-block w-500px h-500px rounded-circle bg-gradient-45 from-primary to-white start-50 blur-10 translate-middle blend-soft-light"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 124,
+                                                lineNumber: 123,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel px-3 lg:px-4 xl:px-6",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    className: "rounded-bottom-1-5 border border-top-0",
+                                                    className: "rounded-bottom-1-5",
                                                     alt: "BIM and Survey data fusion",
                                                     src: "/assets/images/template/home-06-components.png",
                                                     width: "800",
                                                     height: "620"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 126,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 125,
+                                                lineNumber: 124,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "panel vstack items-start justify-between gap-2 p-3 lg:p-4 xl:p-6",
+                                                className: "panel vstack items-start justify-between gap-3 p-3 lg:p-4 xl:p-6",
                                                 "data-anime": "onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "content vstack items-start gap-2",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "h4 m-0",
-                                                                children: "Secure Data. Simple Sharing."
-                                                            }, void 0, false, {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "content vstack items-start gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                            className: "h4 lg:h3 m-0",
+                                                            children: [
+                                                                "Secure Data.",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                                    lineNumber: 140,
+                                                                    columnNumber: 37
+                                                                }, this),
+                                                                "Precise Permissions.",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                                    lineNumber: 141,
+                                                                    columnNumber: 45
+                                                                }, this),
+                                                                "Simple Sharing."
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                            lineNumber: 139,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "fs-6 md:fs-5 lg:fs-4 dark:text-white",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                style: {
+                                                                    opacity: 0.7
+                                                                },
+                                                                children: [
+                                                                    "Share 3D scans with anyone — no install needed.",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                                        lineNumber: 146,
+                                                                        columnNumber: 74
+                                                                    }, this),
+                                                                    "Grant the right access to the right people, instantly.",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                                        lineNumber: 147,
+                                                                        columnNumber: 81
+                                                                    }, this),
+                                                                    "Your data stays encrypted, safe, and under control."
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 140,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "fs-6 lg:fs-5 dark:text-white",
-                                                                children: "Share projects instantly with clients and stakeholders—no software installation required. Control exactly who sees what with granular permissions and secure project links."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 141,
-                                                                columnNumber: 23
+                                                                lineNumber: 145,
+                                                                columnNumber: 25
                                                             }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 139,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: "/fonctionnalites",
-                                                        className: "text-secondary fw-medium text-decoration-none d-inline-flex align-items-center gap-1 mt-2",
-                                                        style: {
-                                                            fontSize: '14px'
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                children: "See sharing options"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 151,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                className: "icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 152,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 146,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                            lineNumber: 144,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                    lineNumber: 138,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 135,
+                                                lineNumber: 134,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 113,
+                                        lineNumber: 112,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 112,
+                                    lineNumber: 111,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1380,110 +1882,38 @@ function MainFeatures() {
                                         "data-anime": "onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 300;",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "panel vstack items-center gap-2 p-3 lg:p-4 xl:p-6",
+                                                className: "panel vstack items-center gap-3 p-3 lg:p-4 xl:p-6",
                                                 "data-anime": "onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                        className: "h4 m-0",
+                                                        className: "h4 lg:h3 m-0",
                                                         children: "Smart Annotations & Measurements"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 166,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "fs-6 md:fs-5 lg:fs-4 m-0 xl:px-4 text-center",
-                                                        children: "Add comments, measurements, and markup that stay precisely positioned in 3D space. Real-time collaboration with your entire team."
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                opacity: 0.7
+                                                            },
+                                                            children: "Add comments, measurements, and markup that stay precisely positioned in 3D space. Real-time collaboration with your entire team."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
+                                                            lineNumber: 168,
+                                                            columnNumber: 23
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 169,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "hstack gap-4 mt-3",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "vstack items-center gap-1",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                        className: "icon icon-2 unicon-ruler text-primary"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 175,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "fs-8 fw-medium",
-                                                                        children: "Measurements"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 176,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 174,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "vstack items-center gap-1",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                        className: "icon icon-2 unicon-comment text-primary"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 179,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "fs-8 fw-medium",
-                                                                        children: "Comments"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 180,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 178,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "vstack items-center gap-1",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                        className: "icon icon-2 unicon-users text-primary"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 183,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "fs-8 fw-medium",
-                                                                        children: "Collaboration"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                        lineNumber: 184,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                                lineNumber: 182,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 167,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 164,
+                                                lineNumber: 162,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1495,201 +1925,61 @@ function MainFeatures() {
                                                     height: "800"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 176,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                lineNumber: 188,
+                                                lineNumber: 174,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 160,
+                                        lineNumber: 158,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                    lineNumber: 159,
+                                    lineNumber: 157,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                            lineNumber: 35,
+                            lineNumber: 30,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel mt-6 lg:mt-8",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row child-cols-12 sm:child-cols-6 lg:child-cols-3 g-2 lg:g-4",
+                            className: "text-center mt-6 lg:mt-8",
+                            "data-anime": "onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 800;",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/fonctionnalites",
+                                className: "btn btn-lg btn-outline-primary rounded-pill px-5 py-3",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "icon icon-3 unicon-share text-primary mx-auto"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 207,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                    className: "h6 m-0",
-                                                    children: "Flexible Sharing"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 208,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-7 opacity-70",
-                                                    children: "Generate secure project links with granular access control"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 209,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 206,
-                                            columnNumber: 19
-                                        }, this)
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "Discover all features"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 205,
+                                        lineNumber: 197,
                                         columnNumber: 17
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "icon icon-3 unicon-code text-primary mx-auto"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 214,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                    className: "h6 m-0",
-                                                    children: "API Ready"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 215,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-7 opacity-70",
-                                                    children: "Integrate with your existing workflow and white-label for clients"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 216,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 213,
-                                            columnNumber: 19
-                                        }, this)
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                        className: "icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180 ms-1"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 212,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "icon icon-3 unicon-file text-primary mx-auto"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 221,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                    className: "h6 m-0",
-                                                    children: "All Formats"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 222,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-7 opacity-70",
-                                                    children: "LAS, E57, IFC, DXF, orthophotos - we support them all"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 223,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 220,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 219,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "vstack gap-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "icon icon-3 unicon-shield text-primary mx-auto"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 228,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                    className: "h6 m-0",
-                                                    children: "French Hosting"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 229,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-7 opacity-70",
-                                                    children: "Your data stays in France with ISO 27001 certification"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                                    lineNumber: 230,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                            lineNumber: 227,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                        lineNumber: 226,
+                                        lineNumber: 198,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                                lineNumber: 204,
+                                lineNumber: 193,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/MainFeatures.jsx",
-                            lineNumber: 203,
+                            lineNumber: 189,
                             columnNumber: 13
                         }, this)
                     ]
@@ -2209,30 +2499,33 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 function Testimonials() {
-    const testimonials = [
+    // Témoignage principal mis en avant
+    const featuredTestimonial = {
+        id: 1,
+        quote: "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
+        author: "Pierre Moreau",
+        position: "Géomètre-expert",
+        company: "Cabinet Moreau & Associés",
+        location: "Lyon",
+        avatar: "/assets/images/common/login.webp"
+    };
+    // Statistiques avec design minimaliste
+    const realResults = [
         {
-            id: 1,
-            quote: "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h.",
-            author: "Géomètre-expert",
-            location: "Lyon",
-            avatar: "/assets/images/avatars/01.png",
-            rating: 5
+            percentage: "50%",
+            description: "Faster Client Approvals"
         },
         {
-            id: 2,
-            quote: "Notre client final a validé le livrable directement via la visite 3D. On a réduit nos allers-retours de moitié.",
-            author: "Bureau d'études VRD",
-            location: "Nantes",
-            avatar: "/assets/images/avatars/02.png",
-            rating: 5
+            percentage: "70%",
+            description: "Fewer Site Visits Required"
         },
         {
-            id: 3,
-            quote: "Enfin une solution française qui comprend nos contraintes de souveraineté. L'interface est intuitive, même pour nos clients non-techniques.",
-            author: "Responsable Géomatique",
-            location: "Toulouse",
-            avatar: "/assets/images/avatars/03.png",
-            rating: 5
+            percentage: "3x",
+            description: "Faster File Sharing"
+        },
+        {
+            percentage: "90%",
+            description: "Client Satisfaction Rate"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2240,285 +2533,332 @@ function Testimonials() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "section-outer panel py-6 xl:py-9",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container max-w-xl",
+                className: "container max-w-lg",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "section-inner panel",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center",
-                            "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});",
+                            className: "panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8",
+                            "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "cstack gap-1 py-1 px-2 border rounded-pill",
+                                    className: "panel vstack items-center gap-2 xl:gap-3 text-center",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                            lineNumber: 43,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "fs-8 fw-bold text-uppercase",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "hero-badge mx-auto",
                                             children: "Testimonials"
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                            lineNumber: 44,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                    lineNumber: 42,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "h3 lg:h2 xl:h1 m-0",
-                                    children: [
-                                        "Built by Geospatial Professionals,",
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5",
-                                            children: "for Professionals"
+                                            lineNumber: 49,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "h3 lg:h2 xl:h1 m-0",
+                                            children: [
+                                                "Real Results from Real Teams",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                    lineNumber: 53,
+                                                    columnNumber: 47
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                            lineNumber: 52,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto",
+                                            children: "Discover how View4Sight helps surveying and engineering professionals save time and deliver better results."
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                            lineNumber: 50,
-                                            columnNumber: 17
+                                            lineNumber: 55,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/Testimonials.jsx",
                                     lineNumber: 48,
-                                    columnNumber: 15
+                                    columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70",
-                                    children: "Discover how French surveying professionals are transforming their workflows with View4Sight."
-                                }, void 0, false, {
-                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                    lineNumber: 54,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/view4sight/Testimonials.jsx",
-                            lineNumber: 38,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "row child-cols-12 lg:child-cols-4 col-match g-2 lg:g-4",
-                            "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 300});",
-                            children: testimonials.map((testimonial)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "row child-cols-12 justify-center col-match g-2 lg:g-3",
+                                    "data-uc-grid": "",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel vstack gap-4 p-4 lg:p-6 rounded-2 bg-secondary dark:bg-gray-800 h-100",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hstack gap-1",
-                                                children: [
-                                                    ...Array(testimonial.rating)
-                                                ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-1 unicon-star-filled text-warning"
-                                                    }, i, false, {
-                                                        fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                        lineNumber: 69,
-                                                        columnNumber: 25
-                                                    }, this))
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 67,
-                                                columnNumber: 21
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
-                                                className: "fs-6 lg:fs-5 m-0 text-dark dark:text-white",
-                                                children: [
-                                                    '"',
-                                                    testimonial.quote,
-                                                    '"'
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 74,
-                                                columnNumber: 21
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hstack gap-3 mt-auto",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-gray-800 overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "row child-cols-12 col-match g-0",
+                                                "data-uc-grid": "",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "cstack w-48px h-48px rounded-circle overflow-hidden",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            className: "w-100 h-100 object-cover",
-                                                            src: testimonial.avatar,
-                                                            alt: testimonial.author,
-                                                            width: 48,
-                                                            height: 48
-                                                        }, void 0, false, {
+                                                        className: "sm:col-6 lg:col-8",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "panel vstack items-start gap-3",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "panel",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "hstack h-48px",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: "d-flex align-items-center gap-2",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "w-40px h-40px rounded-circle bg-primary-50 dark:bg-primary-900 d-flex align-items-center justify-content-center",
+                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                                className: "text-primary fw-bold",
+                                                                                                children: "GM"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                                lineNumber: 79,
+                                                                                                columnNumber: 39
+                                                                                            }, this)
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                            lineNumber: 78,
+                                                                                            columnNumber: 37
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "vstack gap-0",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                                    className: "fw-bold text-dark dark:text-white",
+                                                                                                    children: featuredTestimonial.company
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                                    lineNumber: 82,
+                                                                                                    columnNumber: 39
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                                    className: "fs-7 text-dark dark:text-white text-opacity-70",
+                                                                                                    children: featuredTestimonial.location
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                                    lineNumber: 83,
+                                                                                                    columnNumber: 39
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                            lineNumber: 81,
+                                                                                            columnNumber: 37
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                    lineNumber: 77,
+                                                                                    columnNumber: 35
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                lineNumber: 76,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                            lineNumber: 75,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            className: "fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white",
+                                                                            children: [
+                                                                                '"',
+                                                                                featuredTestimonial.quote,
+                                                                                '"'
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                            lineNumber: 90,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                    lineNumber: 73,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "panel mt-2 lg:mt-4",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "panel vstack items-start gap-0 lg:gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                                                                                className: "h6 lg:h5 m-0",
+                                                                                children: featuredTestimonial.author
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                lineNumber: 98,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "fs-7 lg:h6 opacity-70",
+                                                                                children: featuredTestimonial.position
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                                lineNumber: 99,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                        lineNumber: 97,
+                                                                        columnNumber: 31
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                    lineNumber: 96,
+                                                                    columnNumber: 29
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                            lineNumber: 81,
-                                                            columnNumber: 25
+                                                            lineNumber: 72,
+                                                            columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                        lineNumber: 80,
-                                                        columnNumber: 23
+                                                        lineNumber: 71,
+                                                        columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "vstack gap-0",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                className: "h6 m-0",
-                                                                children: testimonial.author
+                                                        className: "sm:col-6 lg:col-4",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "panel overflow-hidden h-100",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
+                                                                className: "featured-image m-0 rounded ratio ratio-1x1 h-100 uc-transition-toggle overflow-hidden",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                    className: "media-cover image uc-transition-scale-up uc-transition-opaque",
+                                                                    alt: "View4Sight customer testimonial",
+                                                                    src: featuredTestimonial.avatar,
+                                                                    width: "1500",
+                                                                    height: "1000"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                                    lineNumber: 111,
+                                                                    columnNumber: 31
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                                lineNumber: 90,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "fs-7 text-dark dark:text-white text-opacity-70 m-0",
-                                                                children: testimonial.location
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                                lineNumber: 91,
-                                                                columnNumber: 25
+                                                                lineNumber: 110,
+                                                                columnNumber: 29
                                                             }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                            lineNumber: 109,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                        lineNumber: 89,
-                                                        columnNumber: 23
+                                                        lineNumber: 108,
+                                                        columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 79,
-                                                columnNumber: 21
+                                                lineNumber: 67,
+                                                columnNumber: 23
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                            lineNumber: 66,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/components/view4sight/Testimonials.jsx",
                                         lineNumber: 65,
                                         columnNumber: 19
                                     }, this)
-                                }, testimonial.id, false, {
+                                }, void 0, false, {
                                     fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                    lineNumber: 64,
+                                    lineNumber: 61,
                                     columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/view4sight/Testimonials.jsx",
-                            lineNumber: 59,
-                            columnNumber: 13
+                            lineNumber: 43,
+                            columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel mt-6 lg:mt-8 p-4 lg:p-6 rounded-2 bg-primary-50 dark:bg-gray-800 text-center",
+                            className: "panel mt-6 lg:mt-8",
                             "data-anime": "onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row child-cols-4 lg:child-cols-3 col-match g-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "vstack gap-1",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "h3 m-0 text-primary",
-                                                children: "30%"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 108,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "fs-7 text-dark dark:text-white text-opacity-70 m-0",
-                                                children: "Reduction in client validation time"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 109,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                className: "row child-cols-6 lg:child-cols-4 col-match g-4 lg:g-6",
+                                children: realResults.map((result, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "col",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "panel vstack items-center gap-3 p-4 lg:p-6 text-center rounded-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-xs hover:shadow-sm uc-transition-all-medium position-relative overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "position-absolute top-0 start-0 w-100 h-2px bg-primary"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                    lineNumber: 139,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h1 lg:display-6 xl:display-5 fw-black text-primary m-0",
+                                                    style: {
+                                                        fontSize: 'clamp(2.5rem, 6vw, 3.5rem)',
+                                                        lineHeight: '1'
+                                                    },
+                                                    children: result.percentage
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                    lineNumber: 142,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "fs-6 lg:fs-5 text-dark dark:text-white text-opacity-80 m-0 fw-medium",
+                                                    children: result.description
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                                    lineNumber: 147,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/view4sight/Testimonials.jsx",
+                                            lineNumber: 137,
+                                            columnNumber: 23
+                                        }, this)
+                                    }, index, false, {
                                         fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                        lineNumber: 107,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "vstack gap-1",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "h3 m-0 text-primary",
-                                                children: "50%"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 114,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "fs-7 text-dark dark:text-white text-opacity-70 m-0",
-                                                children: "Fewer site visits required"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 115,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                        lineNumber: 113,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "vstack gap-1",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "h3 m-0 text-primary",
-                                                children: "80%"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 120,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "fs-7 text-dark dark:text-white text-opacity-70 m-0",
-                                                children: "Clearer communication"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                                lineNumber: 121,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                        lineNumber: 119,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                        lineNumber: 136,
+                                        columnNumber: 21
+                                    }, this))
+                            }, void 0, false, {
                                 fileName: "[project]/components/view4sight/Testimonials.jsx",
-                                lineNumber: 106,
-                                columnNumber: 15
+                                lineNumber: 134,
+                                columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/Testimonials.jsx",
-                            lineNumber: 102,
-                            columnNumber: 13
+                            lineNumber: 129,
+                            columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/view4sight/Testimonials.jsx",
-                    lineNumber: 37,
-                    columnNumber: 11
+                    lineNumber: 42,
+                    columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/Testimonials.jsx",
-                lineNumber: 36,
-                columnNumber: 9
+                lineNumber: 41,
+                columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/view4sight/Testimonials.jsx",
-            lineNumber: 35,
-            columnNumber: 7
+            lineNumber: 40,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/view4sight/Testimonials.jsx",
-        lineNumber: 34,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
@@ -2548,88 +2888,73 @@ function SecurityBlock() {
     const securityFeatures = [
         {
             id: 1,
-            icon: "🇫🇷",
+            icon: "/assets/images/common/icons/home.svg",
+            iconColor: "bg-blue-500",
             title: "Sovereign Hosting",
-            description: "Data centers located in France"
+            description: "Your projects never leave French territory"
         },
         {
             id: 2,
-            icon: "🏢",
+            icon: "/assets/images/common/icons/database.svg",
+            iconColor: "bg-purple-500",
             title: "On-premise Option",
-            description: "Complete control for sensitive projects"
+            description: "Install on your own servers for maximum control"
         },
         {
             id: 3,
-            icon: "🛡️",
-            title: "Enterprise-grade Security",
-            description: "ISO 27001 certification and robust access controls"
+            icon: "/assets/images/common/icons/settings.svg",
+            iconColor: "bg-green-500",
+            title: "Enterprise Security",
+            description: "Bank-level security with granular user permissions"
         },
         {
             id: 4,
-            icon: "📋",
+            icon: "/assets/images/common/icons/check-circle.svg",
+            iconColor: "bg-orange-500",
             title: "GDPR Compliance",
-            description: "Built for European privacy standards from day one"
+            description: "European privacy by design, not as an afterthought"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "section panel overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "section-outer panel py-6 xl:py-9 bg-secondary dark:bg-gray-800",
+            className: "section-outer panel py-8 xl:py-12 bg-gray-900",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container max-w-xl",
+                className: "container max-w-6xl",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "section-inner panel",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center",
+                            className: "panel vstack items-center gap-2 xl:gap-3 mb-6 lg:mb-8 text-center",
                             "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "cstack gap-1 py-1 px-2 border rounded-pill",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                            lineNumber: 43,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "fs-8 fw-bold text-uppercase",
-                                            children: "Security & Sovereignty"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                            lineNumber: 44,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: "hero-badge mx-auto",
+                                    children: "Security & Sovereignty"
+                                }, void 0, false, {
                                     fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                    lineNumber: 42,
+                                    lineNumber: 47,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "h3 lg:h2 xl:h1 m-0",
+                                    className: "h3 lg:h2 xl:h1 m-0 text-white",
                                     children: [
-                                        "Your Data Stays Where It Belongs:",
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-flex px-1 bg-white text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5",
-                                            children: "In France"
-                                        }, void 0, false, {
+                                        "Your Data Stays Where It",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                            lineNumber: 50,
-                                            columnNumber: 17
-                                        }, this)
+                                            lineNumber: 51,
+                                            columnNumber: 41
+                                        }, this),
+                                        "Belongs: In France"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70",
-                                    children: "Unlike American cloud solutions, View4Sight keeps your sensitive project data on French soil. ISO 27001 certified infrastructure, GDPR compliant, and built to meet public sector requirements."
+                                    className: "fs-6 xl:fs-5 text-white text-opacity-70 max-w-lg mx-auto",
+                                    children: "While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved."
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/SecurityBlock.jsx",
                                     lineNumber: 54,
@@ -2638,205 +2963,418 @@ function SecurityBlock() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                            lineNumber: 38,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match g-2 lg:g-4",
+                            className: "row g-4 lg:g-6 mb-12 lg:mb-16",
                             "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 300});",
-                            children: securityFeatures.map((feature)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "col-12 lg:col-5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "panel vstack items-center gap-3 p-4 lg:p-6 rounded-2 bg-white dark:bg-gray-700 text-center h-100",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "cstack w-64px h-64px rounded-circle bg-primary-50 dark:bg-primary-900",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "fs-2",
-                                                    children: feature.icon
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                    lineNumber: 68,
-                                                    columnNumber: 23
-                                                }, this)
+                                        className: "d-flex align-items-start justify-content-center h-100",
+                                        style: {
+                                            paddingTop: '0'
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "panel d-flex align-items-center justify-content-center p-6 lg:p-8 rounded-2 lg:rounded-3 w-100",
+                                            style: {
+                                                backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                                                border: '1px solid rgba(255, 255, 255, 0.05)',
+                                                maxWidth: '400px'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/assets/images/shield.png",
+                                                alt: "Security Shield - Data Protection in France",
+                                                width: "350",
+                                                height: "350",
+                                                className: "w-70 h-auto"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                lineNumber: 67,
-                                                columnNumber: 21
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "vstack gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                        className: "h6 lg:h5 m-0",
-                                                        children: feature.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 71,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "fs-7 lg:fs-6 text-dark dark:text-white text-opacity-70 m-0",
-                                                        children: feature.description
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                lineNumber: 70,
+                                                lineNumber: 68,
                                                 columnNumber: 21
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                            lineNumber: 67,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
                                         lineNumber: 66,
-                                        columnNumber: 19
+                                        columnNumber: 17
                                     }, this)
-                                }, feature.id, false, {
+                                }, void 0, false, {
                                     fileName: "[project]/components/view4sight/SecurityBlock.jsx",
                                     lineNumber: 65,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "col-12 lg:col-7",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "row child-cols-12 sm:child-cols-6 col-match g-2 h-100",
+                                        children: securityFeatures.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: `panel vstack items-start overflow-hidden ${index === 0 ? 'bg-secondary text-gray-900 dark:bg-gray-800 dark:text-white' : index === 1 ? 'uc-dark' : index === 2 ? 'bg-gray-800 uc-dark' : 'bg-secondary text-gray-900 dark:bg-gray-800 dark:text-white'} rounded-2 lg:rounded-3 h-100`,
+                                                    style: index === 1 ? {
+                                                        backgroundColor: '#7FC2C8'
+                                                    } : {},
+                                                    "data-anime": "onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: ${100 * index};",
+                                                    children: [
+                                                        index === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                    lineNumber: 97,
+                                                                    columnNumber: 30
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "position-absolute d-inline-block w-300px h-300px rounded-circle start-50 blur-10 translate-middle blend-soft-light",
+                                                                    style: {
+                                                                        background: 'linear-gradient(45deg, #7FC2C8, white)'
+                                                                    }
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                    lineNumber: 98,
+                                                                    columnNumber: 30
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true),
+                                                        index === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                    lineNumber: 103,
+                                                                    columnNumber: 30
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "position-absolute d-inline-block w-300px h-300px rounded-circle start-50 blur-10 translate-middle blend-soft-light",
+                                                                    style: {
+                                                                        background: 'linear-gradient(45deg, #7FC2C8, white)'
+                                                                    }
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                    lineNumber: 104,
+                                                                    columnNumber: 30
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "panel vstack items-start gap-2 lg:gap-3 p-3 lg:p-4 h-100 justify-content-between",
+                                                            "data-anime": "onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "vstack items-start gap-2 lg:gap-3",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: `w-40px h-40px lg:w-44px lg:h-44px rounded-2 ${feature.iconColor} d-flex align-items-center justify-content-center`,
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                            src: feature.icon,
+                                                                            alt: "",
+                                                                            width: "20",
+                                                                            height: "20",
+                                                                            className: "w-20px h-20px lg:w-24px lg:h-24px",
+                                                                            style: {
+                                                                                filter: 'brightness(0) invert(1)'
+                                                                            }
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                            lineNumber: 114,
+                                                                            columnNumber: 32
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                        lineNumber: 113,
+                                                                        columnNumber: 30
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                                        className: "h6 lg:h5 m-0 fw-bold",
+                                                                        children: feature.title
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                        lineNumber: 123,
+                                                                        columnNumber: 30
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "fs-7 lg:fs-6 m-0",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            style: {
+                                                                                opacity: 0.7
+                                                                            },
+                                                                            children: feature.description
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                            lineNumber: 125,
+                                                                            columnNumber: 32
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                        lineNumber: 124,
+                                                                        columnNumber: 30
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                lineNumber: 112,
+                                                                columnNumber: 28
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                            lineNumber: 108,
+                                                            columnNumber: 26
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                    lineNumber: 84,
+                                                    columnNumber: 24
+                                                }, this)
+                                            }, feature.id, false, {
+                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                lineNumber: 83,
+                                                columnNumber: 22
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                        lineNumber: 81,
+                                        columnNumber: 18
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                    lineNumber: 80,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/view4sight/SecurityBlock.jsx",
                             lineNumber: 60,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel mt-6 lg:mt-8 p-4 lg:p-6 rounded-2 bg-white dark:bg-gray-700 text-center",
+                            className: "panel p-6 lg:p-8 rounded-3 text-center",
+                            style: {
+                                backgroundColor: '#E4DCCA',
+                                marginTop: '80px'
+                            },
                             "data-anime": "onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "vstack gap-3",
+                                className: "vstack gap-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "h5 lg:h4 m-0",
-                                        children: "Trusted by French Public Sector"
+                                        className: "h4 lg:h3 m-0 text-dark fw-bold",
+                                        children: "European privacy by design, not as an afterthought"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                        lineNumber: 87,
+                                        lineNumber: 145,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hstack justify-center gap-4 flex-wrap",
+                                        className: "hstack justify-center gap-6 lg:gap-8 flex-wrap",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hstack gap-2",
+                                                className: "d-flex align-items-center gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-1 unicon-shield text-success"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0",
+                                                        style: {
+                                                            backgroundColor: '#28a745'
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            width: "18",
+                                                            height: "18",
+                                                            viewBox: "0 0 20 20",
+                                                            fill: "none",
+                                                            style: {
+                                                                display: 'block',
+                                                                margin: 'auto'
+                                                            },
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M6 10l2 2 6-6",
+                                                                stroke: "#fff",
+                                                                strokeWidth: "2.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                lineNumber: 150,
+                                                                columnNumber: 26
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                            lineNumber: 149,
+                                                            columnNumber: 24
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 90,
-                                                        columnNumber: 21
+                                                        lineNumber: 148,
+                                                        columnNumber: 22
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "fs-7 fw-medium",
+                                                        className: "fs-5 fw-medium text-dark lh-1",
                                                         children: "ISO/CEI 27001 Certified"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 91,
-                                                        columnNumber: 21
+                                                        lineNumber: 153,
+                                                        columnNumber: 22
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                lineNumber: 89,
-                                                columnNumber: 19
+                                                lineNumber: 147,
+                                                columnNumber: 20
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hstack gap-2",
+                                                className: "d-flex align-items-center gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-1 unicon-check text-success"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0",
+                                                        style: {
+                                                            backgroundColor: '#28a745'
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            width: "18",
+                                                            height: "18",
+                                                            viewBox: "0 0 20 20",
+                                                            fill: "none",
+                                                            style: {
+                                                                display: 'block',
+                                                                margin: 'auto'
+                                                            },
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M6 10l2 2 6-6",
+                                                                stroke: "#fff",
+                                                                strokeWidth: "2.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                lineNumber: 158,
+                                                                columnNumber: 26
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                            lineNumber: 157,
+                                                            columnNumber: 24
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 94,
-                                                        columnNumber: 21
+                                                        lineNumber: 156,
+                                                        columnNumber: 22
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "fs-7 fw-medium",
+                                                        className: "fs-5 fw-medium text-dark lh-1",
                                                         children: "GDPR Compliant"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 95,
-                                                        columnNumber: 21
+                                                        lineNumber: 161,
+                                                        columnNumber: 22
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                lineNumber: 93,
-                                                columnNumber: 19
+                                                lineNumber: 155,
+                                                columnNumber: 20
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hstack gap-2",
+                                                className: "d-flex align-items-center gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "icon icon-1 unicon-globe text-primary"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0",
+                                                        style: {
+                                                            backgroundColor: '#28a745'
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            width: "18",
+                                                            height: "18",
+                                                            viewBox: "0 0 20 20",
+                                                            fill: "none",
+                                                            style: {
+                                                                display: 'block',
+                                                                margin: 'auto'
+                                                            },
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M6 10l2 2 6-6",
+                                                                stroke: "#fff",
+                                                                strokeWidth: "2.5",
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                                lineNumber: 166,
+                                                                columnNumber: 26
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/SecurityBlock.jsx",
+                                                            lineNumber: 165,
+                                                            columnNumber: 24
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 98,
-                                                        columnNumber: 21
+                                                        lineNumber: 164,
+                                                        columnNumber: 22
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "fs-7 fw-medium",
+                                                        className: "fs-5 fw-medium text-dark lh-1",
                                                         children: "French Public Sector Ready"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                        lineNumber: 99,
-                                                        columnNumber: 21
+                                                        lineNumber: 169,
+                                                        columnNumber: 22
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                                lineNumber: 97,
-                                                columnNumber: 19
+                                                lineNumber: 163,
+                                                columnNumber: 20
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                        lineNumber: 88,
-                                        columnNumber: 17
+                                        lineNumber: 146,
+                                        columnNumber: 34
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "fs-7 text-dark dark:text-white text-opacity-50 m-0",
-                                        children: "10+ years experience in laser scanning and photogrammetry"
+                                        className: "fs-6 text-dark text-opacity-60 m-0 fst-italic",
+                                        children: "Backed by France's leading surveying experts"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                        lineNumber: 102,
+                                        lineNumber: 172,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                                lineNumber: 86,
+                                lineNumber: 144,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                            lineNumber: 82,
+                            lineNumber: 139,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                    lineNumber: 37,
+                    lineNumber: 41,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-                lineNumber: 36,
+                lineNumber: 40,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-            lineNumber: 35,
+            lineNumber: 39,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/view4sight/SecurityBlock.jsx",
-        lineNumber: 34,
+        lineNumber: 38,
         columnNumber: 5
     }, this);
 }
@@ -2900,25 +3438,9 @@ function FaqShort() {
                             "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "cstack gap-1 py-1 px-2 border rounded-pill",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                            lineNumber: 40,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "fs-8 fw-bold text-uppercase",
-                                            children: "FAQ"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                            lineNumber: 41,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: "hero-badge mx-auto",
+                                    children: "FAQ"
+                                }, void 0, false, {
                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
                                     lineNumber: 39,
                                     columnNumber: 15
@@ -2927,19 +3449,16 @@ function FaqShort() {
                                     className: "h3 lg:h2 xl:h1 m-0",
                                     children: [
                                         "Frequently Asked",
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5",
-                                            children: "Questions"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                            lineNumber: 47,
-                                            columnNumber: 17
-                                        }, this)
+                                            lineNumber: 43,
+                                            columnNumber: 33
+                                        }, this),
+                                        "Questions"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                    lineNumber: 45,
+                                    lineNumber: 42,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2947,7 +3466,7 @@ function FaqShort() {
                                     children: "Get answers to the most common questions about View4Sight."
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 46,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -2975,25 +3494,25 @@ function FaqShort() {
                                                             children: faq.question
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                            lineNumber: 70,
+                                                            lineNumber: 65,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                             className: `icon icon-1 unicon-chevron-down transition-transform ${activeIndex === index ? 'rotate-180' : ''}`
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                            lineNumber: 71,
+                                                            lineNumber: 66,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 64,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                lineNumber: 63,
+                                                lineNumber: 58,
                                                 columnNumber: 21
                                             }, this),
                                             activeIndex === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3003,28 +3522,28 @@ function FaqShort() {
                                                     children: faq.answer
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                    lineNumber: 79,
+                                                    lineNumber: 74,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                lineNumber: 78,
+                                                lineNumber: 73,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 57,
                                         columnNumber: 19
                                     }, this)
                                 }, faq.id, false, {
                                     fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 56,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/FaqShort.jsx",
-                            lineNumber: 56,
+                            lineNumber: 51,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3038,7 +3557,7 @@ function FaqShort() {
                                         children: "Still have questions?"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                        lineNumber: 95,
+                                        lineNumber: 90,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3046,7 +3565,7 @@ function FaqShort() {
                                         children: "Our team is here to help you get started with View4Sight."
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                        lineNumber: 96,
+                                        lineNumber: 91,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3058,7 +3577,7 @@ function FaqShort() {
                                                 children: "Contact Support"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                lineNumber: 100,
+                                                lineNumber: 95,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3067,24 +3586,24 @@ function FaqShort() {
                                                 children: "View Documentation"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                                lineNumber: 106,
+                                                lineNumber: 101,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 94,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/FaqShort.jsx",
-                                lineNumber: 94,
+                                lineNumber: 89,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/FaqShort.jsx",
-                            lineNumber: 90,
+                            lineNumber: 85,
                             columnNumber: 13
                         }, this)
                     ]
@@ -3664,59 +4183,94 @@ function VideoComponent() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 id: "how_it_works",
                 ref: parallax.ref,
-                className: "how-it-works section panel  scrollSpysection",
+                className: "how-it-works section panel scrollSpysection",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "section-outer panel",
+                    className: "section-outer panel py-6 lg:py-8 xl:py-10",
                     "data-anime": "onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "container xl:max-w-xl",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                    src: "/assets/images/media/lexend_vid_home-6.webm",
-                                    preload: "none",
-                                    loop: true,
-                                    autoPlay: true,
-                                    poster: "/assets/images/media/lexend_vid_home-6.jpg",
-                                    muted: true,
-                                    playsInline: true,
-                                    "data-uc-cover": true,
-                                    "data-uc-video": "autoplay: true;"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                                    lineNumber: 25,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "position-cover bg-black bg-opacity-40",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        onClick: ()=>setOpen(true),
-                                        className: "position-absolute top-50 start-50 translate-middle uc-link w-64px lg:w-100px h-64px lg:h-100px rounded-circle cstack bg-white bg-opacity-70 backdrop-2 text-primary",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "icon-3 unicon-play fw-bold"
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "vstack gap-2 xl:gap-3 mb-4 lg:mb-6 text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "hero-badge mx-auto",
+                                        children: "Video demo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "h3 lg:h2 xl:h1 m-0",
+                                        children: "How It Works"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                        lineNumber: 30,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto",
+                                        children: "The platform is designed to help you visualize, automate, and build geospatial data workflows."
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                        lineNumber: 33,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                        src: "/assets/images/media/lexend_vid_home-6.webm",
+                                        preload: "none",
+                                        loop: true,
+                                        autoPlay: true,
+                                        poster: "/assets/images/media/lexend_vid_home-6.jpg",
+                                        muted: true,
+                                        playsInline: true,
+                                        "data-uc-cover": true,
+                                        "data-uc-video": "autoplay: true;"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                        lineNumber: 38,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "position-cover bg-black bg-opacity-40",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            onClick: ()=>setOpen(true),
+                                            className: "position-absolute top-50 start-50 translate-middle uc-link w-64px lg:w-100px h-64px lg:h-100px rounded-circle cstack bg-white bg-opacity-70 backdrop-2 text-primary",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "icon-3 unicon-play fw-bold"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                                lineNumber: 54,
+                                                columnNumber: 19
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                                            lineNumber: 41,
-                                            columnNumber: 19
+                                            lineNumber: 50,
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                                        lineNumber: 37,
-                                        columnNumber: 17
+                                        lineNumber: 49,
+                                        columnNumber: 15
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                                    lineNumber: 36,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                            lineNumber: 24,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
                         lineNumber: 23,
                         columnNumber: 11
@@ -3737,7 +4291,7 @@ function VideoComponent() {
                 setIsOpen: ()=>setOpen(false)
             }, void 0, false, {
                 fileName: "[project]/components/homes/home-6/VideoComponent.jsx",
-                lineNumber: 48,
+                lineNumber: 61,
                 columnNumber: 7
             }, this)
         ]

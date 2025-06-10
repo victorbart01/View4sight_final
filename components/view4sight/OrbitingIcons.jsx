@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function OrbitingIcons() {
   const formats = [
-    { name: "LAS", icon: "unicon-file-alt", delay: "0s", color: "#FE552E" },
-    { name: "E57", icon: "unicon-cube", delay: "1s", color: "#7FC2C8" },
-    { name: "IFC", icon: "unicon-building", delay: "2s", color: "#C54E34" },
-    { name: "DXF", icon: "unicon-ruler-combined", delay: "3s", color: "#F6B44C" },
-    { name: "Ortho", icon: "unicon-map", delay: "4s", color: "#E4DCCA" },
-    { name: "PLY", icon: "unicon-layers-alt", delay: "5s", color: "#7FC2C8" }
+    { name: "LAS", svgPath: "/assets/images/file formats/LAS.svg", delay: "0s" },
+    { name: "E57", svgPath: "/assets/images/file formats/E57.svg", delay: "1s" },
+    { name: "IFC", svgPath: "/assets/images/file formats/IFC.svg", delay: "2s" },
+    { name: "DXF", svgPath: "/assets/images/file formats/DXF.svg", delay: "3s" },
+    { name: "ORTHO", svgPath: "/assets/images/file formats/ORTHO.svg", delay: "4s" },
+    { name: "PLY", svgPath: "/assets/images/file formats/PLY.svg", delay: "5s" }
   ];
 
   const [rotation, setRotation] = useState(0);
@@ -61,8 +61,8 @@ export default function OrbitingIcons() {
           <Image
             src="/assets/images/logo_v4s.svg"
             alt="View4Sight Logo"
-            width="65"
-            height="65"
+            width="55"
+            height="55"
             className="d-block"
           />
         </div>
@@ -97,15 +97,15 @@ export default function OrbitingIcons() {
                   transition: 'none'
                 }}
               >
-                <div
-                  className="format-icon rounded-circle d-flex align-items-center justify-content-center shadow"
-                  style={{ backgroundColor: format.color }}
-                >
-                  <i className={`icon ${format.icon} text-white`} style={{ fontSize: '20px' }}></i>
+                <div className="format-svg-container">
+                  <Image
+                    src={format.svgPath}
+                    alt={`${format.name} file format`}
+                    width="50"
+                    height="55"
+                    className="format-svg"
+                  />
                 </div>
-                <span className="format-label fs-8 fw-medium text-center mt-1 d-block">
-                  {format.name}
-                </span>
               </div>
             </div>
           );
@@ -122,12 +122,12 @@ export default function OrbitingIcons() {
         }
 
         .central-logo .logo-wrapper {
-          width: 90px;
-          height: 90px;
+          width: 110px;
+          height: 110px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: #2c2c2c !important;
+          background-color: rgba(44, 44, 44, 0.1) !important;
         }
 
         .radar-ring-inner {
@@ -163,20 +163,25 @@ export default function OrbitingIcons() {
           will-change: transform;
         }
 
-        .format-icon {
-          width: 50px;
-          height: 50px;
-          font-size: 20px;
+        .format-svg-container {
           display: flex;
           align-items: center;
           justify-content: center;
           pointer-events: auto;
+          transition: transform 0.3s ease;
         }
 
-        .format-label {
-          color: #fff;
-          opacity: 0.9;
-          white-space: nowrap;
+        .format-svg-container:hover {
+          transform: scale(1.1);
+        }
+
+        .format-svg {
+          filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+          transition: filter 0.3s ease;
+        }
+
+        .format-svg:hover {
+          filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
         }
 
         /* Responsive */
@@ -188,13 +193,9 @@ export default function OrbitingIcons() {
             transform: translateX(-50%);
           }
           
-          .format-icon {
+          .format-svg {
             width: 35px;
-            height: 35px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: auto;
           }
           
           .central-logo .logo-wrapper {
@@ -203,15 +204,15 @@ export default function OrbitingIcons() {
           }
           
           .central-logo .logo-wrapper img {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
           }
           
           .radar-ring-inner {
             width: 140px;
             height: 140px;
           }
-
+          
           .radar-ring-outer {
             width: 200px;
             height: 200px;

@@ -6,101 +6,171 @@ export default function SecurityBlock() {
   const securityFeatures = [
     {
       id: 1,
-      icon: "🇫🇷",
+      icon: "/assets/images/common/icons/home.svg",
+      iconColor: "bg-blue-500",
       title: "Sovereign Hosting",
-      description: "Data centers located in France"
+      description: "Your projects never leave French territory"
     },
     {
       id: 2,
-      icon: "🏢",
-      title: "On-premise Option", 
-      description: "Complete control for sensitive projects"
+      icon: "/assets/images/common/icons/database.svg",
+      iconColor: "bg-purple-500",
+      title: "On-premise Option",
+      description: "Install on your own servers for maximum control"
     },
     {
       id: 3,
-      icon: "🛡️",
-      title: "Enterprise-grade Security",
-      description: "ISO 27001 certification and robust access controls"
+      icon: "/assets/images/common/icons/settings.svg",
+      iconColor: "bg-green-500",
+      title: "Enterprise Security",
+      description: "Bank-level security with granular user permissions"
     },
     {
       id: 4,
-      icon: "📋",
+      icon: "/assets/images/common/icons/check-circle.svg",
+      iconColor: "bg-orange-500",
       title: "GDPR Compliance",
-      description: "Built for European privacy standards from day one"
+      description: "European privacy by design, not as an afterthought"
     }
   ];
 
   return (
     <div className="section panel overflow-hidden">
-      <div className="section-outer panel py-6 xl:py-9 bg-secondary dark:bg-gray-800">
-        <div className="container max-w-xl">
+      <div className="section-outer panel py-8 xl:py-12 bg-gray-900">
+        <div className="container max-w-6xl">
           <div className="section-inner panel">
+            {/* Header */}
             <div
-              className="panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center"
+              className="panel vstack items-center gap-2 xl:gap-3 mb-6 lg:mb-8 text-center"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});"
             >
-              <div className="cstack gap-1 py-1 px-2 border rounded-pill">
-                <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
-                <span className="fs-8 fw-bold text-uppercase">
-                  Security & Sovereignty
-                </span>
+              <div className="hero-badge mx-auto">
+                Security & Sovereignty
               </div>
-              <h2 className="h3 lg:h2 xl:h1 m-0">
-                Your Data Stays Where It Belongs:{" "}
-                <span className="d-inline-flex px-1 bg-white text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                  In France
-                </span>
+              <h2 className="h3 lg:h2 xl:h1 m-0 text-white">
+                Your Data Stays Where It<br />
+                Belongs: In France
               </h2>
-              <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Unlike American cloud solutions, View4Sight keeps your sensitive project data on French soil. 
-                ISO 27001 certified infrastructure, GDPR compliant, and built to meet public sector requirements.
+              <p className="fs-6 xl:fs-5 text-white text-opacity-70 max-w-lg mx-auto">
+                While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved.
               </p>
             </div>
 
+                        {/* Main Content Layout */}
             <div
-              className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match g-2 lg:g-4"
+              className="row g-4 lg:g-6 mb-12 lg:mb-16"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 300});"
             >
-              {securityFeatures.map((feature) => (
-                <div key={feature.id}>
-                  <div className="panel vstack items-center gap-3 p-4 lg:p-6 rounded-2 bg-white dark:bg-gray-700 text-center h-100">
-                    <div className="cstack w-64px h-64px rounded-circle bg-primary-50 dark:bg-primary-900">
-                      <span className="fs-2">{feature.icon}</span>
-                    </div>
-                    <div className="vstack gap-2">
-                      <h5 className="h6 lg:h5 m-0">{feature.title}</h5>
-                      <p className="fs-7 lg:fs-6 text-dark dark:text-white text-opacity-70 m-0">
-                        {feature.description}
-                      </p>
-                    </div>
+                            {/* Left: Shield Image */}
+              <div className="col-12 lg:col-5">
+                <div className="d-flex align-items-start justify-content-center h-100" style={{paddingTop: '0'}}>
+                  <div className="panel d-flex align-items-center justify-content-center p-6 lg:p-8 rounded-2 lg:rounded-3 w-100" style={{backgroundColor: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', maxWidth: '400px'}}>
+                    <Image
+                      src="/assets/images/shield.png"
+                      alt="Security Shield - Data Protection in France"
+                      width="350"
+                      height="350"
+                      className="w-70 h-auto"
+                    />
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Right: Security Features Grid */}
+              <div className="col-12 lg:col-7">
+                 <div className="row child-cols-12 sm:child-cols-6 col-match g-2 h-100">
+                   {securityFeatures.map((feature, index) => (
+                     <div key={feature.id}>
+                       <div 
+                         className={`panel vstack items-start overflow-hidden ${
+                           index === 0 ? 'bg-secondary text-gray-900 dark:bg-gray-800 dark:text-white' :
+                           index === 1 ? 'uc-dark' :
+                           index === 2 ? 'bg-gray-800 uc-dark' :
+                           'bg-secondary text-gray-900 dark:bg-gray-800 dark:text-white'
+                         } rounded-2 lg:rounded-3 h-100`}
+                         style={index === 1 ? {backgroundColor: '#7FC2C8'} : {}}
+                         data-anime="onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: ${100 * index};"
+                       >
+                         {/* Background effects for certain cards */}
+                         {index === 1 && (
+                           <>
+                             <div className="position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900" />
+                             <div className="position-absolute d-inline-block w-300px h-300px rounded-circle start-50 blur-10 translate-middle blend-soft-light" style={{background: 'linear-gradient(45deg, #7FC2C8, white)'}} />
+                           </>
+                         )}
+                         {index === 2 && (
+                           <>
+                             <div className="position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900" />
+                             <div className="position-absolute d-inline-block w-300px h-300px rounded-circle start-50 blur-10 translate-middle blend-soft-light" style={{background: 'linear-gradient(45deg, #7FC2C8, white)'}} />
+                           </>
+                         )}
+                         
+                         <div
+                           className="panel vstack items-start gap-2 lg:gap-3 p-3 lg:p-4 h-100 justify-content-between"
+                           data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
+                         >
+                           <div className="vstack items-start gap-2 lg:gap-3">
+                             <div className={`w-40px h-40px lg:w-44px lg:h-44px rounded-2 ${feature.iconColor} d-flex align-items-center justify-content-center`}>
+                               <Image
+                                 src={feature.icon}
+                                 alt=""
+                                 width="20"
+                                 height="20"
+                                 className="w-20px h-20px lg:w-24px lg:h-24px"
+                                 style={{filter: 'brightness(0) invert(1)'}}
+                               />
+                             </div>
+                             <h5 className="h6 lg:h5 m-0 fw-bold">{feature.title}</h5>
+                             <p className="fs-7 lg:fs-6 m-0">
+                               <span style={{ opacity: 0.7 }}>
+                                 {feature.description}
+                               </span>
+                             </p>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
+               </div>
             </div>
 
-            {/* Trust indicators */}
+            {/* Trust Indicators */}
             <div 
-              className="panel mt-6 lg:mt-8 p-4 lg:p-6 rounded-2 bg-white dark:bg-gray-700 text-center"
+              className="panel p-6 lg:p-8 rounded-3 text-center"
+              style={{backgroundColor: '#E4DCCA', marginTop: '80px'}}
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
             >
-              <div className="vstack gap-3">
-                <h4 className="h5 lg:h4 m-0">Trusted by French Public Sector</h4>
-                <div className="hstack justify-center gap-4 flex-wrap">
-                  <div className="hstack gap-2">
-                    <i className="icon icon-1 unicon-shield text-success"></i>
-                    <span className="fs-7 fw-medium">ISO/CEI 27001 Certified</span>
-                  </div>
-                  <div className="hstack gap-2">
-                    <i className="icon icon-1 unicon-check text-success"></i>
-                    <span className="fs-7 fw-medium">GDPR Compliant</span>
-                  </div>
-                  <div className="hstack gap-2">
-                    <i className="icon icon-1 unicon-globe text-primary"></i>
-                    <span className="fs-7 fw-medium">French Public Sector Ready</span>
-                  </div>
-                </div>
-                <p className="fs-7 text-dark dark:text-white text-opacity-50 m-0">
-                  10+ years experience in laser scanning and photogrammetry
+              <div className="vstack gap-6">
+                <h4 className="h4 lg:h3 m-0 text-dark fw-bold">European privacy by design, not as an afterthought</h4>
+                                 <div className="hstack justify-center gap-6 lg:gap-8 flex-wrap">
+                   <div className="d-flex align-items-center gap-3">
+                     <div className="w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{backgroundColor: '#28a745'}}>
+                       <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style={{display: 'block', margin: 'auto'}}>
+                         <path d="M6 10l2 2 6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                       </svg>
+                     </div>
+                     <span className="fs-5 fw-medium text-dark lh-1">ISO/CEI 27001 Certified</span>
+                   </div>
+                   <div className="d-flex align-items-center gap-3">
+                     <div className="w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{backgroundColor: '#28a745'}}>
+                       <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style={{display: 'block', margin: 'auto'}}>
+                         <path d="M6 10l2 2 6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                       </svg>
+                     </div>
+                     <span className="fs-5 fw-medium text-dark lh-1">GDPR Compliant</span>
+                   </div>
+                   <div className="d-flex align-items-center gap-3">
+                     <div className="w-32px h-32px rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{backgroundColor: '#28a745'}}>
+                       <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style={{display: 'block', margin: 'auto'}}>
+                         <path d="M6 10l2 2 6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                       </svg>
+                     </div>
+                     <span className="fs-5 fw-medium text-dark lh-1">French Public Sector Ready</span>
+                   </div>
+                 </div>
+                <p className="fs-6 text-dark text-opacity-60 m-0 fst-italic">
+                  Backed by France's leading surveying experts
                 </p>
               </div>
             </div>

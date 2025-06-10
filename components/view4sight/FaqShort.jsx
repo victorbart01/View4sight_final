@@ -36,17 +36,12 @@ export default function FaqShort() {
               className="panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});"
             >
-              <div className="cstack gap-1 py-1 px-2 border rounded-pill">
-                <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
-                <span className="fs-8 fw-bold text-uppercase">
-                  FAQ
-                </span>
+              <div className="hero-badge mx-auto">
+                FAQ
               </div>
               <h2 className="h3 lg:h2 xl:h1 m-0">
-                Frequently Asked{" "}
-                <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                  Questions
-                </span>
+                Frequently Asked<br />
+                Questions
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
                 Get answers to the most common questions about View4Sight.

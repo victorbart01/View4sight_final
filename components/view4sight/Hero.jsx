@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="row child-cols justify-center lg:justify-between items-center g-0">
-              <div className="col-12 sm:col-10 md:col-8 lg:col-5">
+              <div className="col-12 sm:col-10 md:col-8 lg:col-6">
                 <div
                   className="panel vstack gap-5 sm:text-center lg:text-start rtl:lg:text-end py-4"
                   data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
@@ -41,7 +41,9 @@ export default function Hero() {
                   
                   {/* Description */}
                   <p className="fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 lh-base mb-0 pe-lg-4">
-                    Turn massive point clouds into collaborative workspaces. Real-time measurements, smart annotations, instant sharing—zero software required.
+                    Turn massive point clouds into collaborative workspaces.<br />
+                    Real-time measurements, smart annotations, instant sharing.<br />
+                    Zero software required.
                   </p>
                   
                   {/* Boutons CTA avec style amélioré */}
@@ -57,7 +59,7 @@ export default function Hero() {
                       className="btn btn-lg btn-outline-primary rounded-pill px-5 py-3 fw-medium fs-6 cursor-pointer"
                       role="button"
                     >
-                      Book a demo
+                      See how it works
                     </a>
                   </div>
                   
@@ -104,7 +106,7 @@ export default function Hero() {
               </div>
               <div className="col-12 lg:col-6">
                 <div
-                  className="expand-container mt-4 lg:mt-4 ltr:ms-n2 rtl:me-n2"
+                  className="expand-container mt-4 lg:mt-4 ltr:ms-2 rtl:me-2"
                   data-anime="translateX: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
                   {/* TODO: Remplacer par une capture d'écran de View4Sight */}
