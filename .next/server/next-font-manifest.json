@@ -1,9 +1,9 @@
 {
   "app": {
-    "[project]/app/page": [],
+    "[project]/app/tarifs/page": [],
     "[project]/app/view4sight/page": [],
-    "[project]/app/(othersPages)/sign-in/page": [],
-    "[project]/app/_not-found/page": []
+    "[project]/app/_not-found/page": [],
+    "[project]/app/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

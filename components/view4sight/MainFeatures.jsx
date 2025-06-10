@@ -7,7 +7,7 @@ import OrbitingIcons from "./OrbitingIcons";
 export default function MainFeatures() {
   return (
     <div id="features" className="features section panel scrollSpysection">
-      <div className="section-outer panel pt-6 lg:pt-8 xl:pt-10">
+      <div className="section-outer panel pt-3 lg:pt-4 xl:pt-5 bg-gray-900">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div

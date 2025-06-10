@@ -1,6 +1,7 @@
 {
-  "/page": "app/page.js",
+  "/tarifs/page": "app/tarifs/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/view4sight/page": "app/view4sight/page.js",
-  "/(othersPages)/sign-in/page": "app/(othersPages)/sign-in/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
 }

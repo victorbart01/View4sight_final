@@ -1,26 +1,27 @@
+import PricingSection from "@/components/view4sight/PricingSection";
+import PricingCompare from "@/components/innerpages/PricingCompare";
+import FaqShort from "@/components/view4sight/FaqShort";
+import CtaFinal from "@/components/view4sight/CtaFinal";
+
 export const metadata = {
-  title: "Tarifs - View4Sight",
-  description: "Découvrez nos plans tarifaires flexibles pour View4Sight. Essai gratuit de 30 jours.",
+  title: "Pricing - View4Sight",
+  description: "Flexible pricing plans for 3D point cloud visualization. Start with a 30-day free trial.",
 };
 
 export default function TarifsPage() {
   return (
-    <div className="section panel overflow-hidden">
-      <div className="section-outer panel py-6 xl:py-9">
-        <div className="container max-w-lg">
-          <div className="section-inner panel text-center">
-            <h1 className="h2 lg:h1 m-0 mb-4">Tarifs View4Sight</h1>
-            <p className="fs-5 text-dark dark:text-white text-opacity-70">
-              Page en cours de développement...
-            </p>
-            <div className="mt-6">
-              <a href="/view4sight" className="btn btn-primary">
-                Retour à l'accueil
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      {/* Pricing Component */}
+      <PricingSection />
+
+      {/* Pricing Comparison Table */}
+      <PricingCompare />
+
+      {/* FAQ Section */}
+      <FaqShort />
+
+      {/* CTA Final */}
+      <CtaFinal />
+    </>
   );
 } 

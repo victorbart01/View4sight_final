@@ -9,7 +9,7 @@ export default function ClientLogos() {
       id="companies_sponsores"
       className="companies-sponsores section panel overflow-hidden"
     >
-      <div className="section-outer panel py-6">
+      <div className="section-outer panel pt-6 pb-3">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div

@@ -132,7 +132,7 @@ export default function View4SightHeader() {
               <div className="uc-logo text-dark dark:text-white">
                 <Link
                   className="panel text-none"
-                  href={`/view4sight`}
+                  href={`/`}
                   style={{ width: 160 }}
                 >
                   <Image
@@ -342,7 +342,7 @@ export default function View4SightHeader() {
                       </div>
                 </li>
                 <li>
-                  <Link className="text-none nav-hover-effect" href="/page-pricing">
+                  <Link className="text-none nav-hover-effect" href="/tarifs">
                     <span>Pricing</span>
                   </Link>
                 </li>
@@ -522,7 +522,7 @@ export default function View4SightHeader() {
               {/* Free Trial Button */}
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href={`/page-pricing`}
+                href={`/tarifs`}
               >
                 Start free trial
               </Link>

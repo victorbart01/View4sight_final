@@ -14,10 +14,12 @@ export default function VideoComponent() {
       <div
         id="how_it_works"
         ref={parallax.ref}
-        className="how-it-works section panel scrollSpysection"
+        className="how-it-works section panel scrollSpysection bg-gray-900"
+        style={{backgroundColor: '#0e0e0f'}}
       >
         <div
-          className="section-outer panel py-6 lg:py-8 xl:py-10"
+          className="section-outer panel py-6 lg:py-8 xl:py-10 bg-gray-900"
+          style={{backgroundColor: '#0e0e0f'}}
           data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
         >
           <div className="container xl:max-w-xl">
@@ -27,14 +29,14 @@ export default function VideoComponent() {
               <div className="hero-badge mx-auto">
                 Video demo
               </div>
-              <h2 className="h3 lg:h2 xl:h1 m-0">
+              <h2 className="h3 lg:h2 xl:h1 m-0 text-white">
                 How It Works
               </h2>
-              <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
+              <p className="fs-6 xl:fs-5 text-white text-opacity-70 max-w-lg mx-auto">
                 The platform is designed to help you visualize, automate, and build geospatial data workflows.
               </p>
             </div>
-            <div className="panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700">
+            <div className="panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-gray-600">
               <video
                 src="/assets/images/media/lexend_vid_home-6.webm"
                 preload="none"
