@@ -50,7 +50,7 @@ export default function Testimonials() {
                     Testimonials
                   </div>
                   <h2 className="h3 lg:h2 xl:h1 m-0">
-                  Real Results from Real Teams<br />
+                  How Teams Transform Their 3D Workflows<br />
                   </h2>
                   <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
                   Discover how View4Sight helps surveying and engineering professionals save time and deliver better results.

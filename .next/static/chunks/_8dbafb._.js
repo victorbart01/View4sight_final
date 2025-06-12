@@ -127,7 +127,7 @@ function Hero() {
                                                 className: "hstack gap-3 flex-wrap",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: `/page-pricing`,
+                                                        href: `/tarifs`,
                                                         className: "btn btn-lg btn-primary rounded-pill px-5 py-3 text-white fw-medium fs-6",
                                                         children: "Get started"
                                                     }, void 0, false, {
@@ -2353,11 +2353,11 @@ function Testimonials() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "h3 lg:h2 xl:h1 m-0",
                                             children: [
-                                                "Real Results from Real Teams",
+                                                "How Teams Transform Their 3D Workflows",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Testimonials.jsx",
                                                     lineNumber: 53,
-                                                    columnNumber: 47
+                                                    columnNumber: 57
                                                 }, this)
                                             ]
                                         }, void 0, true, {

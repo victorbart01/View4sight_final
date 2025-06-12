@@ -49,7 +49,7 @@ export default function Hero() {
                   {/* Boutons CTA avec style amélioré */}
                   <div className="hstack gap-3 flex-wrap">
                     <Link
-                      href={`/page-pricing`}
+                      href={`/tarifs`}
                       className="btn btn-lg btn-primary rounded-pill px-5 py-3 text-white fw-medium fs-6"
                     >
                       Get started

@@ -9,5 +9,7 @@
   "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
   "/fonctionnalites/collaborate/page": "app/fonctionnalites/collaborate/page.js",
   "/fonctionnalites/secure/page": "app/fonctionnalites/secure/page.js",
-  "/(othersPages)/sign-in-2/page": "app/(othersPages)/sign-in-2/page.js"
+  "/(othersPages)/sign-in-2/page": "app/(othersPages)/sign-in-2/page.js",
+  "/(innerPages)/page-pricing/page": "app/(innerPages)/page-pricing/page.js",
+  "/fonctionnalites/page": "app/fonctionnalites/page.js"
 }

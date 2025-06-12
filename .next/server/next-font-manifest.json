@@ -9,7 +9,9 @@
     "[project]/app/fonctionnalites/measure/page": [],
     "[project]/app/fonctionnalites/collaborate/page": [],
     "[project]/app/fonctionnalites/secure/page": [],
-    "[project]/app/(othersPages)/sign-in-2/page": []
+    "[project]/app/(othersPages)/sign-in-2/page": [],
+    "[project]/app/(innerPages)/page-pricing/page": [],
+    "[project]/app/fonctionnalites/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
