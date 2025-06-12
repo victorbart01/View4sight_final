@@ -3,8 +3,9 @@ export const view4sightTiers = [
     id: 1,
     plan: "Starter",
     price: "Free",
+    yearlyPrice: "Free",
     priceSuffix: "",
-    description: "For individuals & small teams",
+    description: "Perfect for trying out View4Sight",
     features: [
       "15 GB Storage",
       "2 users included",
@@ -13,7 +14,7 @@ export const view4sightTiers = [
       "Basic support"
     ],
     icon: "unicon-sub-volume",
-    buttonText: "Get started",
+    buttonText: "Start free trial",
     footerText: "No credit card required",
     highlight: false,
   },
@@ -21,8 +22,9 @@ export const view4sightTiers = [
     id: 2,
     plan: "Team",
     price: "€79",
+    yearlyPrice: "€63",
     priceSuffix: "/ mo",
-    description: "For growing businesses",
+    description: "For teams ready to collaborate on 3D data",
     features: [
       "150 GB Storage",
       "5 users included",
@@ -32,7 +34,7 @@ export const view4sightTiers = [
       "Priority email support"
     ],
     icon: "unicon-course",
-    buttonText: "Start free trial",
+    buttonText: "Get started",
     footerText: "Payments secured by Stripe",
     highlight: true,
   },
@@ -40,8 +42,9 @@ export const view4sightTiers = [
     id: 3,
     plan: "Studio",
     price: "€199",
+    yearlyPrice: "€159",
     priceSuffix: "/ mo",
-    description: "For larger organizations",
+    description: "For established firms with complex projects",
     features: [
       "500 GB Storage",
       "15 users included",
@@ -51,7 +54,7 @@ export const view4sightTiers = [
       "Priority phone & email support"
     ],
     icon: "unicon-building",
-    buttonText: "Start free trial",
+    buttonText: "Get started",
     footerText: "Payments secured by Stripe",
     highlight: false,
   },

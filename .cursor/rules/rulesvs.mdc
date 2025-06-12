@@ -37,7 +37,7 @@ You are working on View4Sight, a French SaaS platform for 3D point cloud visuali
 
 ## SITE STRUCTURE
 ### Main Pages:
-- Homepage: /view4sight (fully implemented)
+- Homepage: /
 - Features: /fonctionnalites
 - Pricing: /tarifs
 - Security: /securite

@@ -1,14 +1,17 @@
+"use client";
 import { view4sightTiers, enterprisePlan } from "@/data/view4sight-pricing";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function PricingSection() {
+  const [isYearly, setIsYearly] = useState(false);
+
   return (
     <div
       id="pricing_tiers"
       className="pricing-tiers section panel overflow-hidden"
     >
-      <div className="section-outer panel py-4 xl:py-6">
+      <div className="section-outer panel pt-8 lg:pt-10 pb-6 xl:pb-8">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 xl:gap-6">
@@ -17,93 +20,124 @@ export default function PricingSection() {
                 className="heading panel vstack items-center gap-2 text-center"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
               >
-                <div className="hero-badge mx-auto">
-                  Pricing Plans
-                </div>
-                <h2 className="h3 lg:h2 m-0">
-                  Find the perfect plan for your team
+                <h2 className="h3 lg:h2 xl:h1 m-0">
+                  Simple Pricing That Grows With Your Team
                 </h2>
                 <p className="fs-7 xl:fs-6 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
-                  Start with a 30-day free trial. No credit card required.
+                  Start free, scale as you grow. No per-viewer fees, no hidden costs, no long-term contracts.
                 </p>
+                <div className="position-relative">
+                  <ul
+                    className="uc-switcher-nav nav-x gap-0 p-narrow border rounded-2 fs-7 fw-medium"
+                    data-uc-switcher="connect: .pricing-switcher;"
+                  >
+                    <li className={!isYearly ? "uc-active" : ""}>
+                      <a
+                        onClick={() => setIsYearly(false)}
+                        className="text-none w-128px cstack p-1"
+                      >
+                        Monthly
+                      </a>
+                    </li>
+                    <li className={isYearly ? "uc-active" : ""}>
+                      <a
+                        onClick={() => setIsYearly(true)}
+                        className="text-none w-128px cstack p-1 position-relative"
+                      >
+                        Yearly
+                        <span className="position-absolute top-0 start-100 translate-middle badge bg-primary text-white fs-8 rounded-pill">
+                          -20%
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <p className="fs-7 text-primary mt-2 mb-0 fw-medium" style={{ height: '20px', visibility: !isYearly ? 'visible' : 'hidden' }}>
+                    Switch to yearly and save 20%
+                  </p>
+                </div>
               </div>
 
               {/* Pricing cards */}
-              <div className="content panel">
-                <div
-                  className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match justify-center g-2 lg:g-3"
-                  data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
-                >
-                  {view4sightTiers.map((tier, index) => (
-                    <div key={index}>
-                      <div
-                        className={`tier panel vstack justify-between rounded-2 ${
-                          tier.highlight 
-                            ? "bg-white dark:bg-gray-900 position-relative border-2 border-primary shadow-lg" 
-                            : "bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
-                        } text-dark h-100`}
-                      >
-                        {tier.highlight && (
-                          <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
-                            Popular
-                          </span>
-                        )}
-                        <header className="tier-header vstack gap-1 items-center p-3 lg:p-4 pb-0">
-                          <span className="icon-box cstack w-40px h-40px rounded-circle bg-primary text-white">
-                            <i className={`icon-1 ${tier.icon} fs-6 fw-bold`} />
-                          </span>
-                          <h5 className="h5 m-0 text-dark dark:text-white">
-                            {tier.plan}
-                          </h5>
-                          <div className="d-flex gap-narrow items-end mt-1">
-                            <h3 className="h3 lg:h2 price m-0 text-dark dark:text-white">
-                              {tier.price}
-                            </h3>
-                            {tier.priceSuffix && (
-                              <span className="fs-6 mb-1 text-dark dark:text-white text-opacity-70">
-                                {tier.priceSuffix}
-                              </span>
-                            )}
+              <div className="uc-switcher pricing-switcher mt-2">
+                <div className="uc-active">
+                  <div
+                    className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match justify-center g-2 lg:g-3"
+                    data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
+                  >
+                    {view4sightTiers.map((tier, index) => (
+                      <div key={index}>
+                        <div
+                          className={`tier panel rounded-2 ${
+                            tier.highlight 
+                              ? "bg-white dark:bg-gray-900 position-relative border-2 border-primary shadow-lg" 
+                              : "bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                          } text-dark h-100`}
+                          style={{ display: 'grid', gridTemplateRows: '200px 1fr auto' }}
+                        >
+                          {tier.highlight && (
+                            <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
+                              Popular
+                            </span>
+                          )}
+                          <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between">
+                            <div>
+                              <h5 className="h5 m-0 text-dark dark:text-white">
+                                {tier.plan}
+                              </h5>
+                              <div className="d-flex gap-narrow items-end mt-1">
+                                <h3 className="h3 lg:h2 price m-0 text-dark dark:text-white">
+                                  {isYearly ? tier.yearlyPrice : tier.price}
+                                </h3>
+                                {tier.price !== "Free" && (
+                                  <span className="fs-6 mb-1 text-dark dark:text-white text-opacity-70">
+                                    {tier.priceSuffix}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                            <p className="desc fs-7 text-dark dark:text-white text-opacity-70 mb-0">
+                              {tier.description}
+                            </p>
+                          </header>
+                          <div className="tier-body px-3 lg:px-4 pt-1 lg:pt-2 pb-3">
+                            <h6 className="fs-7 fw-medium text-dark dark:text-white mb-3">
+                              Includes:
+                            </h6>
+                            <ul className="nav-y gap-2 text-start">
+                              {tier.features.map((feature, idx) => (
+                                <li
+                                  key={idx}
+                                  className="hstack items-start gap-2"
+                                >
+                                  <i className="cstack w-16px h-16px bg-primary text-white rounded-circle unicon-checkmark fs-8 fw-bold flex-shrink-0 mt-narrow" />
+                                  <span className="fs-7 text-dark dark:text-white text-opacity-80">
+                                    {feature}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                          <p className="desc fs-7 text-dark dark:text-white text-opacity-70 mb-0">
-                            {tier.description}
-                          </p>
-                        </header>
-                        <div className="tier-body p-3 lg:p-4 flex-grow-1 pb-3">
-                          <ul className="nav-y gap-2 text-start">
-                            {tier.features.map((feature, idx) => (
-                              <li
-                                key={idx}
-                                className="hstack items-start gap-2"
+                          <footer className="tier-footer p-3 lg:p-4 mt-auto border-top border-gray-200 dark:border-gray-700">
+                            <div className="vstack gap-1">
+                              <Link
+                                className={`btn btn-md ${
+                                  tier.highlight 
+                                    ? "btn-primary" 
+                                    : "btn-dark dark:btn-white"
+                                } w-100 rounded`}
+                                href={"/sign-up"}
                               >
-                                <i className="cstack w-16px h-16px bg-primary text-white rounded-circle unicon-checkmark fs-8 fw-bold flex-shrink-0 mt-narrow" />
-                                <span className="fs-7 text-dark dark:text-white text-opacity-80">
-                                  {feature}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
+                                <span>{tier.buttonText}</span>
+                              </Link>
+                              <small className="d-block text-center text-dark dark:text-white text-opacity-60">
+                                {tier.footerText || "No credit card required"}
+                              </small>
+                            </div>
+                          </footer>
                         </div>
-                        <footer className="tier-footer p-3 lg:p-4 mt-auto border-top border-gray-200 dark:border-gray-700">
-                          <div className="vstack gap-1">
-                            <Link
-                              className={`btn btn-md ${
-                                tier.highlight 
-                                  ? "btn-primary" 
-                                  : "btn-dark dark:btn-white"
-                              } w-100 rounded`}
-                              href={"/sign-up"}
-                            >
-                              <span>{tier.buttonText}</span>
-                            </Link>
-                            <small className="d-block text-center text-dark dark:text-white text-opacity-60">
-                              {tier.footerText || "No credit card required"}
-                            </small>
-                          </div>
-                        </footer>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -164,7 +198,7 @@ export default function PricingSection() {
                 className="text-center text-dark dark:text-white text-opacity-60 fs-7"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
               >
-                All prices exclude applicable taxes. 
+                Prices exclude any applicable taxes. 
                 <Link href="/securite" className="text-primary ms-1">Learn about security</Link>
               </p>
             </div>
