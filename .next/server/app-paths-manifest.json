@@ -1,3 +1,11 @@
 {
-  "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js"
+  "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/(othersPages)/sign-in/page": "app/(othersPages)/sign-in/page.js",
+  "/tarifs/page": "app/tarifs/page.js",
+  "/(othersPages)/sign-up/page": "app/(othersPages)/sign-up/page.js",
+  "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
+  "/fonctionnalites/collaborate/page": "app/fonctionnalites/collaborate/page.js"
 }

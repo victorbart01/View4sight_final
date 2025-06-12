@@ -28,10 +28,10 @@ const view4sightFeatures = [
     description: "Work together live"
   },
   {
-    href: "/fonctionnalites/automate",
+    href: "/fonctionnalites/secure",
     icon: "/assets/images/custom-icons/upload-share.svg",
-    title: "Automate",
-    description: "API-first platform"
+    title: "Secure",
+    description: "Control & protect"
   }
 ];
 
@@ -241,44 +241,6 @@ export default function View4SightHeader() {
                                     </div>
                                   </Link>
                                 ))}
-                                <div className="border-top mt-2 pt-2">
-                                  <Link
-                                    href="/fonctionnalites"
-                                    className="d-flex align-items-center text-none rounded-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 p-1"
-                                    style={{ gap: "14px" }}
-                                  >
-                                    <div className="d-flex align-items-center justify-content-center" style={{
-                                      width: "44px",
-                                      height: "44px", 
-                                      borderRadius: "10px",
-                                      backgroundColor: "rgba(0, 0, 0, 0.05)",
-                                      flexShrink: 0,
-                                      position: "relative"
-                                    }}>
-                                      <i className="unicon-grid-alt" style={{ 
-                                        fontSize: "20px", 
-                                        color: "#FE552E"
-                                      }}></i>
-                                    </div>
-                                    <div className="d-flex flex-column justify-content-center">
-                                      <h6 className="fw-bold m-0 dark:text-white" style={{ 
-                                        fontSize: "15px",
-                                        lineHeight: "1.2",
-                                        color: "#1e293b",
-                                        marginBottom: "2px"
-                                      }}>
-                                        All Features
-                                      </h6>
-                                      <p className="m-0" style={{ 
-                                        fontSize: "12px",
-                                        lineHeight: "1.3",
-                                        color: "#64748b"
-                                      }}>
-                                        Explore complete platform capabilities
-                                      </p>
-                                    </div>
-                                  </Link>
-                                </div>
                               </div>
                             </div>
                           </div>

@@ -58,7 +58,6 @@ const visualizeFeatures = [
         icon: "unicon-cloud-download",
         iconBg: "#E3F2FD",
         iconColor: "#1976D2",
-        imageBg: "#E8F4FD",
         title: "Massive Files, Instant Loading",
         subtitle: "Stream gigabyte point clouds smoothly in any browser.",
         description: "Our streaming technology processes multi-gigabyte datasets server-side and delivers optimized content to browsers. No plugins, no downloads, no performance compromises. Whether you're in real estate, urban planning, or environmental science, our tools are designed to help you make better decisions faster.",
@@ -70,11 +69,10 @@ const visualizeFeatures = [
         icon: "unicon-eye",
         iconBg: "#FFF3E0",
         iconColor: "#F57C00",
-        imageBg: "#FFF8E1",
         title: "Walk Through Your Data Like Being There",
         subtitle: "Navigate your point clouds with first-person precision.",
         description: "Switch to first-person view and navigate your point clouds like a video game. Perfect for site inspections, virtual walkthroughs, and immersive client presentations. Experience your data from ground level with smooth, intuitive controls that anyone can master.",
-        imgSrc: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+        imgSrc: "https://picsum.photos/900/600?random=2",
         altText: "First-Person Navigation Mode"
     },
     {
@@ -82,7 +80,6 @@ const visualizeFeatures = [
         icon: "unicon-layers",
         iconBg: "#E8F5E9",
         iconColor: "#388E3C",
-        imageBg: "#F1F8E9",
         title: "All Your Data in One View",
         subtitle: "Unlock deeper insights with domain-specific spatial analysis.",
         description: "Combine point clouds, BIM models, orthophotos, and 360° images in a single interface. Estimate wind power production, calculate aspect-slope or visualize how many hours of sunlight on specific dates. Perfect for monitoring changes over time or validating survey data against design models.",
@@ -94,7 +91,6 @@ const visualizeFeatures = [
         icon: "unicon-file-check",
         iconBg: "#F3E5F5",
         iconColor: "#7B1FA2",
-        imageBg: "#FCE4EC",
         title: "Every Format You Use, Ready to View",
         subtitle: "Universal compatibility with survey-grade precision.",
         description: "Native support for LAS, E57, IFC, DXF, OBJ, and more. Advanced coordinate system handling that actually works with survey-grade precision. No more format conversion headaches - just upload and visualize your data exactly as captured.",
@@ -107,23 +103,26 @@ function Features() {
         id: "main_features",
         className: "main-features section panel",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "section-outer panel py-10 lg:py-16 xl:py-20",
+            className: "section-outer panel py-8 lg:py-10 xl:py-12",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container max-w-xl",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "section-inner panel",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "panel vstack gap-16 lg:gap-24 xl:gap-32",
+                        className: "panel vstack",
                         children: visualizeFeatures.map((feature, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "feature-item panel",
+                                style: {
+                                    marginBottom: i !== visualizeFeatures.length - 1 ? "8rem" : "0"
+                                },
                                 "data-anime": "onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "row align-items-center g-8 lg:g-12 xl:g-16",
+                                    className: "row align-items-center g-6 lg:g-10 xl:g-12",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: `col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "panel vstack gap-5",
+                                                className: "panel vstack gap-4",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "d-inline-flex align-items-center justify-content-center rounded-2",
@@ -140,47 +139,47 @@ function Features() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 81,
+                                                            lineNumber: 80,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 73,
+                                                        lineNumber: 72,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "h2 lg:display-6 m-0 fw-bold lh-sm",
+                                                        className: "h2 lg:h1 m-0 fw-bold",
                                                         children: feature.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 90,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 m-0 lh-base",
+                                                        className: "fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 m-0 lh-sm",
                                                         children: feature.subtitle
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 96,
+                                                        lineNumber: 95,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 m-0 lh-relaxed",
+                                                        className: "fs-6 text-dark dark:text-white text-opacity-70 m-0 lh-lg",
                                                         children: feature.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 101,
+                                                        lineNumber: 100,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                lineNumber: 71,
+                                                lineNumber: 70,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                            lineNumber: 70,
+                                            lineNumber: 69,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -188,85 +187,81 @@ function Features() {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel w-100 position-relative",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "rounded-4 p-8 lg:p-10 xl:p-12",
+                                                    className: "rounded-3 p-6 lg:p-8",
                                                     style: {
-                                                        backgroundColor: feature.imageBg
+                                                        background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "rounded-3 overflow-hidden bg-white",
-                                                        style: {
-                                                            border: "1px solid rgba(0, 0, 0, 0.1)",
-                                                            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04)"
-                                                        },
+                                                        className: "rounded-3 overflow-hidden shadow-lg",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                             src: feature.imgSrc,
                                                             width: 900,
                                                             height: 600,
                                                             alt: feature.altText,
-                                                            className: "w-100 h-auto d-block",
+                                                            className: "w-100 h-auto",
                                                             style: {
                                                                 objectFit: "cover",
                                                                 aspectRatio: "3/2"
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 123,
+                                                            lineNumber: 116,
                                                             columnNumber: 29
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 115,
                                                         columnNumber: 27
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 109,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                lineNumber: 109,
+                                                lineNumber: 108,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                            lineNumber: 108,
+                                            lineNumber: 107,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                    lineNumber: 68,
+                                    lineNumber: 67,
                                     columnNumber: 19
                                 }, this)
                             }, feature.id, false, {
                                 fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                lineNumber: 63,
+                                lineNumber: 59,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                        lineNumber: 61,
+                        lineNumber: 57,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                    lineNumber: 60,
+                    lineNumber: 56,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                lineNumber: 59,
+                lineNumber: 55,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-            lineNumber: 58,
+            lineNumber: 54,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-        lineNumber: 57,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
 }

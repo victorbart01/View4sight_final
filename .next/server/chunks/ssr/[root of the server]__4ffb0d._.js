@@ -3235,10 +3235,10 @@ const view4sightFeatures = [
         description: "Work together live"
     },
     {
-        href: "/fonctionnalites/automate",
+        href: "/fonctionnalites/secure",
         icon: "/assets/images/custom-icons/upload-share.svg",
-        title: "Automate",
-        description: "API-first platform"
+        title: "Secure",
+        description: "Control & protect"
     }
 ];
 // Contenu View4Sight pour le sous-menu Ressources
@@ -3440,177 +3440,93 @@ function View4SightHeader() {
                                                                                     gap: "8px"
                                                                                 },
                                                                                 className: "jsx-851ae5af04836e9a" + " " + "d-flex flex-column",
-                                                                                children: [
-                                                                                    view4sightFeatures.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                            className: "d-flex align-items-center text-none rounded-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 p-1",
-                                                                                            href: feature.href,
-                                                                                            style: {
-                                                                                                gap: "14px"
-                                                                                            },
-                                                                                            children: [
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                children: view4sightFeatures.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                                        className: "d-flex align-items-center text-none rounded-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 p-1",
+                                                                                        href: feature.href,
+                                                                                        style: {
+                                                                                            gap: "14px"
+                                                                                        },
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                style: {
+                                                                                                    width: "44px",
+                                                                                                    height: "44px",
+                                                                                                    borderRadius: "10px",
+                                                                                                    backgroundColor: "rgba(254, 85, 46, 0.1)",
+                                                                                                    border: "1px solid rgba(254, 85, 46, 0.2)",
+                                                                                                    flexShrink: 0,
+                                                                                                    position: "relative"
+                                                                                                },
+                                                                                                className: "jsx-851ae5af04836e9a" + " " + "d-flex align-items-center justify-content-center",
+                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                                                    src: feature.icon,
+                                                                                                    alt: feature.title,
+                                                                                                    width: 22,
+                                                                                                    height: 22,
                                                                                                     style: {
-                                                                                                        width: "44px",
-                                                                                                        height: "44px",
-                                                                                                        borderRadius: "10px",
-                                                                                                        backgroundColor: "rgba(254, 85, 46, 0.1)",
-                                                                                                        border: "1px solid rgba(254, 85, 46, 0.2)",
-                                                                                                        flexShrink: 0,
-                                                                                                        position: "relative"
-                                                                                                    },
-                                                                                                    className: "jsx-851ae5af04836e9a" + " " + "d-flex align-items-center justify-content-center",
-                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                                        src: feature.icon,
-                                                                                                        alt: feature.title,
-                                                                                                        width: 22,
-                                                                                                        height: 22,
-                                                                                                        style: {
-                                                                                                            width: "22px",
-                                                                                                            height: "22px",
-                                                                                                            filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)",
-                                                                                                            display: "block",
-                                                                                                            margin: "auto",
-                                                                                                            position: "absolute",
-                                                                                                            top: "50%",
-                                                                                                            left: "50%",
-                                                                                                            transform: "translate(-50%, -50%)"
-                                                                                                        }
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                        lineNumber: 207,
-                                                                                                        columnNumber: 39
-                                                                                                    }, this)
+                                                                                                        width: "22px",
+                                                                                                        height: "22px",
+                                                                                                        filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)",
+                                                                                                        display: "block",
+                                                                                                        margin: "auto",
+                                                                                                        position: "absolute",
+                                                                                                        top: "50%",
+                                                                                                        left: "50%",
+                                                                                                        transform: "translate(-50%, -50%)"
+                                                                                                    }
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 198,
-                                                                                                    columnNumber: 37
-                                                                                                }, this),
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                    className: "jsx-851ae5af04836e9a" + " " + "d-flex flex-column justify-content-center",
-                                                                                                    children: [
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                                                            style: {
-                                                                                                                fontSize: "15px",
-                                                                                                                lineHeight: "1.2",
-                                                                                                                color: "#1e293b",
-                                                                                                                marginBottom: "2px"
-                                                                                                            },
-                                                                                                            className: "jsx-851ae5af04836e9a" + " " + "fw-bold m-0 dark:text-white",
-                                                                                                            children: feature.title
-                                                                                                        }, void 0, false, {
-                                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 226,
-                                                                                                            columnNumber: 39
-                                                                                                        }, this),
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                                            style: {
-                                                                                                                fontSize: "12px",
-                                                                                                                lineHeight: "1.3",
-                                                                                                                color: "rgba(255, 255, 255, 0.7)"
-                                                                                                            },
-                                                                                                            className: "jsx-851ae5af04836e9a" + " " + "m-0",
-                                                                                                            children: feature.description
-                                                                                                        }, void 0, false, {
-                                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 234,
-                                                                                                            columnNumber: 39
-                                                                                                        }, this)
-                                                                                                    ]
-                                                                                                }, void 0, true, {
-                                                                                                    fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 225,
-                                                                                                    columnNumber: 37
+                                                                                                    lineNumber: 207,
+                                                                                                    columnNumber: 39
                                                                                                 }, this)
-                                                                                            ]
-                                                                                        }, index, true, {
-                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 192,
-                                                                                            columnNumber: 35
-                                                                                        }, this)),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "jsx-851ae5af04836e9a" + " " + "border-top mt-2 pt-2",
-                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                            href: "/fonctionnalites",
-                                                                                            className: "d-flex align-items-center text-none rounded-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 p-1",
-                                                                                            style: {
-                                                                                                gap: "14px"
-                                                                                            },
-                                                                                            children: [
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                    style: {
-                                                                                                        width: "44px",
-                                                                                                        height: "44px",
-                                                                                                        borderRadius: "10px",
-                                                                                                        backgroundColor: "rgba(0, 0, 0, 0.05)",
-                                                                                                        flexShrink: 0,
-                                                                                                        position: "relative"
-                                                                                                    },
-                                                                                                    className: "jsx-851ae5af04836e9a" + " " + "d-flex align-items-center justify-content-center",
-                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/view4sight/Header.jsx",
+                                                                                                lineNumber: 198,
+                                                                                                columnNumber: 37
+                                                                                            }, this),
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                className: "jsx-851ae5af04836e9a" + " " + "d-flex flex-column justify-content-center",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
                                                                                                         style: {
-                                                                                                            fontSize: "20px",
-                                                                                                            color: "#FE552E"
+                                                                                                            fontSize: "15px",
+                                                                                                            lineHeight: "1.2",
+                                                                                                            color: "#1e293b",
+                                                                                                            marginBottom: "2px"
                                                                                                         },
-                                                                                                        className: "jsx-851ae5af04836e9a" + " " + "unicon-grid-alt"
+                                                                                                        className: "jsx-851ae5af04836e9a" + " " + "fw-bold m-0 dark:text-white",
+                                                                                                        children: feature.title
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                        lineNumber: 258,
+                                                                                                        lineNumber: 226,
+                                                                                                        columnNumber: 39
+                                                                                                    }, this),
+                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                                                        style: {
+                                                                                                            fontSize: "12px",
+                                                                                                            lineHeight: "1.3",
+                                                                                                            color: "rgba(255, 255, 255, 0.7)"
+                                                                                                        },
+                                                                                                        className: "jsx-851ae5af04836e9a" + " " + "m-0",
+                                                                                                        children: feature.description
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "[project]/components/view4sight/Header.jsx",
+                                                                                                        lineNumber: 234,
                                                                                                         columnNumber: 39
                                                                                                     }, this)
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 250,
-                                                                                                    columnNumber: 37
-                                                                                                }, this),
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                    className: "jsx-851ae5af04836e9a" + " " + "d-flex flex-column justify-content-center",
-                                                                                                    children: [
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                                                            style: {
-                                                                                                                fontSize: "15px",
-                                                                                                                lineHeight: "1.2",
-                                                                                                                color: "#1e293b",
-                                                                                                                marginBottom: "2px"
-                                                                                                            },
-                                                                                                            className: "jsx-851ae5af04836e9a" + " " + "fw-bold m-0 dark:text-white",
-                                                                                                            children: "All Features"
-                                                                                                        }, void 0, false, {
-                                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 264,
-                                                                                                            columnNumber: 39
-                                                                                                        }, this),
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                                            style: {
-                                                                                                                fontSize: "12px",
-                                                                                                                lineHeight: "1.3",
-                                                                                                                color: "#64748b"
-                                                                                                            },
-                                                                                                            className: "jsx-851ae5af04836e9a" + " " + "m-0",
-                                                                                                            children: "Explore complete platform capabilities"
-                                                                                                        }, void 0, false, {
-                                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 272,
-                                                                                                            columnNumber: 39
-                                                                                                        }, this)
-                                                                                                    ]
-                                                                                                }, void 0, true, {
-                                                                                                    fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 263,
-                                                                                                    columnNumber: 37
-                                                                                                }, this)
-                                                                                            ]
-                                                                                        }, void 0, true, {
-                                                                                            fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 245,
-                                                                                            columnNumber: 35
-                                                                                        }, this)
-                                                                                    }, void 0, false, {
+                                                                                                ]
+                                                                                            }, void 0, true, {
+                                                                                                fileName: "[project]/components/view4sight/Header.jsx",
+                                                                                                lineNumber: 225,
+                                                                                                columnNumber: 37
+                                                                                            }, this)
+                                                                                        ]
+                                                                                    }, index, true, {
                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                        lineNumber: 244,
-                                                                                        columnNumber: 33
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                        lineNumber: 192,
+                                                                                        columnNumber: 35
+                                                                                    }, this))
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/components/view4sight/Header.jsx",
                                                                                 lineNumber: 190,
                                                                                 columnNumber: 31
@@ -3681,7 +3597,7 @@ function View4SightHeader() {
                                                                                                                     className: "jsx-851ae5af04836e9a"
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                                    lineNumber: 318,
+                                                                                                                    lineNumber: 280,
                                                                                                                     columnNumber: 41
                                                                                                                 }, this),
                                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3694,7 +3610,7 @@ function View4SightHeader() {
                                                                                                                     className: "jsx-851ae5af04836e9a"
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                                    lineNumber: 319,
+                                                                                                                    lineNumber: 281,
                                                                                                                     columnNumber: 41
                                                                                                                 }, this),
                                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3707,13 +3623,13 @@ function View4SightHeader() {
                                                                                                                     className: "jsx-851ae5af04836e9a"
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                                    lineNumber: 320,
+                                                                                                                    lineNumber: 282,
                                                                                                                     columnNumber: 41
                                                                                                                 }, this)
                                                                                                             ]
                                                                                                         }, void 0, true, {
                                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 312,
+                                                                                                            lineNumber: 274,
                                                                                                             columnNumber: 39
                                                                                                         }, this),
                                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3735,13 +3651,13 @@ function View4SightHeader() {
                                                                                                             children: "view4sight.com"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                            lineNumber: 322,
+                                                                                                            lineNumber: 284,
                                                                                                             columnNumber: 39
                                                                                                         }, this)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 307,
+                                                                                                    lineNumber: 269,
                                                                                                     columnNumber: 37
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3763,18 +3679,18 @@ function View4SightHeader() {
                                                                                                         }
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                        lineNumber: 342,
+                                                                                                        lineNumber: 304,
                                                                                                         columnNumber: 39
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 341,
+                                                                                                    lineNumber: 303,
                                                                                                     columnNumber: 37
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 299,
+                                                                                            lineNumber: 261,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -3788,7 +3704,7 @@ function View4SightHeader() {
                                                                                             children: "View4Sight"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 359,
+                                                                                            lineNumber: 321,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3802,28 +3718,28 @@ function View4SightHeader() {
                                                                                             children: "Disponible directement dans votre navigateur"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 367,
+                                                                                            lineNumber: 329,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                    lineNumber: 297,
+                                                                                    lineNumber: 259,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                lineNumber: 291,
+                                                                                lineNumber: 253,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                            lineNumber: 286,
+                                                                            lineNumber: 248,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                        lineNumber: 285,
+                                                                        lineNumber: 247,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
@@ -3853,17 +3769,17 @@ function View4SightHeader() {
                                                             children: "Pricing"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 346,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 383,
+                                                        lineNumber: 345,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                    lineNumber: 382,
+                                                    lineNumber: 344,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3876,17 +3792,17 @@ function View4SightHeader() {
                                                             children: "Security"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                            lineNumber: 389,
+                                                            lineNumber: 351,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 388,
+                                                        lineNumber: 350,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                    lineNumber: 387,
+                                                    lineNumber: 349,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3919,23 +3835,23 @@ function View4SightHeader() {
                                                                             className: "jsx-851ae5af04836e9a"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                            lineNumber: 400,
+                                                                            lineNumber: 362,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                        lineNumber: 399,
+                                                                        lineNumber: 361,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                    lineNumber: 395,
+                                                                    lineNumber: 357,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                            lineNumber: 393,
+                                                            lineNumber: 355,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3996,12 +3912,12 @@ function View4SightHeader() {
                                                                                                     }
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                    lineNumber: 440,
+                                                                                                    lineNumber: 402,
                                                                                                     columnNumber: 39
                                                                                                 }, this)
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                lineNumber: 431,
+                                                                                                lineNumber: 393,
                                                                                                 columnNumber: 37
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4018,7 +3934,7 @@ function View4SightHeader() {
                                                                                                         children: resource.title
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                        lineNumber: 459,
+                                                                                                        lineNumber: 421,
                                                                                                         columnNumber: 39
                                                                                                     }, this),
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4031,34 +3947,34 @@ function View4SightHeader() {
                                                                                                         children: resource.description
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                        lineNumber: 467,
+                                                                                                        lineNumber: 429,
                                                                                                         columnNumber: 39
                                                                                                     }, this)
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                                lineNumber: 458,
+                                                                                                lineNumber: 420,
                                                                                                 columnNumber: 37
                                                                                             }, this)
                                                                                         ]
                                                                                     }, index, true, {
                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                        lineNumber: 425,
+                                                                                        lineNumber: 387,
                                                                                         columnNumber: 35
                                                                                     }, this))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                lineNumber: 423,
+                                                                                lineNumber: 385,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                            lineNumber: 422,
+                                                                            lineNumber: 384,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                        lineNumber: 421,
+                                                                        lineNumber: 383,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4096,17 +4012,17 @@ function View4SightHeader() {
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 495,
+                                                                                            lineNumber: 457,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                        lineNumber: 488,
+                                                                                        lineNumber: 450,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                    lineNumber: 483,
+                                                                                    lineNumber: 445,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -4136,45 +4052,45 @@ function View4SightHeader() {
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                            lineNumber: 521,
+                                                                                            lineNumber: 483,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                        lineNumber: 514,
+                                                                                        lineNumber: 476,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                                                    lineNumber: 509,
+                                                                                    lineNumber: 471,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                                            lineNumber: 481,
+                                                                            lineNumber: 443,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                                        lineNumber: 480,
+                                                                        lineNumber: 442,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                                lineNumber: 420,
+                                                                lineNumber: 382,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                                            lineNumber: 409,
+                                                            lineNumber: 371,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                    lineNumber: 392,
+                                                    lineNumber: 354,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
@@ -4203,17 +4119,17 @@ function View4SightHeader() {
                                                     children: "Request a demo"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                    lineNumber: 549,
+                                                    lineNumber: 511,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                lineNumber: 544,
+                                                lineNumber: 506,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                            lineNumber: 543,
+                                            lineNumber: 505,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4226,17 +4142,17 @@ function View4SightHeader() {
                                                     children: "Log in"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                                    lineNumber: 556,
+                                                    lineNumber: 518,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                lineNumber: 555,
+                                                lineNumber: 517,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                            lineNumber: 554,
+                                            lineNumber: 516,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -4245,7 +4161,7 @@ function View4SightHeader() {
                                             children: "Start free trial"
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                            lineNumber: 561,
+                                            lineNumber: 523,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -4264,7 +4180,7 @@ function View4SightHeader() {
                                                         className: "jsx-851ae5af04836e9a" + " " + "line-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 574,
+                                                        lineNumber: 536,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -4274,7 +4190,7 @@ function View4SightHeader() {
                                                         className: "jsx-851ae5af04836e9a" + " " + "line-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 575,
+                                                        lineNumber: 537,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -4284,7 +4200,7 @@ function View4SightHeader() {
                                                         className: "jsx-851ae5af04836e9a" + " " + "line-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 576,
+                                                        lineNumber: 538,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -4294,24 +4210,24 @@ function View4SightHeader() {
                                                         className: "jsx-851ae5af04836e9a" + " " + "line-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Header.jsx",
-                                                        lineNumber: 577,
+                                                        lineNumber: 539,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Header.jsx",
-                                                lineNumber: 573,
+                                                lineNumber: 535,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Header.jsx",
-                                            lineNumber: 569,
+                                            lineNumber: 531,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/Header.jsx",
-                                    lineNumber: 541,
+                                    lineNumber: 503,
                                     columnNumber: 13
                                 }, this)
                             ]
