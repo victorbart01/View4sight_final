@@ -11,7 +11,8 @@
     "[project]/app/fonctionnalites/secure/page": [],
     "[project]/app/(othersPages)/sign-in-2/page": [],
     "[project]/app/(innerPages)/page-pricing/page": [],
-    "[project]/app/fonctionnalites/page": []
+    "[project]/app/fonctionnalites/page": [],
+    "[project]/app/securite/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

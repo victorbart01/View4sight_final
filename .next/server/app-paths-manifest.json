@@ -11,5 +11,6 @@
   "/fonctionnalites/secure/page": "app/fonctionnalites/secure/page.js",
   "/(othersPages)/sign-in-2/page": "app/(othersPages)/sign-in-2/page.js",
   "/(innerPages)/page-pricing/page": "app/(innerPages)/page-pricing/page.js",
-  "/fonctionnalites/page": "app/fonctionnalites/page.js"
+  "/fonctionnalites/page": "app/fonctionnalites/page.js",
+  "/securite/page": "app/securite/page.js"
 }

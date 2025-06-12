@@ -19,13 +19,13 @@ export default function CtaFinal() {
               <p className="fs-5 my-0 text-white text-opacity-80">
                 Start your 30-day free trial. No credit card required.
               </p>
-              <a
-                href="/page-pricing"
+              <Link
+                href="/tarifs"
                 className="btn btn-md btn-primary min-w-150px px-3 mt-4"
               >
                 <span>Try View4Sight</span>
                 <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
-              </a>
+              </Link>
             </div>
             <div
               className="image-wrap lg:max-w-1/2 mt-2"
