@@ -7,5 +7,7 @@
   "/tarifs/page": "app/tarifs/page.js",
   "/(othersPages)/sign-up/page": "app/(othersPages)/sign-up/page.js",
   "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
-  "/fonctionnalites/collaborate/page": "app/fonctionnalites/collaborate/page.js"
+  "/fonctionnalites/collaborate/page": "app/fonctionnalites/collaborate/page.js",
+  "/fonctionnalites/secure/page": "app/fonctionnalites/secure/page.js",
+  "/(othersPages)/sign-in-2/page": "app/(othersPages)/sign-in-2/page.js"
 }
