@@ -1,9 +1,9 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Link from "next/link";
 
-export default function ConfirmationPage() {
+function ConfirmationContent() {
   const searchParams = useSearchParams();
   const [checkoutData, setCheckoutData] = useState({
     checkoutId: searchParams.get("checkout_id"),
@@ -90,5 +90,24 @@ export default function ConfirmationPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ConfirmationPage() {
+  return (
+    <Suspense fallback={
+      <div className="section py-8 lg:py-10 xl:py-12">
+        <div className="container max-w-lg">
+          <div className="panel vstack items-center gap-4 lg:gap-6 text-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p>Loading confirmation details...</p>
+          </div>
+        </div>
+      </div>
+    }>
+      <ConfirmationContent />
+    </Suspense>
   );
 } 

@@ -1475,13 +1475,10 @@ __turbopack_esm__({
     "openMobileMenu": (()=>openMobileMenu)
 });
 const openMobileMenu = ()=>{
-    console.log("Tentative d'ouverture du menu mobile"); // Debug
     const menuPanel = document.getElementById("uc-menu-panel");
-    console.log("Menu panel trouvé:", menuPanel); // Debug
     if (menuPanel) {
         // Pour le nouveau menu View4Sight
         if (menuPanel.classList.contains("view4sight-mobile-menu")) {
-            console.log("Menu View4Sight détecté"); // Debug
             // Afficher le menu avec styles forcés
             menuPanel.style.setProperty('display', 'block', 'important');
             menuPanel.style.setProperty('opacity', '1', 'important');
@@ -1496,7 +1493,6 @@ const openMobileMenu = ()=>{
             menuPanel.style.setProperty('background', 'rgba(0, 0, 0, 0.5)', 'important');
             // Faire glisser le panel
             const panel = menuPanel.querySelector('.menu-panel');
-            console.log("Panel trouvé:", panel); // Debug
             if (panel) {
                 panel.style.setProperty('transform', 'translateX(0)', 'important');
                 panel.style.setProperty('position', 'absolute', 'important');

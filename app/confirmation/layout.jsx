@@ -1,5 +1,5 @@
 import Header from "@/components/view4sight/Header";
-import View4SightFooter from "@/components/view4sight/View4SightFooter";
+import View4SightFooter from "@/components/view4sight/Footer";
 
 export const metadata = {
   title: "Payment Successful - View4Sight",

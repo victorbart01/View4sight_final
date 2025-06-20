@@ -1,7 +1,7 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/_not-found/page": []
+    "[project]/app/tarifs/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
