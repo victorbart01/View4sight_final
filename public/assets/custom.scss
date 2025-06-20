@@ -467,32 +467,47 @@ html.uc-dark body {
     height: 6px !important;
   }
   
+  // Réduire l'espacement vertical sur mobile pour rapprocher du header
+  @media (max-width: 767px) {
+    .section-outer.panel {
+      padding-top: 3rem !important; // Réduit de pt-9 (4.5rem) à 3rem
+    }
+  }
+
   // Espacement amélioré pour mobile
   @media (max-width: 991px) {
     .h2,
     .display-5 {
-      font-size: 2rem !important;
+      font-size: 2.5rem !important;
       line-height: 1.1 !important;
     }
     
-    // Points clés en colonne sur mobile
+    // Points clés sur la même ligne sur mobile avec espacement réduit
     .hstack.gap-4.flex-wrap {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      gap: 0.75rem !important;
+      gap: 0.5rem !important;
     }
   }
   
   @media (max-width: 767px) {
     .h2,
     .display-5 {
-      font-size: 1.75rem !important;
+      font-size: 2.2rem !important;
       line-height: 1.1 !important;
     }
     
     .btn-lg {
       font-size: 1rem !important;
       padding: 0.75rem 1.5rem !important;
+    }
+    
+    // Cacher la troisième puce sur mobile pour gagner de la place
+    .hstack.gap-4.flex-wrap > div:nth-child(3) {
+      display: none !important;
+    }
+    
+    // Réduire la taille des puces sur mobile
+    .hstack.gap-4.flex-wrap span {
+      font-size: 0.7rem !important;
     }
   }
 }
@@ -534,7 +549,7 @@ html.uc-dark body {
 /* Responsive */
 @media (max-width: 991.98px) {
   .hero-badge {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 }

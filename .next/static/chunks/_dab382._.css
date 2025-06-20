@@ -62395,28 +62395,40 @@ body.uc-dark, html.uc-dark body {
   height: 6px !important;
 }
 
+@media (width <= 767px) {
+  .hero-header .section-outer.panel {
+    padding-top: 3rem !important;
+  }
+}
+
 @media (width <= 991px) {
   .hero-header .h2, .hero-header .display-5 {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.1 !important;
   }
 
   .hero-header .hstack.gap-4.flex-wrap {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: .75rem !important;
+    gap: .5rem !important;
   }
 }
 
 @media (width <= 767px) {
   .hero-header .h2, .hero-header .display-5 {
-    font-size: 1.75rem !important;
+    font-size: 2.2rem !important;
     line-height: 1.1 !important;
   }
 
   .hero-header .btn-lg {
     font-size: 1rem !important;
     padding: .75rem 1.5rem !important;
+  }
+
+  .hero-header .hstack.gap-4.flex-wrap > div:nth-child(3) {
+    display: none !important;
+  }
+
+  .hero-header .hstack.gap-4.flex-wrap span {
+    font-size: .7rem !important;
   }
 }
 
@@ -62454,7 +62466,7 @@ body.uc-dark, html.uc-dark body {
 
 @media (width <= 991.98px) {
   .hero-badge {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 }

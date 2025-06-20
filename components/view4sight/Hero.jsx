@@ -10,10 +10,10 @@ export default function Hero() {
       <div className="section-outer panel pt-9 pb-6">
         <div className="container max-w-xl">
           <div className="section-inner panel">
-            <div className="row child-cols justify-center lg:justify-between items-center g-0">
-              <div className="col-12 sm:col-10 md:col-8 lg:col-6">
+            <div className="row child-cols justify-center md:justify-between items-center g-0">
+              <div className="col-12 sm:col-10 md:col-6">
                 <div
-                  className="panel vstack gap-5 sm:text-center lg:text-start rtl:lg:text-end py-4"
+                  className="panel vstack gap-5 text-start py-4"
                   data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
                   {/* Groupe pastille + titre avec espacement harmonisé */}
@@ -104,7 +104,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="col-12 lg:col-6">
+              <div className="col-12 md:col-6">
                 <div
                   className="expand-container mt-4 lg:mt-4 ltr:ms-2 rtl:me-2"
                   data-anime="translateX: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
