@@ -3,15 +3,63 @@ import { view4sightTiers, enterprisePlan } from "@/data/view4sight-pricing";
 import Link from "next/link";
 import React, { useState } from "react";
 
+// Function to handle Polar checkout
+const handleCheckout = async (tier, isYearly) => {
+  // Free tier redirects to sign-in
+  if (tier.plan === "Starter") {
+    window.location.href = "/sign-in";
+    return;
+  }
+
+  try {
+    const productId = isYearly ? tier.polarProductIdYearly : tier.polarProductIdMonthly;
+    
+    if (!productId) {
+      console.error("No product ID found for this plan");
+      return;
+    }
+
+    const response = await fetch("/api/create-checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        productId: productId,
+        planName: tier.plan,
+        isYearly: isYearly,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.checkoutUrl) {
+      // Redirect to Polar checkout
+      window.location.href = data.checkoutUrl;
+    } else {
+      console.error("Failed to create checkout session:", data.error);
+    }
+  } catch (error) {
+    console.error("Error creating checkout:", error);
+  }
+};
+
 export default function PricingSection() {
   const [isYearly, setIsYearly] = useState(false);
+
+  // Style CSS personnalisé pour la bordure orange du plan Team
+  const highlightedTierStyle = {
+    borderColor: '#FE552E !important',
+    borderWidth: '3px !important',
+    borderStyle: 'solid !important'
+  };
 
   return (
     <div
       id="pricing_tiers"
       className="pricing-tiers section panel overflow-hidden"
     >
-      <div className="section-outer panel pt-8 lg:pt-10 pb-6 xl:pb-8">
+      <div className="section-outer panel pb-6 xl:pb-8" style={{ paddingTop: '8rem' }}>
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 xl:gap-6">
@@ -20,7 +68,7 @@ export default function PricingSection() {
                 className="heading panel vstack items-center gap-2 text-center"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
               >
-                <h2 className="h3 lg:h2 xl:h1 m-0">
+                <h2 className="h4 md:h3 lg:h2 xl:h1 m-0">
                   Simple Pricing That Grows With Your Team
                 </h2>
                 <p className="fs-7 xl:fs-6 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
@@ -61,7 +109,7 @@ export default function PricingSection() {
               <div className="uc-switcher pricing-switcher mt-2">
                 <div className="uc-active">
                   <div
-                    className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match justify-center g-2 lg:g-3"
+                    className="row child-cols-12 md:child-cols-6 lg:child-cols-4 col-match justify-center g-2 lg:g-3"
                     data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
                   >
                     {view4sightTiers.map((tier, index) => (
@@ -69,17 +117,21 @@ export default function PricingSection() {
                         <div
                           className={`tier panel rounded-2 ${
                             tier.highlight 
-                              ? "bg-white dark:bg-gray-900 position-relative border-2 border-primary shadow-lg" 
-                              : "bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700"
+                              ? "bg-white dark:bg-gray-800 position-relative border-3 border-primary shadow-lg tier-highlighted" 
+                              : "bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700"
                           } text-dark h-100`}
-                          style={{ display: 'grid', gridTemplateRows: '200px 1fr auto' }}
+                          style={{ 
+                            display: 'grid', 
+                            gridTemplateRows: '200px 1fr auto',
+                            ...(tier.highlight ? highlightedTierStyle : {})
+                          }}
                         >
                           {tier.highlight && (
                             <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
                               Popular
                             </span>
                           )}
-                          <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between">
+                          <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between" style={{ paddingBottom: '0 !important' }}>
                             <div>
                               <h5 className="h5 m-0 text-dark dark:text-white">
                                 {tier.plan}
@@ -95,12 +147,12 @@ export default function PricingSection() {
                                 )}
                               </div>
                             </div>
-                            <p className="desc fs-7 text-dark dark:text-white text-opacity-70 mb-0">
+                            <p className="desc fs-7 text-dark dark:text-white text-opacity-70 mb-0" style={{ marginBottom: '-0.75rem !important' }}>
                               {tier.description}
                             </p>
                           </header>
-                          <div className="tier-body px-3 lg:px-4 pt-1 lg:pt-2 pb-3">
-                            <h6 className="fs-7 fw-medium text-dark dark:text-white mb-3">
+                          <div className="tier-body px-3 lg:px-4 pt-0 pb-3">
+                            <h6 className="fs-7 fw-medium text-dark dark:text-white mb-2" style={{ marginTop: '-1rem !important' }}>
                               Includes:
                             </h6>
                             <ul className="nav-y gap-2 text-start">
@@ -119,16 +171,16 @@ export default function PricingSection() {
                           </div>
                           <footer className="tier-footer p-3 lg:p-4 mt-auto border-top border-gray-200 dark:border-gray-700">
                             <div className="vstack gap-1">
-                              <Link
+                              <button
                                 className={`btn btn-md ${
                                   tier.highlight 
                                     ? "btn-primary" 
                                     : "btn-dark dark:btn-white"
                                 } w-100 rounded`}
-                                href={"/sign-up"}
+                                onClick={() => handleCheckout(tier, isYearly)}
                               >
                                 <span>{tier.buttonText}</span>
-                              </Link>
+                              </button>
                               <small className="d-block text-center text-dark dark:text-white text-opacity-60">
                                 {tier.footerText || "No credit card required"}
                               </small>

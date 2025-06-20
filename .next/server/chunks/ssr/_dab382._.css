@@ -62223,7 +62223,7 @@ html:not(.uc-dark) .header-seven .uc-navbar-nav > li.has-dd-menu > a:hover {
 }
 
 .uc-dark .header-default .uc-navbar-nav > li.has-dd-menu > a:hover {
-  box-shadow: inset 0 3px var(--color-primary);
+  box-shadow: none;
   opacity: .75;
   color: #fff !important;
 }
@@ -62425,7 +62425,7 @@ body.uc-dark, html.uc-dark body {
   align-items: center;
   padding: .375rem .875rem;
   background-color: #fe552e0f;
-  border: 1px solid #fe552e26;
+  border: none;
   border-radius: 1.25rem;
   font-size: .7rem;
   font-weight: 500;
@@ -62439,19 +62439,16 @@ body.uc-dark, html.uc-dark body {
 
 .hero-badge:hover {
   background-color: #fe552e14;
-  border-color: #fe552e33;
   color: #fe552e;
 }
 
 .uc-dark .hero-badge {
   background-color: #fe552e14;
-  border-color: #fe552e33;
   color: #fe552ee6;
 }
 
 .uc-dark .hero-badge:hover {
   background-color: #fe552e1f;
-  border-color: #fe552e4d;
   color: #fe552e;
 }
 

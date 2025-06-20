@@ -6,6 +6,7 @@ import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 import { openContactModal } from "@/utlis/toggleContactModal";
 import { homeLinks, links } from "@/data/menu";
 import { services, featuresMenu } from "@/data/services";
+import View4SightMobileMenu from "./View4SightMobileMenu";
 
 // Contenu View4Sight pour le sous-menu Fonctionnalités
 const view4sightFeatures = [
@@ -103,12 +104,13 @@ export default function View4SightHeader() {
           padding: 0.5rem 0.75rem !important;
           border-radius: 0.5rem !important;
           transition: all 0.2s ease !important;
+          position: relative !important;
         }
         .nav-hover-effect:hover {
-          background-color: rgba(0, 0, 0, 0.05) !important;
+          background-color: rgba(254, 85, 46, 0.12) !important;
         }
         :global(.dark) .nav-hover-effect:hover {
-          background-color: rgba(255, 255, 255, 0.1) !important;
+          background-color: rgba(254, 85, 46, 0.15) !important;
         }
         :global(.demo-hover-effect:hover .mockup-container) {
           transform: translateY(-2px) !important;
@@ -546,6 +548,57 @@ export default function View4SightHeader() {
     </header>
     
     <style jsx>{`
+      .nav-hover-effect {
+        padding: 0.5rem 0.75rem !important;
+        border-radius: 0.5rem !important;
+        transition: all 0.2s ease !important;
+        position: relative !important;
+        border: none !important;
+      }
+      .nav-hover-effect:hover {
+        border: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      :global(.dark) .nav-hover-effect:hover {
+        border: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      /* Supprimer toutes les bordures orange des éléments navbar */
+      :global(.uc-navbar-nav > li > a:hover) {
+        border: none !important;
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      :global(.uc-navbar-nav > li:hover > a) {
+        border: none !important;
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      /* Supprimer spécifiquement la box-shadow orange sur les éléments avec sous-menu */
+      :global(.header-default .uc-navbar-nav > li.has-dd-menu > a:hover) {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      :global(.uc-dark .header-default .uc-navbar-nav > li.has-dd-menu > a:hover) {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+      }
+      /* Force la suppression de tous les fonds orange */
+      :global(.uc-navbar-nav > li > a) {
+        background: none !important;
+        background-color: transparent !important;
+      }
+      :global(.uc-navbar-nav > li.has-dd-menu > a) {
+        background: none !important;
+        background-color: transparent !important;
+      }
+      
       .support-hover:hover {
         background: #2a2a2a !important;
         transform: scale(1.02);
@@ -556,6 +609,9 @@ export default function View4SightHeader() {
         transform: scale(1.02);
       }
     `}</style>
+    
+    {/* Menu mobile View4Sight personnalisé */}
+    <View4SightMobileMenu />
     </>
   );
 } 

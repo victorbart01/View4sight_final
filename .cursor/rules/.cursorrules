@@ -1,0 +1,235 @@
+# VIEW4SIGHT PROJECT RULES
+
+## PROJECT OVERVIEW
+You are working on View4Sight, a French SaaS platform for 3D point cloud visualization and sharing for surveyors and engineering firms. The project uses a purchased Next.js template "Lexend" from ThemeForest as the foundation for the marketing website.
+
+## BUSINESS CONTEXT
+- Target audience: French surveyors offices (géomètres-experts), design offices, and architect offices
+- Value proposition: Web-based 3D data visualization without heavy desktop software
+- Key differentiator: French data sovereignty and GDPR compliance
+- Pricing: Freemium model starting at €0/month, scaling to enterprise
+- Content language: English (despite French target market)
+
+## TECHNICAL STACK
+- Framework: Next.js 15.1.7
+- React: 19.0.0
+- CSS Framework: Bootstrap 5 + UIKit CSS (NOT Tailwind)
+- Template: Lexend (ThemeForest purchase)
+- Development server: http://localhost:3000
+- Main route: /view4sight (custom implementation)
+
+## CRITICAL CSS FRAMEWORK RULES
+- **CSS Framework**: Bootstrap 5 for layout and components
+- **UI Components**: UIKit CSS for additional UI elements
+- **Custom Styling**: Template-specific CSS classes
+- **ABSOLUTELY NO Tailwind**: Never use Tailwind utility classes (no `bg-blue-500`, `text-lg`, `flex`, etc.)
+- **Class naming**: Follow Bootstrap 5 conventions (e.g., `btn btn-primary`, `container`, `row`, `col-*`)
+- The project does not work with Tailwind and forbids its use
+
+## COLOR PALETTE
+- Primary color: #FE552E (Lava Pulse)
+- Hover color: #C54E34 (Brick Pulse)
+- Background dark mode: #222222 (Graphite night)
+- Background light mode: #E4DCCA (Kreme)
+
+## SITE STRUCTURE
+### Main Pages:
+- Homepage: /
+- Features: /fonctionnalites
+- Pricing: /tarifs
+- Security: /securite
+- Resources: /ressources
+
+### Homepage Sections (current order):
+1. Hero - "No CAD License. No Plugin Hell. Just Upload & Go."
+2. ClientLogos - Partner/client logos
+3. MainFeatures - 4 core platform features + "Discover all features" button
+4. VideoComponent - "How It Works" demo with pastille and description
+5. Testimonials - Single featured testimonial (home-4 style)
+6. SecurityBlock - French sovereignty messaging
+7. PainBenefits - Client problems and pain points
+8. FaqShort - Interactive FAQ section
+9. CtaFinal - Final call-to-action with urgency
+
+## DESIGN SYSTEM STANDARDS
+
+### Section Headers (standardized):
+- **Pastille style**: Use `hero-badge` class for all section badges
+- **Pastille positioning**: Centered with `mx-auto` (except Hero which stays left-aligned)
+- **Title style**: Clean, épuré style without highlight "étiquettes"
+- **Line breaks**: Strategic use of `<br />` for better visual hierarchy
+
+### Hero Section Guidelines:
+- Prefer cleaner layout: no floating decorative icons
+- No extra CTA buttons ("Start free trial", "Request a demo")
+- Omit "No credit card required" tagline and label pills (e.g., "Visualize")
+- Use title about 30% smaller to keep content compact
+
+### MainFeatures Section:
+- **Orbiting icons**: Use SVG files from `/public/assets/images/file formats/`
+- **Supported formats**: LAS, E57, IFC, DXF, ORTHO, PLY
+- **OrbitingIcons component**: 55px logo, reduced opacity background (rgba(44, 44, 44, 0.1))
+- **Call-to-action**: "Discover all features" button at section end
+
+### VideoComponent Section:
+- **Structure**: Pastille "Video demo" + Title "How It Works" + Description
+- **Content**: "The platform is designed to help you visualize, automate, and build geospatial data workflows."
+- **Spacing**: Added vertical padding (py-6 lg:py-8 xl:py-10)
+
+### Testimonials Section:
+- **Design**: Adapted from home-4 template style
+- **Layout**: Single featured testimonial in 8/4 column layout
+- **Content**: Company logo/initials + quote + author info + photo
+- **Image**: Static photo only (no video functionality)
+- **Stats**: Maintained stats section below testimonial
+
+## NAVIGATION & ROUTING RULES
+
+### Header Navigation:
+- Logo: View4Sight logo (logo_v4s.png) on left
+- Navigation: Accueil, Fonctionnalités, Tarifs, Sécurité, Ressources
+- Right buttons: "Request a demo", "Log in", "Start free trial"
+- Sticky behavior like home-3 template
+
+### Critical Routing Rules:
+- All CTAs must point to `/tarifs` (never template pricing URLs)
+- Pricing plan buttons must link to `/sign-in` (not `/sign-up`)
+- Feature page CTAs must use heading: "Ready to revolutionize your 3D workflows?" (never change this text)
+- Login/sign-up pages (/sign-in, /sign-up) must not include header, footer, or logo
+- 404 pages must display only custom View4Sight header and footer (no template duplicates)
+
+## PRICING PAGE STRUCTURE
+### Pricing Plans:
+- Starter: Free, 15 GB storage, 2 users, 3 active projects, private link sharing
+- Team: 79€/month, 150GB storage, 5 users, 20GB uploads, 50GB downloads, annotations  
+- Studio: 199€/month, 500GB storage, 15 users, 50GB uploads, 1TB downloads, embeddable viewer
+- Enterprise: Unlimited storage & users, on-premise/private cloud hosting, 99.9% SLA, complete white label
+
+### Design Patterns:
+- 3-column layout for Starter/Team/Studio plans
+- Full-width Enterprise section with subtle gray gradient
+- Reduced card heights and compressed spacing for better desktop viewing
+- Primary button style for recommended plans (Team plan uses `btn-primary`)
+- Dark button style for standard plans (`btn-dark`)
+- Footer text: "No credit card required" and "Payments secured by Stripe"
+
+## CUSTOM CSS CLASSES
+
+### Hero Badge (.hero-badge):
+```css
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  background-color: rgba(254, 85, 46, 0.06);
+  border: 1px solid rgba(254, 85, 46, 0.15);
+  border-radius: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(254, 85, 46, 0.85);
+}
+```
+
+### Section Header Pattern:
+```jsx
+<div className="panel vstack items-center gap-2 xl:gap-3 text-center">
+  <div className="hero-badge mx-auto">
+    Section Name
+  </div>
+  <h2 className="h3 lg:h2 xl:h1 m-0">
+    Clean Title<br />
+    With Strategic Breaks
+  </h2>
+  <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
+    Section description
+  </p>
+</div>
+```
+
+## FILE ORGANIZATION
+
+### Custom View4Sight files:
+- `/app/view4sight/` - Main application pages
+- `/components/view4sight/` - Custom components
+- `/public/assets/images/` - View4Sight assets (logo_v4s.svg)
+- `/public/assets/images/file formats/` - SVG format icons
+- `/data/view4sight-pricing.js` - Pricing data structure
+
+### Template structure to preserve:
+- `/components/homes/` - Original template components
+- `/public/assets/css/` - Template styling (Bootstrap 5 + UIKit)
+- `/components/common/` - Shared template components
+
+### Footer Implementation:
+- Use custom `View4SightFooter.jsx` component across all custom pages
+- Four-column layout: Company info, Product links, Resources, Legal
+- French data sovereignty messaging: "Hébergement 100% français, conforme GDPR"
+- "Made in France" badge with heart icon
+- Real navigation links to actual View4sight pages
+
+## DEVELOPMENT GUIDELINES
+
+### When creating new components:
+1. Start with existing Lexend components as base
+2. Use Bootstrap 5 classes for layout (container, row, col-*, etc.)
+3. Use UIKit CSS classes for UI components
+4. Adapt styling to View4Sight brand colors
+5. Maintain responsive design patterns using Bootstrap's grid system
+6. Use `hero-badge mx-auto` for section pastilles (except Hero)
+
+### When modifying existing files:
+1. Preserve original template functionality
+2. Create View4Sight-specific variants when needed
+3. Test on /view4sight route specifically
+4. Maintain Bootstrap 5 + UIKit CSS class structure
+5. Follow standardized section header pattern
+
+### Code style:
+- Use JSX for React components
+- Follow Next.js 15 conventions
+- Use Bootstrap 5 utility classes (e.g., `mb-4`, `text-center`, `btn btn-primary`)
+- Use UIKit CSS components when appropriate
+- **NEVER use Tailwind classes** - this will break the project
+- Comment custom modifications clearly
+
+## CONTENT REQUIREMENTS
+
+### Key Messages:
+- Stop wrestling with heavy 3D software
+- Web-based collaboration for geospatial data
+- French data hosting and sovereignty
+- No software installation required
+
+### Statistics to highlight:
+- 30% reduction in client validation time
+- 50% fewer site visits required
+- 80% clearer communication with stakeholders
+- 150GB storage included in free trial
+
+### File Formats Supported:
+- LAS, E57, IFC, DXF, ORTHO, PLY
+- SVG icons available in `/public/assets/images/file formats/`
+
+### CTAs:
+- Primary: "Start Free Trial" / "Commencer l'essai gratuit"
+- Secondary: "Request a demo" / "Demander une démo"
+- Risk reversal: "30-day free trial, no credit card required"
+
+## COPYWRITING TONE
+- Professional but approachable
+- Technical accuracy without jargon
+- French-first approach (sovereignty emphasis)
+- Problem-solution focused narrative
+- Content in English despite French target market
+
+## CRITICAL REMINDERS
+- **NO TAILWIND CSS** - This project absolutely forbids Tailwind usage
+- **Bootstrap 5 + UIKit only** - Use these frameworks exclusively
+- **Custom routing** - Always use View4Sight specific routes
+- **Template adaptation** - Adapt existing components rather than rebuild
+- **Consistent branding** - Maintain View4Sight colors and messaging
+- **French sovereignty** - Emphasize data hosting and GDPR compliance
+
+Remember: This is a B2B SaaS platform targeting French professionals. Every design and content decision should reflect professionalism, technical competence, and French business values while using Bootstrap 5 + UIKit CSS conventions exclusively. 

@@ -1,18 +1,7 @@
 {
   "app": {
-    "[project]/app/fonctionnalites/visualize/page": [],
-    "[project]/app/_not-found/page": [],
     "[project]/app/page": [],
-    "[project]/app/(othersPages)/sign-in/page": [],
-    "[project]/app/tarifs/page": [],
-    "[project]/app/(othersPages)/sign-up/page": [],
-    "[project]/app/fonctionnalites/measure/page": [],
-    "[project]/app/fonctionnalites/collaborate/page": [],
-    "[project]/app/fonctionnalites/secure/page": [],
-    "[project]/app/(othersPages)/sign-in-2/page": [],
-    "[project]/app/(innerPages)/page-pricing/page": [],
-    "[project]/app/fonctionnalites/page": [],
-    "[project]/app/securite/page": []
+    "[project]/app/_not-found/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

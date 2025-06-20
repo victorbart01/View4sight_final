@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorbarthelemy/Documents/GitHub/View4Sight-final/View4sight_final/app/api/checkout/route.js"],"sourcesContent":["import { Checkout } from '@polar-sh/nextjs'\n\nexport const GET = Checkout({\n  accessToken: process.env.POLAR_ACCESS_TOKEN,\n  successUrl: `${process.env.NEXT_PUBLIC_URL}/confirmation?checkout_id={CHECKOUT_ID}`,\n  // The price ID is automatically read from the 'price_id' query parameter\n  // e.g. /api/checkout?price_id=...\n  server: 'sandbox', // Use 'production' when you go live\n}) "],"names":[],"mappings":";;;AAAA;AAAA;;AAEO,MAAM,MAAM,CAAA,GAAA,0KAAA,CAAA,WAAQ,AAAD,EAAE;IAC1B,aAAa,QAAQ,GAAG,CAAC,kBAAkB;IAC3C,YAAY,GAAG,QAAQ,GAAG,CAAC,eAAe,CAAC,uCAAuC,CAAC;IACnF,yEAAyE;IACzE,kCAAkC;IAClC,QAAQ;AACV"}},
+    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -13,7 +13,8 @@ import Cart from "@/components/common/Cart";
 import { useEffect } from "react";
 import anime from "animejs";
 import { usePathname } from "next/navigation";
-import MobileMenu from "@/components/headers/component/MobileMenu";
+// MobileMenu is now included in View4SightHeader
+// import MobileMenu from "@/components/headers/component/MobileMenu";
 import BacktoTop from "@/components/common/BacktoTop";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ContactModal from "@/components/modals/ContactModal";
@@ -132,7 +133,7 @@ export default function RootLayout({ children }) {
               {!isLoginPage && <View4SightFooter />}
             </div>
           </ParallaxProvider>
-          <MobileMenu />
+          {/* MobileMenu is now included in View4SightHeader */}
           <ContactModal />
           <NewsletterModal />
           <SearchModal />
