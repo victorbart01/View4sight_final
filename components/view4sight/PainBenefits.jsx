@@ -38,8 +38,8 @@ export default function PainBenefits() {
                   
                   <div className="panel vstack gap-4 xl:gap-5">
                     {/* Challenge 1 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)'}}>
-                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)', minHeight: '180px'}}>
+                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between">
                         <div className="hstack gap-4 w-100 align-items-center">
                           <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
                             <Image
@@ -63,7 +63,32 @@ export default function PainBenefits() {
                     </div>
 
                     {/* Challenge 2 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)'}}>
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)', minHeight: '180px'}}>
+                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between">
+                        <div className="hstack gap-4 w-100 align-items-center">
+                          <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
+                            <Image
+                              src="/assets/images/custom-icons/cross.svg"
+                              alt="Challenge"
+                              width={40}
+                              height={40}
+                            />
+                          </div>
+                          <div className="vstack gap-1 flex-grow-1">
+                            <h4 className="h5 xl:h4 m-0 fw-bold text-white">
+                              Team Collaboration is Broken
+                            </h4>
+                            <div className="w-32px h-2px bg-danger rounded-pill"></div>
+                          </div>
+                        </div>
+                        <p className="fs-6 xl:fs-5 m-0 lh-relaxed text-white" style={{ opacity: 0.85 }}>
+                          Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Challenge 3 */}
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)', height: '235px'}}>
                       <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
                         <div className="hstack gap-4 w-100 align-items-center">
                           <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
@@ -86,31 +111,6 @@ export default function PainBenefits() {
                         </p>
                       </div>
                     </div>
-
-                    {/* Challenge 3 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)', border: '1px solid rgba(220, 53, 69, 0.25)'}}>
-                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
-                        <div className="hstack gap-4 w-100 align-items-center">
-                          <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
-                            <Image
-                              src="/assets/images/custom-icons/cross.svg"
-                              alt="Challenge"
-                              width={40}
-                              height={40}
-                            />
-                          </div>
-                          <div className="vstack gap-1 flex-grow-1">
-                            <h4 className="h5 xl:h4 m-0 fw-bold text-white">
-                              Team Collaboration is Broken
-                            </h4>
-                            <div className="w-32px h-2px bg-danger rounded-pill"></div>
-                          </div>
-                        </div>
-                        <p className="fs-6 xl:fs-5 m-0 lh-relaxed text-white" style={{ opacity: 0.85 }}>
-                          Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare.
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
@@ -123,8 +123,8 @@ export default function PainBenefits() {
                   
                   <div className="panel vstack gap-4 xl:gap-5">
                     {/* Solution 1 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)'}}>
-                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)', minHeight: '180px'}}>
+                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between">
                         <div className="hstack gap-4 w-100 align-items-center">
                           <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
                             <Image
@@ -148,8 +148,8 @@ export default function PainBenefits() {
                     </div>
 
                     {/* Solution 2 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)'}}>
-                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)', minHeight: '180px'}}>
+                      <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between">
                         <div className="hstack gap-4 w-100 align-items-center">
                           <div className="flex-shrink-0 d-flex align-items-center justify-content-center">
                             <Image
@@ -173,7 +173,7 @@ export default function PainBenefits() {
                     </div>
 
                     {/* Solution 3 */}
-                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)'}}>
+                    <div className="panel overflow-hidden rounded-2 lg:rounded-3" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)', border: '1px solid rgba(25, 135, 84, 0.25)', height: '235px'}}>
                       <div className="panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6">
                         <div className="hstack gap-4 w-100 align-items-center">
                           <div className="flex-shrink-0 d-flex align-items-center justify-content-center">

@@ -424,10 +424,11 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)',
-                                                                border: '1px solid rgba(220, 53, 69, 0.25)'
+                                                                border: '1px solid rgba(220, 53, 69, 0.25)',
+                                                                minHeight: '180px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
+                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "hstack gap-4 w-100 align-items-center",
@@ -505,10 +506,11 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)',
-                                                                border: '1px solid rgba(220, 53, 69, 0.25)'
+                                                                border: '1px solid rgba(220, 53, 69, 0.25)',
+                                                                minHeight: '180px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
+                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "hstack gap-4 w-100 align-items-center",
@@ -535,7 +537,7 @@ function PainBenefits() {
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                                         className: "h5 xl:h4 m-0 fw-bold text-white",
-                                                                                        children: "Clients Can't Open Your Deliverables"
+                                                                                        children: "Team Collaboration is Broken"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                                                                         lineNumber: 78,
@@ -565,7 +567,7 @@ function PainBenefits() {
                                                                         style: {
                                                                             opacity: 0.85
                                                                         },
-                                                                        children: "Your clients don't understand your 3D surveys through static PDFs. They need special software to see your data and miss the full value of your work."
+                                                                        children: "Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                                                         lineNumber: 84,
@@ -586,7 +588,8 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.12) 0%, rgba(220, 53, 69, 0.06) 100%)',
-                                                                border: '1px solid rgba(220, 53, 69, 0.25)'
+                                                                border: '1px solid rgba(220, 53, 69, 0.25)',
+                                                                height: '235px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
@@ -616,7 +619,7 @@ function PainBenefits() {
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                                         className: "h5 xl:h4 m-0 fw-bold text-white",
-                                                                                        children: "Team Collaboration is Broken"
+                                                                                        children: "Clients Can't Open Your Deliverables"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                                                                         lineNumber: 103,
@@ -646,7 +649,7 @@ function PainBenefits() {
                                                                         style: {
                                                                             opacity: 0.85
                                                                         },
-                                                                        children: "Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare."
+                                                                        children: "Your clients don't understand your 3D surveys through static PDFs. They need special software to see your data and miss the full value of your work."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PainBenefits.jsx",
                                                                         lineNumber: 109,
@@ -700,10 +703,11 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)',
-                                                                border: '1px solid rgba(25, 135, 84, 0.25)'
+                                                                border: '1px solid rgba(25, 135, 84, 0.25)',
+                                                                minHeight: '180px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
+                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "hstack gap-4 w-100 align-items-center",
@@ -781,10 +785,11 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)',
-                                                                border: '1px solid rgba(25, 135, 84, 0.25)'
+                                                                border: '1px solid rgba(25, 135, 84, 0.25)',
+                                                                minHeight: '180px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
+                                                                className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6 h-100 justify-content-between",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "hstack gap-4 w-100 align-items-center",
@@ -862,7 +867,8 @@ function PainBenefits() {
                                                             className: "panel overflow-hidden rounded-2 lg:rounded-3",
                                                             style: {
                                                                 background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.12) 0%, rgba(25, 135, 84, 0.06) 100%)',
-                                                                border: '1px solid rgba(25, 135, 84, 0.25)'
+                                                                border: '1px solid rgba(25, 135, 84, 0.25)',
+                                                                height: '235px'
                                                             },
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "panel vstack items-start gap-3 p-4 lg:p-5 xl:p-6",
@@ -2897,7 +2903,7 @@ function SecurityBlock() {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "panel p-6 lg:p-8 rounded-3 text-center",
+                            className: "panel p-6 lg:p-8 rounded-3 text-center security-trust",
                             style: {
                                 backgroundColor: '#E4DCCA',
                                 marginTop: '80px'

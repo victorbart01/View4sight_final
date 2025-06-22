@@ -137,7 +137,7 @@ export default function SecurityBlock() {
 
             {/* Trust Indicators */}
             <div 
-              className="panel p-6 lg:p-8 rounded-3 text-center"
+              className="panel p-6 lg:p-8 rounded-3 text-center security-trust"
               style={{backgroundColor: '#E4DCCA', marginTop: '80px'}}
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
             >

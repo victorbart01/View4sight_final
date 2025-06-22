@@ -560,3 +560,15 @@ html.uc-dark body {
     margin-right: auto;
   }
 }
+
+/* View4Sight custom fix: SecurityBlock trust indicators responsive */
+@media (max-width: 575.98px) {
+  .security-trust .hstack {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+  .security-trust .d-flex.align-items-center {
+    justify-content: flex-start !important;
+  }
+}

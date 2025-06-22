@@ -62478,6 +62478,18 @@ body.uc-dark, html.uc-dark body {
   }
 }
 
+@media (width <= 575.98px) {
+  .security-trust .hstack {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .security-trust .d-flex.align-items-center {
+    justify-content: flex-start !important;
+  }
+}
+
 
 /* [project]/node_modules/photoswipe/dist/photoswipe.css [app-client] (css) */
 .pswp {

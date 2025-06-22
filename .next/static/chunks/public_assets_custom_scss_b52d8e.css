@@ -573,4 +573,16 @@ body.uc-dark, html.uc-dark body {
   }
 }
 
+@media (width <= 575.98px) {
+  .security-trust .hstack {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .security-trust .d-flex.align-items-center {
+    justify-content: flex-start !important;
+  }
+}
+
 /*# sourceMappingURL=public_assets_custom_scss_b52d8e.css.map*/
