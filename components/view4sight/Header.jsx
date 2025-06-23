@@ -39,16 +39,10 @@ const view4sightFeatures = [
 // Contenu View4Sight pour le sous-menu Ressources
 const view4sightResources = [
   {
-    href: "/ressources/usecases",
+    href: "/ressources/use-cases",
     icon: "/assets/images/common/icons/target.svg",
-    title: "Usecases",
-    description: "Cas d'usage"
-  },
-  {
-    href: "/ressources/tutorials", 
-    icon: "/assets/images/common/icons/video.svg",
-    title: "Tutorials",
-    description: "Tutoriels vidéo"
+    title: "Use Cases",
+    description: "Customer stories"
   },
   {
     href: "/ressources/blog",
@@ -57,7 +51,7 @@ const view4sightResources = [
     description: "Articles & actualités"
   },
   {
-    href: "/ressources/careers",
+    href: "/ressources/carrieres",
     icon: "/assets/images/common/icons/account.svg",
     title: "Recrutement",
     description: "Rejoignez l'équipe"
@@ -377,7 +371,7 @@ export default function View4SightHeader() {
                       border: "1px solid rgba(0, 0, 0, 0.15)",
                       boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05)",
                       borderRadius: "12px",
-                      width: "700px",
+                      width: "520px",
                       backgroundColor: "#ffffff"
                     }}
                   >
@@ -419,7 +413,7 @@ export default function View4SightHeader() {
                                         }}
                                       />
                                     </div>
-                                    <div className="d-flex flex-column justify-content-center">
+                                    <div className="d-flex flex-column justify-content-center" style={{ minHeight: "44px" }}>
                                       <h6 className="fw-bold m-0 dark:text-white" style={{ 
                                         fontSize: "15px",
                                         lineHeight: "1.2",
@@ -442,56 +436,70 @@ export default function View4SightHeader() {
                             </div>
                           </div>
                           <div className="col-7">
-                            <div className="d-flex flex-column h-100" style={{ gap: "0px" }}>
-                              {/* Section Centre d'aide - Top */}
+                            <div className="d-flex flex-column h-100 align-items-center" style={{ padding: "8px", gap: "8px" }}>
+                              {/* Section Centre d'aide - Top - EXACTEMENT 50% de hauteur */}
                               <Link 
                                 href="/ressources/support"
-                                className="text-none d-block demo-hover-effect"
-                                style={{ textDecoration: "none", flex: "1" }}
+                                className="text-none d-block hover:shadow-md transition-all duration-150"
+                                style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
-                                <div className="p-2 h-100 d-flex align-items-center justify-content-center transition-all support-hover" style={{
-                                  background: "#222222",
-                                  borderRadius: "0 12px 0 0",
-                                  cursor: "pointer",
-                                  transition: "all 0.3s ease",
-                                  minHeight: "70px"
-                                }}>
-                                  <Image
-                                    src="/assets/images/support-mockup.svg"
-                                    alt="Centre d'aide"
-                                    width={180}
-                                    height={60}
-                                    style={{
-                                      maxWidth: "100%",
-                                      height: "auto"
-                                    }}
-                                  />
+                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 border border-gray-600 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center support-card-hover h-100" style={{ minHeight: "80px" }}>
+                                  <div className="d-flex align-items-center gap-3">
+                                    {/* Icône headset - directe sans conteneur */}
+                                    <Image
+                                      src="/assets/images/custom-icons/headset.svg"
+                                      alt="Centre d'aide"
+                                      width={24}
+                                      height={24}
+                                      className="flex-shrink-0"
+                                      style={{
+                                        filter: "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)"
+                                      }}
+                                    />
+                                    
+                                    {/* Contenu texte */}
+                                    <div className="d-flex flex-column justify-content-center">
+                                      <h6 className="h6 fw-bold m-0 text-white dark:text-white">
+                                        Centre d'aide
+                                      </h6>
+                                      <p className="fs-7 m-0 text-gray-300 dark:text-gray-400">
+                                        Support 24/7, FAQ et gui
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               </Link>
 
-                              {/* Section Documentation - Bottom */}
+                              {/* Section Documentation - Bottom - EXACTEMENT 50% de hauteur */}
                               <Link 
                                 href="/ressources/docs"
-                                className="text-none d-block demo-hover-effect"
-                                style={{ textDecoration: "none", flex: "1" }}
+                                className="text-none d-block hover:shadow-md transition-all duration-150"
+                                style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
-                                <div className="p-2 h-100 d-flex align-items-center justify-content-center transition-all docs-hover" style={{
-                                  background: "#222222",
-                                  borderRadius: "0 0 12px 0",
-                                  cursor: "pointer",
-                                  transition: "all 0.3s ease",
-                                  minHeight: "70px"
-                                }}>
-                                  <Image
-                                    src="/assets/images/docs-mockup.svg"
-                                    alt="Documentation"
-                                    width={180}
-                                    height={60}
-                                    style={{
-                                      maxWidth: "100%",
-                                      height: "auto"
-                                    }}
-                                  />
+                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 border border-gray-600 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center docs-card-hover h-100" style={{ minHeight: "80px" }}>
+                                  <div className="d-flex align-items-center gap-3">
+                                    {/* Icône file-text - directe sans conteneur */}
+                                    <Image
+                                      src="/assets/images/custom-icons/file-text.svg"
+                                      alt="Documentation"
+                                      width={24}
+                                      height={24}
+                                      className="flex-shrink-0"
+                                      style={{
+                                        filter: "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)"
+                                      }}
+                                    />
+                                    
+                                    {/* Contenu texte */}
+                                    <div className="d-flex flex-column justify-content-center">
+                                      <h6 className="h6 fw-bold m-0 text-white dark:text-white">
+                                        Documentation
+                                      </h6>
+                                      <p className="fs-7 m-0 text-gray-300 dark:text-gray-400">
+                                        API, guides et référence
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               </Link>
                             </div>
@@ -599,14 +607,18 @@ export default function View4SightHeader() {
         background-color: transparent !important;
       }
       
-      .support-hover:hover {
-        background: #2a2a2a !important;
-        transform: scale(1.02);
+      .support-card-hover:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        background-color: rgb(55, 65, 81) !important; /* gray-700 */
+        border-color: rgb(75, 85, 99) !important; /* gray-600 */
       }
       
-      .docs-hover:hover {
-        background: #2a2a2a !important;
-        transform: scale(1.02);
+      .docs-card-hover:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        background-color: rgb(55, 65, 81) !important; /* gray-700 */
+        border-color: rgb(75, 85, 99) !important; /* gray-600 */
       }
     `}</style>
     

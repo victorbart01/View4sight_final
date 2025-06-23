@@ -1,0 +1,8 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/(blogs)/blog-sidebar-left/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pagesUsingSizeAdjust": false
+}

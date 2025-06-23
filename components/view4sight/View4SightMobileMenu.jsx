@@ -49,7 +49,7 @@ const view4sightMenuItems = [
     subItems: [
       {
         label: "Use Cases",
-        href: "/ressources/usecases",
+        href: "/ressources/use-cases",
         description: "Real-world applications"
       },
       {
@@ -61,6 +61,11 @@ const view4sightMenuItems = [
         label: "Blog",
         href: "/ressources/blog",
         description: "Latest news & insights"
+      },
+      {
+        label: "Recrutement",
+        href: "/ressources/carrieres",
+        description: "Join our team"
       },
       {
         label: "Support",

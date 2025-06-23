@@ -81,6 +81,10 @@ const view4sightFooterLinks = [
         title: "Resources",
         links: [
             {
+                href: "/ressources/use-cases",
+                label: "Use Cases"
+            },
+            {
                 href: "/ressources",
                 label: "Documentation"
             },
@@ -91,24 +95,12 @@ const view4sightFooterLinks = [
             {
                 href: "/ressources",
                 label: "Tutorials"
-            },
-            {
-                href: "/ressources",
-                label: "API Reference"
             }
         ]
     },
     {
         title: "Company",
         links: [
-            {
-                href: "/page-about",
-                label: "About Us"
-            },
-            {
-                href: "/page-contact",
-                label: "Contact"
-            },
             {
                 href: "/ressources",
                 label: "Blog"
@@ -172,12 +164,12 @@ function View4SightFooter() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                lineNumber: 55,
+                                                                lineNumber: 53,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                            lineNumber: 54,
+                                                            lineNumber: 52,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -185,13 +177,13 @@ function View4SightFooter() {
                                                             children: "The leading web-based platform for 3D point cloud visualization and collaboration. Transform your survey data into interactive experiences accessible from any browser."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                            lineNumber: 64,
+                                                            lineNumber: 62,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 53,
+                                                    lineNumber: 51,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -202,7 +194,7 @@ function View4SightFooter() {
                                                             children: "French Data Sovereignty"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                            lineNumber: 70,
+                                                            lineNumber: 68,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -215,7 +207,7 @@ function View4SightFooter() {
                                                                             className: "unicon-shield-check text-primary"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                            lineNumber: 73,
+                                                                            lineNumber: 71,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -223,13 +215,13 @@ function View4SightFooter() {
                                                                             children: "GDPR Compliant"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                            lineNumber: 74,
+                                                                            lineNumber: 72,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                    lineNumber: 72,
+                                                                    lineNumber: 70,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -239,7 +231,7 @@ function View4SightFooter() {
                                                                             className: "unicon-servers text-primary"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                            lineNumber: 77,
+                                                                            lineNumber: 75,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -247,36 +239,36 @@ function View4SightFooter() {
                                                                             children: "Hosted in France"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                            lineNumber: 78,
+                                                                            lineNumber: 76,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                    lineNumber: 76,
+                                                                    lineNumber: 74,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                            lineNumber: 71,
+                                                            lineNumber: 69,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 67,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 52,
+                                            lineNumber: 50,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                        lineNumber: 51,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this),
                                     view4sightFooterLinks.map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -289,7 +281,7 @@ function View4SightFooter() {
                                                         children: section.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 87,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -301,39 +293,39 @@ function View4SightFooter() {
                                                                     children: link.label
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                    lineNumber: 93,
+                                                                    lineNumber: 91,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, i, false, {
                                                                 fileName: "[project]/components/view4sight/Footer.jsx",
-                                                                lineNumber: 92,
+                                                                lineNumber: 90,
                                                                 columnNumber: 27
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 88,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/Footer.jsx",
-                                                lineNumber: 88,
+                                                lineNumber: 86,
                                                 columnNumber: 21
                                             }, this)
                                         }, index, false, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 85,
                                             columnNumber: 19
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/Footer.jsx",
-                                lineNumber: 49,
+                                lineNumber: 47,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view4sight/Footer.jsx",
-                            lineNumber: 48,
+                            lineNumber: 46,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -351,7 +343,7 @@ function View4SightFooter() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 111,
+                                            lineNumber: 109,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -364,12 +356,12 @@ function View4SightFooter() {
                                                         children: "Privacy Policy"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 114,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 113,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -379,12 +371,12 @@ function View4SightFooter() {
                                                         children: "Terms of Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 119,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 118,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -394,24 +386,24 @@ function View4SightFooter() {
                                                         children: "Security"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 124,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 123,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 114,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                    lineNumber: 110,
+                                    lineNumber: 108,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -429,29 +421,29 @@ function View4SightFooter() {
                                                             className: `icon icon-2 ${link.iconClass}`
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 141,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/Footer.jsx",
-                                                        lineNumber: 137,
+                                                        lineNumber: 135,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, index, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 134,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 134,
+                                            lineNumber: 132,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "vr bg-gray-700"
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 148,
+                                            lineNumber: 146,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,7 +453,7 @@ function View4SightFooter() {
                                                     className: "unicon-heart text-primary fs-8"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 148,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -469,46 +461,46 @@ function View4SightFooter() {
                                                     children: "Made in France"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 149,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/view4sight/Footer.jsx",
-                                            lineNumber: 149,
+                                            lineNumber: 147,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/Footer.jsx",
-                                    lineNumber: 133,
+                                    lineNumber: 131,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/view4sight/Footer.jsx",
-                            lineNumber: 109,
+                            lineNumber: 107,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/view4sight/Footer.jsx",
-                    lineNumber: 47,
+                    lineNumber: 45,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/Footer.jsx",
-                lineNumber: 46,
+                lineNumber: 44,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/view4sight/Footer.jsx",
-            lineNumber: 45,
+            lineNumber: 43,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/view4sight/Footer.jsx",
-        lineNumber: 44,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

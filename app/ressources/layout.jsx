@@ -1,3 +1,3 @@
 export default function RessourcesLayout({ children }) {
-  return <>{children}</>;
+  return children;
 } 

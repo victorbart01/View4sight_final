@@ -1,0 +1,3 @@
+{
+  "/(innerPages)/page-career-detail/[id]/page": "app/(innerPages)/page-career-detail/[id]/page.js"
+}

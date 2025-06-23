@@ -16,17 +16,15 @@ const view4sightFooterLinks = [
   {
     title: "Resources", 
     links: [
+      { href: "/ressources/use-cases", label: "Use Cases" },
       { href: "/ressources", label: "Documentation" },
       { href: "/ressources", label: "Support Center" },
       { href: "/ressources", label: "Tutorials" },
-      { href: "/ressources", label: "API Reference" },
     ],
   },
   {
     title: "Company",
     links: [
-      { href: "/page-about", label: "About Us" },
-      { href: "/page-contact", label: "Contact" },
       { href: "/ressources", label: "Blog" },
       { href: "/ressources", label: "Careers" },
     ],

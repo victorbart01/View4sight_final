@@ -1,0 +1,8 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/(innerPages)/page-career-detail/[id]/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pagesUsingSizeAdjust": false
+}

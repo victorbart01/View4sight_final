@@ -1,9 +1,7 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/_not-found/page": [],
-    "[project]/app/(innerPages)/page-about/page": [],
-    "[project]/app/ressources/page": []
+    "[project]/app/_not-found/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
