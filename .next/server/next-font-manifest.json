@@ -1,7 +1,13 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/_not-found/page": []
+    "[project]/app/_not-found/page": [],
+    "[project]/app/ressources/use-cases/page": [],
+    "[project]/app/ressources/blog/page": [],
+    "[project]/app/ressources/carrieres/page": [],
+    "[project]/app/fonctionnalites/visualize/page": [],
+    "[project]/app/tarifs/page": [],
+    "[project]/app/fonctionnalites/secure/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

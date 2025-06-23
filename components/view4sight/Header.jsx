@@ -228,7 +228,7 @@ export default function View4SightHeader() {
                                         {feature.title}
                                       </h6>
                                       <p className="m-0" style={{ 
-                                        fontSize: "12px",
+                                        fontSize: "13px",
                                         lineHeight: "1.3",
                                         color: "rgba(255, 255, 255, 0.7)"
                                       }}>
@@ -254,7 +254,7 @@ export default function View4SightHeader() {
                               }}>
                                 <div className="text-center">
                                   {/* Browser mockup avec vraie interface View4Sight */}
-                                  <div className="position-relative overflow-hidden bg-white shadow-sm mx-auto mb-4 mockup-container" style={{
+                                  <div className="position-relative overflow-hidden bg-white shadow-sm mx-auto mb-2 mockup-container" style={{
                                     width: "320px",
                                     height: "200px",
                                     border: "1px solid #e2e8f0",
@@ -608,14 +608,12 @@ export default function View4SightHeader() {
       }
       
       .support-card-hover:hover {
-        transform: translateY(-1px);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
         background-color: rgb(55, 65, 81) !important; /* gray-700 */
         border-color: rgb(75, 85, 99) !important; /* gray-600 */
       }
       
       .docs-card-hover:hover {
-        transform: translateY(-1px);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
         background-color: rgb(55, 65, 81) !important; /* gray-700 */
         border-color: rgb(75, 85, 99) !important; /* gray-600 */
