@@ -1,13 +1,12 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/_not-found/page": [],
-    "[project]/app/ressources/use-cases/page": [],
-    "[project]/app/ressources/blog/page": [],
-    "[project]/app/ressources/carrieres/page": [],
     "[project]/app/fonctionnalites/visualize/page": [],
+    "[project]/app/fonctionnalites/measure/page": [],
+    "[project]/app/_not-found/page": [],
     "[project]/app/tarifs/page": [],
-    "[project]/app/fonctionnalites/secure/page": []
+    "[project]/app/securite/page": [],
+    "[project]/app/ressources/use-cases/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

@@ -3,3 +3,61 @@ description:
 globs:
 alwaysApply: false
 ---
+# Project Overview
+
+## App Purpose
+View4Sight is a French SaaS platform for 3D point cloud visualization and sharing for surveyors and engineering firms. The project uses a purchased Next.js template "Lexend" from ThemeForest as the foundation for the marketing website.
+
+## Business Context
+- **Target audience**: French surveyors offices (géomètres-experts), design offices, and architect offices
+- **Value proposition**: Web-based 3D data visualization without heavy desktop software
+- **Key differentiator**: French data sovereignty and GDPR compliance
+- **Pricing model**: Freemium model starting at €0/month, scaling to enterprise
+- **Content language**: English (despite French target market)
+
+## Technical Stack
+- **Framework**: Next.js 15.1.7
+- **React**: 19.0.0
+- **CSS Framework**: Bootstrap 5 + UIKit CSS (NOT Tailwind)
+- **Template**: Lexend (ThemeForest purchase)
+- **Development server**: http://localhost:3000
+- **Main route**: /view4sight (custom implementation)
+
+## Configuration
+- **Primary color**: #FE552E (Lava Pulse)
+- **Hover color**: #C54E34 (Brick Pulse)
+- **Background dark mode**: #222222 (Graphite night)
+- **Background light mode**: #E4DCCA (Kreme)
+
+## Content Requirements
+
+### Key Messages
+- Stop wrestling with heavy 3D software
+- Web-based collaboration for geospatial data
+- French data hosting and sovereignty
+- No software installation required
+
+### Statistics to Highlight
+- 30% reduction in client validation time
+- 50% fewer site visits required
+- 80% clearer communication with stakeholders
+- 150GB storage included in free trial
+
+### File Formats Supported
+- LAS, E57, IFC, DXF, ORTHO, PLY
+- SVG icons available in `/public/assets/images/file formats/`
+
+### CTAs
+- **Primary**: "Start Free Trial" / "Commencer l'essai gratuit"
+- **Secondary**: "Request a demo" / "Demander une démo"
+- **Risk reversal**: "30-day free trial, no credit card required"
+
+## Copywriting Tone
+- Professional but approachable
+- Technical accuracy without jargon
+- French-first approach (sovereignty emphasis)
+- Problem-solution focused narrative
+- Content in English despite French target market
+
+## Critical Mission
+This is a B2B SaaS platform targeting French professionals. Every design and content decision should reflect professionalism, technical competence, and French business values.

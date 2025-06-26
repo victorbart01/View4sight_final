@@ -4,9 +4,9 @@ import Image from "next/image";
 const measureFeatures = [
   {
     id: "3d-measurements",
-    icon: "unicon-ruler",
-    iconBg: "#E3F2FD",
-    iconColor: "#1976D2",
+    icon: "/assets/images/custom-icons/ruler-bold.svg",
+    iconBg: "#FFF4E6",
+    iconColor: "#FE552E",
     title: "Measure Anything in True 3D Space",
     subtitle: "3D Measurements (Distance, Surface, Volume)",
     description: "Take precise distance, surface area, and volume measurements directly on your point clouds. Results match survey-grade desktop software accuracy.",
@@ -64,10 +64,10 @@ export default function Features() {
                   }}
                   data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
-                  <div className="row align-items-center g-6 lg:g-10 xl:g-12">
+                  <div className="row g-6 lg:g-10 xl:g-12" style={{ minHeight: "400px" }}>
                     {/* Text Content */}
-                    <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
-                      <div className="panel vstack gap-4">
+                    <div className={`col-12 lg:col-5 d-flex align-items-center ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
+                      <div className="panel vstack gap-4 w-100">
                         {/* Icon */}
                         <div 
                           className="d-inline-flex align-items-center justify-content-center rounded-2"
@@ -77,13 +77,27 @@ export default function Features() {
                             backgroundColor: feature.iconBg,
                           }}
                         >
-                          <i 
-                            className={`icon icon-2 ${feature.icon}`}
-                            style={{ 
-                              color: feature.iconColor,
-                              fontSize: "28px"
-                            }}
-                          ></i>
+                          {feature.icon.startsWith('/assets/') ? (
+                            <Image
+                              src={feature.icon}
+                              alt=""
+                              width={36}
+                              height={36}
+                              style={{ 
+                                filter: 'brightness(0)',
+                                margin: '0 auto',
+                                verticalAlign: 'middle'
+                              }}
+                            />
+                          ) : (
+                            <i 
+                              className={`icon icon-2 ${feature.icon}`}
+                              style={{ 
+                                color: feature.iconColor,
+                                fontSize: "28px"
+                              }}
+                            ></i>
+                          )}
                         </div>
                         
                         {/* Title */}
@@ -103,27 +117,52 @@ export default function Features() {
                       </div>
                     </div>
                     
-                    {/* Image */}
-                    <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
+                    {/* Image/Video */}
+                    <div className={`col-12 lg:col-7 d-flex align-items-center ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
                         <div 
                           className="rounded-3 p-6 lg:p-8"
                           style={{
-                            background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
+                            background: i === 0 
+                              ? "linear-gradient(135deg, #FFF4E6 0%, #FFE7CC 100%)"
+                              : "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
                           }}
                         >
-                          <div className="rounded-3 overflow-hidden shadow-lg">
-                            <Image
-                              src={feature.imgSrc}
-                              width={900}
-                              height={600}
-                              alt={feature.altText}
-                              className="w-100 h-auto"
-                              style={{ 
-                                objectFit: "cover",
-                                aspectRatio: "3/2"
-                              }}
-                            />
+                          <div className="rounded-3 overflow-hidden shadow-lg" style={{
+                            border: i === 0 ? "6px solid rgba(255, 255, 255, 0.3)" : "none",
+                            backdropFilter: i === 0 ? "blur(10px)" : "none",
+                            background: i === 0 ? "rgba(255, 255, 255, 0.1)" : "transparent"
+                          }}>
+                            {i === 0 ? (
+                              <video
+                                width={900}
+                                height={600}
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="w-100 h-auto"
+                                style={{ 
+                                  objectFit: "cover",
+                                  aspectRatio: "3/2"
+                                }}
+                              >
+                                <source src="/assets/videos/V4S-Mesures.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                              </video>
+                            ) : (
+                              <Image
+                                src={feature.imgSrc}
+                                width={900}
+                                height={600}
+                                alt={feature.altText}
+                                className="w-100 h-auto"
+                                style={{ 
+                                  objectFit: "cover",
+                                  aspectRatio: "3/2"
+                                }}
+                              />
+                            )}
                           </div>
                         </div>
                       </div>

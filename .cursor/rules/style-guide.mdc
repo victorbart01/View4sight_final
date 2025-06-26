@@ -3,3 +3,221 @@ description:
 globs:
 alwaysApply: false
 ---
+# Style Guide
+
+## Critical CSS Framework Rules
+
+### Framework Hierarchy
+- **Primary**: Bootstrap 5 for layout and components
+- **Secondary**: UIKit CSS for additional UI elements
+- **Custom**: Template-specific CSS classes
+- **ABSOLUTELY FORBIDDEN**: Tailwind CSS utility classes
+
+### Class Naming Conventions
+```css
+/* ✅ Correct - Bootstrap 5 */
+.btn.btn-primary
+.container
+.row
+.col-md-6
+.mb-4
+.text-center
+
+/* ❌ Wrong - Tailwind (FORBIDDEN) */
+.bg-blue-500
+.text-lg
+.flex
+.justify-center
+.p-4
+```
+
+## Design System Standards
+
+### Section Headers (Standardized Pattern)
+```jsx
+<div className="panel vstack items-center gap-2 xl:gap-3 text-center">
+  <div className="hero-badge mx-auto">
+    Section Name
+  </div>
+  <h2 className="h3 lg:h2 xl:h1 m-0">
+    Clean Title<br />
+    With Strategic Breaks
+  </h2>
+  <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
+    Section description
+  </p>
+</div>
+```
+
+### Pastille Guidelines
+- **Style**: Use `hero-badge` class for all section badges
+- **Positioning**: Centered with `mx-auto` (except Hero which stays left-aligned)
+- **Design**: Clean, épuré style without highlight "étiquettes"
+
+### Hero Section Standards
+- **Layout**: Cleaner layout with no floating decorative icons
+- **CTAs**: No extra CTA buttons ("Start free trial", "Request a demo")
+- **Taglines**: Omit "No credit card required" tagline and label pills
+- **Size**: Use title about 30% smaller to keep content compact
+
+## Custom CSS Classes
+
+### Hero Badge
+```css
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  background-color: rgba(254, 85, 46, 0.06);
+  border: 1px solid rgba(254, 85, 46, 0.15);
+  border-radius: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(254, 85, 46, 0.85);
+}
+```
+
+### Component-Specific Patterns
+
+#### MainFeatures Section
+- **Orbiting icons**: Use SVG files from `/public/assets/images/file formats/`
+- **Icon size**: 55px logo with reduced opacity background `rgba(44, 44, 44, 0.1)`
+- **CTA placement**: "Discover all features" button at section end
+
+#### VideoComponent Section
+- **Structure**: Pastille "Video demo" + Title "How It Works" + Description
+- **Spacing**: Vertical padding `py-6 lg:py-8 xl:py-10`
+
+#### Testimonials Section
+- **Design**: Adapted from home-4 template style
+- **Layout**: Single featured testimonial in 8/4 column layout
+- **Image**: Static photo only (no video functionality)
+
+## Development Guidelines
+
+### Component Creation Standards
+1. **Base**: Start with existing Lexend components as base
+2. **Layout**: Use Bootstrap 5 classes (`container`, `row`, `col-*`)
+3. **UI**: Use UIKit CSS classes for UI components
+4. **Colors**: Adapt styling to View4Sight brand colors
+5. **Responsive**: Maintain responsive design patterns using Bootstrap's grid
+6. **Pastilles**: Use `hero-badge mx-auto` for section pastilles (except Hero)
+
+### File Modification Rules
+1. **Preserve**: Original template functionality
+2. **Variants**: Create View4Sight-specific variants when needed
+3. **Testing**: Test on `/view4sight` route specifically
+4. **Structure**: Maintain Bootstrap 5 + UIKit CSS class structure
+5. **Headers**: Follow standardized section header pattern
+
+### Code Style Standards
+- **Components**: Use JSX for React components
+- **Framework**: Follow Next.js 15 conventions
+- **Utilities**: Use Bootstrap 5 utility classes (`mb-4`, `text-center`, `btn btn-primary`)
+- **UI Elements**: Use UIKit CSS components when appropriate
+- **Comments**: Comment custom modifications clearly
+
+## Button Patterns
+
+### Button Hierarchy
+```jsx
+// Primary CTA (recommended plans)
+<button className="btn btn-primary">Get Started</button>
+
+// Secondary CTA (standard plans)  
+<button className="btn btn-dark">Choose Plan</button>
+
+// Outline variant
+<button className="btn btn-outline-primary">Learn More</button>
+```
+
+### Pricing Page Button Patterns
+- **Team plan** (recommended): `btn btn-primary`
+- **Other plans**: `btn btn-dark`
+- **Enterprise**: Custom styling with subtle gray gradient
+
+## Layout Patterns
+
+### Card Design Optimization
+- **Height**: Reduced card heights for better desktop viewing
+- **Padding**: Compressed padding and font sizes for compact layouts
+- **Backgrounds**: Subtle gradients for emphasis (Enterprise uses gray gradient)
+
+### Multi-Section Structure
+1. **Hero** → Introduction/overview
+2. **Content** → Main feature/pricing content  
+3. **Comparison** → Feature comparison tables
+4. **FAQ** → Relevant questions
+5. **CTA** → Final conversion section
+
+## Typography Standards
+
+### Heading Hierarchy
+```jsx
+// Main page titles
+<h1 className="h1">Main Title</h1>
+
+// Section titles
+<h2 className="h3 lg:h2 xl:h1 m-0">Section Title</h2>
+
+// Subsection titles
+<h3 className="h4 lg:h3">Subsection</h3>
+
+// Descriptions
+<p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
+  Description text
+</p>
+```
+
+### Line Break Strategy
+- **Strategic use** of `<br />` for better visual hierarchy
+- **Avoid orphans** and awkward line breaks
+- **Mobile responsive** line breaks
+
+## Comment Standards
+
+### Component Comments
+```jsx
+// ✅ Good commenting
+/**
+ * View4Sight custom pricing component
+ * Adapted from Lexend template PricingSection
+ * Uses Bootstrap 5 grid with custom View4Sight styling
+ */
+export default function PricingSection() {
+  // Component logic here
+}
+```
+
+### CSS Comments
+```css
+/* View4Sight custom hero badge styling */
+.hero-badge {
+  /* Brand colors with transparency */
+  background-color: rgba(254, 85, 46, 0.06);
+  border: 1px solid rgba(254, 85, 46, 0.15);
+}
+```
+
+## Critical Reminders
+
+### Absolute Prohibitions
+- **NO TAILWIND CSS** - This will break the project
+- **NO template pricing URLs** - Always use `/tarifs`
+- **NO inconsistent routing** - Follow established patterns
+- **NO template rebuilding** - Adapt existing components
+
+### Required Patterns
+- **Bootstrap 5 + UIKit only** - Use these frameworks exclusively
+- **Custom routing** - Always use View4Sight specific routes
+- **Template adaptation** - Adapt existing components rather than rebuild
+- **Consistent branding** - Maintain View4Sight colors and messaging
+- **French sovereignty** - Emphasize data hosting and GDPR compliance
+
+### Trust Elements
+- Footer text: "No credit card required"
+- Payment security: "Payments secured by Stripe"
+- Data sovereignty: "Hébergement 100% français, conforme GDPR"
+- Brand badge: "Made in France" with heart icon

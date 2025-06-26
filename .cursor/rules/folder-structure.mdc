@@ -3,3 +3,106 @@ description:
 globs:
 alwaysApply: false
 ---
+# Folder Structure
+
+## Site Structure
+
+### Main Pages
+- **Homepage**: /
+- **Features**: /fonctionnalites
+- **Pricing**: /tarifs
+- **Security**: /securite
+- **Resources**: /ressources
+
+### Homepage Sections (current order)
+1. **Hero** - "No CAD License. No Plugin Hell. Just Upload & Go."
+2. **ClientLogos** - Partner/client logos
+3. **MainFeatures** - 4 core platform features + "Discover all features" button
+4. **VideoComponent** - "How It Works" demo with pastille and description
+5. **Testimonials** - Single featured testimonial (home-4 style)
+6. **SecurityBlock** - French sovereignty messaging
+7. **PainBenefits** - Client problems and pain points
+8. **FaqShort** - Interactive FAQ section
+9. **CtaFinal** - Final call-to-action with urgency
+
+## File Organization
+
+### Custom View4Sight Files
+```
+/app/view4sight/                    # Main application pages
+/components/view4sight/             # Custom components
+/public/assets/images/              # View4Sight assets (logo_v4s.svg)
+/public/assets/images/file formats/ # SVG format icons
+/data/view4sight-pricing.js         # Pricing data structure
+```
+
+### Template Structure to Preserve
+```
+/components/homes/                  # Original template components
+/public/assets/css/                 # Template styling (Bootstrap 5 + UIKit)
+/components/common/                 # Shared template components
+```
+
+### Component Structure
+
+#### Header Navigation
+- **Location**: `/components/view4sight/Header.jsx`
+- **Logo**: View4Sight logo (logo_v4s.png) on left
+- **Navigation**: Accueil, Fonctionnalités, Tarifs, Sécurité, Ressources
+- **Right buttons**: "Request a demo", "Log in", "Start free trial"
+- **Behavior**: Sticky behavior like home-3 template
+
+#### Footer Implementation
+- **Component**: Custom `View4SightFooter.jsx` component
+- **Usage**: Across all custom pages
+- **Layout**: Four-column layout: Company info, Product links, Resources, Legal
+- **Messaging**: French data sovereignty: "Hébergement 100% français, conforme GDPR"
+- **Branding**: "Made in France" badge with heart icon
+- **Links**: Real navigation links to actual View4sight pages
+
+#### Section Components
+- **Hero**: Pastille left-aligned, clean title structure
+- **MainFeatures**: OrbitingIcons with SVG formats, CTA button
+- **VideoComponent**: Pastille + title + description + video
+- **Testimonials**: Home-4 style with single featured testimonial
+- **SecurityBlock, FaqShort, etc.**: Standardized pastille (hero-badge mx-auto)
+
+## Asset Organization
+
+### Images
+```
+/public/assets/images/
+├── logo_v4s.svg                   # Main View4Sight logo
+├── logo_v4s_dark.png              # Dark version
+├── file formats/                   # SVG format icons
+│   ├── LAS.svg
+│   ├── E57.svg
+│   ├── IFC.svg
+│   ├── DXF.svg
+│   ├── ORTHO.svg
+│   └── PLY.svg
+└── [other template assets]
+```
+
+### CSS Structure
+```
+/public/assets/css/
+├── theme/
+│   └── main.min.purge.css         # Template main CSS
+├── fonts.css                      # Font definitions
+└── [other template CSS files]
+```
+
+## Development Structure
+
+### Custom Pages Layout
+- Feature pages: `/app/fonctionnalites/[feature]/`
+- Each feature has: `Hero.jsx`, `Features.jsx`, `Cta.jsx`
+- Layout files: `layout.jsx` for custom footer integration
+- Page files: `page.jsx` for main content
+
+### Reusable Components
+- Use existing Lexend components as base
+- Adapt content for View4Sight messaging
+- Maintain responsive design patterns
+- Follow Bootstrap 5 + UIKit CSS conventions

@@ -3,3 +3,143 @@ description:
 globs:
 alwaysApply: false
 ---
+# API Routes & Routing Patterns
+
+## Critical Routing Rules
+
+### Navigation Links
+- **All CTAs** must point to `/tarifs` (never template pricing URLs)
+- **Pricing plan buttons** must link to `/sign-in` (not `/sign-up`)
+- **Feature page CTAs** must use heading: "Ready to revolutionize your 3D workflows?" (never change this text)
+
+### Authentication Pages
+- **Login/sign-up pages** (`/sign-in`, `/sign-up`) must not include header, footer, or logo
+- **Pages should be** completely minimalistic and focused on the form only
+
+### Error Handling
+- **404 pages** must display only custom View4Sight header and footer
+- **Remove template duplicates** to avoid overlapping elements
+- **Clean error presentation** following View4Sight branding
+
+## Main Route Structure
+
+### Public Routes
+```
+/                           # Homepage
+/fonctionnalites           # Main features page
+/fonctionnalites/visualize # Feature: Visualize
+/fonctionnalites/measure   # Feature: Measure  
+/fonctionnalites/collaborate # Feature: Collaborate
+/fonctionnalites/secure    # Feature: Secure
+/tarifs                    # Pricing page
+/securite                  # Security page
+/ressources               # Resources page
+```
+
+### Authentication Routes
+```
+/sign-in                   # Login (minimal layout)
+/sign-up                   # Registration (minimal layout)
+/reset-password           # Password reset
+```
+
+### Error Routes
+```
+/404                      # Custom 404 page
+/not-found               # Next.js not found page
+```
+
+## Pricing Page Routes
+
+### Pricing Plans Structure
+- **Starter**: Free plan with basic features
+- **Team**: 79€/month recommended plan
+- **Studio**: 199€/month advanced plan  
+- **Enterprise**: Custom pricing with full features
+
+### Pricing Page Sections
+1. **Hero** - Pricing introduction
+2. **Plans** - 3-column layout (Starter/Team/Studio)
+3. **Enterprise** - Full-width section with gray gradient
+4. **Comparison** - Feature comparison table
+5. **FAQ** - Pricing-related questions
+6. **CTA** - Final conversion section
+
+## Route Behavior Patterns
+
+### CTA Button Routing
+```jsx
+// Correct CTA routing
+<Link href="/tarifs" className="btn btn-primary">
+  Start Free Trial
+</Link>
+
+// Pricing plan buttons
+<Link href="/sign-in" className="btn btn-primary">
+  Get Started
+</Link>
+```
+
+### Feature Page CTA Pattern
+```jsx
+// Standardized feature page CTA
+<div className="panel vstack items-center gap-4 text-center">
+  <h2 className="h3 lg:h2 xl:h1 m-0">
+    Ready to revolutionize your 3D workflows?
+  </h2>
+  <Link href="/tarifs" className="btn btn-primary">
+    Start Free Trial
+  </Link>
+</div>
+```
+
+## Error Logic
+
+### 404 Page Structure
+```jsx
+// Custom 404 layout
+<>
+  <Header /> {/* View4Sight custom header only */}
+  <main>
+    {/* Error content */}
+  </main>
+  <View4SightFooter /> {/* View4Sight custom footer only */}
+</>
+```
+
+### Authentication Error Handling
+- **Minimal layout** with no navigation elements
+- **Form-focused** error messages
+- **Clean validation** feedback
+- **Redirect logic** after successful auth
+
+## API Endpoints
+
+### Existing API Routes
+```
+/api/checkout              # Payment processing
+/api/checkout-direct       # Direct payment
+/api/create-checkout       # Checkout creation
+/api/test-env             # Environment testing
+/api/test-polar           # Polar integration testing
+/api/webhooks/polar       # Polar webhooks
+```
+
+### Route Protection
+- **Public routes**: Homepage, features, pricing, security, resources
+- **Protected routes**: User dashboard, account settings
+- **Authentication required**: Sign-in redirect for protected content
+
+## Navigation State Management
+
+### Header Navigation State
+- **Active route highlighting** based on current path
+- **Responsive behavior** for mobile/desktop
+- **Sticky navigation** with scroll detection
+- **CTA button prominence** in navigation
+
+### Route Transitions
+- **Smooth navigation** between sections
+- **Loading states** for async content
+- **Error boundaries** for failed route loads
+- **SEO-friendly URLs** with proper meta tags

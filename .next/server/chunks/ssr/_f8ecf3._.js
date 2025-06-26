@@ -88,7 +88,7 @@ const resourceCategories = [
         title: "Careers",
         description: "Join our team and help shape the future of 3D visualization technology.",
         icon: "/assets/images/common/icons/account.svg",
-        href: "/ressources/careers",
+        href: "/ressources/carrieres",
         color: "warning",
         stats: "We're Hiring"
     }

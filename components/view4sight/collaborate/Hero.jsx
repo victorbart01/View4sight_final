@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div id="hero_header" className="hero-header section panel overflow-hidden">
+    <div id="hero_header" className="hero-header section panel overflow-hidden bg-white dark:bg-gray-800">
       <div className="position-absolute top-0 start-0 end-0 h-600px lg:h-screen bg-secondary dark:bg-gray-800 z-0" />
       <div className="section-outer panel pb-8 pt-8 lg:pt-10 lg:pb-8">
         <div className="container max-w-xl">
