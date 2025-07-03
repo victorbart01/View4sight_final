@@ -129,7 +129,7 @@ export default function Features() {
                           }}
                         >
                           <div className="rounded-3 overflow-hidden shadow-lg" style={{
-                            border: i === 0 ? "6px solid rgba(255, 255, 255, 0.3)" : "none",
+                            border: i === 0 ? "6px solid rgba(255, 255, 255, 0.2)" : "none",
                             backdropFilter: i === 0 ? "blur(10px)" : "none",
                             background: i === 0 ? "rgba(255, 255, 255, 0.1)" : "transparent"
                           }}>

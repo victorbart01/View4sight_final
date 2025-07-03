@@ -1,9 +1,4 @@
 {
   "/page": "app/page.js",
-  "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js",
-  "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/tarifs/page": "app/tarifs/page.js",
-  "/securite/page": "app/securite/page.js",
-  "/ressources/use-cases/page": "app/ressources/use-cases/page.js"
+  "/_not-found/page": "app/_not-found/page.js"
 }

@@ -443,7 +443,7 @@ export default function View4SightHeader() {
                                 className="text-none d-block hover:shadow-md transition-all duration-150"
                                 style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
-                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 border border-gray-600 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center support-card-hover h-100" style={{ minHeight: "80px" }}>
+                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center support-card-hover h-100" style={{ minHeight: "80px" }}>
                                   <div className="d-flex align-items-center gap-3">
                                     {/* Icône headset - directe sans conteneur */}
                                     <Image
@@ -476,7 +476,7 @@ export default function View4SightHeader() {
                                 className="text-none d-block hover:shadow-md transition-all duration-150"
                                 style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
-                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 border border-gray-600 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center docs-card-hover h-100" style={{ minHeight: "80px" }}>
+                                <div className="panel p-3 bg-gray-800 dark:bg-gray-700 dark:border-gray-500 rounded-2 d-flex align-items-center justify-content-center docs-card-hover h-100" style={{ minHeight: "80px" }}>
                                   <div className="d-flex align-items-center gap-3">
                                     {/* Icône file-text - directe sans conteneur */}
                                     <Image
