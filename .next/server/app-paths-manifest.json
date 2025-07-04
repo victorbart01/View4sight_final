@@ -1,19 +1,6 @@
 {
   "/page": "app/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/ressources/docs/page": "app/ressources/docs/page.js",
   "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js",
-  "/tarifs/page": "app/tarifs/page.js",
-  "/ressources/use-cases/page": "app/ressources/use-cases/page.js",
-  "/ressources/blog/page": "app/ressources/blog/page.js",
-  "/ressources/carrieres/page": "app/ressources/carrieres/page.js",
-  "/(othersPages)/page-terms/page": "app/(othersPages)/page-terms/page.js",
-  "/(innerPages)/page-contact-2/page": "app/(innerPages)/page-contact-2/page.js",
-  "/(innerPages)/page-contact/page": "app/(innerPages)/page-contact/page.js",
-  "/ressources/centre-aide/page": "app/ressources/centre-aide/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/ressources/support/page": "app/ressources/support/page.js",
-  "/(innerPages)/page-about/page": "app/(innerPages)/page-about/page.js",
-  "/(othersPages)/coming-soon/page": "app/(othersPages)/coming-soon/page.js",
-  "/(othersPages)/sign-in/page": "app/(othersPages)/sign-in/page.js",
   "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js"
 }

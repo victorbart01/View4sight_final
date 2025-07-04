@@ -15,7 +15,7 @@ const measureFeatures = [
   },
   {
     id: "cross-sections",
-    icon: "unicon-layer-group",
+    icon: "/assets/images/custom-icons/scissors-bold.svg",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
     title: "Slice Through Your Data Instantly",
@@ -120,37 +120,48 @@ export default function Features() {
                     {/* Image/Video */}
                     <div className={`col-12 lg:col-7 d-flex align-items-center ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
-                        <div 
-                          className="rounded-3 p-6 lg:p-8"
-                          style={{
-                            background: i === 0 
-                              ? "linear-gradient(135deg, #FFF4E6 0%, #FFE7CC 100%)"
-                              : "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
-                          }}
-                        >
-                          <div className="rounded-3 overflow-hidden shadow-lg" style={{
-                            border: i === 0 ? "6px solid rgba(255, 255, 255, 0.2)" : "none",
-                            backdropFilter: i === 0 ? "blur(10px)" : "none",
-                            background: i === 0 ? "rgba(255, 255, 255, 0.1)" : "transparent"
-                          }}>
-                            {i === 0 ? (
-                              <video
-                                width={900}
-                                height={600}
-                                autoPlay
-                                muted
-                                loop
-                                playsInline
-                                className="w-100 h-auto"
-                                style={{ 
-                                  objectFit: "cover",
-                                  aspectRatio: "3/2"
-                                }}
-                              >
-                                <source src="/assets/videos/V4S-Mesures.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
-                            ) : (
+                        {i === 0 ? (
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-Measures.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : i === 1 ? (
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-Clipping.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          <div 
+                            className="rounded-3 p-6 lg:p-8"
+                            style={{
+                              background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
+                            }}
+                          >
+                            <div className="rounded-3 overflow-hidden shadow-lg">
                               <Image
                                 src={feature.imgSrc}
                                 width={900}
@@ -162,9 +173,9 @@ export default function Features() {
                                   aspectRatio: "3/2"
                                 }}
                               />
-                            )}
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     </div>
                   </div>
