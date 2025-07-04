@@ -47,13 +47,6 @@ const handleCheckout = async (tier, isYearly) => {
 export default function PricingSection() {
   const [isYearly, setIsYearly] = useState(false);
 
-  // Style CSS personnalisé pour la bordure orange du plan Team
-  const highlightedTierStyle = {
-    borderColor: '#FE552E !important',
-    borderWidth: '3px !important',
-    borderStyle: 'solid !important'
-  };
-
   return (
     <div
       id="pricing_tiers"
@@ -117,13 +110,12 @@ export default function PricingSection() {
                         <div
                           className={`tier panel rounded-2 ${
                             tier.highlight 
-                              ? "bg-white dark:bg-gray-800 position-relative border-3 border-primary shadow-lg tier-highlighted" 
+                              ? "bg-white dark:bg-gray-800 position-relative tier-highlighted shadow-lg" 
                               : "bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700"
                           } text-dark h-100`}
                           style={{ 
                             display: 'grid', 
-                            gridTemplateRows: '200px 1fr auto',
-                            ...(tier.highlight ? highlightedTierStyle : {})
+                            gridTemplateRows: '200px 1fr auto'
                           }}
                         >
                           {tier.highlight && (

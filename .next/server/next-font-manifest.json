@@ -3,7 +3,8 @@
     "[project]/app/page": [],
     "[project]/app/ressources/docs/page": [],
     "[project]/app/fonctionnalites/visualize/page": [],
-    "[project]/app/fonctionnalites/measure/page": []
+    "[project]/app/fonctionnalites/measure/page": [],
+    "[project]/app/tarifs/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

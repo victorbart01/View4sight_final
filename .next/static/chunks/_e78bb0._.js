@@ -163,12 +163,6 @@ const handleCheckout = async (tier, isYearly)=>{
 function PricingSection() {
     _s();
     const [isYearly, setIsYearly] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // Style CSS personnalisé pour la bordure orange du plan Team
-    const highlightedTierStyle = {
-        borderColor: '#FE552E !important',
-        borderWidth: '3px !important',
-        borderStyle: 'solid !important'
-    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         id: "pricing_tiers",
         className: "pricing-tiers section panel overflow-hidden",
@@ -193,7 +187,7 @@ function PricingSection() {
                                         children: "Simple Pricing That Grows With Your Team"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 64,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -201,7 +195,7 @@ function PricingSection() {
                                         children: "Start free, scale as you grow. No per-viewer fees, no hidden costs, no long-term contracts."
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 67,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -219,12 +213,12 @@ function PricingSection() {
                                                             children: "Monthly"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 83,
+                                                            lineNumber: 76,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                        lineNumber: 82,
+                                                        lineNumber: 75,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -239,24 +233,24 @@ function PricingSection() {
                                                                     children: "-20%"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                    lineNumber: 96,
+                                                                    lineNumber: 89,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 91,
+                                                            lineNumber: 84,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 83,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                lineNumber: 78,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -268,19 +262,19 @@ function PricingSection() {
                                                 children: "Switch to yearly and save 20%"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                lineNumber: 102,
+                                                lineNumber: 95,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 70,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                lineNumber: 67,
+                                lineNumber: 60,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -292,11 +286,10 @@ function PricingSection() {
                                         "data-anime": "onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});",
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$view4sight$2d$pricing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["view4sightTiers"].map((tier, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: `tier panel rounded-2 ${tier.highlight ? "bg-white dark:bg-gray-800 position-relative border-3 border-primary shadow-lg tier-highlighted" : "bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700"} text-dark h-100`,
+                                                    className: `tier panel rounded-2 ${tier.highlight ? "bg-white dark:bg-gray-800 position-relative tier-highlighted shadow-lg" : "bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700"} text-dark h-100`,
                                                     style: {
                                                         display: 'grid',
-                                                        gridTemplateRows: '200px 1fr auto',
-                                                        ...tier.highlight ? highlightedTierStyle : {}
+                                                        gridTemplateRows: '200px 1fr auto'
                                                     },
                                                     children: [
                                                         tier.highlight && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -304,7 +297,7 @@ function PricingSection() {
                                                             children: "Popular"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 130,
+                                                            lineNumber: 122,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -320,7 +313,7 @@ function PricingSection() {
                                                                             children: tier.plan
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 136,
+                                                                            lineNumber: 128,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -331,7 +324,7 @@ function PricingSection() {
                                                                                     children: isYearly ? tier.yearlyPrice : tier.price
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 140,
+                                                                                    lineNumber: 132,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 tier.price !== "Free" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -339,19 +332,19 @@ function PricingSection() {
                                                                                     children: tier.priceSuffix
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 144,
+                                                                                    lineNumber: 136,
                                                                                     columnNumber: 35
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 139,
+                                                                            lineNumber: 131,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                    lineNumber: 135,
+                                                                    lineNumber: 127,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -362,13 +355,13 @@ function PricingSection() {
                                                                     children: tier.description
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                    lineNumber: 150,
+                                                                    lineNumber: 142,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 134,
+                                                            lineNumber: 126,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,7 +375,7 @@ function PricingSection() {
                                                                     children: "Includes:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                    lineNumber: 155,
+                                                                    lineNumber: 147,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -394,7 +387,7 @@ function PricingSection() {
                                                                                     className: "cstack w-16px h-16px bg-primary text-white rounded-circle unicon-checkmark fs-8 fw-bold flex-shrink-0 mt-narrow"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 164,
+                                                                                    lineNumber: 156,
                                                                                     columnNumber: 35
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -402,24 +395,24 @@ function PricingSection() {
                                                                                     children: feature
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 165,
+                                                                                    lineNumber: 157,
                                                                                     columnNumber: 35
                                                                                 }, this)
                                                                             ]
                                                                         }, idx, true, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 160,
+                                                                            lineNumber: 152,
                                                                             columnNumber: 33
                                                                         }, this))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                    lineNumber: 158,
+                                                                    lineNumber: 150,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 154,
+                                                            lineNumber: 146,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -434,12 +427,12 @@ function PricingSection() {
                                                                             children: tier.buttonText
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 182,
+                                                                            lineNumber: 174,
                                                                             columnNumber: 33
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 174,
+                                                                        lineNumber: 166,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -447,44 +440,44 @@ function PricingSection() {
                                                                         children: tier.footerText || "No credit card required"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 184,
+                                                                        lineNumber: 176,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                lineNumber: 173,
+                                                                lineNumber: 165,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                            lineNumber: 172,
+                                                            lineNumber: 164,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                    lineNumber: 117,
+                                                    lineNumber: 110,
                                                     columnNumber: 25
                                                 }, this)
                                             }, index, false, {
                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                lineNumber: 116,
+                                                lineNumber: 109,
                                                 columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 104,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                    lineNumber: 110,
+                                    lineNumber: 103,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                lineNumber: 109,
+                                lineNumber: 102,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -497,7 +490,7 @@ function PricingSection() {
                                             className: "position-absolute top-0 end-0 w-50 h-100 bg-gradient-45 from-primary to-transparent opacity-5 z-0"
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                            lineNumber: 202,
+                                            lineNumber: 194,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -517,12 +510,12 @@ function PricingSection() {
                                                                             className: "icon-1 unicon-building fw-bold"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 208,
+                                                                            lineNumber: 200,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 207,
+                                                                        lineNumber: 199,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -532,7 +525,7 @@ function PricingSection() {
                                                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$view4sight$2d$pricing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["enterprisePlan"].title
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                lineNumber: 211,
+                                                                                lineNumber: 203,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -540,19 +533,19 @@ function PricingSection() {
                                                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$view4sight$2d$pricing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["enterprisePlan"].description
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                lineNumber: 212,
+                                                                                lineNumber: 204,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 210,
+                                                                        lineNumber: 202,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                lineNumber: 206,
+                                                                lineNumber: 198,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -565,7 +558,7 @@ function PricingSection() {
                                                                                     className: "cstack w-16px h-16px bg-primary text-white rounded-circle unicon-checkmark fs-8 fw-bold flex-shrink-0"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 221,
+                                                                                    lineNumber: 213,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -574,39 +567,39 @@ function PricingSection() {
                                                                                         children: feature.title
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                        lineNumber: 223,
+                                                                                        lineNumber: 215,
                                                                                         columnNumber: 35
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                                    lineNumber: 222,
+                                                                                    lineNumber: 214,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                            lineNumber: 220,
+                                                                            lineNumber: 212,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     }, idx, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 219,
+                                                                        lineNumber: 211,
                                                                         columnNumber: 29
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                lineNumber: 217,
+                                                                lineNumber: 209,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 197,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                    lineNumber: 204,
+                                                    lineNumber: 196,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -621,7 +614,7 @@ function PricingSection() {
                                                                         children: "Let's talk"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 234,
+                                                                        lineNumber: 226,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -629,13 +622,13 @@ function PricingSection() {
                                                                         children: "Custom pricing"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                        lineNumber: 235,
+                                                                        lineNumber: 227,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                lineNumber: 233,
+                                                                lineNumber: 225,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -644,35 +637,35 @@ function PricingSection() {
                                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$view4sight$2d$pricing$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["enterprisePlan"].buttonText
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                                lineNumber: 239,
+                                                                lineNumber: 231,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 224,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 223,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                            lineNumber: 203,
+                                            lineNumber: 195,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                    lineNumber: 201,
+                                    lineNumber: 193,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                lineNumber: 197,
+                                lineNumber: 189,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -686,39 +679,39 @@ function PricingSection() {
                                         children: "Learn about security"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                        lineNumber: 254,
+                                        lineNumber: 246,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                                lineNumber: 249,
+                                lineNumber: 241,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/view4sight/PricingSection.jsx",
-                        lineNumber: 65,
+                        lineNumber: 58,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/view4sight/PricingSection.jsx",
-                    lineNumber: 64,
+                    lineNumber: 57,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/view4sight/PricingSection.jsx",
-                lineNumber: 63,
+                lineNumber: 56,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/view4sight/PricingSection.jsx",
-            lineNumber: 62,
+            lineNumber: 55,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/view4sight/PricingSection.jsx",
-        lineNumber: 58,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }

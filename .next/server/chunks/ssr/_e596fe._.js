@@ -39,7 +39,7 @@ const visualizeFeatures = [
     },
     {
         id: "integration",
-        icon: "unicon-layers",
+        icon: "/assets/images/custom-icons/stack-bold.svg",
         iconBg: "#E8F5E9",
         iconColor: "#388E3C",
         title: "All Your Data in One View",
@@ -93,7 +93,21 @@ function Features() {
                                                             height: "64px",
                                                             backgroundColor: feature.iconBg
                                                         },
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        children: feature.icon.startsWith('/assets/') ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                            src: feature.icon,
+                                                            alt: "",
+                                                            width: 36,
+                                                            height: 36,
+                                                            style: {
+                                                                filter: 'brightness(0)',
+                                                                margin: '0 auto',
+                                                                verticalAlign: 'middle'
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                            lineNumber: 81,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                             className: `icon icon-2 ${feature.icon}`,
                                                             style: {
                                                                 color: feature.iconColor,
@@ -101,8 +115,8 @@ function Features() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 27
+                                                            lineNumber: 93,
+                                                            columnNumber: 29
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
@@ -114,7 +128,7 @@ function Features() {
                                                         children: feature.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 104,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -122,7 +136,7 @@ function Features() {
                                                         children: feature.subtitle
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 95,
+                                                        lineNumber: 109,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -130,7 +144,7 @@ function Features() {
                                                         children: feature.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 100,
+                                                        lineNumber: 114,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
@@ -148,7 +162,34 @@ function Features() {
                                             className: `col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel w-100 position-relative",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: i === 2 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                    width: 900,
+                                                    height: 600,
+                                                    autoPlay: true,
+                                                    muted: true,
+                                                    loop: true,
+                                                    playsInline: true,
+                                                    className: "w-100 h-auto",
+                                                    style: {
+                                                        objectFit: "cover",
+                                                        aspectRatio: "3/2"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                                            src: "/assets/videos/V4S-SplitScreen.mp4",
+                                                            type: "video/mp4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                            lineNumber: 137,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        "Your browser does not support the video tag."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                    lineNumber: 124,
+                                                    columnNumber: 27
+                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "rounded-3 p-6 lg:p-8",
                                                     style: {
                                                         background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
@@ -167,27 +208,27 @@ function Features() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 116,
-                                                            columnNumber: 29
+                                                            lineNumber: 148,
+                                                            columnNumber: 31
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 115,
-                                                        columnNumber: 27
+                                                        lineNumber: 147,
+                                                        columnNumber: 29
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                    lineNumber: 109,
-                                                    columnNumber: 25
+                                                    lineNumber: 141,
+                                                    columnNumber: 27
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 122,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                            lineNumber: 107,
+                                            lineNumber: 121,
                                             columnNumber: 21
                                         }, this)
                                     ]

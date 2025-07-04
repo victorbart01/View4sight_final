@@ -26,7 +26,7 @@ const visualizeFeatures = [
   },
   {
     id: "integration",
-    icon: "unicon-layers",
+    icon: "/assets/images/custom-icons/stack-bold.svg",
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
     title: "All Your Data in One View",
@@ -77,13 +77,27 @@ export default function Features() {
                             backgroundColor: feature.iconBg,
                           }}
                         >
-                          <i 
-                            className={`icon icon-2 ${feature.icon}`}
-                            style={{ 
-                              color: feature.iconColor,
-                              fontSize: "28px"
-                            }}
-                          ></i>
+                          {feature.icon.startsWith('/assets/') ? (
+                            <Image
+                              src={feature.icon}
+                              alt=""
+                              width={36}
+                              height={36}
+                              style={{ 
+                                filter: 'brightness(0)',
+                                margin: '0 auto',
+                                verticalAlign: 'middle'
+                              }}
+                            />
+                          ) : (
+                            <i 
+                              className={`icon icon-2 ${feature.icon}`}
+                              style={{ 
+                                color: feature.iconColor,
+                                fontSize: "28px"
+                              }}
+                            ></i>
+                          )}
                         </div>
                         
                         {/* Title */}
@@ -103,29 +117,48 @@ export default function Features() {
                       </div>
                     </div>
                     
-                    {/* Image */}
+                    {/* Image/Video */}
                     <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
-                        <div 
-                          className="rounded-3 p-6 lg:p-8"
-                          style={{
-                            background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
-                          }}
-                        >
-                          <div className="rounded-3 overflow-hidden shadow-lg">
-                            <Image
-                              src={feature.imgSrc}
-                              width={900}
-                              height={600}
-                              alt={feature.altText}
-                              className="w-100 h-auto"
-                              style={{ 
-                                objectFit: "cover",
-                                aspectRatio: "3/2"
-                              }}
-                            />
+                        {i === 2 ? (
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-SplitScreen.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          <div 
+                            className="rounded-3 p-6 lg:p-8"
+                            style={{
+                              background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
+                            }}
+                          >
+                            <div className="rounded-3 overflow-hidden shadow-lg">
+                              <Image
+                                src={feature.imgSrc}
+                                width={900}
+                                height={600}
+                                alt={feature.altText}
+                                className="w-100 h-auto"
+                                style={{ 
+                                  objectFit: "cover",
+                                  aspectRatio: "3/2"
+                                }}
+                              />
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     </div>
                   </div>

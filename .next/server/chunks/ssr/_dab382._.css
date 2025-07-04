@@ -21233,6 +21233,11 @@ textarea.form-control-lg {
   --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to);
 }
 
+.tier-highlighted {
+  border: 3px solid #fe552e !important;
+  box-shadow: 0 0 0 1px #fe552e1a !important;
+}
+
 
 /* [project]/public/assets/css/main.scss.css [app-client] (css) */
 @font-face {

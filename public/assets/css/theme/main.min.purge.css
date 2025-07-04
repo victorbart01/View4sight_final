@@ -8450,3 +8450,9 @@ textarea.form-control-lg {
   --uc-gradient-from: #0b4437;
   --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to);
 }
+
+/* View4Sight custom pricing tier highlight */
+.tier-highlighted {
+  border: 3px solid #FE552E !important;
+  box-shadow: 0 0 0 1px rgba(254, 85, 46, 0.1) !important;
+}
