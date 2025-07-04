@@ -17,7 +17,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const visualizeFeatures = [
     {
         id: "streaming",
-        icon: "unicon-cloud-download",
+        icon: "/assets/images/custom-icons/soundcloud-logo-bold.svg",
         iconBg: "#E3F2FD",
         iconColor: "#1976D2",
         title: "Massive Files, Instant Loading",
@@ -25,17 +25,6 @@ const visualizeFeatures = [
         description: "Our streaming technology processes multi-gigabyte datasets server-side and delivers optimized content to browsers. No plugins, no downloads, no performance compromises. Whether you're in real estate, urban planning, or environmental science, our tools are designed to help you make better decisions faster.",
         imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
         altText: "Streaming Technology Interface"
-    },
-    {
-        id: "fpv",
-        icon: "unicon-eye",
-        iconBg: "#FFF3E0",
-        iconColor: "#F57C00",
-        title: "Walk Through Your Data Like Being There",
-        subtitle: "Navigate your point clouds with first-person precision.",
-        description: "Switch to first-person view and navigate your point clouds like a video game. Perfect for site inspections, virtual walkthroughs, and immersive client presentations. Experience your data from ground level with smooth, intuitive controls that anyone can master.",
-        imgSrc: "https://picsum.photos/900/600?random=2",
-        altText: "First-Person Navigation Mode"
     },
     {
         id: "integration",
@@ -47,6 +36,17 @@ const visualizeFeatures = [
         description: "Combine point clouds, BIM models, orthophotos, and 360° images in a single interface. Estimate wind power production, calculate aspect-slope or visualize how many hours of sunlight on specific dates. Perfect for monitoring changes over time or validating survey data against design models.",
         imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
         altText: "Multiple Data Integration"
+    },
+    {
+        id: "fpv",
+        icon: "unicon-eye",
+        iconBg: "#FFF3E0",
+        iconColor: "#F57C00",
+        title: "Walk Through Your Data Like Being There",
+        subtitle: "Navigate your point clouds with first-person precision.",
+        description: "Switch to first-person view and navigate your point clouds like a video game. Perfect for site inspections, virtual walkthroughs, and immersive client presentations. Experience your data from ground level with smooth, intuitive controls that anyone can master.",
+        imgSrc: "https://picsum.photos/900/600?random=2",
+        altText: "First-Person Navigation Mode"
     },
     {
         id: "formats",
@@ -162,7 +162,7 @@ function Features() {
                                             className: `col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel w-100 position-relative",
-                                                children: i === 2 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                children: i === 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                                     width: 900,
                                                     height: 600,
                                                     autoPlay: true,

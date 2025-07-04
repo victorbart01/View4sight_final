@@ -4,7 +4,7 @@ import Image from "next/image";
 const visualizeFeatures = [
   {
     id: "streaming",
-    icon: "unicon-cloud-download",
+    icon: "/assets/images/custom-icons/soundcloud-logo-bold.svg",
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
     title: "Massive Files, Instant Loading",
@@ -12,17 +12,6 @@ const visualizeFeatures = [
     description: "Our streaming technology processes multi-gigabyte datasets server-side and delivers optimized content to browsers. No plugins, no downloads, no performance compromises. Whether you're in real estate, urban planning, or environmental science, our tools are designed to help you make better decisions faster.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "Streaming Technology Interface",
-  },
-  {
-    id: "fpv",
-    icon: "unicon-eye",
-    iconBg: "#FFF3E0",
-    iconColor: "#F57C00",
-    title: "Walk Through Your Data Like Being There",
-    subtitle: "Navigate your point clouds with first-person precision.",
-    description: "Switch to first-person view and navigate your point clouds like a video game. Perfect for site inspections, virtual walkthroughs, and immersive client presentations. Experience your data from ground level with smooth, intuitive controls that anyone can master.",
-    imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "First-Person Navigation Mode",
   },
   {
     id: "integration",
@@ -34,6 +23,17 @@ const visualizeFeatures = [
     description: "Combine point clouds, BIM models, orthophotos, and 360° images in a single interface. Estimate wind power production, calculate aspect-slope or visualize how many hours of sunlight on specific dates. Perfect for monitoring changes over time or validating survey data against design models.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "Multiple Data Integration",
+  },
+  {
+    id: "fpv",
+    icon: "unicon-eye",
+    iconBg: "#FFF3E0",
+    iconColor: "#F57C00",
+    title: "Walk Through Your Data Like Being There",
+    subtitle: "Navigate your point clouds with first-person precision.",
+    description: "Switch to first-person view and navigate your point clouds like a video game. Perfect for site inspections, virtual walkthroughs, and immersive client presentations. Experience your data from ground level with smooth, intuitive controls that anyone can master.",
+    imgSrc: "https://picsum.photos/900/600?random=2",
+    altText: "First-Person Navigation Mode",
   },
   {
     id: "formats",
@@ -120,7 +120,7 @@ export default function Features() {
                     {/* Image/Video */}
                     <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
-                        {i === 2 ? (
+                        {i === 1 ? (
                           <video
                             width={900}
                             height={600}
