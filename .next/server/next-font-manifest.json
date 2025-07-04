@@ -1,7 +1,21 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/_not-found/page": []
+    "[project]/app/_not-found/page": [],
+    "[project]/app/fonctionnalites/visualize/page": [],
+    "[project]/app/tarifs/page": [],
+    "[project]/app/ressources/use-cases/page": [],
+    "[project]/app/ressources/blog/page": [],
+    "[project]/app/ressources/carrieres/page": [],
+    "[project]/app/(othersPages)/page-terms/page": [],
+    "[project]/app/(innerPages)/page-contact-2/page": [],
+    "[project]/app/(innerPages)/page-contact/page": [],
+    "[project]/app/ressources/centre-aide/page": [],
+    "[project]/app/ressources/support/page": [],
+    "[project]/app/(innerPages)/page-about/page": [],
+    "[project]/app/(othersPages)/coming-soon/page": [],
+    "[project]/app/(othersPages)/sign-in/page": [],
+    "[project]/app/fonctionnalites/measure/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

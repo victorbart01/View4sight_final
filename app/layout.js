@@ -22,6 +22,7 @@ import NewsletterModal from "@/components/modals/NewsletterModal";
 import SearchModal from "@/components/modals/SearchModal";
 import View4SightHeader from "@/components/view4sight/Header";
 import View4SightFooter from "@/components/view4sight/Footer";
+import ZohoChat from "@/components/view4sight/ZohoChat";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -139,6 +140,8 @@ export default function RootLayout({ children }) {
           <SearchModal />
           <Cart />
           <BacktoTop />
+          {/* Chat Zoho - Ne pas afficher sur la page de connexion */}
+          {!isLoginPage && <ZohoChat />}
         </Context>
       </body>
     </html>

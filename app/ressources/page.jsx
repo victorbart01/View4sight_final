@@ -9,11 +9,19 @@ export const metadata = {
 
 const resourceCategories = [
   {
+    title: "Support",
+    description: "Get help and support for View4Sight. Find answers to your questions and contact our support team.",
+    icon: "/assets/images/common/icons/support.svg",
+    href: "/ressources/support",
+    color: "primary",
+    stats: "24/7 Support"
+  },
+  {
     title: "Use Cases",
     description: "Discover how professionals across different industries use View4Sight to transform their workflows.",
     icon: "/assets/images/common/icons/target.svg",
     href: "/ressources/use-cases",
-    color: "primary",
+    color: "success",
     stats: "4 Industry Stories"
   },
   {
@@ -21,7 +29,7 @@ const resourceCategories = [
     description: "Stay updated with the latest insights on 3D visualization, surveying best practices, and platform updates.",
     icon: "/assets/images/common/icons/blog.svg", 
     href: "/ressources/blog",
-    color: "success",
+    color: "info",
     stats: "Latest Articles"
   },
   {
@@ -29,7 +37,7 @@ const resourceCategories = [
     description: "Step-by-step video guides to help you master View4Sight's features and optimize your workflows.",
     icon: "/assets/images/common/icons/video.svg",
     href: "/ressources/tutorials",
-    color: "info",
+    color: "warning",
     stats: "Coming Soon"
   },
   {
@@ -37,7 +45,7 @@ const resourceCategories = [
     description: "Join our team and help shape the future of 3D visualization technology.",
     icon: "/assets/images/common/icons/account.svg",
     href: "/ressources/carrieres",
-    color: "warning",
+    color: "secondary",
     stats: "We're Hiring"
   }
 ];

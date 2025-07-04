@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 export default function MobileMenu() {
-  const { isDark, handleToggle } = useContextElement();
   const pathname = usePathname();
   const [activeParent1, setActiveParent1] = useState(-1);
   const [activeParent2, setActiveParent2] = useState(-1);
@@ -251,28 +250,7 @@ export default function MobileMenu() {
               ))}
             </li>
           </ul>
-          <div
-            className="py-2 hstack gap-2 mt-4 bg-white dark:bg-gray-900 uc-sticky uc-active uc-sticky-fixed"
-            data-uc-sticky="position: bottom"
-          >
-            <div className="vstack gap-1">
-              <span className="fs-7 opacity-60">Select theme:</span>
-              <div className="darkmode-trigger" data-darkmode-switch="">
-                <label className="switch">
-                  <input
-                    checked={!isDark}
-                    onChange={handleToggle}
-                    type="checkbox"
-                  />
-                  <span className="slider fs-5" />
-                </label>
-              </div>
-            </div>
-          </div>
-          <div
-            className="uc-sticky-placeholder"
-            style={{ height: 83, width: 290, margin: "32px 0px 0px" }}
-          />
+
         </div>
       </div>
     </div>

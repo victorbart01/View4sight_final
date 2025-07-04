@@ -1115,7 +1115,7 @@ function CtaFinal() {
         id: "cta",
         className: "cta section panel  scrollSpysection",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "section-outer panel py-4 sm:py-6 xl:py-8 bg-gray-900 text-white rounded-2 lg:rounded-3 mx-2 overflow-hidden",
+            className: "section-outer panel py-4 sm:py-6 xl:py-8 bg-white text-dark rounded-2 lg:rounded-3 mx-2 overflow-hidden border border-gray-200",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container xl:max-w-xl",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,7 +1126,7 @@ function CtaFinal() {
                             "data-anime": "onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "h2 xl:display-5 text-white",
+                                    className: "h2 xl:display-5 text-dark",
                                     children: "Ready to revolutionize your 3D workflows?"
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/CtaFinal.jsx",
@@ -1134,7 +1134,7 @@ function CtaFinal() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "fs-5 my-0 text-white text-opacity-80",
+                                    className: "fs-5 my-0 text-dark text-opacity-70",
                                     children: "Start your 30-day free trial. No credit card required."
                                 }, void 0, false, {
                                     fileName: "[project]/components/view4sight/CtaFinal.jsx",

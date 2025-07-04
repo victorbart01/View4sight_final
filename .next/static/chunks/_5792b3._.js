@@ -765,16 +765,13 @@ __turbopack_esm__({
     "default": (()=>BacktoTop)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$Context$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/context/Context.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
 ;
-;
 function BacktoTop() {
     _s();
-    const { isDark, handleToggle } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$Context$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContextElement"])();
     const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "BacktoTop.useEffect": ()=>{
@@ -806,76 +803,29 @@ function BacktoTop() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack  ${isVisible ? "uc-active" : ""}`,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white",
-                "data-darkmode-toggle": "",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                    className: "switch",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "sr-only",
-                            children: "Dark mode toggle"
-                        }, void 0, false, {
-                            fileName: "[project]/components/common/BacktoTop.jsx",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                            onChange: handleToggle,
-                            type: "checkbox",
-                            checked: isDark
-                        }, void 0, false, {
-                            fileName: "[project]/components/common/BacktoTop.jsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "slider fs-5"
-                        }, void 0, false, {
-                            fileName: "[project]/components/common/BacktoTop.jsx",
-                            lineNumber: 50,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/common/BacktoTop.jsx",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, this)
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+            className: "btn btn-sm bg-primary text-white w-40px h-40px rounded-circle",
+            onClick: scrollToTop,
+            "data-uc-backtotop": true,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                className: "icon-2 unicon-chevron-up"
             }, void 0, false, {
                 fileName: "[project]/components/common/BacktoTop.jsx",
-                lineNumber: 43,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                className: "btn btn-sm bg-primary text-white w-40px h-40px rounded-circle",
-                onClick: scrollToTop,
-                "data-uc-backtotop": true,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                    className: "icon-2 unicon-chevron-up"
-                }, void 0, false, {
-                    fileName: "[project]/components/common/BacktoTop.jsx",
-                    lineNumber: 58,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/common/BacktoTop.jsx",
-                lineNumber: 53,
-                columnNumber: 7
+                lineNumber: 46,
+                columnNumber: 9
             }, this)
-        ]
-    }, void 0, true, {
+        }, void 0, false, {
+            fileName: "[project]/components/common/BacktoTop.jsx",
+            lineNumber: 41,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/components/common/BacktoTop.jsx",
-        lineNumber: 38,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
-_s(BacktoTop, "CoucD8pG1lpNYIM1FD2YIAQVP9o=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$Context$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContextElement"]
-    ];
-});
+_s(BacktoTop, "J3yJOyGdBT4L7hs1p1XQYVGMdrY=");
 _c = BacktoTop;
 var _c;
 __turbopack_refresh__.register(_c, "BacktoTop");
