@@ -1,7 +1,14 @@
 {
   "/page": "app/page.js",
-  "/ressources/docs/page": "app/ressources/docs/page.js",
-  "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js",
-  "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
-  "/tarifs/page": "app/tarifs/page.js"
+  "/ressources/blog/page": "app/ressources/blog/page.js",
+  "/ressources/blog/[id]/page": "app/ressources/blog/[id]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(blogs)/blog/page": "app/(blogs)/blog/page.js",
+  "/ressources/blog/author/[author]/page": "app/ressources/blog/author/[author]/page.js",
+  "/tarifs/page": "app/tarifs/page.js",
+  "/(blogs)/blog-category/[category]/page": "app/(blogs)/blog-category/[category]/page.js",
+  "/(blogs)/blog-details/[id]/page": "app/(blogs)/blog-details/[id]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/ressources/blog/category/[category]/page": "app/ressources/blog/category/[category]/page.js",
+  "/ressources/page": "app/ressources/page.js"
 }

@@ -2,7 +2,6 @@ import { blogsPosts4 } from "@/data/blogs";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Pagination from "../../common/Pagination";
 
 export default function Blogs2() {
   return (
@@ -22,7 +21,7 @@ export default function Blogs2() {
               </p>
             </header>
             <div className="row child-cols-12 sm:child-cols-4 col-match gy-4 gx-2 xl:gx-4">
-              {blogsPosts4.slice(0, 7).map((elm, i) => (
+              {blogsPosts4.map((elm, i) => (
                 <div key={i} className="col-12">
                   <article className="post type-post panel rounded-3 p-2 md:p-4 bg-secondary dark:bg-gray-800">
                     <div className="panel row child-cols-12 sm:child-cols items-center g-3 md:g-4">
@@ -34,12 +33,12 @@ export default function Blogs2() {
                               src={elm.imgSrc}
                               width={1280}
                               height={853}
-                              alt="Maximizing your reach with marketing strategies"
+                              alt={elm.imgAlt}
                             />
                             <Link
                               href={`/ressources/blog/${elm.id}`}
                               className="position-cover"
-                              data-caption="Maximizing your reach with marketing strategies"
+                              data-caption={elm.imgCaption}
                             ></Link>
                           </figure>
                           <Link
@@ -57,7 +56,7 @@ export default function Blogs2() {
                               <div className="hstack gap-narrow ft-tertiary">
                                 <Image
                                   src={elm.authorImg}
-                                  alt="David"
+                                  alt={elm.authorAlt}
                                   width={150}
                                   height={150}
                                   className="w-24px h-24px rounded-circle me-narrow"
@@ -100,14 +99,6 @@ export default function Blogs2() {
                   </article>
                 </div>
               ))}
-            </div>
-            <div className="nav-pagination fw-medium">
-              <ul
-                className="nav-x uc-pagination hstack gap-1 justify-center ft-secondary"
-                data-uc-margin=""
-              >
-                <Pagination />
-              </ul>
             </div>
           </div>
         </div>

@@ -61,11 +61,19 @@ const metadata = {
 };
 const resourceCategories = [
     {
+        title: "Support",
+        description: "Get help and support for View4Sight. Find answers to your questions and contact our support team.",
+        icon: "/assets/images/common/icons/support.svg",
+        href: "/ressources/support",
+        color: "primary",
+        stats: "24/7 Support"
+    },
+    {
         title: "Use Cases",
         description: "Discover how professionals across different industries use View4Sight to transform their workflows.",
         icon: "/assets/images/common/icons/target.svg",
         href: "/ressources/use-cases",
-        color: "primary",
+        color: "success",
         stats: "4 Industry Stories"
     },
     {
@@ -73,7 +81,7 @@ const resourceCategories = [
         description: "Stay updated with the latest insights on 3D visualization, surveying best practices, and platform updates.",
         icon: "/assets/images/common/icons/blog.svg",
         href: "/ressources/blog",
-        color: "success",
+        color: "info",
         stats: "Latest Articles"
     },
     {
@@ -81,7 +89,7 @@ const resourceCategories = [
         description: "Step-by-step video guides to help you master View4Sight's features and optimize your workflows.",
         icon: "/assets/images/common/icons/video.svg",
         href: "/ressources/tutorials",
-        color: "info",
+        color: "warning",
         stats: "Coming Soon"
     },
     {
@@ -89,7 +97,7 @@ const resourceCategories = [
         description: "Join our team and help shape the future of 3D visualization technology.",
         icon: "/assets/images/common/icons/account.svg",
         href: "/ressources/carrieres",
-        color: "warning",
+        color: "secondary",
         stats: "We're Hiring"
     }
 ];
@@ -109,7 +117,7 @@ function ResourcesPage() {
                                 children: "Resources"
                             }, void 0, false, {
                                 fileName: "[project]/app/ressources/page.jsx",
-                                lineNumber: 52,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -117,7 +125,7 @@ function ResourcesPage() {
                                 children: "Everything You Need to Succeed"
                             }, void 0, false, {
                                 fileName: "[project]/app/ressources/page.jsx",
-                                lineNumber: 55,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -125,23 +133,23 @@ function ResourcesPage() {
                                 children: "Explore our comprehensive collection of resources designed to help you get the most out of View4Sight."
                             }, void 0, false, {
                                 fileName: "[project]/app/ressources/page.jsx",
-                                lineNumber: 58,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/ressources/page.jsx",
-                        lineNumber: 51,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/ressources/page.jsx",
-                    lineNumber: 50,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/ressources/page.jsx",
-                lineNumber: 49,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -175,12 +183,12 @@ function ResourcesPage() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/ressources/page.jsx",
-                                                                lineNumber: 76,
+                                                                lineNumber: 84,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 75,
+                                                            lineNumber: 83,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -191,7 +199,7 @@ function ResourcesPage() {
                                                                     children: category.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                                    lineNumber: 93,
+                                                                    lineNumber: 101,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -199,19 +207,19 @@ function ResourcesPage() {
                                                                     children: category.stats
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                                    lineNumber: 96,
+                                                                    lineNumber: 104,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 92,
+                                                            lineNumber: 100,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 82,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -219,7 +227,7 @@ function ResourcesPage() {
                                                     children: category.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 109,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -230,56 +238,56 @@ function ResourcesPage() {
                                                             children: "Explore"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 105,
+                                                            lineNumber: 113,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                             className: "unicon-arrow-right fs-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 106,
+                                                            lineNumber: 114,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 112,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/ressources/page.jsx",
-                                            lineNumber: 73,
+                                            lineNumber: 81,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/ressources/page.jsx",
-                                        lineNumber: 72,
+                                        lineNumber: 80,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 79,
                                     columnNumber: 17
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/ressources/page.jsx",
-                                lineNumber: 70,
+                                lineNumber: 78,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/ressources/page.jsx",
-                        lineNumber: 68,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/ressources/page.jsx",
-                    lineNumber: 67,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/ressources/page.jsx",
-                lineNumber: 66,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -295,7 +303,7 @@ function ResourcesPage() {
                                     children: "Quick Access"
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 121,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -303,13 +311,13 @@ function ResourcesPage() {
                                     children: "Direct links to our most popular resources"
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 124,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/ressources/page.jsx",
-                            lineNumber: 120,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -327,7 +335,7 @@ function ResourcesPage() {
                                                     className: "unicon-layers"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 141,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -337,7 +345,7 @@ function ResourcesPage() {
                                                             children: "Platform Features"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 143,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -345,29 +353,29 @@ function ResourcesPage() {
                                                             children: "Explore capabilities"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 136,
+                                                            lineNumber: 144,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 142,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/ressources/page.jsx",
-                                            lineNumber: 132,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/ressources/page.jsx",
-                                        lineNumber: 131,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 130,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,7 +390,7 @@ function ResourcesPage() {
                                                     className: "unicon-credit-card"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 152,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -392,7 +400,7 @@ function ResourcesPage() {
                                                             children: "Pricing Plans"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 146,
+                                                            lineNumber: 154,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -400,29 +408,29 @@ function ResourcesPage() {
                                                             children: "Find your plan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 147,
+                                                            lineNumber: 155,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 153,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/ressources/page.jsx",
-                                            lineNumber: 143,
+                                            lineNumber: 151,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/ressources/page.jsx",
-                                        lineNumber: 142,
+                                        lineNumber: 150,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 141,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -437,7 +445,7 @@ function ResourcesPage() {
                                                     className: "unicon-shield-check"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 163,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -447,7 +455,7 @@ function ResourcesPage() {
                                                             children: "Security & Compliance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -455,57 +463,57 @@ function ResourcesPage() {
                                                             children: "Learn about safety"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/ressources/page.jsx",
-                                                            lineNumber: 158,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/ressources/page.jsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 164,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/ressources/page.jsx",
-                                            lineNumber: 154,
+                                            lineNumber: 162,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/ressources/page.jsx",
-                                        lineNumber: 153,
+                                        lineNumber: 161,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/ressources/page.jsx",
-                                    lineNumber: 152,
+                                    lineNumber: 160,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/ressources/page.jsx",
-                            lineNumber: 129,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/ressources/page.jsx",
-                    lineNumber: 119,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/ressources/page.jsx",
-                lineNumber: 118,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$view4sight$2f$CtaFinal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/ressources/page.jsx",
-                lineNumber: 168,
+                lineNumber: 176,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/ressources/page.jsx",
-        lineNumber: 47,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }

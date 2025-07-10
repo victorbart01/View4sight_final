@@ -1290,10 +1290,10 @@ const posts = [
 const articles = [
     {
         id: 11,
-        category: "Strategy",
-        imgSrc: "/assets/images/blog/img-11.jpg",
-        imgAlt: "Top 5 reasons to invest in marketing",
-        title: "Top 5 reasons to invest in marketing",
+        category: "Technique",
+        imgSrc: "/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png",
+        imgAlt: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        title: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
         author: "David",
         authorImg: "/assets/images/avatars/02.png",
         date: "Apr 3, 2024"
@@ -1322,10 +1322,10 @@ const articles = [
 const blogPosts = [
     {
         id: 14,
-        category: "Strategy",
-        imageSrc: "/assets/images/blog/img-11.jpg",
-        imageAlt: "Top 5 reasons to invest in marketing",
-        title: "Top 5 reasons to invest in marketing",
+        category: "Technique",
+        imageSrc: "/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png",
+        imageAlt: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        title: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
         authorImgSrc: "/assets/images/avatars/02.png",
         authorName: "David",
         date: "Apr 3, 2024"
@@ -1439,14 +1439,14 @@ const blogPosts3 = [
 const blogsPosts4 = [
     {
         id: 26,
-        category: "Strategy",
-        imgSrc: "/assets/images/blog/img-01.jpg",
-        imgAlt: "Top 5 reasons to invest in marketing",
-        imgCaption: "Top 5 reasons to invest in marketing",
-        title: "Top 5 reasons to invest in marketing",
+        category: "Technique",
+        imgSrc: "/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png",
+        imgAlt: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        imgCaption: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        title: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
         authorImg: "/assets/images/avatars/02.png",
         authorAlt: "David",
-        desc: "Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit..",
+        desc: "Quand il s'agit de numériser un bâtiment, un site ou un ouvrage en 3D, deux techniques dominent aujourd'hui : le scan 3D et la photogrammétrie.",
         authorName: "David",
         date: "Apr 26, 2024"
     },
@@ -1504,14 +1504,14 @@ const blogsPosts4 = [
     },
     {
         id: 31,
-        category: "Marketing",
-        imgSrc: "/assets/images/blog/img-06.jpg",
-        imgAlt: "Top 5 reasons to invest in marketing",
-        imgCaption: "Top 5 reasons to invest in marketing",
-        title: "Top 5 reasons to invest in marketing",
+        category: "Technique",
+        imgSrc: "/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png",
+        imgAlt: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        imgCaption: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        title: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
         authorImg: "/assets/images/avatars/04.png",
         authorAlt: "Sarah",
-        desc: "Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit..",
+        desc: "Quand il s'agit de numériser un bâtiment, un site ou un ouvrage en 3D, deux techniques dominent aujourd'hui : le scan 3D et la photogrammétrie.",
         authorName: "Sarah",
         date: "Apr 12, 2024"
     },
@@ -1569,14 +1569,14 @@ const blogsPosts4 = [
     },
     {
         id: 36,
-        category: "Strategy",
-        imgSrc: "/assets/images/blog/img-11.jpg",
-        imgAlt: "Top 5 reasons to invest in marketing",
-        imgCaption: "Top 5 reasons to invest in marketing",
-        title: "Top 5 reasons to invest in marketing",
+        category: "Technique",
+        imgSrc: "/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png",
+        imgAlt: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        imgCaption: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
+        title: "Scan 3D vs Photogrammétrie : quel choix pour votre projet ?",
         authorImg: "/assets/images/avatars/03.png",
         authorAlt: "Allen",
-        desc: "Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit..",
+        desc: "Quand il s'agit de numériser un bâtiment, un site ou un ouvrage en 3D, deux techniques dominent aujourd'hui : le scan 3D et la photogrammétrie.",
         authorName: "Allen",
         date: "Apr 3, 2024"
     }
