@@ -120,7 +120,26 @@ export default function Features() {
                     {/* Image/Video */}
                     <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
-                        {i === 1 ? (
+                        {i === 0 ? (
+                          // Première feature: Vidéo V4S-MassiveFiles.mp4 sans décoration
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-MassiveFiles.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : i === 1 ? (
+                          // Deuxième feature: Vidéo V4S-SplitScreen.mp4
                           <video
                             width={900}
                             height={600}
@@ -137,7 +156,26 @@ export default function Features() {
                             <source src="/assets/videos/V4S-SplitScreen.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                           </video>
+                        ) : i === 2 ? (
+                          // Troisième feature: Vidéo V4S-WalkThrough.mp4 sans décoration
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-WalkThrough.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
                         ) : (
+                          // Autres features: Images avec décoration
                           <div 
                             className="rounded-3 p-6 lg:p-8"
                             style={{

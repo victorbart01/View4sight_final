@@ -4,7 +4,8 @@ import Image from "next/image";
 const collaborateFeatures = [
   {
     id: "real-time-collaboration",
-    icon: "unicon-users-alt",
+    icon: "custom-svg",
+    iconSvg: "/assets/images/custom-icons/navigation-arrow-bold.svg",
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
     title: "See Your Team Working Live",
@@ -15,7 +16,8 @@ const collaborateFeatures = [
   },
   {
     id: "smart-annotations",
-    icon: "unicon-comment-alt-edit",
+    icon: "custom-svg",
+    iconSvg: "/assets/images/custom-icons/chat-text-bold.svg",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
     title: "Comments That Stay Exactly Where You Put Them",
@@ -26,7 +28,8 @@ const collaborateFeatures = [
   },
   {
     id: "instant-link-sharing",
-    icon: "unicon-link",
+    icon: "custom-svg",
+    iconSvg: "/assets/images/custom-icons/export-bold.svg",
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
     title: "Share 3D Data With a Simple Link",
@@ -75,15 +78,33 @@ export default function Features() {
                             width: "64px",
                             height: "64px",
                             backgroundColor: feature.iconBg,
+                            position: "relative"
                           }}
                         >
-                          <i 
-                            className={`icon icon-2 ${feature.icon}`}
-                            style={{ 
-                              color: feature.iconColor,
-                              fontSize: "28px"
-                            }}
-                          ></i>
+                          {feature.iconSvg ? (
+                            <Image
+                              src={feature.iconSvg}
+                              width={36}
+                              height={36}
+                              alt={`${feature.title} icon`}
+                              style={{ 
+                                width: "36px",
+                                height: "36px",
+                                position: "absolute",
+                                top: "50%",
+                                left: "50%",
+                                transform: "translate(-50%, -50%)"
+                              }}
+                            />
+                          ) : (
+                            <i 
+                              className={`icon icon-2 ${feature.icon}`}
+                              style={{ 
+                                color: feature.iconColor,
+                                fontSize: "28px"
+                              }}
+                            ></i>
+                          )}
                         </div>
                         
                         {/* Title */}
@@ -103,29 +124,68 @@ export default function Features() {
                       </div>
                     </div>
                     
-                    {/* Image */}
+                    {/* Image/Video */}
                     <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
                       <div className="panel w-100 position-relative">
-                        <div 
-                          className="rounded-3 p-6 lg:p-8"
-                          style={{
-                            background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
-                          }}
-                        >
-                          <div className="rounded-3 overflow-hidden shadow-lg">
-                            <Image
-                              src={feature.imgSrc}
-                              width={900}
-                              height={600}
-                              alt={feature.altText}
-                              className="w-100 h-auto"
-                              style={{ 
-                                objectFit: "cover",
-                                aspectRatio: "3/2"
-                              }}
-                            />
+                        {i === 1 ? (
+                          // Deuxième feature: Vidéo V4S-Comment.mp4 sans décoration
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-Comment.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : i === 2 ? (
+                          // Troisième feature: Vidéo V4S-SharedLink.mp4 sans décoration
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-SharedLink.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          // Autres features: Images avec décoration
+                          <div 
+                            className="rounded-3 p-6 lg:p-8"
+                            style={{
+                              background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
+                            }}
+                          >
+                            <div className="rounded-3 overflow-hidden shadow-lg">
+                              <Image
+                                src={feature.imgSrc}
+                                width={900}
+                                height={600}
+                                alt={feature.altText}
+                                className="w-100 h-auto"
+                                style={{ 
+                                  objectFit: "cover",
+                                  aspectRatio: "3/2"
+                                }}
+                              />
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     </div>
                   </div>

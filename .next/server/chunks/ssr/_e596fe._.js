@@ -162,7 +162,36 @@ function Features() {
                                             className: `col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "panel w-100 position-relative",
-                                                children: i === 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                children: i === 0 ? // Première feature: Vidéo V4S-MassiveFiles.mp4 sans décoration
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                    width: 900,
+                                                    height: 600,
+                                                    autoPlay: true,
+                                                    muted: true,
+                                                    loop: true,
+                                                    playsInline: true,
+                                                    className: "w-100 h-auto",
+                                                    style: {
+                                                        objectFit: "cover",
+                                                        aspectRatio: "3/2"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                                            src: "/assets/videos/V4S-MassiveFiles.mp4",
+                                                            type: "video/mp4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                            lineNumber: 138,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        "Your browser does not support the video tag."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                    lineNumber: 125,
+                                                    columnNumber: 27
+                                                }, this) : i === 1 ? // Deuxième feature: Vidéo V4S-SplitScreen.mp4
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                                     width: 900,
                                                     height: 600,
                                                     autoPlay: true,
@@ -180,16 +209,45 @@ function Features() {
                                                             type: "video/mp4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 156,
                                                             columnNumber: 29
                                                         }, this),
                                                         "Your browser does not support the video tag."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 143,
                                                     columnNumber: 27
-                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                }, this) : i === 2 ? // Troisième feature: Vidéo V4S-WalkThrough.mp4 sans décoration
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                    width: 900,
+                                                    height: 600,
+                                                    autoPlay: true,
+                                                    muted: true,
+                                                    loop: true,
+                                                    playsInline: true,
+                                                    className: "w-100 h-auto",
+                                                    style: {
+                                                        objectFit: "cover",
+                                                        aspectRatio: "3/2"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                                            src: "/assets/videos/V4S-WalkThrough.mp4",
+                                                            type: "video/mp4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                            lineNumber: 174,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        "Your browser does not support the video tag."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/view4sight/visualize/Features.jsx",
+                                                    lineNumber: 161,
+                                                    columnNumber: 27
+                                                }, this) : // Autres features: Images avec décoration
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "rounded-3 p-6 lg:p-8",
                                                     style: {
                                                         background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)"
@@ -208,17 +266,17 @@ function Features() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 186,
                                                             columnNumber: 31
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                        lineNumber: 147,
+                                                        lineNumber: 185,
                                                         columnNumber: 29
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/view4sight/visualize/Features.jsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 179,
                                                     columnNumber: 27
                                                 }, this)
                                             }, void 0, false, {

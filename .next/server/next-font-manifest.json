@@ -1,16 +1,11 @@
 {
   "app": {
     "[project]/app/page": [],
-    "[project]/app/ressources/blog/page": [],
-    "[project]/app/ressources/blog/[id]/page": [],
+    "[project]/app/fonctionnalites/collaborate/page": [],
     "[project]/app/_not-found/page": [],
-    "[project]/app/(blogs)/blog/page": [],
-    "[project]/app/ressources/blog/author/[author]/page": [],
-    "[project]/app/tarifs/page": [],
-    "[project]/app/(blogs)/blog-category/[category]/page": [],
-    "[project]/app/(blogs)/blog-details/[id]/page": [],
-    "[project]/app/ressources/blog/category/[category]/page": [],
-    "[project]/app/ressources/page": []
+    "[project]/app/fonctionnalites/visualize/page": [],
+    "[project]/app/fonctionnalites/measure/page": [],
+    "[project]/app/fonctionnalites/secure/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
