@@ -470,62 +470,67 @@ export default function BlogDetails1({ blogItem }) {
               </div>
             </div>
             <div className="post-navigation panel vstack sm:hstack justify-between gap-2 mt-8 xl:mt-9 fdr-min-600">
-              <div className="new-post panel hstack w-100 sm:w-1/2">
-                <div className="panel hstack justify-center w-100px h-100px">
-                  <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
-                    <Image
-                      className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                      alt="How can marketing help your business?"
-                      src="/assets/images/blog/img-02.jpg"
-                      width="1280"
-                      height="853"
-                    />
-                    <Link
-                      href={`/blog-details/1`}
-                      className="position-cover"
-                      data-caption="How can marketing help your business?"
-                    ></Link>
-                  </figure>
+              {isMarketingArticle ? (
+                // Si on est sur l'article BIM, on affiche l'article Scan 3D comme "Next Article"
+                <div className="new-post panel hstack w-100 sm:w-1/2">
+                  <div className="panel vstack justify-center px-2 gap-1 w-1/3 text-end rtl:text-start">
+                    <span className="fs-7 opacity-60">Next Article</span>
+                    <h6 className="h6 lg:h5 m-0">
+                      Scan 3D vs Photogrammétrie : quel choix pour votre projet ?
+                    </h6>
+                  </div>
+                  <div className="panel hstack justify-center w-100px h-100px">
+                    <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
+                      <Image
+                        className="media-cover image uc-transition-scale-up uc-transition-opaque"
+                        alt="Scan 3D vs Photogrammétrie : quel choix pour votre projet ?"
+                        src="/assets/images/blog/LiDAR_vs_Photogrammetry_thumbnail.png"
+                        width="1280"
+                        height="853"
+                      />
+                      <Link
+                        href={`/blog-details/2`}
+                        className="position-cover"
+                        data-caption="Scan 3D vs Photogrammétrie : quel choix pour votre projet ?"
+                      ></Link>
+                    </figure>
+                  </div>
+                  <Link
+                    href={`/blog-details/2`}
+                    className="position-cover"
+                  ></Link>
                 </div>
-                <div className="panel vstack justify-center px-2 gap-1 w-1/3">
-                  <span className="fs-7 opacity-60">Prev Article</span>
-                  <h6 className="h6 lg:h5 m-0">
-                    How can marketing help your business?
-                  </h6>
+              ) : (
+                // Si on est sur l'article Scan 3D, on affiche l'article BIM comme "Prev Article"
+                <div className="new-post panel hstack w-100 sm:w-1/2">
+                  <div className="panel hstack justify-center w-100px h-100px">
+                    <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
+                      <Image
+                        className="media-cover image uc-transition-scale-up uc-transition-opaque"
+                        alt="Digital Twin BIM et gestion du patrimoine"
+                        src="/assets/images/blog/notredame-jumeau.jpg"
+                        width="1280"
+                        height="853"
+                      />
+                      <Link
+                        href={`/blog-details/1`}
+                        className="position-cover"
+                        data-caption="Digital Twin BIM et gestion du patrimoine"
+                      ></Link>
+                    </figure>
+                  </div>
+                  <div className="panel vstack justify-center px-2 gap-1 w-1/3">
+                    <span className="fs-7 opacity-60">Prev Article</span>
+                    <h6 className="h6 lg:h5 m-0">
+                      Digital Twin BIM et gestion du patrimoine
+                    </h6>
+                  </div>
+                  <Link
+                    href={`/blog-details/1`}
+                    className="position-cover"
+                  ></Link>
                 </div>
-                <Link
-                  href={`/blog-details/1`}
-                  className="position-cover"
-                ></Link>
-              </div>
-              <div className="new-post panel hstack w-100 sm:w-1/2">
-                <div className="panel vstack justify-center px-2 gap-1 w-1/3 text-end rtl:text-start">
-                  <span className="fs-7 opacity-60">Next Article</span>
-                  <h6 className="h6 lg:h5 m-0">
-                    Top 5 reasons to invest in marketing
-                  </h6>
-                </div>
-                <div className="panel hstack justify-center w-100px h-100px">
-                  <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
-                    <Image
-                      className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                      alt="Top 5 reasons to invest in marketing"
-                      src="/assets/images/blog/img-01.jpg"
-                      width="1280"
-                      height="853"
-                    />
-                    <Link
-                      href={`/blog-details/1`}
-                      className="position-cover"
-                      data-caption="Top 5 reasons to invest in marketing"
-                    ></Link>
-                  </figure>
-                </div>
-                <Link
-                  href={`/blog-details/1`}
-                  className="position-cover"
-                ></Link>
-              </div>
+              )}
             </div>
           </div>
         </div>
