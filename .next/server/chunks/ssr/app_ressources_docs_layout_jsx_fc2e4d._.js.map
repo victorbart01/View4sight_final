@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorbarthelemy/Documents/GitHub/View4Sight-final/View4sight_final/app/ressources/docs/layout.jsx"],"sourcesContent":["import View4SightHeader from \"@/components/view4sight/Header\";\nimport View4SightFooter from \"@/components/view4sight/Footer\";\n\nexport default function DocsLayout({ children }) {\n  return (\n    <div className=\"page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready\">\n      <View4SightHeader />\n      <div id=\"wrapper\" className=\"wrap\" style={{ marginTop: \"80px\" }}>\n        {children}\n      </div>\n      <View4SightFooter />\n    </div>\n  );\n} "],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC,mIAAA,CAAA,UAAgB;;;;;0BACjB,8OAAC;gBAAI,IAAG;gBAAU,WAAU;gBAAO,OAAO;oBAAE,WAAW;gBAAO;0BAC3D;;;;;;0BAEH,8OAAC,mIAAA,CAAA,UAAgB;;;;;;;;;;;AAGvB"}},
-    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

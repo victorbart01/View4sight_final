@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorbarthelemy/Documents/GitHub/View4Sight-final/View4sight_final/app/ressources/blog/layout.jsx"],"sourcesContent":["export default function BlogLayout({ children }) {\n  return children;\n} "],"names":[],"mappings":";;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,OAAO;AACT"}},
-    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

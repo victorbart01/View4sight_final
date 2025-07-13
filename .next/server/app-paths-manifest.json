@@ -1,8 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/fonctionnalites/collaborate/page": "app/fonctionnalites/collaborate/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/fonctionnalites/visualize/page": "app/fonctionnalites/visualize/page.js",
-  "/fonctionnalites/measure/page": "app/fonctionnalites/measure/page.js",
-  "/fonctionnalites/secure/page": "app/fonctionnalites/secure/page.js"
-}

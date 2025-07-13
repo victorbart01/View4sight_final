@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorbarthelemy/Documents/GitHub/View4Sight-final/View4sight_final/app/ressources/centre-aide/layout.jsx"],"sourcesContent":["import View4SightFooter from \"@/components/view4sight/View4SightFooter\";\n\nexport default function CentreAideLayout({ children }) {\n  return (\n    <>\n      {children}\n      <View4SightFooter />\n    </>\n  );\n} "],"names":[],"mappings":";;;;;;;;;;;AAEe,SAAS,iBAAiB,EAAE,QAAQ,EAAE;IACnD,qBACE;;YACG;0BACD,8OAAC;;;;;;;AAGP"}},
-    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
