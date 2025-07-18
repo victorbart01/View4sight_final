@@ -226,7 +226,7 @@ export default function UseCaseDetail({ useCase }) {
                 <Image
                   className="image"
                   alt="success-story"
-                  src="/assets/images/template/home-06-builder-tools.png"
+                  src="/assets/images/Collaborate_hero"
                   width="1280"
                   height="800"
                 />

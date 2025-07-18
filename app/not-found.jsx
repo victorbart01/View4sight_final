@@ -1,6 +1,6 @@
 import View4SightHeader from "@/components/view4sight/Header";
 import View4SightFooter from "@/components/view4sight/Footer";
-import Notfound from "@/components/otherPages/404";
+import Notfound from "@/components/view4sight/Notfound";
 
 export const metadata = {
   title:

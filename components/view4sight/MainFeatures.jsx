@@ -3,8 +3,26 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OrbitingIcons from "./OrbitingIcons";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function MainFeatures() {
+  const { t, tHtml, isLoading } = useTranslation();
+
+  if (isLoading) {
+    return (
+      <div id="features" className="features section panel scrollSpysection">
+        <div className="section-outer panel pt-3 lg:pt-4 xl:pt-5 bg-gray-900">
+          <div className="container xl:max-w-xl">
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '400px' }}>
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div id="features" className="features section panel scrollSpysection">
       <div className="section-outer panel pt-3 lg:pt-4 xl:pt-5 bg-gray-900">
@@ -15,15 +33,14 @@ export default function MainFeatures() {
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <div className="hero-badge mx-auto">
-                Main features
+                {t('main_features.badge')}
               </div>
-                            <h2 className="h3 lg:h2 xl:h1 m-0 px-2">
-                Everything You Need<br />
-                in One Platform
-              </h2>
+              <h2 
+                className="h3 lg:h2 xl:h1 m-0 px-2"
+                dangerouslySetInnerHTML={tHtml('main_features.title')}
+              />
               <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
-                View4Sight handles the complete workflow from data upload to client delivery. 
-                Support for all major formats with advanced coordinate system handling that actually works.
+                {t('main_features.subtitle')}
               </p>
             </div>
             
@@ -39,15 +56,14 @@ export default function MainFeatures() {
                     className="panel vstack items-start gap-3 p-3 lg:p-4 xl:p-6"
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
-                    <h4 className="h4 lg:h3 m-0">Web-based 3D Viewer</h4>
+                    <h4 className="h4 lg:h3 m-0">{t('main_features.features.web_viewer.title')}</h4>
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0">
                       <span style={{ opacity: 0.7 }}>
-                        Navigate massive point clouds smoothly in any browser—no plugins required. 
-                        Your clients just need a web browser to explore your 3D data.
+                        {t('main_features.features.web_viewer.description')}
                       </span>
                     </p>
                     <Link href="/fonctionnalites" className="btn btn-sm btn-primary px-2 mt-2">
-                      <span>Try it now</span>
+                      <span>{t('main_features.features.web_viewer.cta')}</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </Link>
                   </div>
@@ -56,7 +72,7 @@ export default function MainFeatures() {
                     <Image
                       className="ltr:rounded-top-start-1-5 rtl:rounded-top-end-1-5"
                       alt="View4Sight 3D Point Cloud Viewer"
-                      src="/assets/images/template/home-06-main-app.png"
+                      src="/assets/images/web_based.png"
                       width="1280"
                       height="837"
                     />
@@ -87,11 +103,10 @@ export default function MainFeatures() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <div className="content vstack items-start gap-3">
-                      <h4 className="h4 lg:h3 m-0">All Your Geospatial Files in One Place</h4>
+                      <h4 className="h4 lg:h3 m-0">{t('main_features.features.all_formats.title')}</h4>
                       <p className="fs-6 md:fs-5 lg:fs-4 dark:text-white">
                         <span style={{ opacity: 0.7 }}>
-                          Native support for LAS, E57, IFC, DXF, and orthophotos with advanced coordinate system handling that actually works. 
-                          No more juggling between incompatible tools.
+                          {t('main_features.features.all_formats.description')}
                         </span>
                       </p>
                     </div>
@@ -100,7 +115,7 @@ export default function MainFeatures() {
                       className="text-secondary fw-medium text-decoration-none d-inline-flex align-items-center gap-1 mt-2"
                       style={{ fontSize: '14px' }}
                     >
-                      <span>See all formats</span>
+                      <span>{t('main_features.features.all_formats.cta')}</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </Link>
                   </div>
@@ -126,7 +141,7 @@ export default function MainFeatures() {
                     <Image
                       className="rounded-bottom-1-5"
                       alt="BIM and Survey data fusion"
-                      src="/assets/images/template/home-06-components.png"
+                      src="/assets/images/secure_home.png"
                       width="800"
                       height="620"
                     />
@@ -136,18 +151,15 @@ export default function MainFeatures() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <div className="content vstack items-start gap-3">
-                      <h4 className="h4 lg:h3 m-0">
-                        Secure Data.<br />
-                        Precise Permissions.<br />
-                        Simple Sharing.
-                      </h4>
-                      <p className="fs-6 md:fs-5 lg:fs-4 dark:text-white">
-                        <span style={{ opacity: 0.7 }}>
-                          Share 3D scans with anyone — no install needed.<br />
-                          Grant the right access to the right people, instantly.<br />
-                          Your data stays encrypted, safe, and under control.
-                        </span>
-                      </p>
+                      <h4 
+                        className="h4 lg:h3 m-0"
+                        dangerouslySetInnerHTML={tHtml('main_features.features.data_security.title')}
+                      />
+                      <p 
+                        className="fs-6 md:fs-5 lg:fs-4 dark:text-white"
+                        style={{ opacity: 0.7 }}
+                        dangerouslySetInnerHTML={tHtml('main_features.features.data_security.description')}
+                      />
                     </div>
                   </div>
                 </div>
@@ -163,11 +175,10 @@ export default function MainFeatures() {
                     className="panel vstack items-center gap-3 p-3 lg:p-4 xl:p-6"
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
-                    <h4 className="h4 lg:h3 m-0">Smart Annotations & Measurements</h4>
+                    <h4 className="h4 lg:h3 m-0">{t('main_features.features.smart_annotations.title')}</h4>
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0 xl:px-4 text-center">
                       <span style={{ opacity: 0.7 }}>
-                        Add comments, measurements, and markup that stay precisely positioned in 3D space. 
-                        Real-time collaboration with your entire team.
+                        {t('main_features.features.smart_annotations.description')}
                       </span>
                     </p>
                   </div>
@@ -175,7 +186,7 @@ export default function MainFeatures() {
                     {/* TODO: Remplacer par capture d'écran des annotations */}
                     <Image
                       alt="Smart annotations and measurements"
-                      src="/assets/images/template/home-06-builder-tools.png"
+                      src="/assets/images/Collaborate_hero.png"
                       width="1280"
                       height="800"
                     />
@@ -194,7 +205,7 @@ export default function MainFeatures() {
                 href="/fonctionnalites"
                 className="btn btn-lg btn-outline-primary rounded-pill px-5 py-3"
               >
-                <span>Discover all features</span>
+                <span>{t('main_features.discover_all')}</span>
                 <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180 ms-1" />
               </Link>
             </div>

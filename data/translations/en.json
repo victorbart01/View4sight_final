@@ -1,0 +1,448 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "share": "Share",
+    "copy": "Copy",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "more": "More",
+    "less": "Less",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "navigation": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing", 
+    "security": "Security",
+    "resources": "Resources",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Log in",
+    "signup": "Sign up",
+    "dashboard": "Dashboard",
+    "account": "Account",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "hero": {
+    "badge": "3D point cloud viewer",
+    "title": "No CAD License.<br />No Plugin Hell.<br />Just Upload & Go.",
+    "subtitle": "Turn massive point clouds into collaborative workspaces.<br />Real-time measurements, smart annotations, instant sharing.<br />Zero software required.",
+    "cta_primary": "Get started",
+    "cta_secondary": "See how it works",
+    "trust_text": "30-day free trial, no credit card required, 150GB storage included"
+  },
+  "features": {
+    "badge": "Core Features",
+    "title": "Everything you need for<br />3D data collaboration",
+    "subtitle": "Powerful tools designed for surveying professionals and engineering teams.",
+    "visualize": {
+      "title": "Visualize",
+      "description": "High-performance 3D rendering with support for massive point cloud datasets"
+    },
+    "measure": {
+      "title": "Measure", 
+      "description": "Precise measurement tools with automatic annotation and export capabilities"
+    },
+    "collaborate": {
+      "title": "Collaborate",
+      "description": "Real-time sharing and commenting with clients and team members"
+    },
+    "secure": {
+      "title": "Secure",
+      "description": "Enterprise-grade security with French data hosting and GDPR compliance"
+    },
+    "discover_all": "Discover all features"
+  },
+  "video": {
+    "badge": "Video demo",
+    "title": "How It Works",
+    "description": "The platform is designed to help you visualize, automate, and build geospatial data workflows."
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "How Teams Transform Their 3D Workflows",
+    "subtitle": "Discover how View4Sight helps surveying and engineering professionals save time and deliver better results.",
+    "featured": {
+      "quote": "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
+      "author": "Pierre Moreau",
+      "position": "Géomètre-expert",
+      "company": "Cabinet Moreau & Associés, Lyon"
+    },
+    "stats": {
+      "time_saved": "Faster Client Approvals",
+      "site_visits": "Fewer Site Visits Required", 
+      "communication": "Faster File Sharing"
+    }
+  },
+  "security": {
+    "badge": "French Sovereignty",
+    "title": "Your data stays in France.<br />Guaranteed.",
+    "subtitle": "Complete control over your sensitive geospatial data with French hosting and strict compliance standards.",
+    "features": {
+      "hosting": "100% French hosting",
+      "gdpr": "GDPR compliant",
+      "iso": "ISO 27001 certified",
+      "encryption": "End-to-end encryption"
+    }
+  },
+  "pain_benefits": {
+    "badge": "Pain Points",
+    "title": "Your 3D Data Deserves Better<br />Than Static Screenshots",
+    "subtitle": "Sound familiar? Transform these daily frustrations into competitive advantages.",
+    "problems_title": "Current Challenges",
+    "solutions_title": "View4Sight Solutions",
+    "problems": [
+      {
+        "title": "Juggling Multiple Desktop Tools",
+        "description": "You're switching between expensive desktop software, managing licenses, and wasting time on complex installations for every new project."
+      },
+      {
+        "title": "Team Collaboration is Broken",
+        "description": "Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare."
+      },
+      {
+        "title": "Clients Can't Open Your Deliverables",
+        "description": "Your clients don't understand your 3D surveys through static PDFs. They need special software to see your data and miss the full value of your work."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Instant Browser-Based Viewing",
+        "description": "Upload your point clouds once. Your team and clients navigate in 3D directly in their browser, no installation required."
+      },
+      {
+        "title": "Live Team Collaboration",
+        "description": "Shared annotations, collaborative measurements, direct feedback. Your entire team works on the same data, in real-time."
+      },
+      {
+        "title": "Clients Love the Experience",
+        "description": "Your clients finally understand the value of your surveys. They navigate like Google Street View and validate projects faster."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked<br />Questions",
+    "subtitle": "Everything you need to know about View4Sight platform.",
+    "items": {
+      "formats": {
+        "question": "What file formats are supported?",
+        "answer": "We support all major point cloud formats including LAS, E57, PLY, as well as IFC, DXF, and orthophoto formats. Files are automatically optimized for web viewing."
+      },
+      "storage": {
+        "question": "How much storage do I get?",
+        "answer": "Our plans range from 15GB for the free Starter plan to unlimited storage for Enterprise customers. All data is hosted in French data centers."
+      },
+      "sharing": {
+        "question": "How does project sharing work?",
+        "answer": "Create secure, password-protected links to share projects with clients or team members. Control access levels and track viewing activity."
+      },
+      "security": {
+        "question": "Is my data secure?",
+        "answer": "Yes, we use enterprise-grade security with French data hosting, GDPR compliance, and ISO 27001 certification. Your data never leaves France."
+      }
+    }
+  },
+  "cta_final": {
+    "title": "Ready to revolutionize your 3D workflows?",
+    "subtitle": "Start your 30-day free trial. No credit card required.",
+    "cta_primary": "Try View4Sight"
+  },
+  "footer": {
+    "description": "The leading web-based platform for 3D point cloud visualization and collaboration. Transform your survey data into interactive experiences accessible from any browser.",
+    "sovereignty": "French Data Sovereignty",
+    "gdpr_compliant": "GDPR Compliant",
+    "hosted_france": "Hosted in France",
+    "sections": {
+      "product": "Product",
+      "resources": "Resources", 
+      "company": "Company"
+    },
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "security": "Security",
+      "request_demo": "Request Demo",
+      "use_cases": "Use Cases",
+      "documentation": "Documentation",
+      "support_center": "Support Center",
+      "tutorials": "Tutorials",
+      "blog": "Blog",
+      "careers": "Careers",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "made_in_france": "Made in France",
+    "copyright": "View4Sight © {{year}}, All rights reserved."
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Simple, transparent pricing for every team size",
+    "subtitle": "Choose the plan that fits your needs. Upgrade or downgrade at any time.",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "Free",
+        "description": "Perfect for individual professionals and small projects",
+        "features": [
+          "15 GB storage",
+          "2 users",
+          "3 active projects",
+          "Private link sharing",
+          "Basic measurement tools",
+          "Email support"
+        ]
+      },
+      "team": {
+        "name": "Team", 
+        "price": "€79",
+        "period": "/month",
+        "description": "Best for small teams and growing businesses",
+        "features": [
+          "150 GB storage",
+          "5 users",
+          "Unlimited projects",
+          "20GB monthly uploads",
+          "50GB monthly downloads",
+          "Advanced annotations",
+          "Priority support",
+          "Team collaboration tools"
+        ],
+        "popular": true
+      },
+      "studio": {
+        "name": "Studio",
+        "price": "€199", 
+        "period": "/month",
+        "description": "For established firms with complex projects",
+        "features": [
+          "500 GB storage",
+          "15 users",
+          "Advanced analytics",
+          "50GB monthly uploads", 
+          "1TB monthly downloads",
+          "Embeddable viewer",
+          "Custom branding",
+          "Phone support"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "Tailored solutions for large organizations",
+        "features": [
+          "Unlimited storage",
+          "Unlimited users",
+          "On-premise hosting options",
+          "Private cloud deployment",
+          "99.9% SLA guarantee",
+          "Complete white label",
+          "Dedicated account manager",
+          "Custom integrations"
+        ]
+      }
+    },
+    "cta": {
+      "start_free": "Start Free",
+      "get_started": "Get Started",
+      "contact_sales": "Contact Sales"
+    },
+    "trust": {
+      "no_credit_card": "No credit card required",
+      "secure_payments": "Payments secured by Stripe"
+    }
+  },
+  "main_features": {
+    "badge": "Main features",
+    "title": "Everything You Need<br />in One Platform",
+    "subtitle": "View4Sight handles the complete workflow from data upload to client delivery. Support for all major formats with advanced coordinate system handling that actually works.",
+    "discover_all": "Discover all features",
+    "features": {
+      "web_viewer": {
+        "title": "Web-based 3D Viewer",
+        "description": "Navigate massive point clouds smoothly in any browser—no plugins required. Your clients just need a web browser to explore your 3D data.",
+        "cta": "Try it now"
+      },
+      "all_formats": {
+        "title": "All Your Geospatial Files in One Place",
+        "description": "Native support for LAS, E57, IFC, DXF, and orthophotos with advanced coordinate system handling that actually works. No more juggling between incompatible tools.",
+        "cta": "See all formats"
+      },
+      "data_security": {
+        "title": "Secure Data.<br />Precise Permissions.<br />Simple Sharing.",
+        "description": "Share 3D scans with anyone — no install needed.<br />Grant the right access to the right people, instantly.<br />Your data stays encrypted, safe, and under control."
+      },
+      "smart_annotations": {
+        "title": "Smart Annotations & Measurements",
+        "description": "Add comments, measurements, and markup that stay precisely positioned in 3D space. Real-time collaboration with your entire team."
+      }
+    }
+  },
+  "video_demo": {
+    "badge": "Video demo",
+    "title": "How It Works",
+    "description": "The platform is designed to help you visualize, automate, and build geospatial data workflows."
+  },
+  "faq_short": {
+    "badge": "FAQs",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to the most common questions about View4Sight's 3D visualization platform, data security, and geospatial file handling.",
+    "still_question": "Still have a question?",
+    "items": [
+      {
+        "question": "What file formats do you support?",
+        "answer": "All major geospatial formats including LAS, LAZ, E57, PLY for point clouds; IFC, DWG, DXF for BIM; TIFF, GeoTIFF for orthophotos; and 360° imagery formats."
+      },
+      {
+        "question": "How do you handle large datasets?",
+        "answer": "Our streaming technology optimizes data delivery. Files are processed server-side and streamed efficiently to browsers, handling multi-gigabyte datasets smoothly."
+      },
+      {
+        "question": "Can I control who sees my data?",
+        "answer": "Absolutely. Granular access controls let you set viewing permissions, download restrictions, and project-specific access for each collaborator."
+      },
+      {
+        "question": "What about data sovereignty?",
+        "answer": "Your data is hosted on French servers with ISO 27001 certification. We also offer on-premise installations for complete control."
+      },
+      {
+        "question": "Do I need to install software?",
+        "answer": "No installation required. View4Sight runs entirely in your web browser, making it accessible from any device with an internet connection."
+      },
+      {
+        "question": "How much storage do I get?",
+        "answer": "Our free plan includes 150GB of storage. Professional plans offer unlimited storage with additional collaboration features."
+      }
+    ]
+  },
+  "security_block": {
+    "badge": "Security & Sovereignty",
+    "title": "Your Data Stays Where It<br />Belongs: In France",
+    "subtitle": "While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved.",
+    "features": [
+      {
+        "title": "Sovereign Hosting",
+        "description": "Your projects never leave French territory"
+      },
+      {
+        "title": "On-premise Option",
+        "description": "Install on your own servers for maximum control"
+      },
+      {
+        "title": "Enterprise Security",
+        "description": "Bank-level security with granular user permissions"
+      },
+      {
+        "title": "GDPR Compliance",
+        "description": "European privacy by design, not as an afterthought"
+      }
+    ]
+  },
+  "kpi_strip": [
+    {
+      "value": "30%",
+      "description": "Reduction in client validation time"
+    },
+    {
+      "value": "50%",
+      "description": "Fewer site visits required"
+    },
+    {
+      "value": "80%",
+      "description": "Clearer communication with stakeholders"
+    },
+    {
+      "value": "150GB",
+      "description": "Free storage included"
+    }
+  ],
+  "not_found": {
+    "title": "Page not found",
+    "description": "Sorry, the page you're looking for<br />has been moved, redirected or removed permanently.",
+    "go_home": "Go back home",
+    "search_text": "Why not try to search again?",
+    "search_link": "Search now"
+  },
+  "help_center": {
+    "search_placeholder": "Search for help articles, guides, or FAQs...",
+    "search_button": "Search",
+    "contact_form": {
+      "issue_type": "Select issue type",
+      "technical": "Technical Issue",
+      "account": "Account & Billing",
+      "features": "Feature Question",
+      "integration": "Integration Support",
+      "other": "Other",
+      "placeholder": "Describe your issue or question...",
+      "submit": "Send Support Request",
+      "response_time": "We typically respond within 2-4 hours during business hours"
+    },
+    "faqs": [
+      {
+        "question": "How do I upload my first 3D dataset?",
+        "answer": "Simply go to your dashboard, click 'New Project', drag and drop your files (LAS, E57, IFC, etc.), and our platform will automatically process them. The upload supports files up to 20GB depending on your plan."
+      },
+      {
+        "question": "What file formats are supported?",
+        "answer": "View4Sight supports all major 3D formats including LAS, E57, IFC, DXF, PLY, and ORTHO imagery. We also support various survey and point cloud formats from leading hardware manufacturers."
+      },
+      {
+        "question": "How do I share my 3D data with clients?",
+        "answer": "You can generate secure shareable links with custom permissions. Go to your project, click 'Share', set viewing permissions, and send the link. Recipients don't need an account to view your data."
+      },
+      {
+        "question": "Can I measure distances and volumes in the viewer?",
+        "answer": "Yes! Use our built-in measurement tools to calculate distances, areas, volumes, and create cross-sections. All measurements are precise and can be exported for documentation."
+      },
+      {
+        "question": "How do I upgrade or downgrade my plan?",
+        "answer": "Go to Settings > Billing in your dashboard. You can change plans anytime. Upgrades take effect immediately, downgrades at the next billing cycle. No data is lost during plan changes."
+      },
+      {
+        "question": "Is my data secure and where is it stored?",
+        "answer": "All data is encrypted in transit and at rest. We use French data centers and are fully GDPR compliant. You maintain full ownership of your data and can delete it anytime."
+      },
+      {
+        "question": "Can I integrate View4Sight with my existing tools?",
+        "answer": "Yes! We provide a comprehensive REST API and webhooks for custom integrations. Popular integrations include CAD software, survey equipment, and project management tools."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog & News",
+    "subtitle": "Discover the latest news, technical guides and case studies on 3D visualization",
+    "category": "Category",
+    "categoryDescription": "Articles from the selected category",
+    "author": "Author",
+    "authorDescription": "Articles published by this author",
+    "readMore": "Read more",
+    "relatedPosts": "Related articles",
+    "backToBlog": "Back to blog",
+    "allCategories": "All categories",
+    "allAuthors": "All authors",
+    "noArticles": "No articles found",
+    "publishedOn": "Published on",
+    "by": "by",
+    "readingTime": "min read",
+    "shareArticle": "Share article",
+    "tags": "Tags",
+    "comments": "Comments"
+  }
+} 

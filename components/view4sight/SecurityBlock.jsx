@@ -1,38 +1,40 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function SecurityBlock() {
-  const securityFeatures = [
-    {
-      id: 1,
-      icon: "/assets/images/common/icons/home.svg",
-      iconColor: "bg-blue-500",
-      title: "Sovereign Hosting",
-      description: "Your projects never leave French territory"
-    },
-    {
-      id: 2,
-      icon: "/assets/images/common/icons/database.svg",
-      iconColor: "bg-purple-500",
-      title: "On-premise Option",
-      description: "Install on your own servers for maximum control"
-    },
-    {
-      id: 3,
-      icon: "/assets/images/common/icons/settings.svg",
-      iconColor: "bg-green-500",
-      title: "Enterprise Security",
-      description: "Bank-level security with granular user permissions"
-    },
-    {
-      id: 4,
-      icon: "/assets/images/common/icons/check-circle.svg",
-      iconColor: "bg-orange-500",
-      title: "GDPR Compliance",
-      description: "European privacy by design, not as an afterthought"
-    }
-  ];
+  const { t, tHtml, isLoading } = useTranslation();
+
+  if (isLoading) {
+    return (
+      <div className="section panel overflow-hidden">
+        <div className="section-outer panel py-8 xl:py-12 bg-gray-900">
+          <div className="container max-w-6xl">
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '400px' }}>
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Get security features from translations
+  const securityFeatures = t('security_block.features').map((feature, index) => ({
+    id: index + 1,
+    icon: [
+      "/assets/images/common/icons/home.svg",
+      "/assets/images/common/icons/database.svg", 
+      "/assets/images/common/icons/settings.svg",
+      "/assets/images/common/icons/check-circle.svg"
+    ][index],
+    iconColor: ["bg-blue-500", "bg-purple-500", "bg-green-500", "bg-orange-500"][index],
+    title: feature.title,
+    description: feature.description
+  }));
 
   return (
     <div className="section panel overflow-hidden">
@@ -45,14 +47,14 @@ export default function SecurityBlock() {
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});"
             >
               <div className="hero-badge mx-auto">
-                Security & Sovereignty
+                {t('security_block.badge')}
               </div>
-              <h2 className="h3 lg:h2 xl:h1 m-0 text-white">
-                Your Data Stays Where It<br />
-                Belongs: In France
-              </h2>
+              <h2 
+                className="h3 lg:h2 xl:h1 m-0 text-white"
+                dangerouslySetInnerHTML={tHtml('security_block.title')}
+              />
               <p className="fs-6 xl:fs-5 text-white text-opacity-70 max-w-lg mx-auto">
-                While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved.
+                {t('security_block.subtitle')}
               </p>
             </div>
 
@@ -66,7 +68,7 @@ export default function SecurityBlock() {
                 <div className="d-flex align-items-start justify-content-center h-100" style={{paddingTop: '0'}}>
                   <div className="panel d-flex align-items-center justify-content-center p-6 lg:p-8 rounded-2 lg:rounded-3 w-100" style={{backgroundColor: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', maxWidth: '400px'}}>
                     <Image
-                      src="/assets/images/shield.png"
+                      src="/assets/images/secure_shield.png"
                       alt="Security Shield - Data Protection in France"
                       width="350"
                       height="350"

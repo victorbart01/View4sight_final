@@ -54,7 +54,7 @@ const collaborateFeatures = [
 export default function Features() {
   return (
     <div id="main_features" className="main-features section panel">
-      <div className="section-outer panel py-8 lg:py-10 xl:py-12">
+      <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#090909' }}>
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack">
@@ -73,11 +73,13 @@ export default function Features() {
                       <div className="panel vstack gap-4">
                         {/* Icon */}
                         <div 
-                          className="d-inline-flex align-items-center justify-content-center rounded-2"
+                          className="d-inline-flex align-items-center justify-content-center rounded-3"
                           style={{
                             width: "64px",
                             height: "64px",
-                            backgroundColor: feature.iconBg,
+                            backgroundColor: "rgba(255, 59, 28, 0.05)",
+                            border: "1px solid rgba(255, 59, 28, 0.3)",
+                            boxShadow: "inset 0 1px 0 rgba(255, 59, 28, 0.2), 0 0 8px rgba(255, 59, 28, 0.15)",
                             position: "relative"
                           }}
                         >
@@ -93,14 +95,15 @@ export default function Features() {
                                 position: "absolute",
                                 top: "50%",
                                 left: "50%",
-                                transform: "translate(-50%, -50%)"
+                                transform: "translate(-50%, -50%)",
+                                filter: 'brightness(0) saturate(100%) invert(42%) sepia(97%) saturate(4466%) hue-rotate(356deg) brightness(103%) contrast(95%)'
                               }}
                             />
                           ) : (
                             <i 
                               className={`icon icon-2 ${feature.icon}`}
                               style={{ 
-                                color: feature.iconColor,
+                                color: "#FF3B1C",
                                 fontSize: "28px"
                               }}
                             ></i>
@@ -161,6 +164,24 @@ export default function Features() {
                             }}
                           >
                             <source src="/assets/videos/V4S-SharedLink.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : i === 3 ? (
+                          // Quatrième feature: Vidéo V4S-BIM.mp4 sans décoration
+                          <video
+                            width={900}
+                            height={600}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-100 h-auto"
+                            style={{ 
+                              objectFit: "cover",
+                              aspectRatio: "3/2"
+                            }}
+                          >
+                            <source src="/assets/videos/V4S-BIM.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                           </video>
                         ) : (

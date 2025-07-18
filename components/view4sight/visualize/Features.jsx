@@ -26,7 +26,7 @@ const visualizeFeatures = [
   },
   {
     id: "fpv",
-    icon: "unicon-eye",
+    icon: "/assets/images/custom-icons/cardboard.svg",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
     title: "Walk Through Your Data Like Being There",
@@ -37,7 +37,7 @@ const visualizeFeatures = [
   },
   {
     id: "formats",
-    icon: "unicon-file-check",
+    icon: "/assets/images/custom-icons/file-image-bold.svg",
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
     title: "Every Format You Use, Ready to View",
@@ -51,7 +51,7 @@ const visualizeFeatures = [
 export default function Features() {
   return (
     <div id="main_features" className="main-features section panel">
-      <div className="section-outer panel py-8 lg:py-10 xl:py-12">
+      <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#090909' }}>
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack">
@@ -70,11 +70,13 @@ export default function Features() {
                       <div className="panel vstack gap-4">
                         {/* Icon */}
                         <div 
-                          className="d-inline-flex align-items-center justify-content-center rounded-2"
+                          className="d-inline-flex align-items-center justify-content-center rounded-3"
                           style={{
                             width: "64px",
                             height: "64px",
-                            backgroundColor: feature.iconBg,
+                            backgroundColor: "rgba(255, 59, 28, 0.05)",
+                            border: "1px solid rgba(255, 59, 28, 0.3)",
+                            boxShadow: "inset 0 1px 0 rgba(255, 59, 28, 0.2), 0 0 8px rgba(255, 59, 28, 0.15)"
                           }}
                         >
                           {feature.icon.startsWith('/assets/') ? (
@@ -84,7 +86,7 @@ export default function Features() {
                               width={36}
                               height={36}
                               style={{ 
-                                filter: 'brightness(0)',
+                                filter: 'brightness(0) saturate(100%) invert(42%) sepia(97%) saturate(4466%) hue-rotate(356deg) brightness(103%) contrast(95%)',
                                 margin: '0 auto',
                                 verticalAlign: 'middle'
                               }}
@@ -93,7 +95,7 @@ export default function Features() {
                             <i 
                               className={`icon icon-2 ${feature.icon}`}
                               style={{ 
-                                color: feature.iconColor,
+                                color: "#FF3B1C",
                                 fontSize: "28px"
                               }}
                             ></i>

@@ -1,25 +1,15 @@
-import Header2 from "@/components/headers/Header2";
+import React from "react";
+import Terms from "@/components/view4sight/Terms";
 
-import Footer2 from "@/components/footers/Footer2";
-import Breadcumb from "@/components/otherPages/Breadcumb";
-import Terms from "@/components/otherPages/Terms";
 export const metadata = {
-  title:
-    "Terms || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Conditions Générales d'Utilisation - View4Sight",
+  description: "Conditions générales d'utilisation du service View4Sight fourni par INTEGRAL4. Plateforme collaborative pour la visualisation et le partage de données 3D.",
 };
-export default function TermsPage() {
+
+export default function page() {
   return (
-    <>
-      <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
-        <Header2 />
-        <div id="wrapper" className="wrap">
-          <Breadcumb />
-          <Terms />
-        </div>
-        <Footer2 />
-      </div>
-    </>
+    <div style={{ backgroundColor: '#0E0E0F', minHeight: '100vh' }}>
+      <Terms />
+    </div>
   );
-}
+} 

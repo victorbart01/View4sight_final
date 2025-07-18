@@ -34,7 +34,7 @@ export default function Cta() {
               <Image
                 className="image"
                 alt="collaboration-tools"
-                src="/assets/images/template/home-06-builder-tools.png"
+                src="/assets/images/Collaborate_hero.png"
                 width="1280"
                 height="800"
               />

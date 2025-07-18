@@ -1,35 +1,11 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-// Données spécifiques à View4sight
-const view4sightFooterLinks = [
-  {
-    title: "Product",
-    links: [
-      { href: "/fonctionnalites", label: "Features" },
-      { href: "/tarifs", label: "Pricing" },
-      { href: "/securite", label: "Security" },
-      { href: "/page-contact", label: "Request Demo" },
-    ],
-  },
-  {
-    title: "Resources", 
-    links: [
-      { href: "/ressources/use-cases", label: "Use Cases" },
-      { href: "/ressources", label: "Documentation" },
-      { href: "/ressources", label: "Support Center" },
-      { href: "/ressources", label: "Tutorials" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { href: "/ressources", label: "Blog" },
-      { href: "/ressources", label: "Careers" },
-    ],
-  },
-];
+import { usePathname } from "next/navigation";
+import { useTranslation } from "@/hooks/useTranslation";
+import { getLocalizedPath, locales } from "@/lib/i18n";
+import LanguageSelector from "./LanguageSelector";
 
 const view4sightSocialLinks = [
   { href: "https://linkedin.com/company/view4sight", iconClass: "unicon-logo-linkedin" },
@@ -38,6 +14,65 @@ const view4sightSocialLinks = [
 ];
 
 export default function View4SightFooter() {
+  const pathname = usePathname();
+  const { t, isLoading } = useTranslation();
+
+  // Extract current locale from pathname
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const currentLocale = locales.includes(pathSegments[0]) ? pathSegments[0] : 'en';
+
+  // Helper function to create locale-aware links
+  const createLocalizedLink = (path) => {
+    return getLocalizedPath(path, currentLocale);
+  };
+
+  // Generate footer links from translations (localized)
+  const view4sightFooterLinks = [
+    {
+      title: t('footer.sections.product'),
+      links: [
+        { href: createLocalizedLink("/fonctionnalites"), label: t('footer.links.features') },
+        { href: createLocalizedLink("/tarifs"), label: t('footer.links.pricing') },
+        { href: createLocalizedLink("/securite"), label: t('footer.links.security') },
+        { href: createLocalizedLink("/page-contact"), label: t('footer.links.request_demo') },
+      ],
+    },
+    {
+      title: t('footer.sections.resources'), 
+      links: [
+        { href: createLocalizedLink("/ressources/use-cases"), label: t('footer.links.use_cases') },
+        { href: createLocalizedLink("/ressources"), label: t('footer.links.documentation') },
+        { href: createLocalizedLink("/ressources"), label: t('footer.links.support_center') },
+        { href: createLocalizedLink("/ressources"), label: t('footer.links.tutorials') },
+      ],
+    },
+    {
+      title: t('footer.sections.company'),
+      links: [
+        { href: createLocalizedLink("/ressources"), label: t('footer.links.blog') },
+        { href: createLocalizedLink("/ressources"), label: t('footer.links.careers') },
+        { href: createLocalizedLink("/page-privacy"), label: t('footer.links.privacy') },
+        { href: createLocalizedLink("/page-terms"), label: t('footer.links.terms') },
+      ],
+    },
+  ];
+
+  if (isLoading) {
+    return (
+      <footer id="uc-footer" className="uc-footer panel overflow-hidden uc-dark">
+        <div className="footer-outer py-4 lg:py-6 xl:py-9 dark:bg-gray-900 dark:text-white">
+          <div className="container max-w-xl">
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '200px' }}>
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+
   return (
     <footer id="uc-footer" className="uc-footer panel overflow-hidden uc-dark">
       <div className="footer-outer py-4 lg:py-6 xl:py-9 dark:bg-gray-900 dark:text-white">
@@ -49,7 +84,7 @@ export default function View4SightFooter() {
                 <div className="col-12 lg:col-5">
                   <div className="panel vstack items-start gap-4 ltr:md:pe-8 rtl:md:ps-8">
                     <div className="vstack gap-3">
-                      <Link href="/view4sight">
+                      <Link href={createLocalizedLink("/")}>
                         <Image
                           className="text-primary"
                           alt="View4Sight"
@@ -60,22 +95,24 @@ export default function View4SightFooter() {
                         />
                       </Link>
                       <p className="text-gray-300 dark:text-gray-400">
-                        The leading web-based platform for 3D point cloud visualization and collaboration. 
-                        Transform your survey data into interactive experiences accessible from any browser.
+                        {t('footer.description')}
                       </p>
                     </div>
                     <div className="vstack gap-2">
-                      <h6 className="text-white fw-medium mb-2">French Data Sovereignty</h6>
-                      <div className="hstack gap-3">
-                        <div className="d-flex align-items-center gap-2">
-                          <i className="unicon-shield-check text-primary"></i>
-                          <span className="fs-7 text-gray-300">GDPR Compliant</span>
-                        </div>
-                        <div className="d-flex align-items-center gap-2">
-                          <i className="unicon-servers text-primary"></i>
-                          <span className="fs-7 text-gray-300">Hosted in France</span>
-                        </div>
-                      </div>
+                      <ul className="nav-x gap-3">
+                        {view4sightSocialLinks.map((link, index) => (
+                          <li key={index}>
+                            <a 
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-gray-400 hover:text-primary transition-colors"
+                            >
+                              <i className={`icon icon-2 ${link.iconClass}`} />
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -104,50 +141,28 @@ export default function View4SightFooter() {
             </div>
 
             {/* Footer bottom */}
-            <div className="uc-footer-bottom panel vstack lg:hstack gap-4 justify-center lg:justify-between pt-4 lg:pt-6 border-top border-gray-700 dark:text-white">
-              <div className="vstack sm:hstack justify-center lg:justify-start items-center lg:items-start gap-2 lg:gap-4">
+            <div className="uc-footer-bottom panel hstack gap-4 justify-between pt-4 lg:pt-6 border-top border-gray-700 dark:text-white">
+              <div className="d-flex align-items-center">
                 <p className="text-gray-400 m-0">
-                  View4Sight © {new Date().getFullYear()}, All rights reserved.
+                  {t('footer.copyright', { year: new Date().getFullYear() })}
                 </p>
-                <ul className="nav-x gap-3 fw-normal">
-                  <li>
-                    <Link href="/page-privacy" className="text-gray-400 hover:text-primary transition-colors">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/page-terms" className="text-gray-400 hover:text-primary transition-colors">
-                      Terms of Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/securite" className="text-gray-400 hover:text-primary transition-colors">
-                      Security
-                    </Link>
-                  </li>
-                </ul>
               </div>
 
-              <div className="hstack justify-center lg:justify-end gap-3">
-                <ul className="nav-x gap-3">
-                  {view4sightSocialLinks.map((link, index) => (
-                    <li key={index}>
-                      <a 
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-primary transition-colors"
-                      >
-                        <i className={`icon icon-2 ${link.iconClass}`} />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+              <div className="hstack gap-3">
+                {/* GDPR and France hosting */}
+                <div className="d-flex align-items-center gap-2">
+                  <i className="unicon-shield-check text-primary"></i>
+                  <span className="fs-7 text-gray-300">{t('footer.gdpr_compliant')}</span>
+                </div>
                 <div className="vr bg-gray-700" />
                 <div className="d-flex align-items-center gap-2">
-                  <i className="unicon-heart text-primary fs-8"></i>
-                  <span className="fs-7 text-gray-400">Made in France</span>
+                  <i className="unicon-servers text-primary"></i>
+                  <span className="fs-7 text-gray-300">{t('footer.hosted_france')}</span>
                 </div>
+                <div className="vr bg-gray-700" />
+                
+                {/* Language Selector */}
+                <LanguageSelector />
               </div>
             </div>
           </div>

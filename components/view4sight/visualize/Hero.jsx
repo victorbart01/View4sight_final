@@ -29,7 +29,7 @@ export default function Hero() {
               <div className="panel text-center overflow-hidden rounded-3 border border-5 border-dark dark:border-white dark:border-opacity-20">
                 <Image
                   alt="View4Sight visualization dashboard"
-                  src="/assets/images/template/dashboard.jpg"
+                  src="/assets/images/mockup-view4sight.png"
                   width="1440"
                   height="1024"
                 />

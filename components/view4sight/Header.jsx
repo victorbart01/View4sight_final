@@ -2,14 +2,16 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 import { openContactModal } from "@/utlis/toggleContactModal";
 import { homeLinks, links } from "@/data/menu";
 import { services, featuresMenu } from "@/data/services";
+import { getLocalizedPath, locales } from "@/lib/i18n";
 import View4SightMobileMenu from "./View4SightMobileMenu";
 
-// Contenu View4Sight pour le sous-menu Fonctionnalités
-const view4sightFeatures = [
+// Contenu View4Sight pour le sous-menu Fonctionnalités (chemins relatifs)
+const view4sightFeaturesBase = [
   {
     href: "/fonctionnalites/visualize",
     icon: "/assets/images/custom-icons/visualisation-3d.svg",
@@ -36,8 +38,8 @@ const view4sightFeatures = [
   }
 ];
 
-// Contenu View4Sight pour le sous-menu Ressources
-const view4sightResources = [
+// Contenu View4Sight pour le sous-menu Ressources (chemins relatifs)
+const view4sightResourcesBase = [
   {
     href: "/ressources/use-cases",
     icon: "/assets/images/common/icons/target.svg",
@@ -59,9 +61,30 @@ const view4sightResources = [
 ];
 
 export default function View4SightHeader() {
+  const pathname = usePathname();
   const prevScrollPos = useRef(0);
   const ticking = useRef(false);
   const [scrollingUp, setScrollingUp] = useState(false);
+
+  // Extract current locale from pathname
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const currentLocale = locales.includes(pathSegments[0]) ? pathSegments[0] : 'en';
+
+  // Helper function to create locale-aware links
+  const createLocalizedLink = (path) => {
+    return getLocalizedPath(path, currentLocale);
+  };
+
+  // Create localized versions of navigation data
+  const view4sightFeatures = view4sightFeaturesBase.map(feature => ({
+    ...feature,
+    href: createLocalizedLink(feature.href)
+  }));
+
+  const view4sightResources = view4sightResourcesBase.map(resource => ({
+    ...resource,
+    href: createLocalizedLink(resource.href)
+  }));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -128,7 +151,7 @@ export default function View4SightHeader() {
               <div className="uc-logo text-dark dark:text-white">
                 <Link
                   className="panel text-none"
-                  href={`/`}
+                  href={createLocalizedLink('/')}
                   style={{ width: 160 }}
                 >
                   <Image
@@ -242,7 +265,7 @@ export default function View4SightHeader() {
                           </div>
                           <div>
                             <Link 
-                              href="/tarifs"
+                              href={createLocalizedLink("/tarifs")}
                               className="text-none d-block h-100 demo-hover-effect"
                               style={{ textDecoration: "none" }}
                             >
@@ -338,13 +361,8 @@ export default function View4SightHeader() {
                       </div>
                 </li>
                 <li>
-                  <Link className="text-none nav-hover-effect" href="/tarifs">
+                  <Link className="text-none nav-hover-effect" href={createLocalizedLink("/tarifs")}>
                     <span>Pricing</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link className="text-none nav-hover-effect" href="/securite">
-                    <span>Security</span>
                   </Link>
                 </li>
                 <li className="has-dd-menu" style={{ position: "relative" }}>
@@ -439,7 +457,7 @@ export default function View4SightHeader() {
                             <div className="d-flex flex-column h-100 align-items-center" style={{ padding: "8px", gap: "8px" }}>
                               {/* Section Centre d'aide - Top - EXACTEMENT 50% de hauteur */}
                               <Link 
-                                href="/ressources/support"
+                                href={createLocalizedLink("/ressources/support")}
                                 className="text-none d-block hover:shadow-md transition-all duration-150"
                                 style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
@@ -471,8 +489,10 @@ export default function View4SightHeader() {
                               </Link>
 
                               {/* Section Documentation - Bottom - EXACTEMENT 50% de hauteur */}
-                              <Link 
-                                href="/ressources/docs"
+                              <a 
+                                href="https://docs.barthelemy.cloud/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-none d-block hover:shadow-md transition-all duration-150"
                                 style={{ textDecoration: "none", flex: "1", width: "100%" }}
                               >
@@ -501,7 +521,7 @@ export default function View4SightHeader() {
                                     </div>
                                   </div>
                                 </div>
-                              </Link>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -524,7 +544,7 @@ export default function View4SightHeader() {
               
               {/* Login */}
               <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium nav-hover-effect" href={`/sign-in`}>
+                <Link className="text-none fw-medium nav-hover-effect" href={createLocalizedLink('/sign-in')}>
                   <span>Log in</span>
                 </Link>
               </div>
@@ -532,7 +552,7 @@ export default function View4SightHeader() {
               {/* Free Trial Button */}
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href={`/tarifs`}
+                href={createLocalizedLink('/tarifs')}
               >
                 Start free trial
               </Link>

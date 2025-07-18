@@ -1,5 +1,5 @@
 import PricingSection from "@/components/view4sight/PricingSection";
-import PricingCompare from "@/components/innerpages/PricingCompare";
+import PricingCompare from "@/components/view4sight/PricingCompare";
 import FaqShort from "@/components/view4sight/FaqShort";
 import CtaFinal from "@/components/view4sight/CtaFinal";
 

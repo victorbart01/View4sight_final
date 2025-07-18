@@ -2,6 +2,7 @@
 import { view4sightTiers, enterprisePlan } from "@/data/view4sight-pricing";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // Function to handle Polar checkout
 const handleCheckout = async (tier, isYearly) => {
@@ -46,6 +47,23 @@ const handleCheckout = async (tier, isYearly) => {
 
 export default function PricingSection() {
   const [isYearly, setIsYearly] = useState(false);
+  const { t, isLoading } = useTranslation();
+
+  if (isLoading) {
+    return (
+      <div id="pricing_tiers" className="pricing-tiers section panel overflow-hidden">
+        <div className="section-outer panel pb-6 xl:pb-8" style={{ paddingTop: '8rem' }}>
+          <div className="container xl:max-w-xl">
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '400px' }}>
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -62,10 +80,10 @@ export default function PricingSection() {
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
               >
                 <h2 className="h4 md:h3 lg:h2 xl:h1 m-0">
-                  Simple Pricing That Grows With Your Team
+                  {t('pricing.title')}
                 </h2>
                 <p className="fs-7 xl:fs-6 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
-                  Start free, scale as you grow. No per-viewer fees, no hidden costs, no long-term contracts.
+                  {t('pricing.subtitle')}
                 </p>
                 <div className="position-relative">
                   <ul

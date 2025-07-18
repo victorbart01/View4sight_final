@@ -1,37 +1,46 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Testimonials() {
+  const { t, tHtml, isLoading } = useTranslation();
 
-  // Témoignage principal mis en avant
+  if (isLoading) {
+    return (
+      <div className="section panel">
+        <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '400px' }}>
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Get testimonial data from translations
   const featuredTestimonial = {
     id: 1,
-    quote: "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
-    author: "Pierre Moreau",
-    position: "Géomètre-expert",
-    company: "Cabinet Moreau & Associés",
-    location: "Lyon",
+    quote: t('testimonials.featured.quote'),
+    author: t('testimonials.featured.author'),
+    position: t('testimonials.featured.position'),
+    company: t('testimonials.featured.company'),
     avatar: "/assets/images/common/login.webp"
   };
 
-  // Statistiques avec design minimaliste
+  // Stats with original validated values
   const realResults = [
     {
       percentage: "50%",
-      description: "Faster Client Approvals"
+      description: t('testimonials.stats.time_saved')
     },
     {
       percentage: "70%", 
-      description: "Fewer Site Visits Required"
+      description: t('testimonials.stats.site_visits')
     },
     {
       percentage: "3x",
-      description: "Faster File Sharing"
-    },
-    {
-      percentage: "90%",
-      description: "Client Satisfaction Rate"
+      description: t('testimonials.stats.communication')
     }
   ];
 
@@ -47,13 +56,14 @@ export default function Testimonials() {
                 {/* Header */}
                 <div className="panel vstack items-center gap-2 xl:gap-3 text-center">
                   <div className="hero-badge mx-auto">
-                    Testimonials
+                    {t('testimonials.badge')}
                   </div>
-                  <h2 className="h3 lg:h2 xl:h1 m-0">
-                  How Teams Transform Their 3D Workflows<br />
-                  </h2>
+                  <h2 
+                    className="h3 lg:h2 xl:h1 m-0"
+                    dangerouslySetInnerHTML={tHtml('testimonials.title')}
+                  />
                   <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
-                  Discover how View4Sight helps surveying and engineering professionals save time and deliver better results.
+                    {t('testimonials.subtitle')}
                   </p>
                 </div>
 
@@ -80,7 +90,6 @@ export default function Testimonials() {
                                     </div>
                                     <div className="vstack gap-0">
                                       <span className="fw-bold text-dark dark:text-white">{featuredTestimonial.company}</span>
-                                      <span className="fs-7 text-dark dark:text-white text-opacity-70">{featuredTestimonial.location}</span>
                                     </div>
                                   </div>
                                 </div>
@@ -131,7 +140,7 @@ export default function Testimonials() {
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
               >
                 {/* Grille des statistiques - Design amélioré */}
-                <div className="row child-cols-6 lg:child-cols-4 col-match g-4 lg:g-6">
+                <div className="row child-cols-4 col-match g-4 lg:g-6 justify-content-center">
                   {realResults.map((result, index) => (
                     <div key={index} className="col">
                       <div className="panel vstack items-center gap-3 p-4 lg:p-6 text-center rounded-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-xs hover:shadow-sm uc-transition-all-medium position-relative overflow-hidden">

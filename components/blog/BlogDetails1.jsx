@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import RelatedBlogs from "./RelatedBlogs";
+
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
 

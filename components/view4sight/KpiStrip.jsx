@@ -1,33 +1,33 @@
 "use client";
 import React from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function KpiStrip() {
-  const kpis = [
-    {
-      id: 1,
-      value: "30%",
-      description: "Reduction in client validation time",
-      animation: "onview: -100; targets: this; textContent: [0, 30]; easing: easeOutCubic; duration: 1000; delay: 200;"
-    },
-    {
-      id: 2,
-      value: "50%",
-      description: "Fewer site visits required",
-      animation: "onview: -100; targets: this; textContent: [0, 50]; easing: easeOutCubic; duration: 1000; delay: 400;"
-    },
-    {
-      id: 3,
-      value: "80%",
-      description: "Clearer communication with stakeholders",
-      animation: "onview: -100; targets: this; textContent: [0, 80]; easing: easeOutCubic; duration: 1000; delay: 600;"
-    },
-    {
-      id: 4,
-      value: "150GB",
-      description: "Free storage included",
-      animation: "onview: -100; targets: this; textContent: [0, 150]; easing: easeOutCubic; duration: 1000; delay: 800;"
-    }
-  ];
+  const { t, isLoading } = useTranslation();
+
+  if (isLoading) {
+    return (
+      <div className="section panel">
+        <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '200px' }}>
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Get first 3 KPIs from translations (excluding storage)
+  const kpis = t('kpi_strip').slice(0, 3).map((kpi, index) => ({
+    id: index + 1,
+    value: kpi.value,
+    description: kpi.description,
+    animation: [
+      "onview: -100; targets: this; textContent: [0, 30]; easing: easeOutCubic; duration: 1000; delay: 200;",
+      "onview: -100; targets: this; textContent: [0, 50]; easing: easeOutCubic; duration: 1000; delay: 400;",
+      "onview: -100; targets: this; textContent: [0, 80]; easing: easeOutCubic; duration: 1000; delay: 600;"
+    ][index]
+  }));
 
   return (
     <div className="section panel overflow-hidden">
@@ -46,22 +46,13 @@ export default function KpiStrip() {
                 className="panel p-5 lg:py-9 rounded-2 bg-white dark:bg-gray-800"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
               >
-                <div className="row child-cols-6 lg:child-cols-4 col-match g-4 text-center">
+                <div className="row child-cols-4 col-match g-4 text-center justify-content-center">
                   {kpis.map((kpi) => (
                     <div key={kpi.id}>
                       <div className="panel vstack gap-1">
                         <h4 className="h2 xl:display-5 m-0 text-primary">
-                          {kpi.id === 4 ? (
-                            <>
-                              <span data-anime={kpi.animation}>150</span>
-                              <span className="fs-4">GB</span>
-                            </>
-                          ) : (
-                            <>
-                              <span data-anime={kpi.animation}>{kpi.value.replace('%', '')}</span>
-                              <span className="fs-4">%</span>
-                            </>
-                          )}
+                          <span data-anime={kpi.animation}>{kpi.value.replace('%', '')}</span>
+                          <span className="fs-4">%</span>
                         </h4>
                         <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
                           {kpi.description}

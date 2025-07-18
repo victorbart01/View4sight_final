@@ -4,9 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 import { usePathname } from "next/navigation";
+import { getLocalizedPath, locales } from "@/lib/i18n";
 
-// Menu items pour View4Sight
-const view4sightMenuItems = [
+// Menu items base pour View4Sight (chemins relatifs)
+const view4sightMenuItemsBase = [
   {
     label: "Home",
     href: "/",
@@ -86,6 +87,32 @@ export default function View4SightMobileMenu() {
   const [expandedMenu, setExpandedMenu] = useState(-1);
   const elementRef = useRef(null);
   const containerRef = useRef(null);
+
+  // Extract current locale from pathname
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const currentLocale = locales.includes(pathSegments[0]) ? pathSegments[0] : 'en';
+
+  // Helper function to create locale-aware links
+  const createLocalizedLink = (path) => {
+    return getLocalizedPath(path, currentLocale);
+  };
+
+  // Create localized version of menu items
+  const localizeMenuItem = (item) => {
+    const localizedItem = { ...item };
+    if (item.href) {
+      localizedItem.href = createLocalizedLink(item.href);
+    }
+    if (item.subItems) {
+      localizedItem.subItems = item.subItems.map(subItem => ({
+        ...subItem,
+        href: createLocalizedLink(subItem.href)
+      }));
+    }
+    return localizedItem;
+  };
+
+  const view4sightMenuItems = view4sightMenuItemsBase.map(localizeMenuItem);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -395,7 +422,7 @@ export default function View4SightMobileMenu() {
           {/* Header avec logo et bouton fermer */}
           <div className="menu-header">
             <div className="logo-container">
-              <Link href="/" className="text-decoration-none">
+              <Link href={createLocalizedLink("/")} className="text-decoration-none">
                 <Image
                   src="/assets/images/logo_v4s_light.png"
                   alt="View4Sight"
@@ -477,10 +504,10 @@ export default function View4SightMobileMenu() {
 
           {/* Footer avec boutons CTA */}
           <div className="menu-footer">
-            <Link href="/sign-in" className="footer-btn btn-login">
+            <Link href={createLocalizedLink("/sign-in")} className="footer-btn btn-login">
               Log in
             </Link>
-            <Link href="/tarifs" className="footer-btn btn-get-started">
+            <Link href={createLocalizedLink("/tarifs")} className="footer-btn btn-get-started">
               Get Started
             </Link>
           </div>

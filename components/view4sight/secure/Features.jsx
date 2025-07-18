@@ -51,7 +51,7 @@ const secureFeatures = [
 export default function Features() {
   return (
     <div id="main_features" className="main-features section panel">
-      <div className="section-outer panel py-8 lg:py-10 xl:py-12">
+      <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#090909' }}>
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack">
@@ -70,17 +70,19 @@ export default function Features() {
                       <div className="panel vstack gap-4">
                         {/* Icon */}
                         <div 
-                          className="d-inline-flex align-items-center justify-content-center rounded-2"
+                          className="d-inline-flex align-items-center justify-content-center rounded-3"
                           style={{
                             width: "64px",
                             height: "64px",
-                            backgroundColor: feature.iconBg,
+                            backgroundColor: "rgba(255, 59, 28, 0.05)",
+                            border: "1px solid rgba(255, 59, 28, 0.3)",
+                            boxShadow: "inset 0 1px 0 rgba(255, 59, 28, 0.2), 0 0 8px rgba(255, 59, 28, 0.15)"
                           }}
                         >
                           <i 
                             className={`icon icon-2 ${feature.icon}`}
                             style={{ 
-                              color: feature.iconColor,
+                              color: "#FF3B1C",
                               fontSize: "28px"
                             }}
                           ></i>

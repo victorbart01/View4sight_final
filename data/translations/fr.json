@@ -1,0 +1,477 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "back": "Retour",
+    "continue": "Continuer",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Importer",
+    "share": "Partager",
+    "copy": "Copier",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "more": "Plus",
+    "less": "Moins",
+    "all": "Tout",
+    "none": "Aucun",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs", 
+    "security": "Sécurité",
+    "resources": "Ressources",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Se connecter",
+    "signup": "S'inscrire",
+    "dashboard": "Tableau de bord",
+    "account": "Compte",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter"
+  },
+  "hero": {
+    "badge": "Visualiseur web 3D - données géospatiales",
+    "title": "Fini les logiciels.<br />Fini les plugins.<br />Un simple upload, et tout fonctionne.",
+    "subtitle": "Transformez vos nuages de points massifs en espaces de travail collaboratifs.<br />Mesures en temps réel, annotations intelligentes, partage instantané. Aucun logiciel à installer.",
+    "cta_primary": "Essai Gratuit",
+    "cta_secondary": "Demander une Démo",
+    "trust_text": "30 jours d'essai gratuit, aucune carte bancaire requise"
+  },
+  "features": {
+    "badge": "Fonctionnalités Clés",
+    "title": "Tout ce dont vous avez besoin<br />pour la collaboration 3D",
+    "subtitle": "Des outils puissants conçus pour les professionnels du relevé et les équipes d'ingénierie.",
+    "visualize": {
+      "title": "Visualiser",
+      "description": "Rendu 3D haute performance avec support de jeux de données massifs"
+    },
+    "measure": {
+      "title": "Mesurer", 
+      "description": "Outils de mesure précis avec annotation automatique et export"
+    },
+    "collaborate": {
+      "title": "Collaborer",
+      "description": "Partage en temps réel et commentaires avec clients et équipes"
+    },
+    "secure": {
+      "title": "Sécuriser",
+      "description": "Sécurité niveau entreprise avec hébergement français et conformité RGPD"
+    },
+    "discover_all": "Découvrir toutes les fonctionnalités"
+  },
+  "video": {
+    "badge": "Démo vidéo",
+    "title": "Comment ça marche",
+    "description": "La plateforme est conçue pour vous aider à visualiser, automatiser et construire des workflows de données géospatiales."
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Comment les Équipes Transforment<br />Leurs Workflows 3D",
+    "subtitle": "Découvrez comment View4Sight aide les professionnels du relevé et de l'ingénierie à gagner du temps et obtenir de meilleurs résultats.",
+    "featured": {
+      "quote": "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
+      "author": "Pierre Moreau",
+      "position": "Géomètre-expert",
+      "company": "Cabinet Moreau & Associés, Lyon"
+    },
+    "stats": {
+      "time_saved": "30% de validation client plus rapide",
+      "site_visits": "50% de visites terrain en moins", 
+      "communication": "80% de communication plus claire",
+      "storage": "150 Go inclus dans l'essai gratuit"
+    }
+  },
+  "security": {
+    "badge": "Souveraineté Française",
+    "title": "Vos données restent en France.<br />Garanti.",
+    "subtitle": "Contrôle total de vos données géospatiales sensibles avec hébergement français et standards de conformité stricts.",
+    "features": {
+      "hosting": "100% hébergement français",
+      "gdpr": "Conforme RGPD",
+      "iso": "Certifié ISO 27001",
+      "encryption": "Chiffrement de bout en bout"
+    }
+  },
+  "pain_benefits": {
+    "badge": "Défis Courants",
+    "title": "Arrêtez de lutter avec<br />les logiciels 3D lourds",
+    "subtitle": "Les workflows traditionnels de nuages de points sont complexes, coûteux et créent des barrières à la collaboration.",
+    "problems": {
+      "software": "Licences CAO coûteuses pour chaque membre d'équipe",
+      "technical": "Les barrières techniques empêchent l'engagement client", 
+      "sharing": "Partage de fichiers et contrôle de version complexes",
+      "access": "Accès distant et outils de collaboration limités"
+    },
+    "solutions": {
+      "web_based": "Accès web depuis n'importe quel appareil",
+      "collaborative": "Collaboration et retours en temps réel",
+      "simple": "Partage simple avec liens sécurisés",
+      "mobile": "Compatible mobile pour le terrain"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Questions<br />Fréquemment Posées",
+    "subtitle": "Tout ce que vous devez savoir sur la plateforme View4Sight.",
+    "items": {
+      "formats": {
+        "question": "Quels formats de fichiers sont supportés ?",
+        "answer": "Nous supportons tous les formats majeurs de nuages de points incluant LAS, E57, PLY, ainsi que les formats IFC, DXF et orthophoto. Les fichiers sont automatiquement optimisés pour la visualisation web."
+      },
+      "storage": {
+        "question": "Combien de stockage ai-je ?",
+        "answer": "Nos plans vont de 15 Go pour le plan Starter gratuit à un stockage illimité pour les clients Entreprise. Toutes les données sont hébergées dans des centres de données français."
+      },
+      "sharing": {
+        "question": "Comment fonctionne le partage de projets ?",
+        "answer": "Créez des liens sécurisés et protégés par mot de passe pour partager des projets avec clients ou membres d'équipe. Contrôlez les niveaux d'accès et suivez l'activité de visualisation."
+      },
+      "security": {
+        "question": "Mes données sont-elles sécurisées ?",
+        "answer": "Oui, nous utilisons une sécurité niveau entreprise avec hébergement français, conformité RGPD et certification ISO 27001. Vos données ne quittent jamais la France."
+      }
+    }
+  },
+  "cta_final": {
+    "badge": "Commencer",
+    "title": "Prêt à transformer vos<br />workflows 3D ?",
+    "subtitle": "Rejoignez des centaines de professionnels du relevé qui utilisent déjà View4Sight pour optimiser leurs projets.",
+    "cta_primary": "Essai Gratuit",
+    "cta_secondary": "Demander une Démo",
+    "trust_text": "30 jours d'essai gratuit • Aucune carte bancaire • Annulation à tout moment"
+  },
+  "footer": {
+    "description": "La plateforme web leader pour la visualisation et collaboration de nuages de points 3D. Transformez vos données de relevé en expériences interactives accessibles depuis n'importe quel navigateur.",
+    "sovereignty": "Souveraineté des Données Françaises",
+    "gdpr_compliant": "Conforme RGPD",
+    "hosted_france": "Hébergé en France",
+    "sections": {
+      "product": "Produit",
+      "resources": "Ressources", 
+      "company": "Entreprise"
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "security": "Sécurité",
+      "request_demo": "Demander une Démo",
+      "use_cases": "Cas d'Usage",
+      "documentation": "Documentation",
+      "support_center": "Centre d'Aide",
+      "tutorials": "Tutoriels",
+      "blog": "Blog",
+      "careers": "Carrières",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
+    },
+    "made_in_france": "Fabriqué en France",
+    "copyright": "View4Sight © {{year}}, Tous droits réservés."
+  },
+  "pricing": {
+    "badge": "Plans Tarifaires",
+    "title": "Tarification simple et transparente pour toutes les tailles d'équipe",
+    "subtitle": "Choisissez le plan qui correspond à vos besoins. Changez à tout moment.",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "Gratuit",
+        "description": "Parfait pour les professionnels individuels et petits projets",
+        "features": [
+          "15 Go de stockage",
+          "2 utilisateurs",
+          "3 projets actifs",
+          "Partage par lien privé",
+          "Outils de mesure de base",
+          "Support par email"
+        ]
+      },
+      "team": {
+        "name": "Équipe", 
+        "price": "79 €",
+        "period": "/mois",
+        "description": "Idéal pour les petites équipes et entreprises en croissance",
+        "features": [
+          "150 Go de stockage",
+          "5 utilisateurs",
+          "Projets illimités",
+          "20 Go d'upload mensuel",
+          "50 Go de téléchargement mensuel",
+          "Annotations avancées",
+          "Support prioritaire",
+          "Outils de collaboration d'équipe"
+        ],
+        "popular": true
+      },
+      "studio": {
+        "name": "Studio",
+        "price": "199 €", 
+        "period": "/mois",
+        "description": "Pour les cabinets établis avec des projets complexes",
+        "features": [
+          "500 Go de stockage",
+          "15 utilisateurs",
+          "Analyses avancées",
+          "50 Go d'upload mensuel", 
+          "1 To de téléchargement mensuel",
+          "Visionneuse intégrable",
+          "Image de marque personnalisée",
+          "Support téléphonique"
+        ]
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur mesure",
+        "description": "Solutions adaptées pour les grandes organisations",
+        "features": [
+          "Stockage illimité",
+          "Utilisateurs illimités",
+          "Options d'hébergement sur site",
+          "Déploiement cloud privé",
+          "Garantie SLA 99.9%",
+          "Marque blanche complète",
+          "Gestionnaire de compte dédié",
+          "Intégrations personnalisées"
+        ]
+      }
+    },
+    "cta": {
+      "start_free": "Commencer Gratuitement",
+      "get_started": "Commencer",
+      "contact_sales": "Contacter les Ventes"
+    },
+    "trust": {
+      "no_credit_card": "Aucune carte bancaire requise",
+      "secure_payments": "Paiements sécurisés par Stripe"
+    }
+  },
+  "main_features": {
+    "badge": "Fonctionnalités principales",
+    "title": "Tout ce dont vous avez besoin<br />en une seule plateforme",
+    "subtitle": "View4Sight gère le workflow complet depuis l'import des données jusqu'à la livraison client. Support de tous les formats majeurs avec gestion avancée des systèmes de coordonnées qui fonctionne vraiment.",
+    "discover_all": "Découvrir toutes les fonctionnalités",
+    "features": {
+      "web_viewer": {
+        "title": "Visualiseur 3D Web",
+        "description": "Naviguez dans d'énormes nuages de points en fluidité depuis n'importe quel navigateur—aucun plugin requis. Vos clients n'ont besoin que d'un navigateur web pour explorer vos données 3D.",
+        "cta": "Essayer maintenant"
+      },
+      "all_formats": {
+        "title": "Tous Vos Fichiers Géospatiaux en Un Lieu",
+        "description": "Support natif pour LAS, E57, IFC, DXF et orthophotos avec gestion avancée des systèmes de coordonnées qui fonctionne vraiment. Plus besoin de jongler entre des outils incompatibles.",
+        "cta": "Voir tous les formats"
+      },
+      "data_security": {
+        "title": "Données Sécurisées.<br />Permissions Précises.<br />Partage Simple.",
+        "description": "Partagez des scans 3D avec n'importe qui — aucune installation nécessaire.<br />Accordez le bon accès aux bonnes personnes, instantanément.<br />Vos données restent chiffrées, sûres et sous contrôle."
+      },
+      "smart_annotations": {
+        "title": "Annotations & Mesures Intelligentes",
+        "description": "Ajoutez des commentaires, mesures et annotations qui restent précisément positionnés dans l'espace 3D. Collaboration en temps réel avec toute votre équipe."
+      }
+    }
+  },
+  "video_demo": {
+    "badge": "Démo vidéo",
+    "title": "Comment ça marche",
+    "description": "La plateforme est conçue pour vous aider à visualiser, automatiser et construire des workflows de données géospatiales."
+  },
+  "faq_short": {
+    "badge": "FAQ",
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Obtenez des réponses aux questions les plus courantes sur la plateforme de visualisation 3D View4Sight, la sécurité des données et la gestion des fichiers géospatiaux.",
+    "still_question": "Vous avez encore une question ?",
+    "items": [
+      {
+        "question": "Quels formats de fichiers supportez-vous ?",
+        "answer": "Tous les formats géospatiaux majeurs incluant LAS, LAZ, E57, PLY pour les nuages de points ; IFC, DWG, DXF pour la BIM ; TIFF, GeoTIFF pour les orthophotos ; et les formats d'imagerie 360°."
+      },
+      {
+        "question": "Comment gérez-vous les gros jeux de données ?",
+        "answer": "Notre technologie de streaming optimise la livraison des données. Les fichiers sont traités côté serveur et diffusés efficacement vers les navigateurs, gérant sans problème des jeux de données de plusieurs gigaoctets."
+      },
+      {
+        "question": "Puis-je contrôler qui voit mes données ?",
+        "answer": "Absolument. Les contrôles d'accès granulaires vous permettent de définir les permissions de visualisation, les restrictions de téléchargement et l'accès spécifique au projet pour chaque collaborateur."
+      },
+      {
+        "question": "Qu'en est-il de la souveraineté des données ?",
+        "answer": "Vos données sont hébergées sur des serveurs français avec certification ISO 27001. Nous proposons également des installations sur site pour un contrôle complet."
+      },
+      {
+        "question": "Dois-je installer un logiciel ?",
+        "answer": "Aucune installation requise. View4Sight fonctionne entièrement dans votre navigateur web, le rendant accessible depuis n'importe quel appareil avec une connexion internet."
+      },
+      {
+        "question": "Combien de stockage ai-je ?",
+        "answer": "Notre plan gratuit inclut 150 Go de stockage. Les plans professionnels offrent un stockage illimité avec des fonctionnalités de collaboration supplémentaires."
+      }
+    ]
+  },
+  "pain_benefits": {
+    "badge": "Points de Douleur",
+    "title": "Vos Données 3D Méritent Mieux<br />Que des Captures d'Écran Statiques",
+    "subtitle": "Ça vous dit quelque chose ? Transformez ces frustrations quotidiennes en avantages concurrentiels.",
+    "problems_title": "Frustrations Quotidiennes",
+    "solutions_title": "Solutions View4Sight",
+    "problems": [
+      {
+        "title": "Les Clients ne Peuvent pas Visualiser avec des Captures",
+        "description": "Emails incessants, demandes de visites de site et retards d'approbation parce que les images statiques ne racontent pas toute l'histoire."
+      },
+      {
+        "title": "Barrières Logicielles Lourdes",
+        "description": "Licences CAO coûteuses pour chaque partie prenante. Fichiers qui plantent sur mobile. Plugins qui cassent avec les mises à jour."
+      },
+      {
+        "title": "Données Piégées en Silos",
+        "description": "Nuages de points dans un logiciel, BIM dans un autre, mesures dans des feuilles de calcul. Aucune source unique de vérité."
+      },
+      {
+        "title": "Préoccupations de Sécurité et Conformité",
+        "description": "Données sensibles de projet envoyées vers des services cloud américains. La conformité RGPD devient un cauchemar. Souveraineté des données perdue."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Visualisation Instantanée par Navigateur",
+        "description": "Importez vos nuages de points une fois. Votre équipe et vos clients naviguent en 3D directement dans leur navigateur, aucune installation requise."
+      },
+      {
+        "title": "Collaboration en Temps Réel",
+        "description": "Les clients visualisent, mesurent et commentent directement en 3D. Les décisions se prennent plus vite. Moins de visites de site nécessaires."
+      },
+      {
+        "title": "Toutes les Données, Une Plateforme",
+        "description": "Nuages de points, modèles BIM, orthophotos et mesures unifiés dans un seul espace de travail. Partagez tout avec un seul lien."
+      },
+      {
+        "title": "Souveraineté des Données Françaises",
+        "description": "Vos données restent en France sur des serveurs certifiés ISO. RGPD natif, pas ajouté après coup. Approuvé par le secteur public."
+      }
+    ]
+  },
+  "security_block": {
+    "badge": "Sécurité & Souveraineté",
+    "title": "Vos Données Restent Là Où Elles<br />Appartiennent : En France",
+    "subtitle": "Pendant que d'autres envoient vos données à l'étranger, View4Sight les garde à la maison. Certifié ISO, RGPD natif, approuvé par le secteur public.",
+    "features": [
+      {
+        "title": "Hébergement Souverain",
+        "description": "Vos projets ne quittent jamais le territoire français"
+      },
+      {
+        "title": "Option Sur Site",
+        "description": "Installez sur vos propres serveurs pour un contrôle maximum"
+      },
+      {
+        "title": "Sécurité Entreprise",
+        "description": "Sécurité niveau bancaire avec permissions utilisateur granulaires"
+      },
+      {
+        "title": "Conformité RGPD",
+        "description": "Confidentialité européenne par conception, pas en réflexion"
+      }
+    ]
+  },
+  "kpi_strip": [
+    {
+      "value": "30%",
+      "description": "Réduction du temps de validation client"
+    },
+    {
+      "value": "50%",
+      "description": "Moins de visites terrain nécessaires"
+    },
+    {
+      "value": "80%",
+      "description": "Communication plus claire avec les parties prenantes"
+    },
+    {
+      "value": "150 Go",
+      "description": "Stockage gratuit inclus"
+    }
+  ],
+  "not_found": {
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez<br />a été déplacée, redirigée ou supprimée définitivement.",
+    "go_home": "Retour à l'accueil",
+    "search_text": "Pourquoi ne pas essayer de rechercher à nouveau ?",
+    "search_link": "Rechercher maintenant"
+  },
+  "help_center": {
+    "search_placeholder": "Rechercher des articles d'aide, guides ou FAQ...",
+    "search_button": "Rechercher",
+    "contact_form": {
+      "issue_type": "Sélectionner le type de problème",
+      "technical": "Problème Technique",
+      "account": "Compte et Facturation",
+      "features": "Question sur les Fonctionnalités",
+      "integration": "Support d'Intégration",
+      "other": "Autre",
+      "placeholder": "Décrivez votre problème ou question...",
+      "submit": "Envoyer la Demande de Support",
+      "response_time": "Nous répondons généralement sous 2-4 heures pendant les heures de bureau"
+    },
+    "faqs": [
+      {
+        "question": "Comment importer mon premier jeu de données 3D ?",
+        "answer": "Allez simplement sur votre tableau de bord, cliquez sur 'Nouveau Projet', glissez-déposez vos fichiers (LAS, E57, IFC, etc.), et notre plateforme les traitera automatiquement. L'import supporte des fichiers jusqu'à 20 Go selon votre plan."
+      },
+      {
+        "question": "Quels formats de fichiers sont supportés ?",
+        "answer": "View4Sight supporte tous les formats 3D majeurs incluant LAS, E57, IFC, DXF, PLY et l'imagerie ORTHO. Nous supportons également divers formats de relevé et nuages de points des fabricants de matériel leaders."
+      },
+      {
+        "question": "Comment partager mes données 3D avec mes clients ?",
+        "answer": "Vous pouvez générer des liens partageables sécurisés avec des permissions personnalisées. Allez dans votre projet, cliquez sur 'Partager', définissez les permissions de visualisation et envoyez le lien. Les destinataires n'ont pas besoin de compte pour voir vos données."
+      },
+      {
+        "question": "Puis-je mesurer des distances et volumes dans la visionneuse ?",
+        "answer": "Oui ! Utilisez nos outils de mesure intégrés pour calculer distances, surfaces, volumes et créer des coupes transversales. Toutes les mesures sont précises et peuvent être exportées pour documentation."
+      },
+      {
+        "question": "Comment puis-je changer d'abonnement ?",
+        "answer": "Allez dans Paramètres > Facturation dans votre tableau de bord. Vous pouvez changer de plan à tout moment. Les mises à niveau prennent effet immédiatement, les rétrogradations au prochain cycle de facturation. Aucune donnée n'est perdue lors des changements de plan."
+      },
+      {
+        "question": "Mes données sont-elles sécurisées et où sont-elles stockées ?",
+        "answer": "Toutes les données sont chiffrées en transit et au repos. Nous utilisons des centres de données français et sommes entièrement conformes RGPD. Vous gardez la propriété complète de vos données et pouvez les supprimer à tout moment."
+      },
+      {
+        "question": "Puis-je intégrer View4Sight avec mes outils existants ?",
+        "answer": "Oui ! Nous fournissons une API REST complète et des webhooks pour des intégrations personnalisées. Les intégrations populaires incluent les logiciels CAO, équipements de relevé et outils de gestion de projet."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog & Actualités",
+    "subtitle": "Découvrez les dernières actualités, guides techniques et études de cas sur la visualisation 3D",
+    "category": "Catégorie",
+    "categoryDescription": "Articles de la catégorie sélectionnée",
+    "author": "Auteur",
+    "authorDescription": "Articles publiés par cet auteur",
+    "readMore": "Lire la suite",
+    "relatedPosts": "Articles connexes",
+    "backToBlog": "Retour au blog",
+    "allCategories": "Toutes les catégories",
+    "allAuthors": "Tous les auteurs",
+    "noArticles": "Aucun article trouvé",
+    "publishedOn": "Publié le",
+    "by": "par",
+    "readingTime": "min de lecture",
+    "shareArticle": "Partager l'article",
+    "tags": "Étiquettes",
+    "comments": "Commentaires"
+  }
+} 

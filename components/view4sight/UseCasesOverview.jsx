@@ -3,27 +3,27 @@ import Image from "next/image";
 
 const useCaseDomains = [
   {
-    icon: "/assets/images/custom-icons/surveying.svg",
+    icon: "/assets/images/custom-icons/urbain.svg",
     label: "Urban"
   },
   {
-    icon: "/assets/images/custom-icons/construction.svg", 
+    icon: "/assets/images/custom-icons/Infrastructure.svg", 
     label: "Infrastructure"
   },
   {
-    icon: "/assets/images/custom-icons/cultural-heritage.svg",
+    icon: "/assets/images/custom-icons/Patrimoine.svg",
     label: "Heritage"
   },
   {
-    icon: "/assets/images/custom-icons/architecture.svg",
+    icon: "/assets/images/custom-icons/Construction.svg",
     label: "Construction"
   },
   {
-    icon: "/assets/images/custom-icons/construction.svg",
+    icon: "/assets/images/custom-icons/Industrie.svg",
     label: "Industry"
   },
   {
-    icon: "/assets/images/custom-icons/telecom.svg",
+    icon: "/assets/images/custom-icons/Safety.svg",
     label: "Security"
   }
 ];
@@ -105,15 +105,19 @@ export default function UseCasesOverview() {
             <div className="d-inline-flex gap-6 xl:gap-8 align-items-center flex-wrap">
               {useCaseDomains.map((domain, index) => (
                 <div key={index} className="d-flex flex-column align-items-center text-center">
-                  {/* Icône orange */}
-                  <div className="mb-2">
+                  {/* Icône orange avec hauteur fixe */}
+                  <div className="mb-2 d-flex align-items-center justify-content-center" style={{ height: "66px" }}>
                     <Image
                       src={domain.icon}
                       alt={domain.label}
-                      width={55}
-                      height={55}
+                      width={66}
+                      height={66}
                       className="d-block mx-auto"
-                      style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(52%) saturate(6328%) hue-rotate(346deg) brightness(103%) contrast(94%)' }}
+                      style={{ 
+                        filter: 'brightness(0) saturate(100%) invert(45%) sepia(52%) saturate(6328%) hue-rotate(346deg) brightness(103%) contrast(94%)',
+                        maxHeight: "66px",
+                        objectFit: "contain"
+                      }}
                     />
                   </div>
                   
