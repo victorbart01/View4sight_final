@@ -194,7 +194,7 @@
   },
   "pricing": {
     "badge": "Plans Tarifaires",
-    "title": "Tarification simple et transparente pour toutes les tailles d'équipe",
+    "title": "Tarification simple pour toutes les tailles d'équipe",
     "subtitle": "Choisissez le plan qui correspond à vos besoins. Changez à tout moment.",
     "plans": {
       "starter": {
