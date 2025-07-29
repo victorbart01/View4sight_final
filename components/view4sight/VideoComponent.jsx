@@ -62,11 +62,10 @@ export default function VideoComponent() {
             </div>
             <div className="panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-gray-600">
               <video
-                src="/assets/images/media/lexend_vid_home-6.webm"
+                src="/assets/videos/View4Sight-Teaser.mp4"
                 preload="none"
                 loop
                 autoPlay
-                poster="/assets/images/media/lexend_vid_home-6.jpg"
                 muted
                 playsInline
                 data-uc-cover
@@ -86,7 +85,7 @@ export default function VideoComponent() {
       </div>
       <ModalVideo
         isOpen={isOpen}
-        src="/assets/images/media/lexend_vid_home-6.webm"
+        src="/assets/videos/View4Sight-Teaser.mp4"
         setIsOpen={() => setOpen(false)}
       />
     </>
