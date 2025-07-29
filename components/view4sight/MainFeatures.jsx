@@ -72,7 +72,7 @@ export default function MainFeatures() {
                     <Image
                       className="ltr:rounded-top-start-1-5 rtl:rounded-top-end-1-5"
                       alt="View4Sight 3D Point Cloud Viewer"
-                      src="/assets/images/web_based.png"
+                      src="/assets/images/V4S-Snapshots.jpg"
                       width="1280"
                       height="837"
                     />
@@ -110,14 +110,7 @@ export default function MainFeatures() {
                         </span>
                       </p>
                     </div>
-                    <Link
-                      href="#faq"
-                      className="text-secondary fw-medium text-decoration-none d-inline-flex align-items-center gap-1 mt-2"
-                      style={{ fontSize: '14px' }}
-                    >
-                      <span>{t('main_features.features.all_formats.cta')}</span>
-                      <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
-                    </Link>
+                   
                   </div>
                 </div>
               </div>

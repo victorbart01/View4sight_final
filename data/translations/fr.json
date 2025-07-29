@@ -282,7 +282,7 @@
       },
       "all_formats": {
         "title": "Tous vos fichiers géospaciaux au même endroit, sans conversion",
-        "description": "LAS, E57, IFC, orthophotos, DXF… View4Sight lit tous vos formats natifs, sans conversion. Les systèmes de coordonnées sont reconnus et alignés automatiquement",
+        "description": "LAS, E57, IFC, orthophotos, DXF… View4Sight lit tous vos formats natifs, sans conversion. Les systèmes de coordonnées sont reconnus et alignés automatiquement.",
         "cta": "Voir tous les formats"
       },
       "data_security": {

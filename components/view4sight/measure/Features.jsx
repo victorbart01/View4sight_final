@@ -51,7 +51,7 @@ const measureFeatures = [
 export default function Features() {
   return (
     <div id="main_features" className="main-features section panel">
-      <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#090909' }}>
+              <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#0e0e0e' }}>
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack">

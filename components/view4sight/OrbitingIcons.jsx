@@ -116,7 +116,7 @@ export default function OrbitingIcons() {
         .orbiting-container {
           width: 400px;
           height: 400px;
-          margin: 2rem auto;
+          margin: 0.5rem auto;
           margin-left: calc(50% + 20px);
           transform: translateX(-50%);
         }
