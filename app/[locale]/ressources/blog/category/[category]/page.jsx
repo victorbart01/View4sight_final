@@ -8,7 +8,7 @@ import Blogs2 from '@/components/view4sight/blog/Blogs2';
 import { getTranslations } from '@/lib/i18n';
 
 export async function generateMetadata({ params }) {
-  const { locale, category } = use(params);
+  const { locale, category } = await params;
   const t = getTranslations(locale);
   
   return {
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function BlogCategoryPage({ params }) {
-  const { locale, category } = use(params);
+  const { locale, category } = params;
   const t = getTranslations(locale);
   
   // Filter articles by category

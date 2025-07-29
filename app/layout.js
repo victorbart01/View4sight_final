@@ -6,6 +6,7 @@ import "swiper/css/effect-fade";
 import "../public/assets/custom.scss";
 import "photoswipe/dist/photoswipe.css";
 import "rc-slider/assets/index.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata = {
   title: "View4Sight - 3D Point Cloud Visualization",
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="fr" dir="ltr">
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#FE552E" />
       </head>
       <body>
-                  {children}
+        <LanguageProvider initialLanguage="fr">
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

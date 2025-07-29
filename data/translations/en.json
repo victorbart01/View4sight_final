@@ -40,6 +40,11 @@
     "settings": "Settings",
     "logout": "Log out"
   },
+  "nav": {
+    "home": "Home",
+    "resources": "Resources",
+    "blog": "Blog"
+  },
   "hero": {
     "badge": "3D point cloud viewer",
     "title": "No CAD License.<br />No Plugin Hell.<br />Just Upload & Go.",

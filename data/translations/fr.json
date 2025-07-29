@@ -40,6 +40,11 @@
     "settings": "Paramètres",
     "logout": "Se déconnecter"
   },
+  "nav": {
+    "home": "Accueil",
+    "resources": "Ressources",
+    "blog": "Blog"
+  },
   "hero": {
     "badge": "Visualiseur web 3D - données géospatiales",
     "title": "Importez vos scans.<br />Naviguez en 3D.<br />Collaborer en ligne.",

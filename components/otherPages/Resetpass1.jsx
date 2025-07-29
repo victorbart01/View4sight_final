@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Resetpass1() {
   const [email, setEmail] = useState("");
@@ -7,101 +8,106 @@ export default function Resetpass1() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Reset password requested for:", email);
+    // TODO: Implement password reset logic
+    console.log('Password reset requested for:', email);
     setIsSubmitted(true);
   };
 
   if (isSubmitted) {
     return (
-      <section className="section panel overflow-hidden">
-        <div className="section-outer">
-          <div className="container max-w-lg">
-            <div className="section-inner">
-              <div className="panel vstack gap-4 md:gap-6 lg:gap-8">
-                <div className="panel vstack items-center gap-4 text-center">
-                  <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-circle d-flex items-center justify-center">
-                    <i className="unicon-email text-primary fs-4"></i>
-                  </div>
-                  <div className="vstack gap-2">
-                    <h1 className="h2 lg:h1">Email envoyé !</h1>
-                    <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
-                      Nous avons envoyé un lien de réinitialisation à{" "}
-                      <strong>{email}</strong>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="panel vstack gap-3 text-center">
-                  <p className="fs-7 text-dark dark:text-white text-opacity-70">
-                    Vous n'avez pas reçu l'email ? Vérifiez votre dossier spam ou{" "}
-                    <button 
-                      type="button" 
-                      className="btn-link text-primary p-0 border-0 bg-transparent"
-                      onClick={() => setIsSubmitted(false)}
-                    >
-                      essayez une autre adresse
-                    </button>
-                  </p>
-                  
-                  <a href="/sign-in" className="btn btn-outline-primary btn-md">
-                    Retour à la connexion
-                  </a>
-                </div>
-              </div>
+      <div className="min-vh-100 d-flex align-items-center justify-content-center py-5 px-3">
+        <div className="w-100 text-center" style={{ maxWidth: '400px' }}>
+          <div className="mb-4">
+            <div 
+              className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
+              style={{ 
+                width: '64px', 
+                height: '64px', 
+                backgroundColor: 'rgba(254, 85, 46, 0.1)',
+                color: '#FE552E'
+              }}
+            >
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+              </svg>
             </div>
+            <h1 className="h3 mb-2">Email envoyé !</h1>
+            <p className="text-muted">
+              Nous avons envoyé un lien de réinitialisation à{' '}
+              <strong>{email}</strong>
+            </p>
           </div>
+
+          <div className="text-start mb-4 p-3 bg-light rounded">
+            <p className="mb-2 fw-medium">Prochaines étapes :</p>
+            <ol className="ps-3 mb-0">
+              <li className="mb-1">Vérifiez votre boîte de réception</li>
+              <li className="mb-1">Cliquez sur le lien dans l'email</li>
+              <li>Créez votre nouveau mot de passe</li>
+            </ol>
+          </div>
+
+          <p className="text-muted small mb-4">
+            Vous ne recevez pas l'email ? Vérifiez vos spams ou{' '}
+            <button 
+              type="button" 
+              className="btn btn-link p-0 text-decoration-none"
+              onClick={() => setIsSubmitted(false)}
+            >
+              réessayez
+            </button>
+          </p>
+
+          <Link href="/sign-in" className="btn btn-outline-primary">
+            Retour à la connexion
+          </Link>
         </div>
-      </section>
+      </div>
     );
   }
 
   return (
-    <section className="section panel overflow-hidden">
-      <div className="section-outer">
-        <div className="container max-w-lg">
-          <div className="section-inner">
-            <div className="panel vstack gap-4 md:gap-6 lg:gap-8">
-              <div className="panel vstack items-center gap-2 text-center">
-                <h1 className="h2 lg:h1">Mot de passe oublié ?</h1>
-                <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
-                  Pas de problème, nous vous envoyons un lien de réinitialisation
-                </p>
-              </div>
-              
-              <div className="panel">
-                <form onSubmit={handleSubmit} className="vstack gap-4">
-                  <div className="form-group">
-                    <label className="form-label fs-7" htmlFor="email">
-                      Adresse email
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      className="form-control"
-                      placeholder="Entrez votre adresse email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-                  </div>
-                  
-                  <button type="submit" className="btn btn-primary btn-md w-100">
-                    Envoyer le lien de réinitialisation
-                  </button>
-                </form>
-                
-                <div className="panel vstack gap-2 mt-4 text-center">
-                  <a href="/sign-in" className="fs-7 text-primary">
-                    ← Retour à la connexion
-                  </a>
-                </div>
-              </div>
-            </div>
+    <div className="min-vh-100 d-flex align-items-center justify-content-center py-5 px-3">
+      <div className="w-100" style={{ maxWidth: '400px' }}>
+        <div className="text-center mb-4">
+          <h1 className="h3 mb-2">Mot de passe oublié ?</h1>
+          <p className="text-muted">
+            Entrez votre adresse email et nous vous enverrons un lien pour réinitialiser votre mot de passe
+          </p>
+        </div>
+
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="email" className="form-label">
+              Adresse email
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="nom@exemple.com"
+              required
+            />
           </div>
+
+          <button
+            type="submit"
+            className="btn btn-primary w-100 mb-3"
+            style={{ backgroundColor: '#FE552E', borderColor: '#FE552E' }}
+          >
+            Envoyer le lien de réinitialisation
+          </button>
+        </form>
+
+        <div className="text-center">
+          <Link href="/sign-in" className="text-decoration-none">
+            ← Retour à la connexion
+          </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 } 

@@ -4,8 +4,8 @@ import { locales, defaultLocale, getLocaleFromPath } from './lib/i18n';
 // Matcher configuration to exclude static files
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    '/((?!_next|api|favicon.ico|assets|[\\w-]+\\.\\w+).*)',
+    // Skip all internal paths (_next) and auth pages
+    '/((?!_next|api|favicon.ico|assets|sign-in|sign-up|reset-password|page-terms|page-privacy|[\\w-]+\\.\\w+).*)',
     // Match root
     '/'
   ]
