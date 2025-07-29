@@ -38,12 +38,37 @@
     "dashboard": "Dashboard",
     "account": "Account",
     "settings": "Settings",
-    "logout": "Log out"
+    "logout": "Log out",
+    "request_demo": "Request a demo",
+    "start_free_trial": "Start free trial",
+    "browser_available": "Available directly in your browser"
   },
   "nav": {
     "home": "Home",
     "resources": "Resources",
     "blog": "Blog"
+  },
+  "resources_menu": {
+    "use_cases": {
+      "title": "Use Cases",
+      "description": "Customer stories"
+    },
+    "blog": {
+      "title": "Blog", 
+      "description": "Articles & news"
+    },
+    "careers": {
+      "title": "Careers",
+      "description": "Join the team"
+    },
+    "help_center": {
+      "title": "Help Center",
+      "description": "24/7 support, FAQ & guides"
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "API, guides & reference"
+    }
   },
   "hero": {
     "badge": "3D point cloud viewer",
@@ -59,19 +84,19 @@
     "subtitle": "Powerful tools designed for surveying professionals and engineering teams.",
     "visualize": {
       "title": "Visualize",
-      "description": "High-performance 3D rendering with support for massive point cloud datasets"
+      "description": "Navigate massive datasets"
     },
     "measure": {
       "title": "Measure", 
-      "description": "Precise measurement tools with automatic annotation and export capabilities"
+      "description": "Survey-grade precision"
     },
     "collaborate": {
       "title": "Collaborate",
-      "description": "Real-time sharing and commenting with clients and team members"
+      "description": "Work together live"
     },
     "secure": {
       "title": "Secure",
-      "description": "Enterprise-grade security with French data hosting and GDPR compliance"
+      "description": "Control & protect"
     },
     "discover_all": "Discover all features"
   },

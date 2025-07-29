@@ -38,12 +38,37 @@
     "dashboard": "Tableau de bord",
     "account": "Compte",
     "settings": "Paramètres",
-    "logout": "Se déconnecter"
+    "logout": "Se déconnecter",
+    "request_demo": "Demander une démo",
+    "start_free_trial": "Essai gratuit",
+    "browser_available": "Disponible directement dans votre navigateur"
   },
   "nav": {
     "home": "Accueil",
     "resources": "Ressources",
     "blog": "Blog"
+  },
+  "resources_menu": {
+    "use_cases": {
+      "title": "Cas d'Usage",
+      "description": "Histoires de clients"
+    },
+    "blog": {
+      "title": "Blog", 
+      "description": "Articles & actualités"
+    },
+    "careers": {
+      "title": "Recrutement",
+      "description": "Rejoignez l'équipe"
+    },
+    "help_center": {
+      "title": "Centre d'aide",
+      "description": "Support 24/7, FAQ et guides"
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "API, guides et référence"
+    }
   },
   "hero": {
     "badge": "Visualiseur web 3D - données géospatiales",
@@ -59,19 +84,19 @@
     "subtitle": "Des outils puissants conçus pour les professionnels du relevé et les équipes d'ingénierie.",
     "visualize": {
       "title": "Visualiser",
-      "description": "Rendu 3D haute performance avec support de jeux de données massifs"
+      "description": "Naviguez dans vos jeux de données volumineux"
     },
     "measure": {
       "title": "Mesurer", 
-      "description": "Outils de mesure précis avec annotation automatique et export"
+      "description": "Une précision au niveau du géomètre"
     },
     "collaborate": {
       "title": "Collaborer",
-      "description": "Partage en temps réel et commentaires avec clients et équipes"
+      "description": "Travaillez ensemble en temps réel"
     },
     "secure": {
       "title": "Sécuriser",
-      "description": "Sécurité niveau entreprise avec hébergement français et conformité RGPD"
+      "description": "Contrôlez et protégez vos données"
     },
     "discover_all": "Découvrir toutes les fonctionnalités"
   },

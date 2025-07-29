@@ -8,6 +8,7 @@ import { openContactModal } from "@/utlis/toggleContactModal";
 import { homeLinks, links } from "@/data/menu";
 import { services, featuresMenu } from "@/data/services";
 import { getLocalizedPath, locales } from "@/lib/i18n";
+import { useTranslation } from "@/hooks/useTranslation";
 import View4SightMobileMenu from "./View4SightMobileMenu";
 
 // Contenu View4Sight pour le sous-menu Fonctionnalités (chemins relatifs)
@@ -65,6 +66,7 @@ export default function View4SightHeader() {
   const prevScrollPos = useRef(0);
   const ticking = useRef(false);
   const [scrollingUp, setScrollingUp] = useState(false);
+  const { t } = useTranslation();
 
   // Extract current locale from pathname
   const pathSegments = pathname.split('/').filter(Boolean);
@@ -75,16 +77,37 @@ export default function View4SightHeader() {
     return getLocalizedPath(path, currentLocale);
   };
 
-  // Create localized versions of navigation data
+  // Create localized versions of navigation data with translations
   const view4sightFeatures = view4sightFeaturesBase.map(feature => ({
     ...feature,
-    href: createLocalizedLink(feature.href)
+    href: createLocalizedLink(feature.href),
+    title: t(`features.${feature.title.toLowerCase()}.title`),
+    description: t(`features.${feature.title.toLowerCase()}.description`)
   }));
 
-  const view4sightResources = view4sightResourcesBase.map(resource => ({
-    ...resource,
-    href: createLocalizedLink(resource.href)
-  }));
+  const view4sightResources = view4sightResourcesBase.map(resource => {
+    let resourceKey;
+    switch(resource.title) {
+      case 'Use Cases':
+        resourceKey = 'use_cases';
+        break;
+      case 'Blog':
+        resourceKey = 'blog';
+        break;
+      case 'Recrutement':
+        resourceKey = 'careers';
+        break;
+      default:
+        resourceKey = resource.title.toLowerCase();
+    }
+    
+    return {
+      ...resource,
+      href: createLocalizedLink(resource.href),
+      title: t(`resources_menu.${resourceKey}.title`),
+      description: t(`resources_menu.${resourceKey}.description`)
+    };
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -177,7 +200,7 @@ export default function View4SightHeader() {
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2">
                 <li className="has-dd-menu" style={{ position: "relative" }}>
                   <a href="#" role="button" aria-haspopup="true" className="nav-hover-effect text-none">
-                    Features{" "}
+                    {t('navigation.features')}{" "}
                     <span
                       data-uc-navbar-parent-icon=""
                       className="uc-icon uc-navbar-parent-icon"
@@ -351,7 +374,7 @@ export default function View4SightHeader() {
                                     lineHeight: "1.4",
                                     transition: "color 0.3s ease"
                                   }}>
-                                    Disponible directement dans votre navigateur
+                                    {t('navigation.browser_available')}
                                   </p>
                                 </div>
                               </div>
@@ -362,12 +385,12 @@ export default function View4SightHeader() {
                 </li>
                 <li>
                   <Link className="text-none nav-hover-effect" href={createLocalizedLink("/tarifs")}>
-                    <span>Pricing</span>
+                    <span>{t('navigation.pricing')}</span>
                   </Link>
                 </li>
                 <li className="has-dd-menu" style={{ position: "relative" }}>
                   <a href="#" role="button" aria-haspopup="true" className="nav-hover-effect text-none">
-                    Ressources{" "}
+                    {t('navigation.resources')}{" "}
                     <span
                       data-uc-navbar-parent-icon=""
                       className="uc-icon uc-navbar-parent-icon"
@@ -466,7 +489,7 @@ export default function View4SightHeader() {
                                     {/* Icône headset - directe sans conteneur */}
                                     <Image
                                       src="/assets/images/custom-icons/headset.svg"
-                                      alt="Centre d'aide"
+                                      alt={t('resources_menu.help_center.title')}
                                       width={24}
                                       height={24}
                                       className="flex-shrink-0"
@@ -478,10 +501,10 @@ export default function View4SightHeader() {
                                     {/* Contenu texte */}
                                     <div className="d-flex flex-column justify-content-center">
                                       <h6 className="h6 fw-bold m-0 text-white dark:text-white">
-                                        Centre d'aide
+                                        {t('resources_menu.help_center.title')}
                                       </h6>
                                       <p className="fs-7 m-0 text-gray-300 dark:text-gray-400">
-                                        Support 24/7, FAQ et gui
+                                        {t('resources_menu.help_center.description')}
                                       </p>
                                     </div>
                                   </div>
@@ -501,7 +524,7 @@ export default function View4SightHeader() {
                                     {/* Icône file-text - directe sans conteneur */}
                                     <Image
                                       src="/assets/images/custom-icons/file-text.svg"
-                                      alt="Documentation"
+                                      alt={t('resources_menu.documentation.title')}
                                       width={24}
                                       height={24}
                                       className="flex-shrink-0"
@@ -513,10 +536,10 @@ export default function View4SightHeader() {
                                     {/* Contenu texte */}
                                     <div className="d-flex flex-column justify-content-center">
                                       <h6 className="h6 fw-bold m-0 text-white dark:text-white">
-                                        Documentation
+                                        {t('resources_menu.documentation.title')}
                                       </h6>
                                       <p className="fs-7 m-0 text-gray-300 dark:text-gray-400">
-                                        API, guides et référence
+                                        {t('resources_menu.documentation.description')}
                                       </p>
                                     </div>
                                   </div>
@@ -538,7 +561,7 @@ export default function View4SightHeader() {
                   onClick={openContactModal}
                   role="button"
                 >
-                  <span>Request a demo</span>
+                  <span>{t('navigation.request_demo')}</span>
                 </a>
               </div>
               
@@ -550,7 +573,7 @@ export default function View4SightHeader() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Log in</span>
+                  <span>{t('navigation.login')}</span>
                 </a>
               </div>
               
@@ -559,7 +582,7 @@ export default function View4SightHeader() {
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
                 href={createLocalizedLink('/tarifs')}
               >
-                Start free trial
+                {t('navigation.start_free_trial')}
               </Link>
               
               {/* Mobile Menu Toggle */}
