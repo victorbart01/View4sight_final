@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
-export default function HelpCenterHero() {
+export default function HelpCenterHero({ locale = 'en' }) {
+  const { t } = useTranslation(locale);
+
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div
@@ -43,13 +46,15 @@ export default function HelpCenterHero() {
           >
             <div className="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-750px mx-auto text-center">
               <div className="hero-badge mx-auto">
-                Support Center
+                {locale === 'fr' ? 'Centre d\'Aide' : 'Support Center'}
               </div>
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                How can we help you?
+                {locale === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can we help you?'}
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Find answers to your questions, explore our guides, or get in touch with our support team for personalized assistance.
+                {locale === 'fr' 
+                  ? 'Trouvez des réponses à vos questions, explorez nos guides, ou contactez notre équipe de support pour une assistance personnalisée.'
+                  : 'Find answers to your questions, explore our guides, or get in touch with our support team for personalized assistance.'}
               </p>
             </div>
             <div className="panel rounded-3 overflow-hidden bg-secondary dark:bg-gray-800">
@@ -71,14 +76,16 @@ export default function HelpCenterHero() {
                       <div className="panel z-1">
                         <div className="vstack gap-3">
                           <p className="fs-5 xl:fs-4 fw-medium">
-                            "The View4Sight support team helped us integrate the platform seamlessly into our surveying workflow."
+                            {locale === 'fr' 
+                              ? '"L\'équipe de support View4Sight nous a aidés à intégrer la plateforme parfaitement dans notre flux de travail de relevé."'
+                              : '"The View4Sight support team helped us integrate the platform seamlessly into our surveying workflow."'}
                           </p>
                           <div className="vstack gap-0">
                             <p className="fs-6 lg:fs-5 fw-medium">
                               Marie Dubois
                             </p>
                             <span className="fs-7 opacity-80">
-                              Technical Director at GeoSurvey
+                              {locale === 'fr' ? 'Directrice Technique chez GeoSurvey' : 'Technical Director at GeoSurvey'}
                             </span>
                           </div>
                         </div>
@@ -92,17 +99,19 @@ export default function HelpCenterHero() {
                     className="vstack gap-2 p-3 sm:p-6 xl:p-8"
                   >
                     <h3 className="h5 text-dark dark:text-white mb-2">
-                      Need Direct Support?
+                      {locale === 'fr' ? 'Besoin d\'un Support Direct ?' : 'Need Direct Support?'}
                     </h3>
                     <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">
-                      Can't find what you're looking for? Our support team is here to help with any technical questions or issues.
+                      {locale === 'fr' 
+                        ? 'Vous ne trouvez pas ce que vous cherchez ? Notre équipe de support est là pour vous aider avec toute question technique ou problème.'
+                        : "Can't find what you're looking for? Our support team is here to help with any technical questions or issues."}
                     </p>
                     <div className="row child-cols-12 sm:child-cols-6 g-2">
                       <div>
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="text"
-                          placeholder="Your name"
+                          placeholder={locale === 'fr' ? 'Votre nom' : 'Your name'}
                           required
                         />
                       </div>
@@ -110,22 +119,22 @@ export default function HelpCenterHero() {
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="email"
-                          placeholder="Your email"
+                          placeholder={locale === 'fr' ? 'Votre email' : 'Your email'}
                           required
                         />
                       </div>
                     </div>
                     <select className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white">
-                      <option value="">Select issue type</option>
-                      <option value="technical">Technical Issue</option>
-                      <option value="account">Account & Billing</option>
-                      <option value="features">Feature Question</option>
-                      <option value="integration">Integration Support</option>
-                      <option value="other">Other</option>
+                      <option value="">{locale === 'fr' ? 'Sélectionner le type de problème' : 'Select issue type'}</option>
+                      <option value="technical">{locale === 'fr' ? 'Problème Technique' : 'Technical Issue'}</option>
+                      <option value="account">{locale === 'fr' ? 'Compte et Facturation' : 'Account & Billing'}</option>
+                      <option value="features">{locale === 'fr' ? 'Question sur les Fonctionnalités' : 'Feature Question'}</option>
+                      <option value="integration">{locale === 'fr' ? 'Support d\'Intégration' : 'Integration Support'}</option>
+                      <option value="other">{locale === 'fr' ? 'Autre' : 'Other'}</option>
                     </select>
                     <textarea
                       className="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                      placeholder="Describe your issue or question..."
+                      placeholder={locale === 'fr' ? 'Décrivez votre problème ou question...' : 'Describe your issue or question...'}
                       required
                       defaultValue={""}
                     />
@@ -133,10 +142,12 @@ export default function HelpCenterHero() {
                       className="btn btn-primary btn-md text-white mt-2"
                       type="submit"
                     >
-                      Send Support Request
+                      {locale === 'fr' ? 'Envoyer la Demande de Support' : 'Send Support Request'}
                     </button>
                     <p className="text-center fs-7 text-dark dark:text-white text-opacity-60">
-                      We typically respond within 2-4 hours during business hours
+                      {locale === 'fr' 
+                        ? 'Nous répondons généralement sous 2-4 heures pendant les heures de bureau'
+                        : 'We typically respond within 2-4 hours during business hours'}
                     </p>
                   </form>
                 </div>

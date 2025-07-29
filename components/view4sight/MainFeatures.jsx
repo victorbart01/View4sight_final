@@ -198,14 +198,14 @@ export default function MainFeatures() {
 
             </div>
 
-            {/* Bouton vers la page Features */}
+            {/* Bouton vers la page Features - optimisé pour mobile */}
             <div
               className="text-center mt-6 lg:mt-8"
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 800;"
             >
               <Link
                 href="/fonctionnalites"
-                className="btn btn-lg btn-outline-primary rounded-pill px-5 py-3"
+                className="btn btn-md lg:btn-lg btn-outline-primary rounded-pill px-3 lg:px-5 py-2 lg:py-3 fs-7 lg:fs-6"
               >
                 <span>{t('main_features.discover_all')}</span>
                 <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180 ms-1" />

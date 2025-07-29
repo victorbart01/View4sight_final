@@ -14,9 +14,9 @@ export default function SupportPage({ params }) {
   
   return (
     <>
-      <HelpCenterHero />
-      <HelpCenterFaq />
-      <HelpCenterResources />
+      <HelpCenterHero locale={locale} />
+      <HelpCenterResources locale={locale} />
+      <HelpCenterFaq locale={locale} />
     </>
   );
 } 

@@ -2,15 +2,15 @@
 import React from "react";
 import Image from "next/image";
 
-const helpResources = [
+const getHelpResources = (locale) => [
   {
     id: 1,
     lightIcon: "/assets/images/custom-icons/icon-quick-starter.svg",
     darkIcon: "/assets/images/custom-icons/icon-quick-starter.svg",
     altText: "guide-icon",
-    title: "Getting Started Guide",
-    description: "Learn the basics of uploading and visualizing your 3D data",
-    linkText: "Read Guide",
+    title: locale === 'fr' ? "Guide de Démarrage" : "Getting Started Guide",
+    description: locale === 'fr' ? "Apprenez les bases de l'importation et de la visualisation de vos données 3D" : "Learn the basics of uploading and visualizing your 3D data",
+    linkText: locale === 'fr' ? "Lire le Guide" : "Read Guide",
     linkUrl: "/ressources/guides/getting-started",
   },
   {
@@ -18,9 +18,9 @@ const helpResources = [
     lightIcon: "/assets/images/custom-icons/icon-video-tuto.svg",
     darkIcon: "/assets/images/custom-icons/icon-video-tuto.svg",
     altText: "video-icon",
-    title: "Video Tutorials",
-    description: "Step-by-step video tutorials for all platform features",
-    linkText: "Watch Videos",
+    title: locale === 'fr' ? "Tutoriels Vidéo" : "Video Tutorials",
+    description: locale === 'fr' ? "Tutoriels vidéo étape par étape pour toutes les fonctionnalités de la plateforme" : "Step-by-step video tutorials for all platform features",
+    linkText: locale === 'fr' ? "Regarder les Vidéos" : "Watch Videos",
     linkUrl: "/ressources/tutorials",
   },
   {
@@ -28,9 +28,9 @@ const helpResources = [
     lightIcon: "/assets/images/custom-icons/icon-live-chat.svg",
     darkIcon: "/assets/images/custom-icons/icon-live-chat.svg",
     altText: "chat-icon",
-    title: "Live Chat Support",
-    description: "Chat with our support team for immediate assistance",
-    linkText: "Start Chat",
+    title: locale === 'fr' ? "Support Chat en Direct" : "Live Chat Support",
+    description: locale === 'fr' ? "Discutez avec notre équipe de support pour une assistance immédiate" : "Chat with our support team for immediate assistance",
+    linkText: locale === 'fr' ? "Démarrer le Chat" : "Start Chat",
     linkUrl: "chat",
   },
   {
@@ -38,14 +38,16 @@ const helpResources = [
     lightIcon: "/assets/images/custom-icons/icon-internet.svg",
     darkIcon: "/assets/images/custom-icons/icon-internet.svg",
     altText: "status-icon",
-    title: "System Status",
-    description: "Check current platform status and recent updates",
-    linkText: "View Status",
+    title: locale === 'fr' ? "État du Système" : "System Status",
+    description: locale === 'fr' ? "Vérifiez l'état actuel de la plateforme et les mises à jour récentes" : "Check current platform status and recent updates",
+    linkText: locale === 'fr' ? "Voir l'État" : "View Status",
     linkUrl: "/status",
   },
 ];
 
-export default function HelpCenterResources() {
+export default function HelpCenterResources({ locale = 'en' }) {
+  const helpResources = getHelpResources(locale);
+  
   const openZohoChat = () => {
     if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.chat) {
       window.$zoho.salesiq.chat.start();
@@ -62,7 +64,7 @@ export default function HelpCenterResources() {
                 className="h4 sm:h3 lg:h2 m-0 text-center"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
-                Explore Our Help Resources
+                {locale === 'fr' ? 'Explorez Nos Ressources d\'Aide' : 'Explore Our Help Resources'}
               </h2>
               <div
                 className="row child-cols-12 sm:child-cols-6 lg:child-cols-3 g-2 xl:g-3 justify-between col-match"

@@ -59,17 +59,17 @@ export default function Hero() {
                     dangerouslySetInnerHTML={tHtml('hero.subtitle')}
                   />
                   
-                  {/* Boutons CTA avec style amélioré */}
-                  <div className="hstack gap-3 flex-wrap">
+                  {/* Boutons CTA avec style amélioré et responsive optimisé */}
+                  <div className="hstack gap-2 lg:gap-3 flex-wrap">
                     <Link
                       href={`/tarifs`}
-                      className="btn btn-lg btn-primary rounded-pill px-5 py-3 text-white fw-medium fs-6"
+                      className="btn btn-md lg:btn-lg btn-primary rounded-pill px-3 lg:px-5 py-2 lg:py-3 text-white fw-medium fs-7 lg:fs-6"
                     >
                       {t('hero.cta_primary')}
                     </Link>
                     <a
                       onClick={openContactModal}
-                      className="btn btn-lg btn-outline-primary rounded-pill px-5 py-3 fw-medium fs-6 cursor-pointer"
+                      className="btn btn-md lg:btn-lg btn-outline-primary rounded-pill px-3 lg:px-5 py-2 lg:py-3 fw-medium fs-7 lg:fs-6 cursor-pointer"
                       role="button"
                     >
                       {t('hero.cta_secondary')}
