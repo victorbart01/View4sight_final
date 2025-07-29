@@ -544,9 +544,14 @@ export default function View4SightHeader() {
               
               {/* Login */}
               <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium nav-hover-effect" href={createLocalizedLink('/sign-in')}>
+                <a 
+                  className="text-none fw-medium nav-hover-effect" 
+                  href="https://app.view4sight.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span>Log in</span>
-                </Link>
+                </a>
               </div>
               
               {/* Free Trial Button */}

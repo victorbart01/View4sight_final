@@ -42,7 +42,7 @@
   },
   "hero": {
     "badge": "Visualiseur web 3D - données géospatiales",
-    "title": "Fini les logiciels.<br />Fini les plugins.<br />Un simple upload, et tout fonctionne.",
+    "title": "Importez vos scans.<br />Naviguez en 3D.<br />Collaborer en ligne.",
     "subtitle": "Transformez vos nuages de points massifs en espaces de travail collaboratifs.<br />Mesures en temps réel, annotations intelligentes, partage instantané. Aucun logiciel à installer.",
     "cta_primary": "Essai Gratuit",
     "cta_secondary": "Demander une Démo",
@@ -77,18 +77,18 @@
   },
   "testimonials": {
     "badge": "Témoignages",
-    "title": "Comment les Équipes Transforment<br />Leurs Workflows 3D",
-    "subtitle": "Découvrez comment View4Sight aide les professionnels du relevé et de l'ingénierie à gagner du temps et obtenir de meilleurs résultats.",
+    "title": "Conçu par des experts, adopté par les leaders du secteur",
+    "subtitle": "View4Sight a été développé par Integral4, la branche innovation de TTGE, un acteur historique de la topographie et de l’ingénierie en France, fort de plus de 60 ans d’expérience terrain.",
     "featured": {
-      "quote": "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
+      "quote": "Grâce à View4Sight, nous avons évité trois déplacements terrain et finalisé notre dossier DOE en seulement 48 heures. C’est exactement l’efficacité qu’on attend sur nos projets.",
       "author": "Pierre Moreau",
       "position": "Géomètre-expert",
       "company": "Cabinet Moreau & Associés, Lyon"
     },
     "stats": {
-      "time_saved": "30% de validation client plus rapide",
-      "site_visits": "50% de visites terrain en moins", 
-      "communication": "80% de communication plus claire",
+      "time_saved": "de validation client en plus",
+      "site_visits": "de visites terrain en moins", 
+      "communication": "plus rapide à upload vs logiciel de bureau",
       "storage": "150 Go inclus dans l'essai gratuit"
     }
   },
@@ -103,23 +103,7 @@
       "encryption": "Chiffrement de bout en bout"
     }
   },
-  "pain_benefits": {
-    "badge": "Défis Courants",
-    "title": "Arrêtez de lutter avec<br />les logiciels 3D lourds",
-    "subtitle": "Les workflows traditionnels de nuages de points sont complexes, coûteux et créent des barrières à la collaboration.",
-    "problems": {
-      "software": "Licences CAO coûteuses pour chaque membre d'équipe",
-      "technical": "Les barrières techniques empêchent l'engagement client", 
-      "sharing": "Partage de fichiers et contrôle de version complexes",
-      "access": "Accès distant et outils de collaboration limités"
-    },
-    "solutions": {
-      "web_based": "Accès web depuis n'importe quel appareil",
-      "collaborative": "Collaboration et retours en temps réel",
-      "simple": "Partage simple avec liens sécurisés",
-      "mobile": "Compatible mobile pour le terrain"
-    }
-  },
+ 
   "faq": {
     "badge": "FAQ",
     "title": "Questions<br />Fréquemment Posées",
@@ -257,34 +241,34 @@
   },
   "main_features": {
     "badge": "Fonctionnalités principales",
-    "title": "Tout ce dont vous avez besoin<br />en une seule plateforme",
-    "subtitle": "View4Sight gère le workflow complet depuis l'import des données jusqu'à la livraison client. Support de tous les formats majeurs avec gestion avancée des systèmes de coordonnées qui fonctionne vraiment.",
+    "title": "Une seule plateforme pour tous vos jumeaux digitaux",
+    "subtitle": "Importez, explorez, annotez, livrez. View4Sight réunit tous vos outils 3D dans une seule interface — simple, fluide, souveraine.",
     "discover_all": "Découvrir toutes les fonctionnalités",
     "features": {
       "web_viewer": {
-        "title": "Visualiseur 3D Web",
-        "description": "Naviguez dans d'énormes nuages de points en fluidité depuis n'importe quel navigateur—aucun plugin requis. Vos clients n'ont besoin que d'un navigateur web pour explorer vos données 3D.",
+        "title": "Accès instantané à vos données 3D lourdes",
+        "description": "Ouvrez vos nuages de points et maquettes BIM directement dans le navigateur, même les jeux de données les plus lourds. Importez, mesurez, partagez. Instantanément.",
         "cta": "Essayer maintenant"
       },
       "all_formats": {
-        "title": "Tous Vos Fichiers Géospatiaux en Un Lieu",
-        "description": "Support natif pour LAS, E57, IFC, DXF et orthophotos avec gestion avancée des systèmes de coordonnées qui fonctionne vraiment. Plus besoin de jongler entre des outils incompatibles.",
+        "title": "Tous vos fichiers géospaciaux au même endroit, sans conversion",
+        "description": "LAS, E57, IFC, orthophotos, DXF… View4Sight lit tous vos formats natifs, sans conversion. Les systèmes de coordonnées sont reconnus et alignés automatiquement",
         "cta": "Voir tous les formats"
       },
       "data_security": {
-        "title": "Données Sécurisées.<br />Permissions Précises.<br />Partage Simple.",
-        "description": "Partagez des scans 3D avec n'importe qui — aucune installation nécessaire.<br />Accordez le bon accès aux bonnes personnes, instantanément.<br />Vos données restent chiffrées, sûres et sous contrôle."
+        "title": "Partage sécurisé.<br />Contrôle total des accès.",
+        "description": "Vous choisissez qui peut voir, commenter ou télécharger.</br>Attribution de rôles, gestion des droits, données chiffrées.</br>Idéal pour collaborer ou livrer vos relevés aux clients en toute confiance."
       },
       "smart_annotations": {
-        "title": "Annotations & Mesures Intelligentes",
-        "description": "Ajoutez des commentaires, mesures et annotations qui restent précisément positionnés dans l'espace 3D. Collaboration en temps réel avec toute votre équipe."
+        "title": "Collaborez ensemble, en temps réel sur vos modèles 3D",
+        "description": "Commentez, annotez et mesurez directement dans le modèle 3D.br />Facilitez des échanges clairs et efficaces entre équipes terrain, bureau et clients."
       }
     }
   },
   "video_demo": {
     "badge": "Démo vidéo",
     "title": "Comment ça marche",
-    "description": "La plateforme est conçue pour vous aider à visualiser, automatiser et construire des workflows de données géospatiales."
+    "description": "Découvrez comment View4Sight vous permet d’explorer, mesurer et partager vos données 3D en quelques secondes."
   },
   "faq_short": {
     "badge": "FAQ",
@@ -376,11 +360,11 @@
       },
       {
         "title": "Sécurité Entreprise",
-        "description": "Sécurité niveau bancaire avec permissions utilisateur granulaires"
+        "description": "Droits d’accès sur mesure, activité tracée. Idéal pour les audits et les clients sensibles."
       },
       {
         "title": "Conformité RGPD",
-        "description": "Confidentialité européenne par conception, pas en réflexion"
+        "description": "Conforme RGPD dès la conception.Pas d’ajouts, pas de compromis."
       }
     ]
   },

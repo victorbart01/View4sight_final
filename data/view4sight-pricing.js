@@ -24,7 +24,7 @@ export const view4sightTiers = [
     plan: "Team",
     price: "€79",
     yearlyPrice: "€63",
-    priceSuffix: "/ mo",
+    priceSuffix: "/ month",
     description: "For teams ready to collaborate on 3D data",
     features: [
       "150 GB Storage",
@@ -46,7 +46,7 @@ export const view4sightTiers = [
     plan: "Studio",
     price: "€199",
     yearlyPrice: "€159",
-    priceSuffix: "/ mo",
+    priceSuffix: "/ month",
     description: "For established firms with complex projects",
     features: [
       "500 GB Storage",

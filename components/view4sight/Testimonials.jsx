@@ -62,9 +62,10 @@ export default function Testimonials() {
                     className="h3 lg:h2 xl:h1 m-0"
                     dangerouslySetInnerHTML={tHtml('testimonials.title')}
                   />
-                  <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
-                    {t('testimonials.subtitle')}
-                  </p>
+                  <p
+                    className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto"
+                    dangerouslySetInnerHTML={tHtml('testimonials.subtitle')}
+                  />
                 </div>
 
                 {/* Témoignage principal */}

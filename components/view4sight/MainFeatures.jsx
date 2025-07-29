@@ -172,14 +172,16 @@ export default function MainFeatures() {
                   data-anime="onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 300;"
                 >
                   <div
-                    className="panel vstack items-center gap-3 p-3 lg:p-4 xl:p-6"
+                    className="panel vstack items-start gap-3 p-3 lg:p-4 xl:p-6"
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <h4 className="h4 lg:h3 m-0">{t('main_features.features.smart_annotations.title')}</h4>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0 xl:px-4 text-center">
-                      <span style={{ opacity: 0.7 }}>
-                        {t('main_features.features.smart_annotations.description')}
-                      </span>
+                    <p className="fs-6 md:fs-5 lg:fs-4 m-0" style={{ opacity: 0.7 }}>
+                      <span 
+                        dangerouslySetInnerHTML={{ 
+                          __html: t('main_features.features.smart_annotations.description') 
+                        }}
+                      />
                     </p>
                   </div>
                   <div className="panel px-3 lg:px-4 xl:px-6 mb-2 lg:mb-5">

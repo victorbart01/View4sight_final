@@ -73,14 +73,14 @@
   "video": {
     "badge": "Video demo",
     "title": "How It Works",
-    "description": "The platform is designed to help you visualize, automate, and build geospatial data workflows."
+    "description": "See how View4Sight helps you explore, measure, and share 3D data in seconds."
   },
   "testimonials": {
     "badge": "Testimonials",
-    "title": "How Teams Transform Their 3D Workflows",
-    "subtitle": "Discover how View4Sight helps surveying and engineering professionals save time and deliver better results.",
+    "title": "Built by Experts, Trusted by Industry Leaders",
+    "subtitle": "View4Sight was developed by <a href=\"https://www.integral4.fr/en/intelligent-mapping-solutions/\" target=\"_blank\" rel=\"noopener\">Integral4</a>, the innovation arm of <a href=\"https://www.tt-geometres-experts.fr/fr\" target=\"_blank\" rel=\"noopener\">TTGE</a>, a leading French surveying and engineering firm with over 60 years of expertise.",
     "featured": {
-      "quote": "Grâce à View4Sight, on a pu éviter 3 déplacements chantier et finaliser notre DOE en 48h. Enfin une solution française qui comprend nos contraintes de souveraineté données.",
+      "quote": "Thanks to View4Sight, we avoided three site visits and completed our final documentation (DOE) in just 48 hours. It's exactly the kind of efficiency our projects need.",
       "author": "Pierre Moreau",
       "position": "Géomètre-expert",
       "company": "Cabinet Moreau & Associés, Lyon"
@@ -110,11 +110,11 @@
     "solutions_title": "View4Sight Solutions",
     "problems": [
       {
-        "title": "Juggling Multiple Desktop Tools",
+        "title": "Too Many Tools, Too Much Setup",
         "description": "You're switching between expensive desktop software, managing licenses, and wasting time on complex installations for every new project."
       },
       {
-        "title": "Team Collaboration is Broken",
+        "title": "Collaboration Is a Mess",
         "description": "Your team loses time exchanging files via email. Annotations get lost, versions get mixed up, and collaboration becomes a nightmare."
       },
       {
@@ -124,7 +124,7 @@
     ],
     "solutions": [
       {
-        "title": "Instant Browser-Based Viewing",
+        "title": "One Platform, Zero Installations",
         "description": "Upload your point clouds once. Your team and clients navigate in 3D directly in their browser, no installation required."
       },
       {
@@ -272,26 +272,26 @@
   "main_features": {
     "badge": "Main features",
     "title": "Everything You Need<br />in One Platform",
-    "subtitle": "View4Sight handles the complete workflow from data upload to client delivery. Support for all major formats with advanced coordinate system handling that actually works.",
+    "subtitle": "Upload, explore, measure, share without switching tools. View4Sight combines everything you need to handle, secure, and deliver geospatial data.",
     "discover_all": "Discover all features",
     "features": {
       "web_viewer": {
-        "title": "Web-based 3D Viewer",
-        "description": "Navigate massive point clouds smoothly in any browser—no plugins required. Your clients just need a web browser to explore your 3D data.",
+        "title": "Explore Large 3D Files, Right in Your Browser ",
+        "description": "Open massive point clouds and BIM models instantly without any installations. Whether you're on site or in the office, your data is ready to view, measure, and share.",
         "cta": "Try it now"
       },
       "all_formats": {
-        "title": "All Your Geospatial Files in One Place",
-        "description": "Native support for LAS, E57, IFC, DXF, and orthophotos with advanced coordinate system handling that actually works. No more juggling between incompatible tools.",
+        "title": "All Major Geospatial Formats, Seamlessly Integrated",
+        "description": "View, align and combine LAS, E57, IFC, DXF, orthophotos and more — with built-in coordinate system handling. Forget format headaches, just upload and go.",
         "cta": "See all formats"
       },
       "data_security": {
-        "title": "Secure Data.<br />Precise Permissions.<br />Simple Sharing.",
-        "description": "Share 3D scans with anyone — no install needed.<br />Grant the right access to the right people, instantly.<br />Your data stays encrypted, safe, and under control."
+        "title": "Total Control Over Your Data",
+        "description": "Manage user roles, restrict access, and track activity — all with enterprise-grade encryption and French data hosting. Your data stays protected, and always under your control."
       },
       "smart_annotations": {
-        "title": "Smart Annotations & Measurements",
-        "description": "Add comments, measurements, and markup that stay precisely positioned in 3D space. Real-time collaboration with your entire team."
+        "title": "Annotate & Measure Directly in 3D",
+        "description": "Add comments, dimensions, and statuses that stick to real geometry. Everyone sees the same thing, in real-time."
       }
     }
   },
@@ -339,19 +339,19 @@
     "features": [
       {
         "title": "Sovereign Hosting",
-        "description": "Your projects never leave French territory"
+        "description": "Your files are stored in certified French datacenters. No foreign routing, ever."
       },
       {
         "title": "On-premise Option",
-        "description": "Install on your own servers for maximum control"
+        "description": "Deploy View4Sight on your own servers for maximum independence."
       },
       {
-        "title": "Enterprise Security",
-        "description": "Bank-level security with granular user permissions"
+        "title": "Granular Permissions",
+        "description": "Set precise access rights and monitor every action. Ideal for audits and traceability."
       },
       {
         "title": "GDPR Compliance",
-        "description": "European privacy by design, not as an afterthought"
+        "description": "Full compliance with European regulations from day one. No add-ons, no surprises."
       }
     ]
   },

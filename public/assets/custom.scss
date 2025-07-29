@@ -572,3 +572,100 @@ html.uc-dark body {
     justify-content: flex-start !important;
   }
 }
+
+/* View4Sight - SecurityBlock optimized animations */
+.security-visual-container {
+  will-change: opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0); /* Force hardware acceleration */
+}
+
+.security-visual-fade {
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+}
+
+.security-visual-fade.fade-out {
+  opacity: 0;
+}
+
+.security-visual-fade.fade-in {
+  opacity: 1;
+}
+
+/* SecurityBlock feature cards optimizations */
+.security-feature-card {
+  will-change: transform, box-shadow, background-color;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  background-color: #2A2D30;
+  border: 1px solid #404448;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: 
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.2s ease;
+}
+
+.security-feature-card:hover {
+  transform: translateY(-4px) scale(1.02) translateZ(0);
+}
+
+.security-feature-card.active {
+  transform: translateY(-4px) scale(1.02) translateZ(0);
+  background-color: #E5DCCA;
+  box-shadow: 0 12px 40px rgba(254, 85, 46, 0.2), 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Optimize icon transitions */
+.security-icon {
+  transition: background-color 0.3s ease;
+  will-change: background-color;
+}
+
+/* Reduce repaints */
+.security-content-text {
+  transition: color 0.3s ease;
+  will-change: color;
+}
+
+/* Security Trust Indicators - Certification Cards */
+.security-trust {
+  .certification-image-placeholder {
+    /* No hover effects - static display */
+  }
+  
+  .certification-image {
+    /* No hover effects - static display */
+  }
+}
+
+/* Responsive adjustments for certification cards */
+@media (max-width: 575.98px) {
+  .security-trust {
+    .row {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    .col-12, .col-sm-6, .col-lg-4 {
+      max-width: 280px;
+    }
+  }
+}
+
+/* Certification container responsive */
+.certification-container {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .certification-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

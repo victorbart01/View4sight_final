@@ -11,7 +11,7 @@ export default function Hero() {
     return (
       <div id="hero_header" className="hero-header section panel overflow-hidden">
         <div className="position-cover bg-secondary dark:bg-gray-800" />
-        <div className="section-outer panel pt-9 pb-6">
+        <div className="section-outer panel pt-9 pb-2">
           <div className="container max-w-xl">
             <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '500px' }}>
               <div className="spinner-border text-primary" role="status">
@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div className="position-cover bg-secondary dark:bg-gray-800" />
-      <div className="section-outer panel pt-9 pb-6">
+      <div className="section-outer panel pt-9 pb-2">
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div className="row child-cols justify-center md:justify-between items-center g-0">
@@ -46,7 +46,8 @@ export default function Hero() {
                     {/* Titre principal avec hiérarchie forte */}
                     <div className="vstack gap-1">
                       <h1 
-                        className="h2 xl:display-5 fw-bold mb-0 lh-sm text-dark dark:text-white"
+                        className="h2 xl:display-5 fw-bold mb-0 text-dark dark:text-white"
+                        style={{lineHeight: '1.44'}}
                         dangerouslySetInnerHTML={tHtml('hero.title')}
                       />
                     </div>
@@ -76,18 +77,36 @@ export default function Hero() {
                   </div>
                   
                   {/* Points clés avec icônes check-circle */}
-                  <div className="hstack gap-4 flex-wrap">
-                    <div className="hstack gap-1 align-items-center">
+                  <div className="hstack gap-4 flex-wrap justify-center lg:justify-start">
+                    <div className="hstack gap-1 items-center">
                       <Image
-                        src="/assets/images/common/icons/check-circle.svg"
                         alt="Check"
-                        width={16}
-                        height={16}
+                        src="/assets/images/common/icons/check-circle.svg"
+                        width="16"
+                        height="16"
                         className="flex-shrink-0 text-primary"
                       />
-                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">
-                        {t('hero.trust_text')}
-                      </span>
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">30-day free trial</span>
+                    </div>
+                    <div className="hstack gap-1 items-center">
+                      <Image
+                        alt="Check"
+                        src="/assets/images/common/icons/check-circle.svg"
+                        width="16"
+                        height="16"
+                        className="flex-shrink-0 text-primary"
+                      />
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">No credit card required</span>
+                    </div>
+                    <div className="hstack gap-1 items-center">
+                      <Image
+                        alt="Check"
+                        src="/assets/images/common/icons/check-circle.svg"
+                        width="16"
+                        height="16"
+                        className="flex-shrink-0 text-primary"
+                      />
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">150GB storage included</span>
                     </div>
                   </div>
                 </div>

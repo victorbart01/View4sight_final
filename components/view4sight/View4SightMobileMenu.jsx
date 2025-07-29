@@ -504,9 +504,14 @@ export default function View4SightMobileMenu() {
 
           {/* Footer avec boutons CTA */}
           <div className="menu-footer">
-            <Link href={createLocalizedLink("/sign-in")} className="footer-btn btn-login">
+            <a 
+              href="https://app.view4sight.com" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-btn btn-login"
+            >
               Log in
-            </Link>
+            </a>
             <Link href={createLocalizedLink("/tarifs")} className="footer-btn btn-get-started">
               Get Started
             </Link>
