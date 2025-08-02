@@ -72,7 +72,7 @@
   },
   "hero": {
     "badge": "Visualiseur web 3D - données géospatiales",
-    "title": "Importez vos scans.<br />Naviguez en 3D.<br />Collaborer en ligne.",
+    "title": "Importez vos scans.<br />Naviguez en 3D.<br />Collaborez en ligne.",
     "subtitle": "Transformez vos nuages de points massifs en espaces de travail collaboratifs.<br />Mesures en temps réel, annotations intelligentes, partage instantané. Aucun logiciel à installer.",
     "cta_primary": "Essai Gratuit",
     "cta_secondary": "Demander une Démo",
@@ -159,8 +159,8 @@
   },
   "cta_final": {
     "badge": "Commencer",
-    "title": "Prêt à transformer vos<br />workflows 3D ?",
-    "subtitle": "Rejoignez des centaines de professionnels du relevé qui utilisent déjà View4Sight pour optimiser leurs projets.",
+    "title": "Prêt à simplifier vos projets 3D et accélérer vos livrables ?",
+    "subtitle": "Rejoignez des centaines de professionnels du relevé qui utilisent déjà View4Sight pour transformer leurs données 3D en livrables clairs et valorisés.",
     "cta_primary": "Essai Gratuit",
     "cta_secondary": "Demander une Démo",
     "trust_text": "30 jours d'essai gratuit • Aucune carte bancaire • Annulation à tout moment"
@@ -333,27 +333,23 @@
     ]
   },
   "pain_benefits": {
-    "badge": "Points de Douleur",
-    "title": "Vos Données 3D Méritent Mieux<br />Que des Captures d'Écran Statiques",
+    "badge": "Bénéfices",
+    "title": "Vos données 3D méritent mieux<br />que des captures d'écran statiques",
     "subtitle": "Ça vous dit quelque chose ? Transformez ces frustrations quotidiennes en avantages concurrentiels.",
-    "problems_title": "Frustrations Quotidiennes",
-    "solutions_title": "Solutions View4Sight",
+    "problems_title": "Sans View4sight",
+    "solutions_title": "Avec View4Sight",
     "problems": [
       {
-        "title": "Les Clients ne Peuvent pas Visualiser avec des Captures",
-        "description": "Emails incessants, demandes de visites de site et retards d'approbation parce que les images statiques ne racontent pas toute l'histoire."
+        "title": " Trop d’outils, trop de paramétrages",
+        "description": "Vous jonglez entre plusieurs logiciels coûteux, gérez des licences et perdez du temps à installer/configurer à chaque nouveau projet."
       },
       {
-        "title": "Barrières Logicielles Lourdes",
-        "description": "Licences CAO coûteuses pour chaque partie prenante. Fichiers qui plantent sur mobile. Plugins qui cassent avec les mises à jour."
+        "title": "Une collaboration chaotique",
+        "description": "Votre équipe échange des fichiers par mail. Les versions se mélangent, les annotations se perdent, la coordination devient un cauchemar."
       },
       {
-        "title": "Données Piégées en Silos",
-        "description": "Nuages de points dans un logiciel, BIM dans un autre, mesures dans des feuilles de calcul. Aucune source unique de vérité."
-      },
-      {
-        "title": "Préoccupations de Sécurité et Conformité",
-        "description": "Données sensibles de projet envoyées vers des services cloud américains. La conformité RGPD devient un cauchemar. Souveraineté des données perdue."
+        "title": "Les clients ne peuvent pas lire vos livrables",
+        "description": "Ils ne comprennent pas vos relevés 3D à travers des PDF figés. Ils doivent installer un logiciel spécifique — et passent à côté de la valeur de votre travail."
       }
     ],
     "solutions": [
@@ -368,10 +364,6 @@
       {
         "title": "Toutes les Données, Une Plateforme",
         "description": "Nuages de points, modèles BIM, orthophotos et mesures unifiés dans un seul espace de travail. Partagez tout avec un seul lien."
-      },
-      {
-        "title": "Souveraineté des Données Françaises",
-        "description": "Vos données restent en France sur des serveurs certifiés ISO. RGPD natif, pas ajouté après coup. Approuvé par le secteur public."
       }
     ]
   },
@@ -467,6 +459,19 @@
         "answer": "Oui ! Nous fournissons une API REST complète et des webhooks pour des intégrations personnalisées. Les intégrations populaires incluent les logiciels CAO, équipements de relevé et outils de gestion de projet."
       }
     ]
+  },
+  "demo_modal": {
+    "title": "Planifiez votre démo de 30 minutes maintenant",
+    "form": {
+      "first_name": "Prénom*",
+      "last_name": "Nom*",
+      "email": "Votre email*",
+      "phone": "Numéro de téléphone*",
+      "company": "Nom de l'entreprise*",
+      "message": "Votre message.."
+    },
+    "submit_button": "Planifier ma démo",
+    "description": "Nous adapterons votre démo à vos besoins immédiats et répondrons à toutes vos questions. Préparez-vous à voir comment cela fonctionne !"
   },
   "blog": {
     "title": "Blog & Actualités",

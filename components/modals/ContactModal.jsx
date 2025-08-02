@@ -3,11 +3,13 @@
 import { closeContactModal } from "@/utlis/toggleContactModal";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function ContactModal() {
   const pathname = usePathname();
   const elementRef = useRef(null);
   const containerRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -56,7 +58,7 @@ export default function ContactModal() {
         <div className="panel vstack gap-2 md:gap-4 text-center">
           <div className="panel cstack px-3 md:px-4 py-4 md:py-8 m-0 lg:mx-auto">
             <div className="panel vstack justify-center items-center gap-2 sm:gap-4 text-center">
-              <h4 className="h5 lg:h4 m-0">Schedule your 15-minute demo now</h4>
+              <h4 className="h5 lg:h4 m-0">{t('demo_modal.title')}</h4>
               <div className="panel w-100 sm:w-350px md:w-500px mx-auto">
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -69,13 +71,13 @@ export default function ContactModal() {
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="text"
-                      placeholder="Full name*"
+                      placeholder={t('demo_modal.form.first_name')}
                       required
                     />
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="text"
-                      placeholder="Last name*"
+                      placeholder={t('demo_modal.form.last_name')}
                       required
                     />
                   </div>
@@ -86,36 +88,35 @@ export default function ContactModal() {
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="email"
-                      placeholder="Your email*"
+                      placeholder={t('demo_modal.form.email')}
                       required
                     />
                     <input
                       className="form-control h-48px w-100 md:w-1/2 rtl:text-end bg-white dark:border-white dark:text-dark"
                       type="tel"
-                      placeholder="Phone number*"
+                      placeholder={t('demo_modal.form.phone')}
                       required
                     />
                   </div>
                   <input
                     className="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
                     type="text"
-                    placeholder="Company name*"
+                    placeholder={t('demo_modal.form.company')}
                     required
                   />
                   <textarea
                     className="form-control min-h-150px w-full bg-white dark:border-white dark:text-dark"
-                    placeholder="Your message.."
+                    placeholder={t('demo_modal.form.message')}
                     defaultValue={""}
                   />
                   <button
                     className="btn btn-primary btn-md text-white mt-2"
                     type="submit"
                   >
-                    Schedule my demo
+                    {t('demo_modal.submit_button')}
                   </button>
                   <p className="fs-7 opacity-70 mt-2 text-center">
-                    We’ll tailor your demo to your immediate needs and answer
-                    all your questions. Get ready to see how it works!
+                    {t('demo_modal.description')}
                   </p>
                 </form>
               </div>

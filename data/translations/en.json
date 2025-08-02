@@ -474,5 +474,18 @@
     "shareArticle": "Share article",
     "tags": "Tags",
     "comments": "Comments"
+  },
+  "demo_modal": {
+    "title": "Schedule your 30-minute demo now",
+    "form": {
+      "first_name": "Full name*",
+      "last_name": "Last name*",
+      "email": "Your email*",
+      "phone": "Phone number*",
+      "company": "Company name*",
+      "message": "Your message.."
+    },
+    "submit_button": "Schedule my demo",
+    "description": "We'll tailor your demo to your immediate needs and answer all your questions. Get ready to see how it works!"
   }
 } 
