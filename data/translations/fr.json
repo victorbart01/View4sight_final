@@ -354,16 +354,16 @@
     ],
     "solutions": [
       {
-        "title": "Visualisation Instantanée par Navigateur",
-        "description": "Importez vos nuages de points une fois. Votre équipe et vos clients naviguent en 3D directement dans leur navigateur, aucune installation requise."
+        "title": "Une seule plateforme, aucune installation",
+        "description": "Importez vos données 3D une seule fois. Vos équipes et vos clients y accèdent directement dans leur navigateur — sans rien installer."
       },
       {
-        "title": "Collaboration en Temps Réel",
-        "description": "Les clients visualisent, mesurent et commentent directement en 3D. Les décisions se prennent plus vite. Moins de visites de site nécessaires."
+        "title": "Une collaboration d’équipe en temps réel",
+        "description": "Annotations partagées, mesures collaboratives, retours instantanés. Toute l’équipe travaille sur les mêmes données, en même temps."
       },
       {
-        "title": "Toutes les Données, Une Plateforme",
-        "description": "Nuages de points, modèles BIM, orthophotos et mesures unifiés dans un seul espace de travail. Partagez tout avec un seul lien."
+        "title": "Une expérience claire pour vos clients",
+        "description": "Vos clients comprennent enfin ce que vous leur livrez. Ils explorent les données comme dans Google Street View et valident plus vite."
       }
     ]
   },
