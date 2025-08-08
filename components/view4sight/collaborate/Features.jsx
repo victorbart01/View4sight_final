@@ -9,7 +9,7 @@ const collaborateFeatures = [
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
     title: "See Your Team Working Live",
-    subtitle: "Real-Time Multi-User Collaboration",
+
     description: "Multiple users can navigate, measure, and annotate the same project simultaneously. See cursors and actions from teammates in real-time.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "Real-Time Multi-User Collaboration Interface",
@@ -21,7 +21,7 @@ const collaborateFeatures = [
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
     title: "Comments That Stay Exactly Where You Put Them",
-    subtitle: "Smart Annotations That Stick",
+
     description: "Add annotations, markups, and comments that remain precisely positioned in 3D space. Perfect for site inspections and progress tracking.",
     imgSrc: "https://picsum.photos/900/600?random=2",
     altText: "Smart 3D Annotations Feature",
@@ -33,7 +33,7 @@ const collaborateFeatures = [
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
     title: "Share 3D Data With a Simple Link",
-    subtitle: "Instant Link Sharing",
+
     description: "Send a web link, they view instantly. No software installation required for stakeholders. Works on phones, tablets, and computers.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "Instant Link Sharing System",
@@ -44,7 +44,7 @@ const collaborateFeatures = [
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
     title: "Overlay Design Models with Reality Data",
-    subtitle: "BIM Model Integration",
+
     description: "Compare as-built point clouds with original BIM designs. Spot discrepancies instantly and collaborate on construction progress with your entire team.",
     imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "BIM Model Integration Comparison",
@@ -67,13 +67,13 @@ export default function Features() {
                   }}
                   data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
-                  <div className="row align-items-center g-6 lg:g-10 xl:g-12">
+                  <div className="row items-center g-6 lg:g-10 xl:g-12" style={{ minHeight: "500px" }}>
                     {/* Text Content */}
                     <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
                       <div className="panel vstack gap-4">
                         {/* Icon */}
                         <div 
-                          className="d-inline-flex align-items-center justify-content-center rounded-3"
+                          className="d-inline-flex items-center justify-content-center rounded-3"
                           style={{
                             width: "64px",
                             height: "64px",
@@ -111,17 +111,12 @@ export default function Features() {
                         </div>
                         
                         {/* Title */}
-                        <h3 className="h2 lg:h1 m-0 fw-bold">
+                        <h3 className="h4 lg:h3 m-0 fw-bold">
                           {feature.title}
                         </h3>
                         
-                        {/* Subtitle */}
-                        <p className="fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 m-0 lh-sm">
-                          {feature.subtitle}
-                        </p>
-                        
                         {/* Description */}
-                        <p className="fs-6 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
+                        <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
                           {feature.description}
                         </p>
                       </div>

@@ -64,7 +64,7 @@ export default function Features() {
                   }}
                   data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
-                  <div className="row align-items-center g-6 lg:g-10 xl:g-12">
+                  <div className="row items-center g-6 lg:g-10 xl:g-12" style={{ minHeight: "500px" }}>
                     {/* Text Content */}
                     <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
                       <div className="panel vstack gap-4">
@@ -103,17 +103,12 @@ export default function Features() {
                         </div>
                         
                         {/* Title */}
-                        <h3 className="h2 lg:h1 m-0 fw-bold">
+                        <h3 className="h4 lg:h3 m-0 fw-bold">
                           {feature.title}
                         </h3>
                         
-                        {/* Subtitle */}
-                        <p className="fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 m-0 lh-sm">
-                          {feature.subtitle}
-                        </p>
-                        
                         {/* Description */}
-                        <p className="fs-6 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
+                        <p className="fs-6 lg:fs-4 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
                           {feature.description}
                         </p>
                       </div>

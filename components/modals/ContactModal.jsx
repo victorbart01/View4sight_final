@@ -2,7 +2,7 @@
 
 import { closeContactModal } from "@/utlis/toggleContactModal";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function ContactModal() {
@@ -10,6 +10,20 @@ export default function ContactModal() {
   const elementRef = useRef(null);
   const containerRef = useRef(null);
   const { t } = useTranslation();
+
+  // Form state management
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
+
+  // UI state management
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', null
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -33,6 +47,59 @@ export default function ContactModal() {
   useEffect(() => {
     closeContactModal();
   }, [pathname]);
+
+  // Handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/request-demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        // Reset form after successful submission
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: ''
+        });
+        // Close modal after 2 seconds
+        setTimeout(() => {
+          closeContactModal();
+        }, 2000);
+      } else {
+        setSubmitStatus('error');
+        console.error('Error submitting form:', result.error);
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Network error:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <div
       ref={containerRef}
@@ -61,7 +128,7 @@ export default function ContactModal() {
               <h4 className="h5 lg:h4 m-0">{t('demo_modal.title')}</h4>
               <div className="panel w-100 sm:w-350px md:w-500px mx-auto">
                 <form
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={handleSubmit}
                   className="vstack gap-2"
                 >
                   <div
@@ -71,12 +138,18 @@ export default function ContactModal() {
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="text"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
                       placeholder={t('demo_modal.form.first_name')}
                       required
                     />
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="text"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
                       placeholder={t('demo_modal.form.last_name')}
                       required
                     />
@@ -88,12 +161,18 @@ export default function ContactModal() {
                     <input
                       className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       placeholder={t('demo_modal.form.email')}
                       required
                     />
                     <input
                       className="form-control h-48px w-100 md:w-1/2 rtl:text-end bg-white dark:border-white dark:text-dark"
                       type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
                       placeholder={t('demo_modal.form.phone')}
                       required
                     />
@@ -101,23 +180,54 @@ export default function ContactModal() {
                   <input
                     className="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
                     type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleInputChange}
                     placeholder={t('demo_modal.form.company')}
                     required
                   />
                   <textarea
                     className="form-control min-h-150px w-full bg-white dark:border-white dark:text-dark"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder={t('demo_modal.form.message')}
-                    defaultValue={""}
                   />
                   <button
                     className="btn btn-primary btn-md text-white mt-2"
                     type="submit"
+                    disabled={isLoading}
                   >
-                    {t('demo_modal.submit_button')}
+                    {isLoading ? (
+                      <>
+                        <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        {t('common.loading', 'Envoi en cours...')}
+                      </>
+                    ) : (
+                      t('demo_modal.submit_button')
+                    )}
                   </button>
-                  <p className="fs-7 opacity-70 mt-2 text-center">
-                    {t('demo_modal.description')}
-                  </p>
+
+                  {/* Status messages */}
+                  {submitStatus === 'success' && (
+                    <div className="alert alert-success mt-3" role="alert">
+                      <i className="unicon-check-circle me-2"></i>
+                      Merci ! Votre demande de démo a été envoyée avec succès. Nous vous recontacterons très prochainement.
+                    </div>
+                  )}
+                  
+                  {submitStatus === 'error' && (
+                    <div className="alert alert-danger mt-3" role="alert">
+                      <i className="unicon-times-circle me-2"></i>
+                      Une erreur s'est produite lors de l'envoi. Veuillez réessayer ou nous contacter directement.
+                    </div>
+                  )}
+
+                  {submitStatus !== 'success' && (
+                    <p className="fs-7 opacity-70 mt-2 text-center">
+                      {t('demo_modal.description')}
+                    </p>
+                  )}
                 </form>
               </div>
             </div>

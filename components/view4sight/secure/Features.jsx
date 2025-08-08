@@ -8,7 +8,7 @@ const secureFeatures = [
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
     title: "Your Projects Never Leave French Territory",
-    subtitle: "French Data Sovereignty",
+
     description: "Unlike American cloud solutions, View4Sight keeps your sensitive data exclusively on French soil. ISO 27001 certified infrastructure with full GDPR compliance.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "French Data Sovereignty Infrastructure",
@@ -19,7 +19,7 @@ const secureFeatures = [
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
     title: "Bank-Level Access Controls",
-    subtitle: "Granular User Permissions",
+
     description: "Set precise viewing, downloading, and editing permissions for each user and project. Role-based access with audit trails for complete accountability.",
     imgSrc: "https://picsum.photos/900/600?random=2",
     altText: "Granular User Permission System",
@@ -30,7 +30,7 @@ const secureFeatures = [
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
     title: "Complete Control With Your Own Servers",
-    subtitle: "On-Premise Deployment",
+
     description: "Install View4Sight on your own infrastructure for maximum security and control. Perfect for classified projects and strict compliance requirements.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "On-Premise Deployment Options",
@@ -41,7 +41,7 @@ const secureFeatures = [
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
     title: "Export Your Data Anytime",
-    subtitle: "Local Data Download",
+
     description: "Your data belongs to you. Download projects locally whenever needed, in original formats or processed versions. No vendor lock-in, ever.",
     imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
     altText: "Data Export and Download Features",
@@ -64,13 +64,13 @@ export default function Features() {
                   }}
                   data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
-                  <div className="row align-items-center g-6 lg:g-10 xl:g-12">
+                  <div className="row items-center g-6 lg:g-10 xl:g-12" style={{ minHeight: "500px" }}>
                     {/* Text Content */}
                     <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
                       <div className="panel vstack gap-4">
                         {/* Icon */}
                         <div 
-                          className="d-inline-flex align-items-center justify-content-center rounded-3"
+                          className="d-inline-flex items-center justify-content-center rounded-3"
                           style={{
                             width: "64px",
                             height: "64px",
@@ -89,17 +89,12 @@ export default function Features() {
                         </div>
                         
                         {/* Title */}
-                        <h3 className="h2 lg:h1 m-0 fw-bold">
+                        <h3 className="h4 lg:h3 m-0 fw-bold">
                           {feature.title}
                         </h3>
                         
-                        {/* Subtitle */}
-                        <p className="fs-5 lg:fs-4 text-dark dark:text-white text-opacity-80 m-0 lh-sm">
-                          {feature.subtitle}
-                        </p>
-                        
                         {/* Description */}
-                        <p className="fs-6 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
+                        <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
                           {feature.description}
                         </p>
                       </div>

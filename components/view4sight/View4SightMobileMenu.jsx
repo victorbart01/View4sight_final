@@ -5,88 +5,14 @@ import Image from "next/image";
 import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 import { usePathname } from "next/navigation";
 import { getLocalizedPath, locales } from "@/lib/i18n";
-
-// Menu items base pour View4Sight (chemins relatifs)
-const view4sightMenuItemsBase = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Features",
-    subItems: [
-      {
-        label: "Visualize",
-        href: "/fonctionnalites/visualize",
-        description: "Navigate massive datasets"
-      },
-      {
-        label: "Measure", 
-        href: "/fonctionnalites/measure",
-        description: "Survey-grade precision"
-      },
-      {
-        label: "Collaborate",
-        href: "/fonctionnalites/collaborate",
-        description: "Work together live"
-      },
-      {
-        label: "Secure",
-        href: "/fonctionnalites/secure",
-        description: "Control & protect"
-      }
-    ]
-  },
-  {
-    label: "Pricing",
-    href: "/tarifs",
-  },
-  {
-    label: "Security",
-    href: "/securite",
-  },
-  {
-    label: "Resources",
-    subItems: [
-      {
-        label: "Use Cases",
-        href: "/ressources/use-cases",
-        description: "Real-world applications"
-      },
-      {
-        label: "Tutorials",
-        href: "/ressources/tutorials",
-        description: "Video guides & how-tos"
-      },
-      {
-        label: "Blog",
-        href: "/ressources/blog",
-        description: "Latest news & insights"
-      },
-      {
-        label: "Recrutement",
-        href: "/ressources/carrieres",
-        description: "Join our team"
-      },
-      {
-        label: "Support",
-        href: "/ressources/support", 
-        description: "Help center"
-      },
-      {
-        label: "Documentation",
-        href: "/ressources/docs",
-        description: "Technical documentation"
-      }
-    ]
-  }
-];
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function View4SightMobileMenu() {
   const pathname = usePathname();
   const [expandedMenu, setExpandedMenu] = useState(-1);
   const elementRef = useRef(null);
   const containerRef = useRef(null);
+  const { t } = useTranslation();
 
   // Extract current locale from pathname
   const pathSegments = pathname.split('/').filter(Boolean);
@@ -97,22 +23,73 @@ export default function View4SightMobileMenu() {
     return getLocalizedPath(path, currentLocale);
   };
 
-  // Create localized version of menu items
-  const localizeMenuItem = (item) => {
-    const localizedItem = { ...item };
-    if (item.href) {
-      localizedItem.href = createLocalizedLink(item.href);
+  // Define menu structure with translations
+  const view4sightMenuItems = [
+    {
+      label: t('navigation.home'),
+      href: createLocalizedLink("/")
+    },
+    {
+      label: t('navigation.features'),
+      subItems: [
+        {
+          label: t('features.visualize.title'),
+          href: createLocalizedLink("/fonctionnalites/visualize"),
+          description: t('features.visualize.description'),
+          icon: "/assets/images/custom-icons/visualisation-3d.svg"
+        },
+        {
+          label: t('features.measure.title'),
+          href: createLocalizedLink("/fonctionnalites/measure"),
+          description: t('features.measure.description'),
+          icon: "/assets/images/custom-icons/mesure-annotations.svg"
+        },
+        {
+          label: t('features.collaborate.title'),
+          href: createLocalizedLink("/fonctionnalites/collaborate"),
+          description: t('features.collaborate.description'),
+          icon: "/assets/images/custom-icons/collaboration.svg"
+        },
+        {
+          label: t('features.secure.title'),
+          href: createLocalizedLink("/fonctionnalites/secure"),
+          description: t('features.secure.description'),
+          icon: "/assets/images/custom-icons/upload-share.svg"
+        }
+      ]
+    },
+    {
+      label: t('navigation.pricing'),
+      href: createLocalizedLink("/tarifs")
+    },
+    {
+      label: t('navigation.security'),
+      href: createLocalizedLink("/securite")
+    },
+    {
+      label: t('navigation.resources'),
+      subItems: [
+        {
+          label: t('resources_menu.use_cases.title'),
+          href: createLocalizedLink("/ressources/use-cases"),
+          description: t('resources_menu.use_cases.description'),
+          icon: "/assets/images/common/icons/target.svg"
+        },
+        {
+          label: t('resources_menu.blog.title'),
+          href: createLocalizedLink("/ressources/blog"),
+          description: t('resources_menu.blog.description'),
+          icon: "/assets/images/common/icons/blog.svg"
+        },
+        {
+          label: t('resources_menu.careers.title'),
+          href: createLocalizedLink("/ressources/carrieres"),
+          description: t('resources_menu.careers.description'),
+          icon: "/assets/images/common/icons/account.svg"
+        }
+      ]
     }
-    if (item.subItems) {
-      localizedItem.subItems = item.subItems.map(subItem => ({
-        ...subItem,
-        href: createLocalizedLink(subItem.href)
-      }));
-    }
-    return localizedItem;
-  };
-
-  const view4sightMenuItems = view4sightMenuItemsBase.map(localizeMenuItem);
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -292,36 +269,60 @@ export default function View4SightMobileMenu() {
         }
         
         .submenu-item {
-          padding: 14px 20px 14px 40px;
-          border-left: 3px solid transparent;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-        }
-        
-        .submenu-item:last-child {
-          border-bottom: none;
+          padding: 0;
         }
         
         .submenu-link {
           display: block;
+          padding: 12px 20px;
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none;
-          font-size: 15px;
-          line-height: 1.4;
           transition: all 0.2s ease;
-          padding: 4px 0;
+          border-radius: 8px;
+          margin: 2px 0;
         }
         
         .submenu-link:hover {
-          color: #FE552E;
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+          transform: translateX(4px);
         }
         
         .submenu-link.active {
+          background-color: rgba(254, 85, 46, 0.2);
           color: #FE552E;
         }
         
+        .submenu-content {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        
+        .submenu-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          background-color: rgba(254, 85, 46, 0.1);
+          border: 1px solid rgba(254, 85, 46, 0.2);
+          flex-shrink: 0;
+        }
+        
+        .submenu-text {
+          flex: 1;
+        }
+        
+        .submenu-label {
+          font-weight: 500;
+          font-size: 14px;
+        }
+        
         .submenu-description {
-          font-size: 13px;
-          color: rgba(255, 255, 255, 0.5);
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.6);
           margin-top: 2px;
         }
         
@@ -488,10 +489,29 @@ export default function View4SightMobileMenu() {
                             href={subItem.href}
                             className={`submenu-link ${pathname === subItem.href || pathname.startsWith(subItem.href + "/") ? 'active' : ''}`}
                           >
-                            <div>{subItem.label}</div>
-                            {subItem.description && (
-                              <div className="submenu-description">{subItem.description}</div>
-                            )}
+                            <div className="submenu-content">
+                              {subItem.icon && (
+                                <div className="submenu-icon">
+                                  <Image
+                                    src={subItem.icon}
+                                    alt={subItem.label}
+                                    width={24}
+                                    height={24}
+                                    style={{
+                                      width: "24px",
+                                      height: "24px",
+                                      filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)"
+                                    }}
+                                  />
+                                </div>
+                              )}
+                              <div className="submenu-text">
+                                <div className="submenu-label">{subItem.label}</div>
+                                {subItem.description && (
+                                  <div className="submenu-description">{subItem.description}</div>
+                                )}
+                              </div>
+                            </div>
                           </Link>
                         </div>
                       ))}
@@ -510,10 +530,10 @@ export default function View4SightMobileMenu() {
               rel="noopener noreferrer"
               className="footer-btn btn-login"
             >
-              Log in
+              {t('navigation.login')}
             </a>
             <Link href={createLocalizedLink("/tarifs")} className="footer-btn btn-get-started">
-              Get Started
+              {t('navigation.start_free_trial')}
             </Link>
           </div>
         </div>

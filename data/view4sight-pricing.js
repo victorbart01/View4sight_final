@@ -29,8 +29,8 @@ export const view4sightTiers = [
     features: [
       "150 GB Storage",
       "5 users included",
-      "20 GB uploads",
-      "50 GB downloads",
+      "30 active projects",
+      "Private link sharing",
       "Advanced annotations",
       "Priority email support"
     ],
@@ -51,8 +51,8 @@ export const view4sightTiers = [
     features: [
       "500 GB Storage",
       "15 users included",
-      "50 GB uploads",
-      "1 TB downloads",
+      "100 active projects",
+      "Private link sharing",
       "Embeddable viewer",
       "Priority phone & email support"
     ],

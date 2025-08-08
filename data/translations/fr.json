@@ -116,7 +116,7 @@
       "company": "Cabinet Moreau & Associés, Lyon"
     },
     "stats": {
-      "time_saved": "de validation client en plus",
+      "time_saved": "de temps gagné sur vos livraisons",
       "site_visits": "de visites terrain en moins", 
       "communication": "plus rapide à upload vs logiciel de bureau",
       "storage": "150 Go inclus dans l'essai gratuit"
@@ -291,7 +291,7 @@
       },
       "smart_annotations": {
         "title": "Collaborez ensemble, en temps réel sur vos modèles 3D",
-        "description": "Commentez, annotez et mesurez directement dans le modèle 3D.br />Facilitez des échanges clairs et efficaces entre équipes terrain, bureau et clients."
+        "description": "Commentez, annotez et mesurez directement dans le modèle 3D. Facilitez des échanges clairs et efficaces entre équipes terrain, bureau et clients."
       }
     }
   },
@@ -303,7 +303,7 @@
   "faq_short": {
     "badge": "FAQ",
     "title": "Questions Fréquemment Posées",
-    "subtitle": "Obtenez des réponses aux questions les plus courantes sur la plateforme de visualisation 3D View4Sight, la sécurité des données et la gestion des fichiers géospatiaux.",
+    "subtitle": "Trouvez des réponses claires à vos questions sur View4Sight : fonctionnement, formats compatibles, sécurité des données et plus encore.",
     "still_question": "Vous avez encore une question ?",
     "items": [
       {
@@ -348,8 +348,8 @@
         "description": "Votre équipe échange des fichiers par mail. Les versions se mélangent, les annotations se perdent, la coordination devient un cauchemar."
       },
       {
-        "title": "Les clients ne peuvent pas lire vos livrables",
-        "description": "Ils ne comprennent pas vos relevés 3D à travers des PDF figés. Ils doivent installer un logiciel spécifique — et passent à côté de la valeur de votre travail."
+        "title": "Le client ne peut pas lire vos livrables",
+        "description": "Il ne comprend pas vos relevés 3D à travers des PDF figés. Ils doivent installer un logiciel spécifique et passent à côté de la valeur de votre travail."
       }
     ],
     "solutions": [
@@ -492,5 +492,140 @@
     "shareArticle": "Partager l'article",
     "tags": "Étiquettes",
     "comments": "Commentaires"
+  },
+  "features_pages": {
+    "visualize": {
+      "meta": {
+        "title": "Fonctionnalités Visualisation - View4Sight | Naviguez dans vos données 3D massives",
+        "description": "Diffusez des nuages de points de plusieurs gigaoctets directement dans votre navigateur. Aucun plugin, aucun téléchargement, aucun compromis sur les performances."
+      },
+      "hero": {
+        "title": "Naviguez dans vos données 3D massives<br />comme dans une application desktop",
+        "subtitle": "Diffusez des nuages de points de plusieurs gigaoctets directement dans votre navigateur.<br />Aucun plugin, aucun téléchargement, aucun compromis sur les performances."
+      },
+      "features": [
+        {
+          "title": "Fichiers volumineux, chargement instantané",
+          "subtitle": "Diffusez des nuages de points de plusieurs gigaoctets directement dans votre navigateur.",
+          "description": "Notre technologie de streaming traite les jeux de données de plusieurs gigaoctets côté serveur et livre un contenu optimisé aux navigateurs. Aucun plugin, aucun téléchargement, aucun compromis sur les performances. Que vous soyez dans l'immobilier, l'urbanisme ou les sciences environnementales, nos outils sont conçus pour vous aider à prendre de meilleures décisions plus rapidement."
+        },
+        {
+          "title": "Toutes vos données en une seule vue",
+          "subtitle": "Déverrouillez des insights plus profonds avec une analyse spatiale spécifique au domaine.",
+          "description": "Combinez nuages de points, modèles BIM, orthophotos et images 360° dans une interface unique. Estimez la production d'énergie éolienne, calculez l'aspect-pente ou visualisez combien d'heures de soleil à des dates spécifiques. Parfait pour surveiller les changements dans le temps ou valider les données de relevé par rapport aux modèles de conception."
+        },
+        {
+          "title": "Parcourez vos données comme si vous y étiez",
+          "subtitle": "Naviguez dans vos nuages de points avec une précision à la première personne.",
+          "description": "Basculez en vue à la première personne et naviguez dans vos nuages de points comme un jeu vidéo. Parfait pour les inspections de site, les visites virtuelles et les présentations clients immersives. Découvrez vos données depuis le niveau du sol avec des contrôles fluides et intuitifs que tout le monde peut maîtriser."
+        },
+        {
+          "title": "Tous les formats que vous utilisez, prêts à visualiser",
+          "subtitle": "Compatibilité universelle avec une précision de niveau relevé.",
+          "description": "Support natif pour LAS, E57, IFC, DXF, OBJ et plus. Gestion avancée des systèmes de coordonnées qui fonctionne réellement avec une précision de niveau relevé. Fini les maux de tête de conversion de formats - il suffit de télécharger et de visualiser vos données exactement comme capturées."
+        }
+      ]
+    },
+    "measure": {
+      "meta": {
+        "title": "Fonctionnalités Mesure - View4Sight | Précision géomètre dans votre navigateur",
+        "description": "Outils de mesure professionnels qui fonctionnent directement dans votre navigateur. Obtenez une précision centimétrique sans logiciel desktop coûteux."
+      },
+      "hero": {
+        "title": "Précision de niveau géomètre,<br />Commodité basée navigateur",
+        "subtitle": "Outils de mesure professionnels qui fonctionnent directement dans votre navigateur.<br />Obtenez une précision centimétrique sans logiciel desktop coûteux."
+      },
+      "features": [
+        {
+          "title": "Mesures précises au centimètre près",
+          "subtitle": "Outils de mesure de niveau professionnel directement dans votre navigateur.",
+          "description": "Mesurez distances, surfaces, volumes et créez des profils d'élévation avec une précision géomètre. Nos outils utilisent les coordonnées natives de vos données pour garantir une précision maximale, même sur des projets à grande échelle."
+        },
+        {
+          "title": "Calculs de volumes intelligents",
+          "subtitle": "Quantifiez déblais, remblais et volumes de matériaux avec précision.",
+          "description": "Calculez automatiquement les volumes entre surfaces, mesurez les stocks de matériaux et générez des rapports de cubature détaillés. Parfait pour les projets de terrassement, l'estimation de matériaux et le suivi de l'avancement des travaux."
+        },
+        {
+          "title": "Profils et coupes transversales",
+          "subtitle": "Créez des profils en long et des coupes techniques instantanément.",
+          "description": "Générez des profils d'élévation et des coupes transversales en quelques clics. Exportez-les directement vers vos logiciels CAO ou utilisez-les pour la validation de conformité et les rapports techniques."
+        },
+        {
+          "title": "Annotations et rapports automatiques",
+          "subtitle": "Documentez vos mesures avec des rapports professionnels.",
+          "description": "Toutes vos mesures sont automatiquement documentées avec coordonnées, timestamps et métadonnées. Générez des rapports PDF prêts pour vos clients ou intégrez les données dans vos workflows existants via notre API."
+        }
+      ]
+    },
+    "collaborate": {
+      "meta": {
+        "title": "Fonctionnalités Collaboration - View4Sight | Travaillez ensemble en temps réel",
+        "description": "Votre équipe entière peut mesurer, annoter et réviser les mêmes données 3D simultanément. Fini les conflits de versions ou les pièces jointes par email."
+      },
+      "hero": {
+        "title": "Travaillez ensemble en temps réel,<br />depuis n'importe où",
+        "subtitle": "Votre équipe entière peut mesurer, annoter et réviser les mêmes données 3D simultanément.<br />Fini les conflits de versions ou les pièces jointes par email."
+      },
+      "features": [
+        {
+          "title": "Annotations collaboratives en temps réel",
+          "subtitle": "Commentez, mesurez et révisez ensemble, instantanément.",
+          "description": "Plusieurs utilisateurs peuvent ajouter des annotations, mesures et commentaires simultanément sur les mêmes données 3D. Voyez les modifications de votre équipe en temps réel et répondez instantanément pour des décisions plus rapides."
+        },
+        {
+          "title": "Partage sécurisé avec contrôle d'accès",
+          "subtitle": "Partagez vos projets avec clients et partenaires en toute sécurité.",
+          "description": "Créez des liens de partage personnalisés avec niveaux d'accès granulaires. Contrôlez qui peut voir, commenter, mesurer ou télécharger vos données. Parfait pour les présentations clients et la collaboration inter-entreprises."
+        },
+        {
+          "title": "Historique des versions et suivi des modifications",
+          "subtitle": "Gardez trace de toutes les modifications et revenez en arrière si nécessaire.",
+          "description": "Chaque annotation, mesure et modification est horodatée et attribuée. Consultez l'historique complet du projet, comparez les versions et restaurez des états antérieurs en cas de besoin."
+        },
+        {
+          "title": "Présentations clients interactives",
+          "subtitle": "Transformez vos livrables en expériences immersives.",
+          "description": "Créez des présentations interactives où vos clients peuvent explorer les données 3D, comprendre les enjeux et valider les solutions proposées. Fini les PDF statiques - montrez la réalité de vos projets."
+        }
+      ]
+    },
+    "secure": {
+      "meta": {
+        "title": "Fonctionnalités Sécurité - View4Sight | Vos données restent sécurisées et souveraines",
+        "description": "Sécurité niveau entreprise avec hébergement de données français. Contrôle complet sur vos données de projet sensibles, contrairement aux fournisseurs cloud américains."
+      },
+      "hero": {
+        "title": "Vos données restent sécurisées<br />et souveraines",
+        "subtitle": "Sécurité niveau entreprise avec hébergement de données français.<br />Contrôle complet sur vos données de projet sensibles, contrairement aux fournisseurs cloud américains."
+      },
+      "features": [
+        {
+          "title": "Vos projets ne quittent jamais le territoire français",
+          "subtitle": "Souveraineté des données françaises",
+          "description": "Contrairement aux solutions cloud américaines, View4Sight garde vos données sensibles exclusivement sur le sol français. Infrastructure certifiée ISO 27001 avec conformité RGPD complète."
+        },
+        {
+          "title": "Contrôles d'accès de niveau bancaire",
+          "subtitle": "Permissions utilisateur granulaires",
+          "description": "Définissez des permissions précises de visualisation, téléchargement et édition pour chaque utilisateur et projet. Accès basé sur les rôles avec pistes d'audit pour une responsabilité complète."
+        },
+        {
+          "title": "Contrôle complet avec vos propres serveurs",
+          "subtitle": "Déploiement sur site",
+          "description": "Installez View4Sight sur votre propre infrastructure pour une sécurité et un contrôle maximum. Parfait pour les projets classifiés et les exigences de conformité strictes."
+        },
+        {
+          "title": "Vos données, vos règles, pour toujours",
+          "subtitle": "Exportation et propriété des données",
+          "description": "Exportez toutes vos données à tout moment dans des formats standard. Aucun vendor lock-in, aucune restriction propriétaire. Vos données vous appartiennent et restent accessibles même après résiliation du service."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à révolutionner vos workflows 3D ?",
+      "subtitle": "Commencez votre essai gratuit de 30 jours. Aucune carte bancaire requise.",
+      "button": "Essayer View4Sight"
+    }
   }
 } 
