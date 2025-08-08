@@ -90,8 +90,8 @@ export default function PricingCompare() {
                       </div>
                     </th>
                     <td><span>2 users</span></td>
-                    <td><span>5 users</span></td>
-                    <td><span>15 users</span></td>
+                    <td><span>30 users</span></td>
+                    <td><span>100 users</span></td>
                     <td><span>Unlimited</span></td>
                   </tr>
                   <tr className="table-row border-gray-100 dark:border-gray-600">
