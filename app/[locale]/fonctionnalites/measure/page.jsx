@@ -4,8 +4,8 @@ import Features from "@/components/view4sight/measure/Features";
 import Cta from "@/components/view4sight/measure/Cta";
 
 export const metadata = {
-  title: "Measure - View4Sight",
-  description: "Survey-grade precision with professional measurement tools.",
+  title: "Mesurer - View4Sight | Précision topographique dans votre navigateur",
+  description: "Mesure 3D au centimètre sur nuages de points, maillages et BIM. Distances, surfaces, volumes, coupes et profils calculés de façon reproductible pour vos contrôles.",
 };
 
 export default function MeasurePage({ params }) {

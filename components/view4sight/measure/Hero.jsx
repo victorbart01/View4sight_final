@@ -9,17 +9,14 @@ export default function Hero() {
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div
-              className="vstack items-center gap-2 lg:gap-4 mt-3 lg:mt-4 mb-4 lg:mb-6 max-w-750px mx-auto text-center"
+              className="vstack items-center gap-2 lg:gap-4 mt-3 lg:mt-4 mb-4 lg:mb-6 max-w-950px mx-auto text-center"
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h1 className="h3 sm:h2 lg:h1 xl:display-6 m-0">
-                Survey-Grade Precision, <br className="d-none lg:d-block" />
-                Browser-Based Convenience
+                La précision topographique, en 3D et dans le navigateur
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Professional measurement tools that work directly in your browser.
-                <br className="d-none sm:d-block" />
-                Get centimeter accuracy without expensive desktop software.
+                Mesurez sur nuages de points, maillages et BIM, là où se trouvent les données. Sections et profils instantanés, écarts lisibles selon vos tolérances, classification avec légendes prêtes pour le rapport.
               </p>
             </div>
             <div

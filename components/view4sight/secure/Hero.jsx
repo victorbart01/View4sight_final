@@ -13,13 +13,10 @@ export default function Hero() {
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h1 className="h3 sm:h2 lg:h1 xl:display-6 m-0">
-                Your Data Stays Secure <br className="d-none lg:d-block" />
-                and Sovereign
+                Vos données restent sécurisées et souveraines
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Enterprise-grade security with French data hosting.
-                <br className="d-none sm:d-block" />
-                Complete control over your sensitive project data, unlike American cloud providers.
+                Pendant que d'autres envoient vos données à l'étranger, View4Sight les garde à la maison. Certifié ISO, RGPD natif, approuvé par le secteur public.
               </p>
             </div>
             <div

@@ -7,44 +7,40 @@ const secureFeatures = [
     icon: "unicon-shield-check",
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
-    title: "Your Projects Never Leave French Territory",
-
-    description: "Unlike American cloud solutions, View4Sight keeps your sensitive data exclusively on French soil. ISO 27001 certified infrastructure with full GDPR compliance.",
+    title: "Hébergement en France",
+    description: "Vos projets restent sous juridiction française. Hébergement en France sur infrastructures certifiées ISO/IEC 27001, conforme RGPD.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "French Data Sovereignty Infrastructure",
+    altText: "Infrastructures d'hébergement en France",
   },
   {
     id: "user-permissions",
     icon: "unicon-lock-access",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
-    title: "Bank-Level Access Controls",
-
-    description: "Set precise viewing, downloading, and editing permissions for each user and project. Role-based access with audit trails for complete accountability.",
+    title: "Contrôles d’accès avancés",
+    description: "Définissez vos permissions pour chaque rôle : lecture, mesure, édition, téléchargement. Liens de partage contrôlés et révocables, et journaux d’audit détaillant chaque action.",
     imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Granular User Permission System",
+    altText: "Système de permissions utilisateur granulaire",
   },
   {
     id: "on-premise",
     icon: "unicon-server",
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
-    title: "Complete Control With Your Own Servers",
-
-    description: "Install View4Sight on your own infrastructure for maximum security and control. Perfect for classified projects and strict compliance requirements.",
+    title: "Auto-hébergement si besoin",
+    description: "Déployez View4Sight sur vos propres serveurs ou dans votre cloud privé pour un contrôle maximal et des environnements isolés.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "On-Premise Deployment Options",
+    altText: "Options de déploiement on-premise",
   },
   {
     id: "data-export",
     icon: "unicon-download-alt",
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
-    title: "Export Your Data Anytime",
-
-    description: "Your data belongs to you. Download projects locally whenever needed, in original formats or processed versions. No vendor lock-in, ever.",
+    title: "Exportez à tout moment",
+    description: "Vos données vous appartiennent. Exportez vos jeux de données bruts ou traités quand vous le souhaitez. Aucun verrouillage.",
     imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Data Export and Download Features",
+    altText: "Fonctionnalités d’export de données",
   }
 ];
 

@@ -9,17 +9,17 @@ export default function Hero() {
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div
-              className="vstack items-center gap-2 lg:gap-4 mt-3 lg:mt-4 mb-4 lg:mb-6 max-w-750px mx-auto text-center"
+              className="vstack items-center gap-2 lg:gap-4 mt-3 lg:mt-4 mb-4 lg:mb-6 max-w-950px mx-auto text-center"
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h1 className="h3 sm:h2 lg:h1 xl:display-6 m-0">
-                Navigate Massive 3D Datasets <br className="d-none lg:d-block" />
-                Like a Desktop App
+                Visualisez des projets 3D massifs. <br className="d-none lg:d-block" />
+                En ligne, en toute fluidité.
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Stream gigabyte point clouds smoothly in any browser.
+                Streamez des nuages de points de plusieurs gigaoctets directement dans le navigateur.
                 <br className="d-none sm:d-block" />
-                No plugins, no downloads, no performance compromises.
+                Aucun plugin, aucun téléchargement, sans compromis sur les performances.
               </p>
             </div>
             <div

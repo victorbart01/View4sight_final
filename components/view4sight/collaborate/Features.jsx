@@ -8,11 +8,10 @@ const collaborateFeatures = [
     iconSvg: "/assets/images/custom-icons/navigation-arrow-bold.svg",
     iconBg: "#E3F2FD",
     iconColor: "#1976D2",
-    title: "See Your Team Working Live",
-
-    description: "Multiple users can navigate, measure, and annotate the same project simultaneously. See cursors and actions from teammates in real-time.",
+    title: "Travaillez ensemble en temps réel",
+    description: "Collaborez sur la même scène avec curseurs et actions en direct. Toute l’équipe navigue, mesure et commente en même temps, sans conflits de versions ni pièces jointes.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Real-Time Multi-User Collaboration Interface",
+    altText: "Interface de collaboration multi-utilisateurs en temps réel",
   },
   {
     id: "smart-annotations",
@@ -20,11 +19,10 @@ const collaborateFeatures = [
     iconSvg: "/assets/images/custom-icons/chat-text-bold.svg",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
-    title: "Comments That Stay Exactly Where You Put Them",
-
-    description: "Add annotations, markups, and comments that remain precisely positioned in 3D space. Perfect for site inspections and progress tracking.",
+    title: "Des commentaires ancrés aux données",
+    description: "Ajoutez annotations et marquages qui restent ancrés au point exact dans l’espace 3D. Idéal pour visites de site, listes de réserves et suivi d’avancement.",
     imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Smart 3D Annotations Feature",
+    altText: "Fonction d’annotations 3D intelligentes",
   },
   {
     id: "instant-link-sharing",
@@ -32,22 +30,20 @@ const collaborateFeatures = [
     iconSvg: "/assets/images/custom-icons/export-bold.svg",
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
-    title: "Share 3D Data With a Simple Link",
-
-    description: "Send a web link, they view instantly. No software installation required for stakeholders. Works on phones, tablets, and computers.",
+    title: "Partagez via un simple lien",
+    description: "Partagez votre modèle 3D ou jumeau numérique aussi simplement qu’un lien YouTube ou Google Docs. Aucune installation, aucune formation requise.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Instant Link Sharing System",
+    altText: "Partage de lien instantané",
   },
   {
     id: "bim-integration",
     icon: "unicon-layers-alt",
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
-    title: "Overlay Design Models with Reality Data",
-
-    description: "Compare as-built point clouds with original BIM designs. Spot discrepancies instantly and collaborate on construction progress with your entire team.",
+    title: "Conception et réalité, côte à côte",
+    description: "Superposez le BIM et le tel que construit pour détecter tôt les écarts, réduire les reprises et maintenir l’avancement du chantier.",
     imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "BIM Model Integration Comparison",
+    altText: "Comparaison BIM vs réalité",
   }
 ];
 

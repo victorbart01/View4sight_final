@@ -7,44 +7,40 @@ const measureFeatures = [
     icon: "/assets/images/custom-icons/ruler-bold.svg",
     iconBg: "#FFF4E6",
     iconColor: "#FE552E",
-    title: "Measure Anything in True 3D Space",
-
-    description: "Take precise distance, surface area, and volume measurements directly on your point clouds. Results match survey-grade desktop software accuracy.",
+    title: "Mesurez tout en 3D",
+    description: "Prenez vos cotes directement sur la donnée : longueurs, surfaces et volumes, sans quitter la scène 3D. Contrôlez par exemple des longueurs de murs, des surfaces de dalles ou des cubatures de déblais/remblais.",
     imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "3D Measurement Tools Interface",
+    altText: "Interface des outils de mesure 3D",
   },
   {
     id: "cross-sections",
     icon: "/assets/images/custom-icons/scissors-bold.svg",
     iconBg: "#FFF3E0",
     iconColor: "#F57C00",
-    title: "Slice Through Your Data Instantly",
-
-    description: "Create interactive cross-sections and elevation views on the fly. Analyze internal structures and hidden details with precision, no pre-processing required.",
+    title: "Sections et profils à la volée",
+    description: "Créez sections et profils altimétriques à la volée, orthogonaux ou libres, calés sur vos axes et niveaux. Mesurez dénivelés, épaisseurs et écarts localement, sans pré-traitement ni export.",
     imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Interactive Cross-Sections Feature",
+    altText: "Fonction de sections et profils",
   },
   {
     id: "flatness-controls",
     icon: "unicon-chart-line",
     iconBg: "#E8F5E9",
     iconColor: "#388E3C",
-    title: "Professional Surveying Tools Built-In",
-
-    description: "Advanced flatness analysis and deviation measurements for construction and surveying professionals. Built-in tools that understand your workflow.",
+    title: "Contrôles topographiques intégrés",
+    description: "Vérifiez planéité, écarts et tolérances directement dans la scène. Cartes d’écarts et exports prêts pour vos rapports.",
     imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Flatness Analysis Tools",
+    altText: "Outils d'analyse de planéité",
   },
   {
     id: "object-attributes",
     icon: "/assets/images/custom-icons/tag-bold.svg",
     iconBg: "#F3E5F5",
     iconColor: "#7B1FA2",
-    title: "Classify and Highlight Objects by Type",
-
-    description: "Add attributes to objects and classify them by type. Automatically highlight specific elements and create visual legends for better data understanding.",
+    title: "Classez et mettez en évidence par type",
+    description: "Ajoutez des attributs aux objets, regroupez par classe et générez des légendes claires pour une compréhension immédiate entre équipes.",
     imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Object Classification System",
+    altText: "Système de classification des objets",
   }
 ];
 

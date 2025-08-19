@@ -131,14 +131,13 @@ export default function SecurityBlock() {
 
               {/* Right: Security Features Grid */}
               <div className="col-12 lg:col-6">
-                 <div className="row child-cols-12 sm:child-cols-6 col-match g-3 h-100">
+                 <div className="row child-cols-12 sm:child-cols-6 col-match g-3 h-100" onMouseLeave={() => handleFeatureChange(0)}>
                    {securityFeatures.map((feature, index) => (
                      <div key={feature.id}>
                        <div 
                          className={`panel overflow-hidden rounded-3 h-100 position-relative security-feature-card ${activeFeature === index ? 'active' : ''}`}
                          data-anime="onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: ${100 * index};"
                          onMouseEnter={() => handleFeatureChange(index)}
-                         onMouseLeave={() => handleFeatureChange(0)}
                          onFocus={() => handleFeatureChange(index)}
                          tabIndex={0}
                        >

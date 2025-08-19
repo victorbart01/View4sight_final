@@ -4,8 +4,8 @@ import Features from "@/components/view4sight/collaborate/Features";
 import Cta from "@/components/view4sight/collaborate/Cta";
 
 export const metadata = {
-  title: "Collaborate - View4Sight",
-  description: "Work together in real-time from anywhere in the world.",
+  title: "Collaborer - View4Sight | Collaboration 3D en temps réel",
+  description: "Fini les emails, les photos et les versions qui se croisent. Une scène unique et des commentaires centralisés pour travailler plus vite, sans confusion.",
 };
 
 export default function CollaboratePage({ params }) {

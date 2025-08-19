@@ -13,13 +13,10 @@ export default function Hero() {
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h1 className="h3 sm:h2 lg:h1 xl:display-6 m-0">
-                Work Together in Real-Time, <br className="d-none lg:d-block" />
-                From Anywhere
+                Une seule scène, une seule version
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Your entire team can measure, annotate, and review the same 3D data simultaneously.
-                <br className="d-none sm:d-block" />
-                No more version conflicts or email attachments.
+                Fini les emails, les photos et les versions qui se croisent. Une scène unique et des commentaires centralisés pour travailler plus vite, sans confusion.
               </p>
             </div>
             <div

@@ -6,8 +6,8 @@ import View4SightFooter from "@/components/view4sight/Footer";
 import React from "react";
 
 export const metadata = {
-  title: "Visualize Features - View4Sight | Navigate Massive 3D Datasets Like a Desktop App",
-  description: "Stream gigabyte point clouds smoothly in any browser. No plugins, no downloads, no performance compromises.",
+  title: "Visualiser - View4Sight | Visualisez des projets 3D massifs en ligne, en toute fluidité",
+  description: "Streamez des nuages de points de plusieurs gigaoctets directement dans le navigateur. Aucun plugin, aucun téléchargement, sans compromis sur les performances.",
 };
 
 export default function VisualizePage() {

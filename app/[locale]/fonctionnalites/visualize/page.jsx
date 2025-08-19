@@ -4,8 +4,8 @@ import Features from "@/components/view4sight/visualize/Features";
 import Cta from "@/components/view4sight/visualize/Cta";
 
 export const metadata = {
-  title: "Visualize - View4Sight",
-  description: "Navigate massive 3D datasets like a desktop app, directly in your browser.",
+  title: "Visualiser - View4Sight | Visualisez des projets 3D massifs en ligne, en toute fluidité",
+  description: "Streamez des nuages de points de plusieurs gigaoctets directement dans le navigateur. Aucun plugin, aucun téléchargement, sans compromis sur les performances.",
 };
 
 export default function VisualizePage({ params }) {
