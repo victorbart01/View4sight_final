@@ -317,8 +317,8 @@ export default function PricingSection() {
                             }}
                           >
                             {tier.highlight && (
-                              <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
-                                Popular
+                          <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
+                                Populaire
                               </span>
                             )}
                             <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between" style={{ paddingBottom: '0 !important' }}>
@@ -336,7 +336,7 @@ export default function PricingSection() {
                             </header>
                             <div className="tier-body px-3 lg:px-4 pt-0 pb-3">
                               <h6 className="fs-7 fw-medium text-dark dark:text-white mb-2" style={{ marginTop: '-1rem !important' }}>
-                                Includes:
+                                Inclus :
                               </h6>
                               <ul className="nav-y gap-2 text-start">
                                 {tier.features.map((feature, idx) => (
@@ -365,7 +365,7 @@ export default function PricingSection() {
                                   <span>{tier.buttonText}</span>
                                 </button>
                                 <small className="d-block text-center text-dark dark:text-white text-opacity-60">
-                                  {tier.footerText || "No credit card required"}
+                                  {tier.footerText || "Aucune carte bancaire requise"}
                                 </small>
                               </div>
                             </footer>
@@ -414,9 +414,9 @@ export default function PricingSection() {
                       <div className="col-12 lg:col-4 text-center text-lg-end">
                         <div className="vstack gap-3">
                           <div>
-                            <h4 className="h4 m-0 text-dark dark:text-white">Let's talk</h4>
+                            <h4 className="h4 m-0 text-dark dark:text-white">Discutons-en</h4>
                             <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-0">
-                              Custom pricing
+                              Tarification sur mesure
                             </p>
                           </div>
                           <Link href={enterprisePlan.buttonLink} className="btn btn-md btn-primary">
@@ -433,8 +433,8 @@ export default function PricingSection() {
                   className="text-center text-dark dark:text-white text-opacity-60 fs-7"
                   data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
                 >
-                  Prices exclude any applicable taxes. 
-                  <Link href="/securite" className="text-primary ms-1">Learn about security</Link>
+                  Prix hors taxes applicables. 
+                  <Link href="/securite" className="text-primary ms-1">En savoir plus sur la sécurité</Link>
                 </p>
               </div>
             </div>

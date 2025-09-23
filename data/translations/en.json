@@ -297,6 +297,31 @@
     "trust": {
       "no_credit_card": "No credit card required",
       "secure_payments": "Payments secured by Stripe"
+    },
+    "compare": {
+      "title": "Compare View4Sight Plans",
+      "subtitle": "Choose the plan that fits your 3D visualization needs",
+      "columns": {
+        "features": "Features"
+      },
+      "groups": {
+        "core": "Core Features",
+        "advanced": "Advanced Features"
+      },
+      "rows": {
+        "storage": "Storage",
+        "users": "Users",
+        "active_projects": "Active Projects",
+        "file_formats": "File Formats",
+        "annotations": "Annotations",
+        "embeddable_viewer": "Embeddable Viewer",
+        "api_access": "API Access",
+        "on_premise": "On-Premise Hosting",
+        "priority_support": "Priority Support"
+      },
+      "values": {
+        "unlimited": "Unlimited"
+      }
     }
   },
   "main_features": {
@@ -474,6 +499,13 @@
     "shareArticle": "Share article",
     "tags": "Tags",
     "comments": "Comments"
+  },
+  "features_pages": {
+    "cta": {
+      "title": "Ready to revolutionize your 3D workflows?",
+      "subtitle": "Start your 30-day free trial. No credit card required.",
+      "button": "Try View4Sight"
+    }
   },
   "demo_modal": {
     "title": "Schedule your 30-minute demo now",

@@ -267,6 +267,31 @@
     "trust": {
       "no_credit_card": "Aucune carte bancaire requise",
       "secure_payments": "Paiements sécurisés par Stripe"
+    },
+    "compare": {
+      "title": "Comparez les offres View4Sight",
+      "subtitle": "Choisissez l'offre qui correspond à vos besoins en visualisation 3D",
+      "columns": {
+        "features": "Fonctionnalités"
+      },
+      "groups": {
+        "core": "Fonctionnalités de base",
+        "advanced": "Fonctionnalités avancées"
+      },
+      "rows": {
+        "storage": "Stockage",
+        "users": "Utilisateurs",
+        "active_projects": "Projets actifs",
+        "file_formats": "Formats de fichiers",
+        "annotations": "Annotations",
+        "embeddable_viewer": "Visionneuse intégrable",
+        "api_access": "Accès API",
+        "on_premise": "Hébergement sur site",
+        "priority_support": "Support prioritaire"
+      },
+      "values": {
+        "unlimited": "Illimité"
+      }
     }
   },
   "main_features": {
@@ -281,7 +306,7 @@
         "cta": "Essayer maintenant"
       },
       "all_formats": {
-        "title": "Tous vos fichiers géospaciaux au même endroit, sans conversion",
+        "title": "Tous vos fichiers géospatiaux au même endroit, sans conversion",
         "description": "LAS, E57, IFC, orthophotos, DXF… View4Sight lit tous vos formats natifs, sans conversion. Les systèmes de coordonnées sont reconnus et alignés automatiquement.",
         "cta": "Voir tous les formats"
       },
