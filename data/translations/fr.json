@@ -200,7 +200,7 @@
       "starter": {
         "name": "Starter",
         "price": "Gratuit",
-        "description": "Parfait pour les professionnels individuels et petits projets",
+        "description": "Idéal pour tester la plateforme",
         "features": [
           "15 Go de stockage",
           "2 utilisateurs",
@@ -213,6 +213,7 @@
       "team": {
         "name": "Équipe", 
         "price": "79 €",
+        "price_yearly": "63 €",
         "period": "/mois",
         "description": "Idéal pour les petites équipes et entreprises en croissance",
         "features": [
@@ -229,7 +230,8 @@
       },
       "studio": {
         "name": "Studio",
-        "price": "199 €", 
+        "price": "199 €",
+        "price_yearly": "159 €", 
         "period": "/mois",
         "description": "Pour les cabinets établis avec des projets complexes",
         "features": [
@@ -268,6 +270,16 @@
       "no_credit_card": "Aucune carte bancaire requise",
       "secure_payments": "Paiements sécurisés par Stripe"
     },
+    "enterprise": {
+      "unlimited_storage_users": "Stockage et utilisateurs illimités",
+      "on_premise_cloud": "Sur site / cloud privé",
+      "sla": "SLA 99,9%",
+      "white_label": "Marque blanche complète",
+      "lets_talk": "Discutons-en",
+      "custom_pricing": "Tarification sur mesure"
+    },
+    "tax_note": "Prix hors taxes applicables.",
+    "security_link": "En savoir plus sur la sécurité",
     "compare": {
       "title": "Comparez les offres View4Sight",
       "subtitle": "Choisissez l'offre qui correspond à vos besoins en visualisation 3D",
@@ -290,7 +302,14 @@
         "priority_support": "Support prioritaire"
       },
       "values": {
-        "unlimited": "Illimité"
+        "unlimited": "Illimité",
+        "storage_starter": "15 Go",
+        "storage_team": "150 Go",
+        "storage_studio": "500 Go",
+        "users_starter": "2 utilisateurs",
+        "users_team": "30 utilisateurs",
+        "users_studio": "100 utilisateurs",
+        "projects_starter": "3 projets"
       }
     }
   },

@@ -73,9 +73,9 @@ export default function PricingCompare() {
                         <span className="fs-5 fw-bold text-dark dark:text-white">{t('pricing.compare.rows.storage')}</span>
                       </div>
                     </th>
-                    <td><span>15 Go</span></td>
-                    <td><span>150 Go</span></td>
-                    <td><span>500 Go</span></td>
+                    <td><span>{t('pricing.compare.values.storage_starter')}</span></td>
+                    <td><span>{t('pricing.compare.values.storage_team')}</span></td>
+                    <td><span>{t('pricing.compare.values.storage_studio')}</span></td>
                     <td><span>{t('pricing.compare.values.unlimited')}</span></td>
                   </tr>
                   <tr className="table-row border-gray-100 dark:border-gray-600">
@@ -84,9 +84,9 @@ export default function PricingCompare() {
                         <span className="fs-5 fw-bold text-dark dark:text-white">{t('pricing.compare.rows.users')}</span>
                       </div>
                     </th>
-                    <td><span>2 utilisateurs</span></td>
-                    <td><span>30 utilisateurs</span></td>
-                    <td><span>100 utilisateurs</span></td>
+                    <td><span>{t('pricing.compare.values.users_starter')}</span></td>
+                    <td><span>{t('pricing.compare.values.users_team')}</span></td>
+                    <td><span>{t('pricing.compare.values.users_studio')}</span></td>
                     <td><span>{t('pricing.compare.values.unlimited')}</span></td>
                   </tr>
                   <tr className="table-row border-gray-100 dark:border-gray-600">
@@ -95,7 +95,7 @@ export default function PricingCompare() {
                         <span className="fs-5 fw-bold text-dark dark:text-white">{t('pricing.compare.rows.active_projects')}</span>
                       </div>
                     </th>
-                    <td><span>3 projets</span></td>
+                    <td><span>{t('pricing.compare.values.projects_starter')}</span></td>
                     <td><span>{t('pricing.compare.values.unlimited')}</span></td>
                     <td><span>{t('pricing.compare.values.unlimited')}</span></td>
                     <td><span>{t('pricing.compare.values.unlimited')}</span></td>

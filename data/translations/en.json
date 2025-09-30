@@ -230,7 +230,7 @@
       "starter": {
         "name": "Starter",
         "price": "Free",
-        "description": "Perfect for individual professionals and small projects",
+        "description": "Perfect for trying the platform",
         "features": [
           "15 GB storage",
           "2 users",
@@ -243,8 +243,9 @@
       "team": {
         "name": "Team", 
         "price": "€79",
+        "price_yearly": "€63",
         "period": "/month",
-        "description": "Best for small teams and growing businesses",
+        "description": "For growing firms",
         "features": [
           "150 GB storage",
           "5 users",
@@ -259,7 +260,8 @@
       },
       "studio": {
         "name": "Studio",
-        "price": "€199", 
+        "price": "€199",
+        "price_yearly": "€159", 
         "period": "/month",
         "description": "For established firms with complex projects",
         "features": [
@@ -298,6 +300,16 @@
       "no_credit_card": "No credit card required",
       "secure_payments": "Payments secured by Stripe"
     },
+    "enterprise": {
+      "unlimited_storage_users": "Unlimited storage & users",
+      "on_premise_cloud": "On-premise / private cloud",
+      "sla": "99.9% SLA",
+      "white_label": "Complete white label",
+      "lets_talk": "Let's talk",
+      "custom_pricing": "Custom pricing"
+    },
+    "tax_note": "Prices exclude any applicable taxes.",
+    "security_link": "Learn about security",
     "compare": {
       "title": "Compare View4Sight Plans",
       "subtitle": "Choose the plan that fits your 3D visualization needs",
@@ -320,7 +332,14 @@
         "priority_support": "Priority Support"
       },
       "values": {
-        "unlimited": "Unlimited"
+        "unlimited": "Unlimited",
+        "storage_starter": "15 GB",
+        "storage_team": "150 GB",
+        "storage_studio": "500 GB",
+        "users_starter": "2 users",
+        "users_team": "30 users",
+        "users_studio": "100 users",
+        "projects_starter": "3 projects"
       }
     }
   },

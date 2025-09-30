@@ -7,7 +7,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 // Function to handle Polar checkout
 const handleCheckout = async (tier, isYearly) => {
   // Free tier redirects to sign-in
-  if (tier.plan === "Starter") {
+  if (tier.planKey === "starter") {
     window.location.href = "/sign-in";
     return;
   }
@@ -46,8 +46,14 @@ const handleCheckout = async (tier, isYearly) => {
 };
 
 // Animated Price Component
-const AnimatedPrice = ({ price, isYearly, tier }) => {
-  const displayPrice = isYearly ? tier.yearlyPrice : tier.price;
+const AnimatedPrice = ({ isYearly, planKey, t }) => {
+  const priceKey = isYearly ? `pricing.plans.${planKey}.price_yearly` : `pricing.plans.${planKey}.price`;
+  const periodKey = `pricing.plans.${planKey}.period`;
+  const displayPrice = t(priceKey);
+  
+  // Check if the period key actually exists in translations (avoid showing the key itself)
+  const periodTranslation = t(periodKey);
+  const period = periodTranslation !== periodKey ? periodTranslation : '';
   
   return (
     <div style={{ position: 'relative', display: 'inline-block' }}>
@@ -61,7 +67,7 @@ const AnimatedPrice = ({ price, isYearly, tier }) => {
       >
         {displayPrice}
       </h3>
-      {displayPrice !== "Free" && (
+      {period && (
         <span 
           className="text-dark dark:text-white text-opacity-70"
           style={{
@@ -74,7 +80,7 @@ const AnimatedPrice = ({ price, isYearly, tier }) => {
             whiteSpace: 'nowrap'
           }}
         >
-          {tier.priceSuffix}
+          {period}
         </span>
       )}
     </div>
@@ -303,7 +309,14 @@ export default function PricingSection() {
                       className="row child-cols-12 md:child-cols-6 lg:child-cols-4 col-match justify-center g-2 lg:g-3"
                       data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
                     >
-                      {view4sightTiers.map((tier, index) => (
+                      {view4sightTiers.map((tier, index) => {
+                        const planName = t(`pricing.plans.${tier.planKey}.name`);
+                        const planDescription = t(`pricing.plans.${tier.planKey}.description`);
+                        const planFeatures = t(`pricing.plans.${tier.planKey}.features`) || [];
+                        const buttonText = t(`pricing.cta.${tier.buttonKey}`);
+                        const footerText = t('pricing.trust.no_credit_card');
+                        
+                        return (
                         <div key={index}>
                           <div
                             className={`tier panel rounded-2 tier-card ${
@@ -324,14 +337,14 @@ export default function PricingSection() {
                             <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between" style={{ paddingBottom: '0 !important' }}>
                               <div>
                                 <h5 className="h5 m-0 text-dark dark:text-white">
-                                  {tier.plan}
+                                  {planName}
                                 </h5>
                                                                  <div className="d-flex gap-narrow items-end mt-1">
-                                   <AnimatedPrice price={tier.price} isYearly={isYearly} tier={tier} />
+                                   <AnimatedPrice isYearly={isYearly} planKey={tier.planKey} t={t} />
                                  </div>
                               </div>
                                                              <p className="desc fs-7 text-dark dark:text-white text-opacity-70 mb-0" style={{ marginTop: '1rem', marginBottom: '-0.75rem !important' }}>
-                                 {tier.description}
+                                 {planDescription}
                                </p>
                             </header>
                             <div className="tier-body px-3 lg:px-4 pt-0 pb-3">
@@ -339,7 +352,7 @@ export default function PricingSection() {
                                 Inclus :
                               </h6>
                               <ul className="nav-y gap-2 text-start">
-                                {tier.features.map((feature, idx) => (
+                                {planFeatures.map((feature, idx) => (
                                   <li
                                     key={idx}
                                     className="hstack items-start gap-2"
@@ -362,16 +375,17 @@ export default function PricingSection() {
                                   } w-100 rounded`}
                                   onClick={() => handleCheckout(tier, isYearly)}
                                 >
-                                  <span>{tier.buttonText}</span>
+                                  <span>{buttonText}</span>
                                 </button>
                                 <small className="d-block text-center text-dark dark:text-white text-opacity-60">
-                                  {tier.footerText || "Aucune carte bancaire requise"}
+                                  {footerText}
                                 </small>
                               </div>
                             </footer>
                           </div>
                         </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -391,19 +405,19 @@ export default function PricingSection() {
                               <i className="icon-1 unicon-building fw-bold" />
                             </span>
                             <div>
-                              <h3 className="h4 mb-1 text-dark dark:text-white">{enterprisePlan.title}</h3>
+                              <h3 className="h4 mb-1 text-dark dark:text-white">{t(`pricing.plans.${enterprisePlan.planKey}.name`)}</h3>
                               <p className="fs-6 m-0 text-dark dark:text-white text-opacity-70">
-                                {enterprisePlan.description}
+                                {t(`pricing.plans.${enterprisePlan.planKey}.description`)}
                               </p>
                             </div>
                           </div>
                           <div className="row child-cols-12 sm:child-cols-6 g-2 mt-2">
-                            {enterprisePlan.features.map((feature, idx) => (
+                            {enterprisePlan.featureKeys.map((feature, idx) => (
                               <div key={idx}>
                                 <div className="hstack gap-2">
                                   <i className="cstack w-16px h-16px bg-primary text-white rounded-circle unicon-checkmark fs-8 fw-bold flex-shrink-0" />
                                   <div>
-                                    <span className="fs-7 fw-medium text-dark dark:text-white">{feature.title}</span>
+                                    <span className="fs-7 fw-medium text-dark dark:text-white">{t(`pricing.enterprise.${feature.key}`)}</span>
                                   </div>
                                 </div>
                               </div>
@@ -414,13 +428,13 @@ export default function PricingSection() {
                       <div className="col-12 lg:col-4 text-center text-lg-end">
                         <div className="vstack gap-3">
                           <div>
-                            <h4 className="h4 m-0 text-dark dark:text-white">Discutons-en</h4>
+                            <h4 className="h4 m-0 text-dark dark:text-white">{t('pricing.enterprise.lets_talk')}</h4>
                             <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-0">
-                              Tarification sur mesure
+                              {t('pricing.enterprise.custom_pricing')}
                             </p>
                           </div>
                           <Link href={enterprisePlan.buttonLink} className="btn btn-md btn-primary">
-                            {enterprisePlan.buttonText}
+                            {t(`pricing.cta.${enterprisePlan.buttonKey}`)}
                           </Link>
                         </div>
                       </div>
@@ -433,8 +447,8 @@ export default function PricingSection() {
                   className="text-center text-dark dark:text-white text-opacity-60 fs-7"
                   data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
                 >
-                  Prix hors taxes applicables. 
-                  <Link href="/securite" className="text-primary ms-1">En savoir plus sur la sécurité</Link>
+                  {t('pricing.tax_note')}{' '}
+                  <Link href="/securite" className="text-primary ms-1">{t('pricing.security_link')}</Link>
                 </p>
               </div>
             </div>
