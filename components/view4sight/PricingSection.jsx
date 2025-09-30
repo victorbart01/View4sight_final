@@ -47,10 +47,20 @@ const handleCheckout = async (tier, isYearly) => {
 
 // Animated Price Component
 const AnimatedPrice = ({ isYearly, planKey, t }) => {
-  const priceKey = isYearly ? `pricing.plans.${planKey}.price_yearly` : `pricing.plans.${planKey}.price`;
-  const periodKey = `pricing.plans.${planKey}.period`;
-  const displayPrice = t(priceKey);
+  // Try yearly price first, fallback to regular price if it doesn't exist
+  const yearlyPriceKey = `pricing.plans.${planKey}.price_yearly`;
+  const regularPriceKey = `pricing.plans.${planKey}.price`;
   
+  let displayPrice;
+  if (isYearly) {
+    const yearlyPrice = t(yearlyPriceKey);
+    // If yearly price key doesn't exist (returns the key itself), use regular price
+    displayPrice = yearlyPrice !== yearlyPriceKey ? yearlyPrice : t(regularPriceKey);
+  } else {
+    displayPrice = t(regularPriceKey);
+  }
+  
+  const periodKey = `pricing.plans.${planKey}.period`;
   // Check if the period key actually exists in translations (avoid showing the key itself)
   const periodTranslation = t(periodKey);
   const period = periodTranslation !== periodKey ? periodTranslation : '';
