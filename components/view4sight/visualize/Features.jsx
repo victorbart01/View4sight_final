@@ -1,5 +1,134 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+
+// Nouveau composant pour la frise infinie des formats
+const FormatCarousel = () => {
+  const formats = [
+    { name: "LAS", svgPath: "/assets/images/file formats/LAS.svg", color: "#2563EB" },
+    { name: "E57", svgPath: "/assets/images/file formats/E57.svg", color: "#06B6D4" },
+    { name: "IFC", svgPath: "/assets/images/file formats/IFC.svg", color: "#DC2626" },
+    { name: "DXF", svgPath: "/assets/images/file formats/DXF.svg", color: "#F59E0B" },
+    { name: "ORTHO", svgPath: "/assets/images/file formats/ORTHO.svg", color: "#8B5CF6" },
+    { name: "PLY", svgPath: "/assets/images/file formats/PLY.svg", color: "#EC4899" },
+  ];
+
+  // Dupliquer les formats pour créer l'effet infini
+  const extendedFormats = [...formats, ...formats, ...formats];
+
+  return (
+    <div 
+      className="w-100"
+      style={{
+        backgroundColor: "#0E0E0E",
+        borderRadius: "0.75rem",
+        padding: "2rem 1.5rem",
+        overflow: "hidden",
+      }}
+    >
+      <style jsx>{`
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+
+        @keyframes scroll-right {
+          0% {
+            transform: translateX(-33.333%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        
+        .carousel-track-1 {
+          display: flex;
+          gap: 2rem;
+          animation: scroll-left 30s linear infinite;
+          will-change: transform;
+        }
+
+        .carousel-track-2 {
+          display: flex;
+          gap: 2rem;
+          animation: scroll-right 30s linear infinite;
+          will-change: transform;
+        }
+
+        .carousel-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          transition: all 0.3s ease;
+        }
+
+        .carousel-item:hover {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+          border-color: rgba(255, 255, 255, 0.2);
+          transform: translateY(-4px);
+          box-shadow: 0 8px 24px rgba(254, 85, 46, 0.1);
+        }
+
+        .carousel-row {
+          overflow: hidden;
+          position: relative;
+          height: 120px;
+        }
+      `}</style>
+
+      <div className="panel vstack gap-4">
+        {/* Ligne 1 */}
+        <div className="panel d-flex carousel-row">
+          <div className="carousel-track-1">
+            {extendedFormats.map((format, index) => (
+              <div key={`row1-${index}`} className="carousel-item">
+                <Image
+                  src={format.svgPath}
+                  alt={format.name}
+                  width={50}
+                  height={55}
+                  style={{
+                    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3))',
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ligne 2 - Sens inverse pour effet alternant */}
+        <div className="panel d-flex carousel-row">
+          <div className="carousel-track-2">
+            {extendedFormats.map((format, index) => (
+              <div key={`row2-${index}`} className="carousel-item">
+                <Image
+                  src={format.svgPath}
+                  alt={format.name}
+                  width={50}
+                  height={55}
+                  style={{
+                    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3))',
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const visualizeFeatures = [
   {
@@ -171,6 +300,9 @@ export default function Features() {
                             <source src="/assets/videos/V4S-WalkThrough.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                           </video>
+                        ) : i === 3 ? (
+                          // Quatrième feature: Frise infinie des formats sur 2 lignes
+                          <FormatCarousel />
                         ) : (
                           // Autres features: Images avec décoration
                           <div 
