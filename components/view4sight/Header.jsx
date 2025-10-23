@@ -11,31 +11,37 @@ import { getLocalizedPath, locales } from "@/lib/i18n";
 import { useTranslation } from "@/hooks/useTranslation";
 import View4SightMobileMenu from "./View4SightMobileMenu";
 
+// This function is no longer needed - we use CSS mask instead for better color accuracy
+
 // Contenu View4Sight pour le sous-menu Fonctionnalités (chemins relatifs)
 const view4sightFeaturesBase = [
   {
     href: "/fonctionnalites/visualize",
     icon: "/assets/images/custom-icons/visualisation-3d.svg",
     title: "Visualize",
-    description: "Navigate massive datasets"
+    description: "Navigate massive datasets",
+    color: "#00FF00"
   },
   {
     href: "/fonctionnalites/measure", 
     icon: "/assets/images/custom-icons/mesure-annotations.svg",
     title: "Measure",
-    description: "Survey-grade precision"
+    description: "Survey-grade precision",
+    color: "#FF0055"
   },
   {
     href: "/fonctionnalites/collaborate",
     icon: "/assets/images/custom-icons/collaboration.svg",
     title: "Collaborate",
-    description: "Work together live"
+    description: "Work together live",
+    color: "#FF4500"
   },
   {
     href: "/fonctionnalites/secure",
     icon: "/assets/images/custom-icons/upload-share.svg",
     title: "Secure",
-    description: "Control & protect"
+    description: "Control & protect",
+    color: "#00FFFF"
   }
 ];
 
@@ -230,7 +236,19 @@ export default function View4SightHeader() {
                           <div>
                             <div className="p-2 h-100 d-flex flex-column justify-content-center">
                               <div className="d-flex flex-column" style={{ gap: "8px" }}>
-                                {view4sightFeatures.map((feature, index) => (
+                                {view4sightFeatures.map((feature, index) => {
+                                  const baseFeature = view4sightFeaturesBase[index];
+                                  const featureColor = baseFeature.color;
+                                  
+                                  // Convert hex to rgba
+                                  const hexToRgba = (hex, alpha) => {
+                                    const r = parseInt(hex.slice(1, 3), 16);
+                                    const g = parseInt(hex.slice(3, 5), 16);
+                                    const b = parseInt(hex.slice(5, 7), 16);
+                                    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+                                  };
+                                  
+                                  return (
                                   <Link
                                     key={index}
                                     className="d-flex align-items-center text-none rounded-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 p-1"
@@ -241,26 +259,25 @@ export default function View4SightHeader() {
                                       width: "44px",
                                       height: "44px", 
                                       borderRadius: "10px",
-                                      backgroundColor: "rgba(254, 85, 46, 0.1)",
-                                      border: "1px solid rgba(254, 85, 46, 0.2)",
-                                      flexShrink: 0,
-                                      position: "relative"
+                                      backgroundColor: hexToRgba(featureColor, 0.1),
+                                      border: `1px solid ${hexToRgba(featureColor, 0.2)}`,
+                                      flexShrink: 0
                                     }}>
-                                      <Image
-                                        src={feature.icon}
-                                        alt={feature.title}
-                                        width={22}
-                                        height={22}
-                                        style={{ 
-                                          width: "22px", 
+                                      <div
+                                        style={{
+                                          width: "22px",
                                           height: "22px",
-                                          filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)",
-                                          display: "block",
-                                          margin: "auto",
-                                          position: "absolute",
-                                          top: "50%",
-                                          left: "50%",
-                                          transform: "translate(-50%, -50%)"
+                                          backgroundColor: featureColor,
+                                          WebkitMaskImage: `url(${feature.icon})`,
+                                          maskImage: `url(${feature.icon})`,
+                                          WebkitMaskRepeat: "no-repeat",
+                                          maskRepeat: "no-repeat",
+                                          WebkitMaskPosition: "center",
+                                          maskPosition: "center",
+                                          WebkitMaskSize: "contain",
+                                          maskSize: "contain",
+                                          filter: `drop-shadow(0 0 3px ${featureColor}) brightness(1.2)`,
+                                          margin: "auto"
                                         }}
                                       />
                                     </div>
@@ -282,7 +299,8 @@ export default function View4SightHeader() {
                                       </p>
                                     </div>
                                   </Link>
-                                ))}
+                                  );
+                                })}
                               </div>
                             </div>
                           </div>

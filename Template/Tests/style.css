@@ -1,0 +1,354 @@
+.frame {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 609px;
+    min-height: 798px;
+    position: relative;
+  }
+  
+  .frame .rectangle {
+    position: absolute;
+    top: 53px;
+    left: 69px;
+    width: 467px;
+    height: 669px;
+  }
+  
+  .frame .img {
+    position: absolute;
+    top: 476px;
+    left: 84px;
+    width: 437px;
+    height: 228px;
+  }
+  
+  .frame .div {
+    position: absolute;
+    top: 668px;
+    left: 393px;
+    width: 67px;
+    height: 54px;
+    background-color: #8e8e8e;
+    border-radius: 16px;
+  }
+  
+  .frame .rectangle-2 {
+    position: absolute;
+    top: 668px;
+    left: 469px;
+    width: 67px;
+    height: 54px;
+    background-color: #8e8e8e;
+    border-radius: 16px;
+  }
+  
+  .frame .arrow {
+    left: 411px;
+    position: absolute;
+    top: 688px;
+    width: 30px;
+    height: 15px;
+  }
+  
+  .frame .arrow-2 {
+    left: 488px;
+    position: absolute;
+    top: 688px;
+    width: 30px;
+    height: 15px;
+  }
+  
+  .frame .badges {
+    position: absolute;
+    top: 408px;
+    left: 88px;
+    display: flex;
+    gap: 16px;
+    z-index: 10;
+  }
+
+  .frame .badge {
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .frame .text-wrapper {
+    position: absolute;
+    top: 445px;
+    left: 84px;
+    width: 437px;
+    height: 228px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+    padding: 30px 25px;
+    box-sizing: border-box;
+  }
+  
+  .frame .sara-bright {
+    position: absolute;
+    top: 645px;
+    left: 105px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.5;
+  }
+  /* Original CSS code should be injected here */
+  
+  .frame .div,
+  .frame .rectangle-2 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  
+  .frame .div:hover,
+  .frame .rectangle-2:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .frame .div:active,
+  .frame .rectangle-2:active {
+    transform: translateY(0) scale(0.98);
+  }
+  
+  .frame .div:focus-visible,
+  .frame .rectangle-2:focus-visible {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+  }
+  
+  .frame .arrow,
+  .frame .arrow-2 {
+    pointer-events: none;
+    filter: invert(1) brightness(0);
+    opacity: 0.8;
+  }
+  
+  .frame .text-wrapper {
+    text-align: left;
+  }
+  
+  .frame .sara-bright {
+    text-align: left;
+  }
+  
+  .frame .sara-bright cite {
+    font-style: normal;
+    display: block;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .frame {
+      min-width: 100%;
+      min-height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .testimonial-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+    }
+
+    .frame .rectangle {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 90vw;
+      height: auto;
+      aspect-ratio: 467/669;
+      margin-bottom: 0;
+    }
+
+    .frame .img {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 85vw;
+      height: auto;
+      aspect-ratio: 437/228;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .frame .badges {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 90vw;
+      margin: 15px auto;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .frame .badge {
+      font-size: 13px;
+      padding: 7px 16px;
+    }
+
+    .frame .text-wrapper {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 85vw;
+      height: auto !important;
+      margin: 10px auto;
+      padding: 18px;
+      font-size: 17px;
+      line-height: 1.35;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .frame .sara-bright {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 85vw;
+      margin: 8px auto;
+      padding-left: 18px;
+      font-size: 12px;
+    }
+
+    .carousel-controls {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      display: flex !important;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    .frame .div {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 54px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .frame .rectangle-2 {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 54px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .frame .arrow {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 24px;
+      height: 12px;
+    }
+
+    .frame .arrow-2 {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 24px;
+      height: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .frame .rectangle {
+      width: 95vw;
+    }
+
+    .frame .img {
+      width: 92vw;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .frame .badges {
+      width: 95vw;
+      margin: 12px auto;
+      gap: 8px;
+    }
+
+    .frame .badge {
+      font-size: 12px;
+      padding: 6px 14px;
+    }
+
+    .frame .text-wrapper {
+      width: 92vw;
+      margin: 8px auto;
+      padding: 15px;
+      font-size: 15px;
+    }
+
+    .frame .sara-bright {
+      width: 92vw;
+      margin: 6px auto;
+      padding-left: 15px;
+      font-size: 11px;
+    }
+
+    .carousel-controls {
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .frame .div,
+    .frame .rectangle-2 {
+      width: 48px;
+      height: 44px;
+    }
+
+    .frame .arrow,
+    .frame .arrow-2 {
+      width: 20px;
+      height: 10px;
+    }
+  }
+  

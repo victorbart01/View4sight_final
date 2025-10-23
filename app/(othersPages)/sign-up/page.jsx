@@ -1,9 +1,7 @@
 import Signup from "@/components/otherPages/Signup";
 export const metadata = {
-  title:
-    "Signup 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Créer un compte | View4Sight - Essai Gratuit",
+  description: "Créez votre compte View4Sight et commencez votre essai gratuit. Visualisez et partagez vos données 3D sans logiciel lourd. 150GB de stockage inclus. Hébergement français, conforme GDPR.",
 };
 export default function SignupPage1() {
   return (

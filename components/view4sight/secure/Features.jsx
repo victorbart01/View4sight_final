@@ -1,50 +1,44 @@
 import React from "react";
 import Image from "next/image";
-
-const secureFeatures = [
-  {
-    id: "french-sovereignty",
-    icon: "unicon-shield-check",
-    iconBg: "#E3F2FD",
-    iconColor: "#1976D2",
-    title: "Hébergement en France",
-    description: "Vos projets restent sous juridiction française. Hébergement en France sur infrastructures certifiées ISO/IEC 27001, conforme RGPD.",
-    imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Infrastructures d'hébergement en France",
-  },
-  {
-    id: "user-permissions",
-    icon: "unicon-lock-access",
-    iconBg: "#FFF3E0",
-    iconColor: "#F57C00",
-    title: "Contrôles d’accès avancés",
-    description: "Définissez vos permissions pour chaque rôle : lecture, mesure, édition, téléchargement. Liens de partage contrôlés et révocables, et journaux d’audit détaillant chaque action.",
-    imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Système de permissions utilisateur granulaire",
-  },
-  {
-    id: "on-premise",
-    icon: "unicon-server",
-    iconBg: "#E8F5E9",
-    iconColor: "#388E3C",
-    title: "Auto-hébergement si besoin",
-    description: "Déployez View4Sight sur vos propres serveurs ou dans votre cloud privé pour un contrôle maximal et des environnements isolés.",
-    imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Options de déploiement on-premise",
-  },
-  {
-    id: "data-export",
-    icon: "unicon-download-alt",
-    iconBg: "#F3E5F5",
-    iconColor: "#7B1FA2",
-    title: "Exportez à tout moment",
-    description: "Vos données vous appartiennent. Exportez vos jeux de données bruts ou traités quand vous le souhaitez. Aucun verrouillage.",
-    imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Fonctionnalités d’export de données",
-  }
-];
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Features() {
+  const { t } = useTranslation();
+
+  const secureFeatures = [
+    {
+      id: "french-sovereignty",
+      icon: "unicon-shield-check",
+      iconBg: "#E3F2FD",
+      iconColor: "#1976D2",
+      imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Infrastructures d'hébergement en France",
+    },
+    {
+      id: "user-permissions",
+      icon: "unicon-lock-access",
+      iconBg: "#FFF3E0",
+      iconColor: "#F57C00",
+      imgSrc: "https://picsum.photos/900/600?random=2",
+      altText: "Système de permissions utilisateur granulaire",
+    },
+    {
+      id: "on-premise",
+      icon: "unicon-server",
+      iconBg: "#E8F5E9",
+      iconColor: "#388E3C",
+      imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Options de déploiement on-premise",
+    },
+    {
+      id: "data-export",
+      icon: "unicon-download-alt",
+      iconBg: "#F3E5F5",
+      iconColor: "#7B1FA2",
+      imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Fonctionnalités d'export de données",
+    }
+  ];
   return (
     <div id="main_features" className="main-features section panel">
               <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#0e0e0e' }}>
@@ -86,12 +80,12 @@ export default function Features() {
                         
                         {/* Title */}
                         <h3 className="h4 lg:h3 m-0 fw-bold">
-                          {feature.title}
+                          {t(`features_pages.secure.features.${i}.title`)}
                         </h3>
                         
                         {/* Description */}
                         <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
-                          {feature.description}
+                          {t(`features_pages.secure.features.${i}.description`)}
                         </p>
                       </div>
                     </div>

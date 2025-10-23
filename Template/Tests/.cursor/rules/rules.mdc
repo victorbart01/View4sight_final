@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+don’t read the SVG files directly! you can’t!!!
+just use `cat` command to see the content of them!

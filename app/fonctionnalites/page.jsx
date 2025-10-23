@@ -16,15 +16,9 @@ const featureCategories = [
     description: "Navigate massive 3D datasets like a desktop app. Stream gigabyte point clouds smoothly in any browser.",
     href: "/fonctionnalites/visualize",
     icon: "unicon-eye",
+    color: "#FE552E", // Lava Pulse - couleur principale View4Sight
+    bgColor: "rgba(254, 85, 46, 0.1)",
     features: ["Streaming Technology", "First-Person Navigation", "Multiple Data Integration", "Universal Format Support"],
-  },
-  {
-    id: "collaborate",
-    title: "Collaborate",
-    description: "Share your 3D data with clients and team members. Real-time annotations and secure access control.",
-    href: "/fonctionnalites/collaborate",
-    icon: "unicon-users-alt",
-    features: ["Secure Sharing", "Real-time Annotations", "Version Control", "Client Presentations"],
   },
   {
     id: "measure",
@@ -32,15 +26,29 @@ const featureCategories = [
     description: "Professional measurement tools for surveyors. Extract dimensions, volumes, and profiles with precision.",
     href: "/fonctionnalites/measure",
     icon: "unicon-ruler",
+    color: "#3B82F6", // Bleu
+    bgColor: "rgba(59, 130, 246, 0.1)",
     features: ["Distance & Area", "Volume Calculation", "Cross Sections", "Elevation Profiles"],
   },
   {
-    id: "automate",
-    title: "Automate",
-    description: "API-first platform to integrate with your existing workflows. Build custom automations and integrations.",
-    href: "/fonctionnalites/automate",
-    icon: "unicon-cog",
-    features: ["RESTful API", "Webhooks", "Batch Processing", "Custom Workflows"],
+    id: "collaborate",
+    title: "Collaborate",
+    description: "Share your 3D data with clients and team members. Real-time annotations and secure access control.",
+    href: "/fonctionnalites/collaborate",
+    icon: "unicon-users-alt",
+    color: "#10B981", // Vert
+    bgColor: "rgba(16, 185, 129, 0.1)",
+    features: ["Secure Sharing", "Real-time Annotations", "Version Control", "Client Presentations"],
+  },
+  {
+    id: "secure",
+    title: "Secure",
+    description: "Enterprise-grade data protection and hosting in France.",
+    href: "/fonctionnalites/secure",
+    icon: "unicon-shield-check",
+    color: "#6366F1", // Indigo
+    bgColor: "rgba(99, 102, 241, 0.1)",
+    features: ["ISO 27001", "French Hosting", "GDPR Compliant", "On-Premise Options"],
   },
 ];
 
@@ -90,8 +98,19 @@ export default function FeaturesPage() {
                           data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                         >
                           <div className="vstack gap-3">
-                            <div className="w-64px h-64px rounded-2 bg-primary bg-opacity-10 vstack items-center justify-center">
-                              <i className={`icon icon-2 ${category.icon} text-primary`}></i>
+                            <div 
+                              className="w-64px h-64px rounded-2"
+                              style={{ 
+                                backgroundColor: category.bgColor,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'
+                              }}
+                            >
+                              <i 
+                                className={`icon icon-2 ${category.icon}`}
+                                style={{ color: category.color }}
+                              ></i>
                             </div>
                             <div className="vstack gap-2">
                               <h3 className="h4 m-0 text-dark dark:text-white">{category.title}</h3>
@@ -102,14 +121,17 @@ export default function FeaturesPage() {
                             <ul className="vstack gap-1 mt-2">
                               {category.features.map((feature, j) => (
                                 <li key={j} className="hstack gap-2 fs-7 text-dark dark:text-white text-opacity-60">
-                                  <i className="unicon-checkmark-outline text-primary fs-6"></i>
+                                  <i 
+                                    className="unicon-checkmark-outline fs-6"
+                                    style={{ color: category.color }}
+                                  ></i>
                                   <span>{feature}</span>
                                 </li>
                               ))}
                             </ul>
                             <div className="hstack gap-1 mt-2">
-                              <span className="text-primary fw-medium">Learn more</span>
-                              <i className="unicon-arrow-right text-primary"></i>
+                              <span className="fw-medium" style={{ color: category.color }}>Learn more</span>
+                              <i className="unicon-arrow-right" style={{ color: category.color }}></i>
                             </div>
                           </div>
                         </div>

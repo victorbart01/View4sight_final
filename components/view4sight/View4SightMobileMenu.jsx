@@ -7,6 +7,16 @@ import { usePathname } from "next/navigation";
 import { getLocalizedPath, locales } from "@/lib/i18n";
 import { useTranslation } from "@/hooks/useTranslation";
 
+// This function is no longer needed - we use CSS mask instead for better color accuracy
+
+// Feature colors mapping
+const featureColors = {
+  "visualize": "#00FF00",
+  "measure": "#FF0055",
+  "collaborate": "#FF4500",
+  "secure": "#00FFFF"
+};
+
 export default function View4SightMobileMenu() {
   const pathname = usePathname();
   const [expandedMenu, setExpandedMenu] = useState(-1);
@@ -36,25 +46,29 @@ export default function View4SightMobileMenu() {
           label: t('features.visualize.title'),
           href: createLocalizedLink("/fonctionnalites/visualize"),
           description: t('features.visualize.description'),
-          icon: "/assets/images/custom-icons/visualisation-3d.svg"
+          icon: "/assets/images/custom-icons/visualisation-3d.svg",
+          color: featureColors.visualize
         },
         {
           label: t('features.measure.title'),
           href: createLocalizedLink("/fonctionnalites/measure"),
           description: t('features.measure.description'),
-          icon: "/assets/images/custom-icons/mesure-annotations.svg"
+          icon: "/assets/images/custom-icons/mesure-annotations.svg",
+          color: featureColors.measure
         },
         {
           label: t('features.collaborate.title'),
           href: createLocalizedLink("/fonctionnalites/collaborate"),
           description: t('features.collaborate.description'),
-          icon: "/assets/images/custom-icons/collaboration.svg"
+          icon: "/assets/images/custom-icons/collaboration.svg",
+          color: featureColors.collaborate
         },
         {
           label: t('features.secure.title'),
           href: createLocalizedLink("/fonctionnalites/secure"),
           description: t('features.secure.description'),
-          icon: "/assets/images/custom-icons/upload-share.svg"
+          icon: "/assets/images/custom-icons/upload-share.svg",
+          color: featureColors.secure
         }
       ]
     },
@@ -492,17 +506,36 @@ export default function View4SightMobileMenu() {
                             <div className="submenu-content">
                               {subItem.icon && (
                                 <div className="submenu-icon">
-                                  <Image
-                                    src={subItem.icon}
-                                    alt={subItem.label}
-                                    width={24}
-                                    height={24}
-                                    style={{
-                                      width: "24px",
-                                      height: "24px",
-                                      filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)"
-                                    }}
-                                  />
+                                  {subItem.color ? (
+                                    <div
+                                      style={{
+                                        width: "24px",
+                                        height: "24px",
+                                        backgroundColor: subItem.color,
+                                        WebkitMaskImage: `url(${subItem.icon})`,
+                                        maskImage: `url(${subItem.icon})`,
+                                        WebkitMaskRepeat: "no-repeat",
+                                        maskRepeat: "no-repeat",
+                                        WebkitMaskPosition: "center",
+                                        maskPosition: "center",
+                                        WebkitMaskSize: "contain",
+                                        maskSize: "contain",
+                                        filter: `drop-shadow(0 0 3px ${subItem.color}) brightness(1.2)`
+                                      }}
+                                    />
+                                  ) : (
+                                    <Image
+                                      src={subItem.icon}
+                                      alt={subItem.label}
+                                      width={24}
+                                      height={24}
+                                      style={{
+                                        width: "24px",
+                                        height: "24px",
+                                        filter: "brightness(0) saturate(100%) invert(38%) sepia(77%) saturate(2618%) hue-rotate(343deg) brightness(101%) contrast(94%)"
+                                      }}
+                                    />
+                                  )}
                                 </div>
                               )}
                               <div className="submenu-text">

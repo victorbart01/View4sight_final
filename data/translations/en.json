@@ -520,6 +520,118 @@
     "comments": "Comments"
   },
   "features_pages": {
+    "visualize": {
+      "meta": {
+        "title": "Visualize - View4Sight | Visualize Massive 3D Projects Online, Seamlessly",
+        "description": "Stream multi-gigabyte point clouds directly in your browser. No plugins, no downloads, no performance compromises."
+      },
+      "hero": {
+        "title": "Visualize Massive 3D Projects.<br />Online, Seamlessly.",
+        "subtitle": "Stream multi-gigabyte point clouds directly in your browser.<br />No plugins, no downloads, no performance compromises."
+      },
+      "features": [
+        {
+          "title": "Massive Files. Instant Loading.",
+          "description": "Display multi-gigabyte point clouds and 3D models without downsampling or plugins. Navigate, rotate, and zoom smoothly even on a low-end laptop."
+        },
+        {
+          "title": "One Unified Space for All Your Data",
+          "description": "Overlay point clouds, BIM, orthophotos, 360° photos, and CAD in a single scene. Compare as-designed vs as-built, track changes over time, and validate surveys without multiple exports."
+        },
+        {
+          "title": "Visit the Site in Immersive View",
+          "description": "Switch to first-person view to explore corridors, levels, and terrains with simple controls. The feeling of being on-site, without travel."
+        },
+        {
+          "title": "All Your Formats, Ready to Visualize",
+          "description": "Native support for LAS/LAZ, E57, IFC, DXF, OBJ, etc. No conversions. No surprises. Upload and visualize data exactly as captured."
+        }
+      ]
+    },
+    "measure": {
+      "meta": {
+        "title": "Measure - View4Sight | Surveying Precision in Your Browser",
+        "description": "Centimeter-accurate 3D measurements on point clouds, meshes, and BIM. Distances, areas, volumes, sections, and profiles calculated reproducibly for your inspections."
+      },
+      "hero": {
+        "title": "Surveying Precision, in 3D and in Your Browser",
+        "subtitle": "Measure on point clouds, meshes, and BIM, where your data lives. Instant sections and profiles, readable deviations based on your tolerances, classification with legends ready for reporting."
+      },
+      "features": [
+        {
+          "title": "Measure Everything in 3D",
+          "description": "Take measurements directly on your data: lengths, areas, and volumes, without leaving the 3D scene. Check wall lengths, slab areas, or cut-and-fill volumes, for example."
+        },
+        {
+          "title": "On-the-Fly Sections and Profiles",
+          "description": "Create elevation sections and profiles on-the-fly, orthogonal or freeform, aligned with your axes and levels. Measure slopes, thicknesses, and local deviations without pre-processing or exports."
+        },
+        {
+          "title": "Integrated Surveying Controls",
+          "description": "Check flatness, deviations, and tolerances directly in the scene. Deviation maps and exports ready for your reports."
+        },
+        {
+          "title": "Classify and Highlight by Type",
+          "description": "Add attributes to objects, group by class, and generate clear legends for immediate understanding across teams."
+        }
+      ]
+    },
+    "collaborate": {
+      "meta": {
+        "title": "Collaborate - View4Sight | Real-Time 3D Collaboration",
+        "description": "No more emails, photos, and crossed versions. One unified scene and centralized comments to work faster, without confusion."
+      },
+      "hero": {
+        "title": "One Scene, One Version",
+        "subtitle": "No more emails, photos, and crossed versions. One unified scene and centralized comments to work faster, without confusion."
+      },
+      "features": [
+        {
+          "title": "Work Together in Real-Time",
+          "description": "Collaborate on the same scene with live cursors and actions. The entire team navigates, measures, and comments simultaneously, without version conflicts or attachments."
+        },
+        {
+          "title": "Comments Anchored to Data",
+          "description": "Add annotations and markups that remain anchored to the exact point in 3D space. Ideal for site visits, punch lists, and progress tracking."
+        },
+        {
+          "title": "Share via a Simple Link",
+          "description": "Share your 3D model or digital twin as easily as a YouTube or Google Docs link. No installation, no training required."
+        },
+        {
+          "title": "Design and Reality, Side by Side",
+          "description": "Overlay BIM and as-built to detect deviations early, reduce rework, and maintain project progress."
+        }
+      ]
+    },
+    "secure": {
+      "meta": {
+        "title": "Security - View4Sight | Secure and Sovereign Data",
+        "description": "While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved."
+      },
+      "hero": {
+        "title": "Your Data Stays Secure and Sovereign",
+        "subtitle": "While others send your data abroad, View4Sight keeps it home. ISO certified, GDPR native, public sector approved."
+      },
+      "features": [
+        {
+          "title": "Hosting in France",
+          "description": "Your projects remain under French jurisdiction. Hosted in France on ISO/IEC 27001 certified infrastructure, GDPR compliant."
+        },
+        {
+          "title": "Advanced Access Controls",
+          "description": "Define permissions for each role: read, measure, edit, download. Controlled and revocable sharing links, and detailed audit logs tracking every action."
+        },
+        {
+          "title": "Self-Hosting When Needed",
+          "description": "Deploy View4Sight on your own servers or in your private cloud for maximum control and isolated environments."
+        },
+        {
+          "title": "Export Anytime",
+          "description": "Your data belongs to you. Export your raw or processed datasets whenever you want. No lock-in."
+        }
+      ]
+    },
     "cta": {
       "title": "Ready to revolutionize your 3D workflows?",
       "subtitle": "Start your 30-day free trial. No credit card required.",

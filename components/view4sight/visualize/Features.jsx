@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // Nouveau composant pour la frise infinie des formats
 const FormatCarousel = () => {
@@ -130,54 +131,43 @@ const FormatCarousel = () => {
   );
 };
 
-const visualizeFeatures = [
-  {
-    id: "streaming",
-    icon: "/assets/images/custom-icons/soundcloud-logo-bold.svg",
-    iconBg: "#E3F2FD",
-    iconColor: "#1976D2",
-    title: "Fichiers massifs. Chargement instantané.",
-    subtitle: "",
-    description: "Affichez des nuages de points et des modèles 3D de plusieurs gigaoctets sans sous-échantillonnage ni plugins. Déplacez-vous, faites pivoter et zoomez avec fluidité même sur un ordinateur portable bas de gamme.",
-    imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Interface de streaming",
-  },
-  {
-    id: "integration",
-    icon: "/assets/images/custom-icons/stack-bold.svg",
-    iconBg: "#E8F5E9",
-    iconColor: "#388E3C",
-    title: "Un espace unique pour toutes vos données",
-    subtitle: "",
-    description: "Superposez nuages de points, BIM, orthophotos, photos 360° et CAO dans une scène unique. Comparez projet vs tel que construit, suivez les évolutions dans le temps et validez les relevés sans exports successifs.",
-    imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Intégration multi-données",
-  },
-  {
-    id: "fpv",
-    icon: "/assets/images/custom-icons/cardboard.svg",
-    iconBg: "#FFF3E0",
-    iconColor: "#F57C00",
-    title: "Visitez le site en vue immersive",
-    subtitle: "",
-    description: "Passez en vue à la première personne pour explorer couloirs, niveaux et terrains avec des contrôles simples. La sensation d'être sur place, sans déplacement.",
-    imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Mode de navigation à la première personne",
-  },
-  {
-    id: "formats",
-    icon: "/assets/images/custom-icons/file-image-bold.svg",
-    iconBg: "#F3E5F5",
-    iconColor: "#7B1FA2",
-    title: "Tous vos formats, prêts à être visualisés",
-    subtitle: "",
-    description: "Prise en charge native de LAS/LAZ, E57, IFC, DXF, OBJ, etc. Pas de conversions. Pas de mauvaises surprises. Importez et visualisez les données telles qu'elles ont été capturées.",
-    imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Compatibilité universelle des formats",
-  }
-];
-
 export default function Features() {
+  const { t } = useTranslation();
+
+  const visualizeFeatures = [
+    {
+      id: "streaming",
+      icon: "/assets/images/custom-icons/soundcloud-logo-bold.svg",
+      iconBg: "#E3F2FD",
+      iconColor: "#1976D2",
+      imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Interface de streaming",
+    },
+    {
+      id: "integration",
+      icon: "/assets/images/custom-icons/stack-bold.svg",
+      iconBg: "#E8F5E9",
+      iconColor: "#388E3C",
+      imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Intégration multi-données",
+    },
+    {
+      id: "fpv",
+      icon: "/assets/images/custom-icons/cardboard.svg",
+      iconBg: "#FFF3E0",
+      iconColor: "#F57C00",
+      imgSrc: "https://picsum.photos/900/600?random=2",
+      altText: "Mode de navigation à la première personne",
+    },
+    {
+      id: "formats",
+      icon: "/assets/images/custom-icons/file-image-bold.svg",
+      iconBg: "#F3E5F5",
+      iconColor: "#7B1FA2",
+      imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Compatibilité universelle des formats",
+    }
+  ];
   return (
     <div id="main_features" className="main-features section panel">
               <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#0e0e0e' }}>
@@ -233,12 +223,12 @@ export default function Features() {
                         
                         {/* Title */}
                         <h3 className="h4 lg:h3 m-0 fw-bold">
-                          {feature.title}
+                          {t(`features_pages.visualize.features.${i}.title`)}
                         </h3>
                         
                         {/* Description */}
                         <p className="fs-6 lg:fs-4 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
-                          {feature.description}
+                          {t(`features_pages.visualize.features.${i}.description`)}
                         </p>
                       </div>
                     </div>

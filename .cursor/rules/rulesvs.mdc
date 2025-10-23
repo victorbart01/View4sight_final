@@ -18,7 +18,6 @@ You are working on View4Sight, a French SaaS platform for 3D point cloud visuali
 - Framework: Next.js 15.1.7
 - React: 19.0.0
 - CSS Framework: Bootstrap 5 + UIKit CSS (NOT Tailwind)
-- Template: Lexend (ThemeForest purchase)
 - Development server: http://localhost:3000
 - Main route: /view4sight (custom implementation)
 
@@ -27,7 +26,6 @@ You are working on View4Sight, a French SaaS platform for 3D point cloud visuali
 - **UI Components**: UIKit CSS for additional UI elements
 - **Custom Styling**: Template-specific CSS classes
 - **NO Tailwind**: Do not use Tailwind utility classes
-- **Class naming**: Follow Bootstrap 5 conventions (e.g., `btn btn-primary`, `container`, `row`, `col-*`)
 
 ## COLOR PALETTE
 - Primary color: #FE552E (Lava Pulse)
@@ -35,159 +33,6 @@ You are working on View4Sight, a French SaaS platform for 3D point cloud visuali
 - Background dark mode: #222222 (Graphite night)
 - Background light mode: #E4DCCA (Kreme)
 
-## SITE STRUCTURE
-### Main Pages:
-- Homepage: /
-- Features: /fonctionnalites
-- Pricing: /tarifs
-- Security: /securite
-- Resources: /ressources
-
-### Homepage Sections (current order):
-1. Hero - "No CAD License. No Plugin Hell. Just Upload & Go."
-2. ClientLogos - Partner/client logos
-3. MainFeatures - 4 core platform features + "Discover all features" button
-4. VideoComponent - "How It Works" demo with pastille and description
-5. Testimonials - Single featured testimonial (home-4 style)
-6. SecurityBlock - French sovereignty messaging
-7. PainBenefits - Client problems and pain points
-8. FaqShort - Interactive FAQ section
-9. CtaFinal - Final call-to-action with urgency
-
-## DESIGN SYSTEM UPDATES
-
-### Section Headers (standardized):
-- **Pastille style**: Use `hero-badge` class for all section badges
-- **Pastille positioning**: Centered with `mx-auto` (except Hero which stays left-aligned)
-- **Title style**: Clean, épuré style without highlight "étiquettes"
-- **Line breaks**: Strategic use of `<br />` for better visual hierarchy
-
-### MainFeatures Section:
-- **Orbiting icons**: Use SVG files from `/public/assets/images/file formats/`
-- **Supported formats**: LAS, E57, IFC, DXF, ORTHO, PLY
-- **OrbitingIcons component**: 55px logo, reduced opacity background (rgba(44, 44, 44, 0.1))
-- **Call-to-action**: "Discover all features" button at section end
-
-### VideoComponent Section:
-- **Structure**: Pastille "Video demo" + Title "How It Works" + Description
-- **Content**: "The platform is designed to help you visualize, automate, and build geospatial data workflows."
-- **Spacing**: Added vertical padding (py-6 lg:py-8 xl:py-10)
-
-### Testimonials Section:
-- **Design**: Adapted from home-4 template style
-- **Layout**: Single featured testimonial in 8/4 column layout
-- **Content**: Company logo/initials + quote + author info + photo
-- **Image**: Static photo only (no video functionality)
-- **Stats**: Maintained stats section below testimonial
-
-## COPYWRITING GUIDELINES
-### Tone & Voice:
-- Professional but approachable
-- Technical accuracy without jargon
-- French-first approach (sovereignty emphasis)
-- Problem-solution focused narrative
-
-### Key Messages:
-- Stop wrestling with heavy 3D software
-- Web-based collaboration for geospatial data
-- French data hosting and sovereignty
-- No software installation required
-
-### CTAs:
-- Primary: "Start Free Trial" / "Commencer l'essai gratuit"
-- Secondary: "Request a demo" / "Demander une démo"
-- Risk reversal: "30-day free trial, no credit card required"
-
-## COMPONENT STRUCTURE
-### Header (/components/view4sight/Header.jsx):
-- Logo: View4Sight logo (logo_v4s.png) on left
-- Navigation: Accueil, Fonctionnalités, Tarifs, Sécurité, Ressources
-- Right buttons: "Request a demo", "Log in", "Start free trial"
-- Sticky behavior like home-3 template
-
-### Section Components:
-- **Hero**: Pastille left-aligned, clean title structure
-- **MainFeatures**: OrbitingIcons with SVG formats, CTA button
-- **VideoComponent**: Pastille + title + description + video
-- **Testimonials**: Home-4 style with single featured testimonial
-- **SecurityBlock, FaqShort, etc.**: Standardized pastille (hero-badge mx-auto)
-
-### Reusable Components:
-- Use existing Lexend components as base
-- Adapt content for View4Sight messaging
-- Maintain responsive design patterns
-- Follow Bootstrap 5 + UIKit CSS conventions
-
-## CUSTOM CSS CLASSES
-### Hero Badge (.hero-badge):
-```css
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.375rem 0.875rem;
-  background-color: rgba(254, 85, 46, 0.06);
-  border: 1px solid rgba(254, 85, 46, 0.15);
-  border-radius: 1.25rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgba(254, 85, 46, 0.85);
-  /* Responsive centering and hover effects included */
-}
-```
-
-## FILE ORGANIZATION
-### Custom View4Sight files:
-- /app/view4sight/ - Main application pages
-- /components/view4sight/ - Custom components
-- /public/assets/images/ - View4Sight assets (logo_v4s.svg)
-- /public/assets/images/file formats/ - SVG format icons
-
-### Template structure to preserve:
-- /components/homes/ - Original template components
-- /public/assets/css/ - Template styling (Bootstrap 5 + UIKit)
-- /components/common/ - Shared template components
-
-## DEVELOPMENT GUIDELINES
-### When creating new components:
-1. Start with existing Lexend components as base
-2. Use Bootstrap 5 classes for layout (container, row, col-*, etc.)
-3. Use UIKit CSS classes for UI components
-4. Adapt styling to View4Sight brand colors
-5. Maintain responsive design patterns using Bootstrap's grid system
-6. Use `hero-badge mx-auto` for section pastilles (except Hero)
-
-### When modifying existing files:
-1. Preserve original template functionality
-2. Create View4Sight-specific variants when needed
-3. Test on /view4sight route specifically
-4. Maintain Bootstrap 5 + UIKit CSS class structure
-5. Follow standardized section header pattern
-
-### Code style:
-- Use JSX for React components
-- Follow Next.js 15 conventions
-- Use Bootstrap 5 utility classes (e.g., `mb-4`, `text-center`, `btn btn-primary`)
-- Use UIKit CSS components when appropriate
-- **AVOID Tailwind classes** (no `bg-blue-500`, `text-lg`, `flex`, etc.)
-- Comment custom modifications clearly
-
-### Section Header Pattern:
-```jsx
-<div className="panel vstack items-center gap-2 xl:gap-3 text-center">
-  <div className="hero-badge mx-auto">
-    Section Name
-  </div>
-  <h2 className="h3 lg:h2 xl:h1 m-0">
-    Clean Title<br />
-    With Strategic Breaks
-  </h2>
-  <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-lg mx-auto">
-    Section description
-  </p>
-</div>
-```
 
 ## CSS FRAMEWORK REMINDERS
 - **Bootstrap 5**: Use for layout, grid system, utilities, and components
@@ -215,5 +60,35 @@ You are working on View4Sight, a French SaaS platform for 3D point cloud visuali
 ### File Formats Supported:
 - LAS, E57, IFC, DXF, ORTHO, PLY
 - SVG icons available in /public/assets/images/file formats/
+
+don’t read the SVG files directly! you can’t!!!
+just use `cat` command to see the content of them!
+
+## GRID SYSTEM & RESPONSIVE CLASSES
+
+### ⚠️ IMPORTANT: Syntaxe spécifique du template
+Le template Lexend utilise une **syntaxe avec deux-points** pour les breakpoints responsive (comme UIKit), **PAS la syntaxe Bootstrap standard**.
+
+### Grid/Colonnes - Syntaxe CORRECTE
+```jsx
+// ✅ CORRECT - Utiliser deux-points (:)
+<div className="row child-cols g-4">
+  <div className="col-12 lg:col-6 xl:col-4">...</div>
+  <div className="col-12 lg:col-3">...</div>
+  <div className="col-12 md:col-6 lg:col-4">...</div>
+</div>
+
+// ❌ INCORRECT - Ne PAS utiliser la syntaxe Bootstrap standard
+<div className="row g-4">
+  <div className="col-12 col-lg-6 col-xl-4">...</div>  // ❌ Ne fonctionne pas !
+  <div className="col-12 col-lg-3">...</div>           // ❌ Ne fonctionne pas !
+</div>
+```
+
+### Breakpoints disponibles
+- `sm:` - Small (≥576px)
+- `md:` - Medium (≥768px)
+- `lg:` - Large (≥992px)
+- `xl:` - Extra Large (≥1200px)
 
 Remember: This is a B2B SaaS platform targeting French professionals. Every design and content decision should reflect professionalism, technical competence, and French business values. Always use Bootstrap 5 + UIKit CSS conventions, never Tailwind. The design is now standardized with clean, épuré aesthetics and consistent section headers using the hero-badge pattern.

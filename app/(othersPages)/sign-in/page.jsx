@@ -1,9 +1,7 @@
 import SignIn from "@/components/otherPages/SignIn";
 export const metadata = {
-  title:
-    "Signin 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Se connecter | View4Sight - Visualisation 3D et Géospatiale",
+  description: "Connectez-vous à votre compte View4Sight pour accéder à vos projets 3D, partager des données géospatiales et collaborer avec votre équipe. Plateforme française de visualisation sans logiciel CAD.",
 };
 export default function SigninPage1() {
   return (

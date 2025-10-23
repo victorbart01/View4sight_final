@@ -1,50 +1,44 @@
 import React from "react";
 import Image from "next/image";
-
-const measureFeatures = [
-  {
-    id: "3d-measurements",
-    icon: "/assets/images/custom-icons/ruler-bold.svg",
-    iconBg: "#FFF4E6",
-    iconColor: "#FE552E",
-    title: "Mesurez tout en 3D",
-    description: "Prenez vos cotes directement sur la donnée : longueurs, surfaces et volumes, sans quitter la scène 3D. Contrôlez par exemple des longueurs de murs, des surfaces de dalles ou des cubatures de déblais/remblais.",
-    imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Interface des outils de mesure 3D",
-  },
-  {
-    id: "cross-sections",
-    icon: "/assets/images/custom-icons/scissors-bold.svg",
-    iconBg: "#FFF3E0",
-    iconColor: "#F57C00",
-    title: "Sections et profils à la volée",
-    description: "Créez sections et profils altimétriques à la volée, orthogonaux ou libres, calés sur vos axes et niveaux. Mesurez dénivelés, épaisseurs et écarts localement, sans pré-traitement ni export.",
-    imgSrc: "https://picsum.photos/900/600?random=2",
-    altText: "Fonction de sections et profils",
-  },
-  {
-    id: "flatness-controls",
-    icon: "unicon-chart-line",
-    iconBg: "#E8F5E9",
-    iconColor: "#388E3C",
-    title: "Contrôles topographiques intégrés",
-    description: "Vérifiez planéité, écarts et tolérances directement dans la scène. Cartes d’écarts et exports prêts pour vos rapports.",
-    imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Outils d'analyse de planéité",
-  },
-  {
-    id: "object-attributes",
-    icon: "/assets/images/custom-icons/tag-bold.svg",
-    iconBg: "#F3E5F5",
-    iconColor: "#7B1FA2",
-    title: "Classez et mettez en évidence par type",
-    description: "Ajoutez des attributs aux objets, regroupez par classe et générez des légendes claires pour une compréhension immédiate entre équipes.",
-    imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
-    altText: "Système de classification des objets",
-  }
-];
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Features() {
+  const { t } = useTranslation();
+
+  const measureFeatures = [
+    {
+      id: "3d-measurements",
+      icon: "/assets/images/custom-icons/ruler-bold.svg",
+      iconBg: "#FFF4E6",
+      iconColor: "#FE552E",
+      imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Interface des outils de mesure 3D",
+    },
+    {
+      id: "cross-sections",
+      icon: "/assets/images/custom-icons/scissors-bold.svg",
+      iconBg: "#FFF3E0",
+      iconColor: "#F57C00",
+      imgSrc: "https://picsum.photos/900/600?random=2",
+      altText: "Fonction de sections et profils",
+    },
+    {
+      id: "flatness-controls",
+      icon: "unicon-chart-line",
+      iconBg: "#E8F5E9",
+      iconColor: "#388E3C",
+      imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Outils d'analyse de planéité",
+    },
+    {
+      id: "object-attributes",
+      icon: "/assets/images/custom-icons/tag-bold.svg",
+      iconBg: "#F3E5F5",
+      iconColor: "#7B1FA2",
+      imgSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
+      altText: "Système de classification des objets",
+    }
+  ];
   return (
     <div id="main_features" className="main-features section panel">
               <div className="section-outer panel py-8 lg:py-10 xl:py-12" style={{ backgroundColor: '#0e0e0e' }}>
@@ -100,12 +94,12 @@ export default function Features() {
                         
                         {/* Title */}
                         <h3 className="h4 lg:h3 m-0 fw-bold">
-                          {feature.title}
+                          {t(`features_pages.measure.features.${i}.title`)}
                         </h3>
                         
                         {/* Description */}
                         <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 m-0 lh-lg">
-                          {feature.description}
+                          {t(`features_pages.measure.features.${i}.description`)}
                         </p>
                       </div>
                     </div>
