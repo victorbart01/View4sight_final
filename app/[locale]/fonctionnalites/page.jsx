@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // Animation variants
 const fadeInUp = {
@@ -162,12 +163,42 @@ const categories = [
 ];
 
 export default function FeaturesPage() {
+  const { t, isLoading } = useTranslation();
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [expandedFeature, setExpandedFeature] = useState(null);
+  const answerRefs = useRef([]);
 
   const toggleFeature = (index) => {
     setExpandedFeature(expandedFeature === index ? null : index);
   };
+
+  // Aligne l'animation d'ouverture/fermeture sur l'accordéon FAQ (transition height)
+  useEffect(() => {
+    // Réinitialise toutes les hauteurs
+    answerRefs.current.forEach((el) => {
+      if (!el) return;
+      el.style.height = "0px";
+      el.style.overflow = "hidden";
+      el.style.transition = "all 0.5s ease-in-out";
+      el.style.marginTop = "0px";
+    });
+    if (expandedFeature !== null && answerRefs.current[expandedFeature]) {
+      const element = answerRefs.current[expandedFeature];
+      element.style.height = element.scrollHeight + "px";
+      element.style.overflow = "hidden";
+      element.style.transition = "all 0.5s ease-in-out";
+      element.style.marginTop = "16px";
+    }
+  }, [expandedFeature, activeCategory]);
+
+  // Récupère le contenu des pages dédiées pour l'accordéon de gauche
+  const pageFeaturesByCategory = {
+    visualize: !isLoading ? t("features_pages.visualize.features") : [],
+    measure: !isLoading ? t("features_pages.measure.features") : [],
+    collaborate: !isLoading ? t("features_pages.collaborate.features") : [],
+    secure: !isLoading ? t("features_pages.secure.features") : [],
+  };
+  const currentFeatures = pageFeaturesByCategory[activeCategory.id] || [];
 
   return (
     <div className="position-relative" style={{ 
@@ -352,29 +383,25 @@ export default function FeaturesPage() {
                       whileHover={{ y: -8 }}
                     >
                       <div
-                        className="h-100 p-4 rounded-5 position-relative"
+                        className="h-100 p-4 rounded-5 position-relative feature-card"
                         style={{
                           backgroundColor: activeCategory.id === cat.id ? `${cat.color}08` : "rgba(255, 255, 255, 0.02)",
-                          border: activeCategory.id === cat.id ? `2px solid ${cat.color}` : `1px solid ${cat.color}40`,
+                          border: activeCategory.id === cat.id ? `2px solid ${cat.color}66` : `1px solid ${cat.color}26`,
                           cursor: "pointer",
                           transition: "all 0.3s ease",
-                          boxShadow: activeCategory.id === cat.id ? `0 0 24px ${cat.color}60, inset 0 0 20px ${cat.color}20` : `0 0 12px ${cat.color}30`,
-                          minHeight: "160px"
+                          boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+                          minHeight: "160px",
+                          overflow: "hidden"
                         }}
                         onClick={() => setActiveCategory(cat)}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.backgroundColor = `${cat.color}10`;
-                          e.currentTarget.style.boxShadow = `0 0 32px ${cat.color}70, 0 0 60px ${cat.color}40, inset 0 0 20px ${cat.color}30`;
-                          e.currentTarget.style.borderColor = cat.color;
-                          e.currentTarget.style.transform = "translateY(-12px)";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.backgroundColor = activeCategory.id === cat.id ? `${cat.color}08` : "rgba(255, 255, 255, 0.02)";
-                          e.currentTarget.style.boxShadow = activeCategory.id === cat.id ? `0 0 24px ${cat.color}60, inset 0 0 20px ${cat.color}20` : `0 0 12px ${cat.color}30`;
-                          e.currentTarget.style.borderColor = activeCategory.id === cat.id ? cat.color : `${cat.color}40`;
-                          e.currentTarget.style.transform = "translateY(-8px)";
-                        }}
                       >
+                        <span 
+                          className="glow-ball" 
+                          aria-hidden="true"
+                          style={{
+                            background: `radial-gradient(80% 80% at 0% 0%, ${cat.color}99 0%, ${cat.color}59 30%, ${cat.color}24 60%, ${cat.color}00 80%)`
+                          }}
+                        />
                         {/* Icône en haut à gauche */}
                         <div 
                           className="mb-3"
@@ -382,8 +409,8 @@ export default function FeaturesPage() {
                             width: "48px",
                             height: "48px",
                             borderRadius: "14px",
-                            backgroundColor: `${cat.color}18`,
-                            border: `2px solid ${cat.color}60`,
+                            backgroundColor: `${cat.color}14`,
+                            border: `2px solid ${cat.color}40`,
                             boxShadow: `0 0 20px ${cat.color}50, inset 0 0 15px ${cat.color}30`,
                             display: "flex",
                             alignItems: "center",
@@ -449,12 +476,33 @@ export default function FeaturesPage() {
               transform: scale(1.1);
             }
           }
+
+          /* Effet de boule lumineuse en haut à gauche des vignettes */
+          .feature-card { position: relative; overflow: hidden; }
+          .feature-card > *:not(.glow-ball) { position: relative; z-index: 1; }
+          .feature-card .glow-ball {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            filter: blur(12px);
+            opacity: 0.9;
+            z-index: 0;
+            pointer-events: none;
+            transition: transform 0.35s ease, opacity 0.35s ease;
+          }
+          .feature-card:hover .glow-ball {
+            transform: translate(-4px, -4px) scale(1.02);
+            opacity: 1;
+          }
         `}</style>
       </section>
 
       {/* Section détaillée : Colonne gauche (features) + Colonne droite (screenshot) */}
       <section className="container" style={{ maxWidth: "1400px" }}>
-        <div className="row g-4">
+        <div className="row g-4 align-items-stretch">
           {/* Colonne gauche - Features list avec accordéon */}
           <div className="col-12 lg:col-5">
             <motion.div
@@ -462,47 +510,17 @@ export default function FeaturesPage() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="p-5 rounded-4"
+              className="p-5 rounded-4 h-100 d-flex flex-column"
               style={{
-                backgroundColor: "rgba(255, 255, 255, 0.03)",
-                border: "1px solid rgba(255,255,255,0.1)"
+                background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.02) 100%)",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: "20px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.25)"
               }}
             >
-              {/* Titre de la catégorie active */}
+              {/* En-tête allégé sans icône ni titre */}
               <div className="mb-4">
-                <div 
-                  className="d-inline-flex align-items-center justify-content-center mb-3"
-                  style={{
-                    width: "56px",
-                    height: "56px",
-                    borderRadius: "14px",
-                    backgroundColor: `${activeCategory.color}15`,
-                    border: `2px solid ${activeCategory.color}40`
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "28px",
-                      height: "28px",
-                      backgroundColor: activeCategory.color,
-                      WebkitMaskImage: `url(${activeCategory.iconSvg})`,
-                      maskImage: `url(${activeCategory.iconSvg})`,
-                      WebkitMaskRepeat: "no-repeat",
-                      maskRepeat: "no-repeat",
-                      WebkitMaskPosition: "center",
-                      maskPosition: "center",
-                      WebkitMaskSize: "contain",
-                      maskSize: "contain",
-                      filter: `drop-shadow(0 0 4px ${activeCategory.color}) brightness(1.3) saturate(1.5)`
-                    }}
-                  />
-                </div>
-                
-                <h2 className="h2 fw-bold mb-3" style={{ color: "#ffffff" }}>
-                  {activeCategory.title}
-                </h2>
-                
-                <p className="mb-4" style={{ color: "rgba(255,255,255,0.7)", fontSize: "16px", lineHeight: "1.6" }}>
+                <p className="mb-4" style={{ color: "rgba(255,255,255,0.72)", fontSize: "16px", lineHeight: "1.6" }}>
                   {activeCategory.description}
                 </p>
 
@@ -514,7 +532,8 @@ export default function FeaturesPage() {
                     border: "none",
                     color: "#fff",
                     fontWeight: "500",
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
+                    boxShadow: `${activeCategory.color}33 0px 8px 24px`
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.opacity = "0.9";
@@ -531,7 +550,7 @@ export default function FeaturesPage() {
 
               {/* Accordéon des features */}
               <div className="mt-5">
-                {activeCategory.features.map((feature, index) => (
+                {currentFeatures.map((feature, index) => (
                   <div 
                     key={index}
                     className="border-bottom"
@@ -551,9 +570,8 @@ export default function FeaturesPage() {
                           color: expandedFeature === index ? activeCategory.color : "#ffffff",
                           fontSize: "16px"
                         }}
-                      >
-                        {feature.title}
-                      </span>
+                        dangerouslySetInnerHTML={{ __html: feature.title || feature?.titleFr || "" }}
+                      />
                       <ChevronDown 
                         size={20} 
                         style={{
@@ -563,27 +581,21 @@ export default function FeaturesPage() {
                         }}
                       />
                     </button>
-                    
-                    {expandedFeature === index && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="pb-3"
-                      >
-                        <p 
-                          className="mb-0 ps-0"
-                          style={{ 
-                            color: "rgba(255,255,255,0.6)",
-                            fontSize: "14px",
-                            lineHeight: "1.6"
-                          }}
-                        >
-                          {feature.description}
-                        </p>
-                      </motion.div>
-                    )}
+                    <div
+                      ref={(el) => (answerRefs.current[index] = el)}
+                      className="feature-accordion-content pb-3"
+                      style={{ height: 0, overflow: "hidden" }}
+                    >
+                      <p 
+                        className="mb-0 ps-0"
+                        style={{ 
+                          color: "rgba(255,255,255,0.6)",
+                          fontSize: "14px",
+                          lineHeight: "1.6"
+                        }}
+                        dangerouslySetInnerHTML={{ __html: feature.description || feature?.descriptionFr || "" }}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -599,50 +611,37 @@ export default function FeaturesPage() {
               transition={{ duration: 0.4 }}
             >
               <div 
-                className="w-100 rounded-4 overflow-hidden position-relative"
+                className="w-100 position-relative overflow-hidden h-100"
                 style={{
-                  backgroundColor: "#1a1a1a",
-                  padding: "12px",
-                  boxShadow: `0 20px 60px ${activeCategory.color}30`,
-                  border: `1px solid ${activeCategory.color}20`
+                  borderRadius: "20px",
+                  backgroundColor: "#121212",
+                  padding: "0",
+                  border: "1px solid rgba(255,255,255,0.06)",
+                  boxShadow: `0 20px 60px rgba(0,0,0,0.45)`
                 }}
               >
-                {/* Browser header simulation */}
-                <div 
-                  className="d-flex align-items-center gap-2 px-3 py-2 mb-2"
+                {/* Glow doux derrière la carte */}
+                <div
+                  className="position-absolute start-0 top-0 w-100 h-100"
                   style={{
-                    backgroundColor: "#0a0a0a",
-                    borderRadius: "8px 8px 0 0"
+                    background: `radial-gradient(60% 60% at 50% 0%, ${activeCategory.color}22 0%, transparent 60%)`,
+                    filter: "blur(14px)",
+                    zIndex: 0,
+                    pointerEvents: "none"
                   }}
-                >
-                  <div style={{ width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#FF5F57" }} />
-                  <div style={{ width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#FFBD2E" }} />
-                  <div style={{ width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#28CA42" }} />
-                </div>
-
-                {/* Screenshot */}
-                <div className="position-relative">
-                  <Image
-                    src={activeCategory.image}
-                    alt={activeCategory.title}
-                    width={800}
-                    height={500}
-                    className="w-100 h-auto"
-                    style={{ 
-                      borderRadius: "4px",
-                      display: "block"
-                    }}
-                  />
-                  
-                  {/* Overlay gradient pour effet premium */}
-                  <div 
-                    className="position-absolute top-0 start-0 w-100 h-100"
-                    style={{
-                      background: `linear-gradient(135deg, ${activeCategory.color}15 0%, transparent 50%)`,
-                      pointerEvents: "none"
-                    }}
-                  />
-                </div>
+                />
+                <Image
+                  src={activeCategory.image}
+                  alt={activeCategory.title}
+                  width={1000}
+                  height={600}
+                  className="w-100 h-100"
+                  style={{ 
+                    borderRadius: "20px",
+                    display: "block",
+                    objectFit: "cover"
+                  }}
+                />
               </div>
             </motion.div>
           </div>
