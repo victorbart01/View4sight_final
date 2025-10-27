@@ -15,7 +15,7 @@ const useCaseDomains = [
     label: "Heritage"
   },
   {
-    icon: "/assets/images/custom-icons/Construction.svg",
+    icon: "/assets/images/custom-icons/construction.svg",
     label: "Construction"
   },
   {
