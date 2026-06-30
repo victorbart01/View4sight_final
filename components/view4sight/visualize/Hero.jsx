@@ -6,8 +6,16 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div id="hero_header" className="hero-header section panel overflow-hidden bg-white dark:bg-gray-800">
-      <div className="position-absolute top-0 start-0 end-0 h-600px lg:h-screen bg-secondary dark:bg-gray-800 z-0" />
+    <div
+      id="hero_header"
+      className="hero-header section panel overflow-hidden"
+      style={{
+        backgroundColor: "#1C1C1E",
+        backgroundImage:
+          "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px), linear-gradient(180deg, rgba(14,14,14,0) calc(100% - 160px), #0e0e0e 100%)",
+        backgroundSize: "24px 24px, 100% 100%",
+      }}
+    >
       <div className="section-outer panel pb-8 pt-8 lg:pt-10 lg:pb-8">
         <div className="container max-w-xl">
           <div className="section-inner panel">

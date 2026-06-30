@@ -181,12 +181,14 @@ export default function Features() {
                   style={{ 
                     marginBottom: i !== visualizeFeatures.length - 1 ? "8rem" : "0" 
                   }}
-                  data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
                   <div className="row items-center g-6 lg:g-10 xl:g-12" style={{ minHeight: "500px" }}>
                     {/* Text Content */}
                     <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
-                      <div className="panel vstack gap-4">
+                      <div
+                        className="panel vstack gap-4"
+                        data-anime="onview: -100; targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 150});"
+                      >
                         {/* Icon */}
                         <div 
                           className="d-inline-flex align-items-center justify-content-center rounded-3"
@@ -235,7 +237,10 @@ export default function Features() {
                     
                     {/* Image/Video */}
                     <div className={`col-12 lg:col-7 ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
-                      <div className="panel w-100 position-relative">
+                      <div
+                        className="panel w-100 position-relative"
+                        data-anime="onview: -100; targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 600; delay: 200;"
+                      >
                         {i === 0 ? (
                           // Première feature: Vidéo V4S-MassiveFiles.mp4 sans décoration
                           <video

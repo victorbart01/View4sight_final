@@ -1,14 +1,21 @@
 "use client";
-import Image from "next/image";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div id="hero_header" className="hero-header section panel overflow-hidden bg-white dark:bg-gray-800">
-      <div className="position-absolute top-0 start-0 end-0 h-600px lg:h-screen bg-secondary dark:bg-gray-800 z-0" />
-      <div className="section-outer panel pb-8 pt-8 lg:pt-10 lg:pb-8">
+    <div
+      id="hero_header"
+      className="hero-header section panel overflow-hidden"
+      style={{
+        backgroundColor: "#1C1C1E",
+        backgroundImage:
+          "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px), linear-gradient(180deg, rgba(14,14,14,0) calc(100% - 160px), #0e0e0e 100%)",
+        backgroundSize: "24px 24px, 100% 100%",
+      }}
+    >
+      <div className="section-outer panel pt-8 lg:pt-10" style={{ paddingBottom: "44px" }}>
         <div className="container max-w-xl">
           <div className="section-inner panel">
             <div
@@ -23,19 +30,6 @@ export default function Hero() {
                 className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70"
                 dangerouslySetInnerHTML={{ __html: t('features_pages.secure.hero.subtitle') }}
               />
-            </div>
-            <div
-              className="hero-scene panel max-w-950px mx-auto"
-              data-anime="targets: >*; scale: [0.9, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
-            >
-              <div className="panel text-center overflow-hidden rounded-3 border border-5 border-dark dark:border-white dark:border-opacity-20">
-                <Image
-                  alt="View4Sight security dashboard"
-                  src="/assets/images/template/dashboard.jpg"
-                  width="1440"
-                  height="1024"
-                />
-              </div>
             </div>
           </div>
         </div>

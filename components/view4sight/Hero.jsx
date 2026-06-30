@@ -86,7 +86,7 @@ export default function Hero() {
                         height="16"
                         className="flex-shrink-0 text-primary"
                       />
-                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">30-day free trial</span>
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">{t('hero.trust_free_trial')}</span>
                     </div>
                     <div className="hstack gap-1 items-center">
                       <Image
@@ -96,7 +96,7 @@ export default function Hero() {
                         height="16"
                         className="flex-shrink-0 text-primary"
                       />
-                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">No credit card required</span>
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">{t('hero.trust_no_credit_card')}</span>
                     </div>
                     <div className="hstack gap-1 items-center">
                       <Image
@@ -106,7 +106,7 @@ export default function Hero() {
                         height="16"
                         className="flex-shrink-0 text-primary"
                       />
-                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">150GB storage included</span>
+                      <span className="fs-8 text-dark dark:text-white fw-bold text-nowrap">{t('hero.trust_storage')}</span>
                     </div>
                   </div>
                 </div>

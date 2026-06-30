@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Newsletter() {
+  const { t } = useTranslation();
   return (
     <div
       id="blog_newsletter"
@@ -16,9 +18,9 @@ export default function Newsletter() {
             >
               <div>
                 <div className="vstack gap-2 max-w-500px xl:max-w-600px">
-                  <h2 className="h4 md:h3 lg:h2 m-0">Stay Updated with View4Sight</h2>
+                  <h2 className="h4 md:h3 lg:h2 m-0">{t('blog.newsletter.title')}</h2>
                   <p className="fs-6 lg:fs-5">
-                    Get the latest insights on 3D visualization, surveying best practices, and platform updates delivered to your inbox.
+                    {t('blog.newsletter.subtitle')}
                   </p>
                   <form
                     onSubmit={(e) => e.preventDefault()}
@@ -28,18 +30,18 @@ export default function Newsletter() {
                       <input
                         className="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                         type="email"
-                        placeholder="Your email address"
+                        placeholder={t('blog.newsletter.placeholder')}
                         required
                       />
                     </div>
                     <div className="col-12 sm:col-auto">
                       <button className="btn btn-md h-48px xl:h-56px w-100 lg:min-w-150px xl:min-w-200px btn-primary text-white">
-                        Subscribe
+                        {t('blog.newsletter.button')}
                       </button>
                     </div>
                   </form>
                   <p className="fs-7 text-dark dark:text-white text-opacity-70">
-                    We respect your privacy. Unsubscribe at any time.
+                    {t('blog.newsletter.privacy')}
                   </p>
                 </div>
               </div>

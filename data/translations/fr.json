@@ -28,7 +28,7 @@
   "navigation": {
     "home": "Accueil",
     "features": "Fonctionnalités",
-    "pricing": "Tarifs", 
+    "pricing": "Tarifs",
     "security": "Sécurité",
     "resources": "Ressources",
     "blog": "Blog",
@@ -54,7 +54,7 @@
       "description": "Histoires de clients"
     },
     "blog": {
-      "title": "Blog", 
+      "title": "Blog",
       "description": "Articles & actualités"
     },
     "careers": {
@@ -76,7 +76,10 @@
     "subtitle": "Transformez vos nuages de points massifs en espaces de travail collaboratifs.<br />Mesures en temps réel, annotations intelligentes, partage instantané. Aucun logiciel à installer.",
     "cta_primary": "Essai Gratuit",
     "cta_secondary": "Demander une Démo",
-    "trust_text": "30 jours d'essai gratuit, aucune carte bancaire requise"
+    "trust_text": "30 jours d'essai gratuit, aucune carte bancaire requise",
+    "trust_free_trial": "30 jours d'essai gratuit",
+    "trust_no_credit_card": "Aucune carte bancaire requise",
+    "trust_storage": "150 Go de stockage inclus"
   },
   "features": {
     "badge": "Fonctionnalités Clés",
@@ -87,7 +90,7 @@
       "description": "Naviguez dans vos jeux de données volumineux"
     },
     "measure": {
-      "title": "Mesurer", 
+      "title": "Mesurer",
       "description": "Une précision au niveau du géomètre"
     },
     "collaborate": {
@@ -117,10 +120,28 @@
     },
     "stats": {
       "time_saved": "de temps gagné sur vos livraisons",
-      "site_visits": "de visites terrain en moins", 
+      "site_visits": "de visites terrain en moins",
       "communication": "plus rapide à upload vs logiciel de bureau",
       "storage": "150 Go inclus dans l'essai gratuit"
-    }
+    },
+    "eyebrow": "Ce qu'ils en disent",
+    "results": [
+      {
+        "label": "Économisez jusqu'à",
+        "value": "50%",
+        "suffix": "de temps de livraison"
+      },
+      {
+        "label": "Réduisez jusqu'à",
+        "value": "70%",
+        "suffix": "de visites sur site"
+      },
+      {
+        "label": "Partagez en",
+        "value": "1",
+        "suffix": "clic"
+      }
+    ]
   },
   "security": {
     "badge": "Souveraineté Française",
@@ -133,7 +154,6 @@
       "encryption": "Chiffrement de bout en bout"
     }
   },
- 
   "faq": {
     "badge": "FAQ",
     "title": "Questions<br />Fréquemment Posées",
@@ -165,6 +185,19 @@
     "cta_secondary": "Demander une Démo",
     "trust_text": "30 jours d'essai gratuit • Aucune carte bancaire • Annulation à tout moment"
   },
+  "features_overview": {
+    "title_before": "Découvrez tout ce que",
+    "title_after": "peut faire pour vous",
+    "subtitle": "Visualisez, mesurez, collaborez et sécurisez vos données 3D — sur une seule plateforme web.",
+    "btn_primary": "Essayer gratuitement",
+    "btn_secondary": "Voir une démo",
+    "learn_more": "En savoir plus",
+    "cta_title": "Prêt à révolutionner vos workflows 3D ?",
+    "cta_subtitle": "Commencez votre essai gratuit de 30 jours avec un accès complet à toutes les fonctionnalités.",
+    "cta_primary": "Essai Gratuit",
+    "cta_secondary": "Demander une Démo",
+    "badge": "Fonctionnalités"
+  },
   "footer": {
     "description": "La plateforme web leader pour la visualisation et collaboration de nuages de points 3D. Transformez vos données de relevé en expériences interactives accessibles depuis n'importe quel navigateur.",
     "sovereignty": "Souveraineté des Données Françaises",
@@ -172,7 +205,7 @@
     "hosted_france": "Hébergé en France",
     "sections": {
       "product": "Produit",
-      "resources": "Ressources", 
+      "resources": "Ressources",
       "company": "Entreprise"
     },
     "links": {
@@ -196,6 +229,13 @@
     "badge": "Plans Tarifaires",
     "title": "Tarification simple pour toutes les tailles d'équipe",
     "subtitle": "Choisissez le plan qui correspond à vos besoins. Changez à tout moment.",
+    "billing": {
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "save_message": "Passez à l'annuel et économisez 20%"
+    },
+    "popular": "Populaire",
+    "included": "Inclus :",
     "plans": {
       "starter": {
         "name": "Starter",
@@ -211,7 +251,7 @@
         ]
       },
       "team": {
-        "name": "Équipe", 
+        "name": "Équipe",
         "price": "79 €",
         "price_yearly": "63 €",
         "period": "/mois",
@@ -231,14 +271,14 @@
       "studio": {
         "name": "Studio",
         "price": "199 €",
-        "price_yearly": "159 €", 
+        "price_yearly": "159 €",
         "period": "/mois",
         "description": "Pour les cabinets établis avec des projets complexes",
         "features": [
           "500 Go de stockage",
           "15 utilisateurs",
           "Analyses avancées",
-          "50 Go d'upload mensuel", 
+          "50 Go d'upload mensuel",
           "1 To de téléchargement mensuel",
           "Visionneuse intégrable",
           "Image de marque personnalisée",
@@ -430,9 +470,11 @@
       },
       {
         "title": "Conformité RGPD",
-        "description": "Conforme RGPD dès la conception.Pas d’ajouts, pas de compromis."
+        "description": "Conforme RGPD dès la conception. Pas d’ajouts, pas de compromis."
       }
-    ]
+    ],
+    "trust_title": "La confidentialité européenne dès la conception, pas en option",
+    "trust_subtitle": "Adopté par les géomètres, les administrations et les équipes d'infrastructure."
   },
   "kpi_strip": [
     {
@@ -452,6 +494,46 @@
       "description": "Stockage gratuit inclus"
     }
   ],
+  "careers": {
+    "hero": {
+      "title": "Rejoignez View4Sight.",
+      "subtitle": "Nous révolutionnons la façon dont le secteur de la topographie visualise et partage les données 3D. Rejoignez notre équipe d'ingénieurs et d'innovateurs passionnés qui construisent l'avenir de la technologie géospatiale. Nous valorisons la créativité, l'excellence technique et la résolution de problèmes en équipe."
+    },
+    "openings_title": "Postes ouverts",
+    "apply": "Postuler",
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Ingénieur Senior Graphismes 3D",
+        "location": "Paris, France / Télétravail"
+      },
+      {
+        "id": 2,
+        "title": "Data Scientist Géospatial",
+        "location": "Télétravail"
+      },
+      {
+        "id": 3,
+        "title": "Développeur Frontend, WebGL",
+        "location": "Paris, France"
+      },
+      {
+        "id": 4,
+        "title": "Product Manager - Topographie",
+        "location": "Paris, France / Télétravail"
+      },
+      {
+        "id": 5,
+        "title": "Ingénieur DevOps, Infrastructure Cloud",
+        "location": "Paris, France"
+      },
+      {
+        "id": 6,
+        "title": "Responsable Développement Commercial",
+        "location": "France / Télétravail"
+      }
+    ]
+  },
   "not_found": {
     "title": "Page non trouvée",
     "description": "Désolé, la page que vous recherchez<br />a été déplacée, redirigée ou supprimée définitivement.",
@@ -520,6 +602,15 @@
   "blog": {
     "title": "Blog & Actualités",
     "subtitle": "Découvrez les dernières actualités, guides techniques et études de cas sur la visualisation 3D",
+    "latest_title": "Derniers Articles",
+    "latest_subtitle": "Restez à jour sur les dernières tendances en visualisation 3D, les workflows de relevé et la gestion de données géospatiales.",
+    "newsletter": {
+      "title": "Restez informé avec View4Sight",
+      "subtitle": "Recevez les dernières analyses sur la visualisation 3D, les bonnes pratiques de relevé et les mises à jour de la plateforme, directement dans votre boîte mail.",
+      "placeholder": "Votre adresse email",
+      "button": "S'abonner",
+      "privacy": "Nous respectons votre vie privée. Désabonnez-vous à tout moment."
+    },
     "category": "Catégorie",
     "categoryDescription": "Articles de la catégorie sélectionnée",
     "author": "Auteur",
@@ -672,4 +763,4 @@
       "button": "Essayer View4Sight"
     }
   }
-} 
+}

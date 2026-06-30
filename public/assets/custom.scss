@@ -669,3 +669,10 @@ html.uc-dark body {
     flex-wrap: nowrap;
   }
 }
+
+// Page Secure : resserrer l'espace entre le hero et la première feature (~-30%)
+// Le bas du hero a déjà été réduit (44px) ; on réduit ici le haut de la première
+// section. Double classe pour battre la spécificité de `.xl:py-12` (toutes deux !important).
+.uc-secure-feat.section-outer {
+  padding-top: 90px !important;
+}

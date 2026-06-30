@@ -25,7 +25,7 @@ export default function Features() {
     },
     {
       id: "flatness-controls",
-      icon: "unicon-chart-line",
+      icon: "/assets/images/custom-icons/gauge-bold.svg",
       iconBg: "#E8F5E9",
       iconColor: "#388E3C",
       imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600&q=80",
@@ -53,12 +53,14 @@ export default function Features() {
                   style={{ 
                     marginBottom: i !== measureFeatures.length - 1 ? "8rem" : "0" 
                   }}
-                  data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
                   <div className="row items-center g-6 lg:g-10 xl:g-12" style={{ minHeight: "500px" }}>
                     {/* Text Content */}
                     <div className={`col-12 lg:col-5 ${i % 2 === 0 ? 'order-1 lg:order-0' : 'order-1 lg:order-1'}`}>
-                      <div className="panel vstack gap-4 w-100">
+                      <div
+                        className="panel vstack gap-4 w-100"
+                        data-anime="onview: -100; targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 150});"
+                      >
                         {/* Icon */}
                         <div 
                           className="d-inline-flex items-center justify-content-center rounded-3"
@@ -107,7 +109,10 @@ export default function Features() {
                     
                     {/* Image/Video */}
                     <div className={`col-12 lg:col-7 d-flex items-center ${i % 2 === 0 ? 'order-0 lg:order-1' : 'order-0 lg:order-0'}`}>
-                      <div className="panel w-100 position-relative">
+                      <div
+                        className="panel w-100 position-relative"
+                        data-anime="onview: -100; targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 600; delay: 200;"
+                      >
                         {i === 0 ? (
                           <video
                             width={900}

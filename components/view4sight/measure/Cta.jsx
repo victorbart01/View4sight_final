@@ -10,7 +10,7 @@ export default function Cta() {
   if (isLoading) {
     return (
       <div id="cta" className="cta section panel  scrollSpysection">
-        <div className="section-outer panel py-4 sm:py-6 xl:py-8 bg-white text-dark rounded-2 lg:rounded-3 mx-2 overflow-hidden border border-gray-200">
+        <div className="section-outer panel p-4 sm:p-6 xl:p-8 text-dark rounded-2 lg:rounded-3 mx-2 lg:mx-auto max-w-xl overflow-hidden border border-gray-200" style={{ backgroundColor: "#F4F4F5", borderColor: "#E4E4E7" }}>
           <div className="container xl:max-w-xl">
             <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '200px' }}>
               <div className="spinner-border text-primary" role="status">
@@ -24,14 +24,14 @@ export default function Cta() {
   }
   return (
     <div id="cta" className="cta section panel  scrollSpysection">
-      <div className="section-outer panel py-4 sm:py-6 xl:py-8 bg-white text-dark rounded-2 lg:rounded-3 mx-2 overflow-hidden border border-gray-200">
+      <div className="section-outer panel p-4 sm:p-6 xl:p-8 text-dark rounded-2 lg:rounded-3 mx-2 lg:mx-auto max-w-xl overflow-hidden border border-gray-200" style={{ backgroundColor: "#F4F4F5", borderColor: "#E4E4E7" }}>
         <div className="container xl:max-w-xl">
           <div className="section-inner vstack lg:hstack items-center gap-4 lg:gap-6 text-center ltr:lg:text-start rtl:lg:text-end flex-sm-column home-6-cta">
             <div
               className="content panel vstack items-center lg:items-start justify-center gap-2 lg:max-w-3/5 px-4 lg:px-0 "
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <h2 className="h2 xl:display-5 text-dark">
+              <h2 className="h2 text-dark">
                 {t('features_pages.cta.title')}
               </h2>
               <p className="fs-5 my-0 text-dark text-opacity-70">

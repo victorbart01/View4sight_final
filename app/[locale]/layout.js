@@ -44,8 +44,6 @@ export default function LocaleLayout({ children, params }) {
   }, [validLocale, localeInfo.direction]);
   
   useEffect(() => {
-    const elements = document.querySelectorAll("[data-anime]");
-
     // Intersection Observer callback function
     const handleIntersection = (entries, observer) => {
       entries.forEach((entry) => {
@@ -110,14 +108,26 @@ export default function LocaleLayout({ children, params }) {
       threshold: 0,
     });
 
-    elements.forEach((element) => {
-      observer.observe(element);
-    });
+    // Observe current and any late-rendered [data-anime] elements. Some
+    // sections (pricing, FAQ...) render after an async translation load, so a
+    // one-time scan misses them; a MutationObserver re-scans as they mount.
+    const observed = new WeakSet();
+    const observeAll = () => {
+      document.querySelectorAll("[data-anime]").forEach((element) => {
+        if (!observed.has(element)) {
+          observed.add(element);
+          observer.observe(element);
+        }
+      });
+    };
+    observeAll();
+
+    const mutationObserver = new MutationObserver(() => observeAll());
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      elements.forEach((element) => {
-        observer.unobserve(element);
-      });
+      observer.disconnect();
+      mutationObserver.disconnect();
     };
   }, [pathname]);
 

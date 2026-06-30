@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -73,39 +72,83 @@ export default function Signup() {
           }
         }
       `}</style>
-      <div style={{ 
-        display: 'flex', 
-        minHeight: '100vh', 
-        width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-        <div style={{ 
-          display: 'flex', 
-          width: '100%', 
-          maxWidth: '1600px',
+      {/* Dark form-field styling, scoped to this page (.sg-page beats Bootstrap defaults) */}
+      <style>{`
+        .sg-page .form-label { color: rgba(255,255,255,0.62); font-size: 13px; }
+        .sg-page .form-control {
+          background-color: #0E0E0F !important;
+          border: 1px solid rgba(255,255,255,0.12) !important;
+          color: #fff !important;
+        }
+        .sg-page .form-control::placeholder { color: rgba(255,255,255,0.32) !important; }
+        .sg-page .form-control:focus {
+          background-color: #0E0E0F !important;
+          border-color: #FE552E !important;
+          box-shadow: 0 0 0 3px rgba(254,85,46,0.18) !important;
+          color: #fff !important;
+        }
+        .sg-page .form-control:-webkit-autofill,
+        .sg-page .form-control:-webkit-autofill:focus {
+          -webkit-text-fill-color: #fff;
+          -webkit-box-shadow: 0 0 0 1000px #0E0E0F inset;
+          caret-color: #fff;
+        }
+        .sg-eye {
+          color: rgba(255,255,255,0.45);
+          transition: color .15s ease;
+        }
+        .sg-eye:hover { color: rgba(255,255,255,0.8); }
+        .sg-btn-primary { transition: filter .15s ease, transform .15s ease; }
+        .sg-btn-primary:hover { filter: brightness(1.06); }
+        .sg-btn-primary:active { transform: translateY(1px); }
+      `}</style>
+      <div
+        className="sg-page"
+        style={{
+          display: 'flex',
+          minHeight: '100vh',
+          width: '100%',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#0E0E0F',
+          // Dot texture + vertical gradient (hero dots, faded vertically top & bottom)
+          backgroundImage: [
+            "linear-gradient(180deg, #0E0E0F 0%, rgba(14,14,15,0) 16%, rgba(14,14,15,0) 84%, #0E0E0F 100%)",
+            "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px)",
+          ].join(", "),
+          backgroundSize: "100% 100%, 24px 24px",
+        }}
+      >
+        <div style={{
+          display: 'flex',
+          width: '100%',
+          maxWidth: '1280px',
           minHeight: '100vh'
         }}>
         {/* Left Column - Form */}
-      <div style={{ 
-        flex: '1', 
-        display: 'flex', 
-        alignItems: 'center', 
+      <div style={{
+        flex: '1',
+        display: 'flex',
+        alignItems: 'center',
         justifyContent: 'center',
         padding: '2rem'
       }}>
-            <div className="w-100" style={{ maxWidth: '450px' }}>
+            <div
+              className="w-100"
+              style={{ maxWidth: '420px' }}
+              data-anime="onview:-100; targets: >*; translateY: [22, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(80, {start: 100});"
+            >
               {/* Logo View4Sight */}
               <div className="mb-4">
-                <img 
-                  src="/assets/images/logo_v4s.svg" 
-                  alt="View4Sight" 
-                  style={{ height: '40px', width: 'auto' }}
+                <img
+                  src="/assets/images/logo_v4s_light.png"
+                  alt="View4Sight"
+                  style={{ height: '38px', width: 'auto' }}
                 />
               </div>
 
-              <h1 className="h2 mb-2">Créer un compte</h1>
-              <p className="text-muted mb-4">
+              <h1 className="h2 mb-2" style={{ color: '#fff', letterSpacing: '-0.01em' }}>Créer un compte</h1>
+              <p className="mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 Commencez à explorer et utiliser toutes les ressources<br />
                 qui vous aideront à élever chaque projet.
               </p>
@@ -128,7 +171,7 @@ export default function Signup() {
                     style={{
                       borderRadius: '12px',
                       padding: '12px 16px',
-                      border: '1px solid #e0e0e0'
+                      fontSize: '15px'
                     }}
                   />
           </div>
@@ -143,14 +186,14 @@ export default function Signup() {
                     className="form-control form-control-lg"
               id="email"
               name="email"
-                    placeholder="Votre email"
+                    placeholder="votre@entreprise.com"
               value={formData.email}
               onChange={handleChange}
               required
                     style={{
                       borderRadius: '12px',
                       padding: '12px 16px',
-                      border: '1px solid #e0e0e0'
+                      fontSize: '15px'
                     }}
             />
           </div>
@@ -166,7 +209,7 @@ export default function Signup() {
                       className="form-control form-control-lg"
               id="password"
               name="password"
-                      placeholder="Créer un mot de passe"
+                      placeholder="Au moins 8 caractères"
               value={formData.password}
               onChange={handleChange}
               required
@@ -175,21 +218,37 @@ export default function Signup() {
                         borderRadius: '12px',
                         padding: '12px 16px',
                         paddingRight: '48px',
-                        border: '1px solid #e0e0e0'
+                        fontSize: '15px'
                       }}
                     />
                     <button
                       type="button"
-                      className="btn btn-link position-absolute"
+                      className="sg-eye position-absolute d-flex align-items-center justify-content-center"
+                      aria-label={formData.showPassword ? "Masquer le mot de passe" : "Afficher le mot de passe"}
                       style={{
                         top: '50%',
-                        right: '8px',
+                        right: '10px',
                         transform: 'translateY(-50%)',
-                        padding: '8px'
+                        width: '32px',
+                        height: '32px',
+                        border: 0,
+                        background: 'transparent',
+                        padding: 0,
+                        cursor: 'pointer'
                       }}
                       onClick={() => setFormData(prev => ({ ...prev, showPassword: !prev.showPassword }))}
                     >
-                      {formData.showPassword ? '👁️' : '👁️‍🗨️'}
+                      {formData.showPassword ? (
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                          <line x1="1" y1="1" x2="23" y2="23" />
+                        </svg>
+                      ) : (
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg>
+                      )}
                     </button>
                   </div>
           </div>
@@ -197,14 +256,14 @@ export default function Signup() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="btn btn-lg w-100 mb-4"
+                  className="btn btn-lg w-100 mb-4 sg-btn-primary"
                   style={{
                     backgroundColor: '#FE552E',
                     borderColor: '#FE552E',
                     color: 'white',
                     borderRadius: '12px',
                     padding: '14px',
-                    fontWeight: '500'
+                    fontWeight: '600'
                   }}
                 >
                   Créer un compte
@@ -214,22 +273,24 @@ export default function Signup() {
 
               {/* Sign In Link */}
               <p className="text-center mb-0">
-                <span className="text-muted">Vous avez déjà un compte ? </span>
-                <Link 
-                  href="/sign-in" 
+                <span style={{ color: 'rgba(255,255,255,0.5)' }}>Vous avez déjà un compte ? </span>
+                <a
+                  href="https://app.view4sight.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-decoration-none fw-medium"
                   style={{ color: '#FE552E' }}
                 >
                   Se connecter
-                </Link>
+                </a>
               </p>
             </div>
           </div>
 
           {/* Right Column - Testimonial */}
-          <div 
+          <div
             style={{
-              flex: '0 0 62%',
+              flex: '1',
               display: 'none',
               alignItems: 'center',
               justifyContent: 'center',
@@ -238,46 +299,49 @@ export default function Signup() {
             }}
             className="testimonial-column"
           >
+            {/* Fixed-size testimonial canvas, centered in the column (robust to column width) */}
+            <div style={{ position: 'relative', width: '513px', height: '735px', flexShrink: 0 }}>
             {/* SVG Background rectangle-14 */}
-            <img 
-              src="/assets/images/rectangle-14.svg" 
+            <img
+              src="/assets/images/rectangle-14.svg"
               alt=""
               style={{
                 position: 'absolute',
-                top: '58px',
-                left: '76px',
+                top: '0px',
+                left: '0px',
                 width: '513px',
                 height: '735px',
-                objectFit: 'cover'
+                objectFit: 'cover',
+                filter: 'brightness(0.9)'
               }}
             />
-            
+
             {/* SVG Shape Rectangle-15 pour l'effet glassmorphism */}
-            <img 
-              src="/assets/images/Rectangle-15.svg" 
+            <img
+              src="/assets/images/Rectangle-15.svg"
               alt=""
               style={{
                 position: 'absolute',
-                top: '523px',
-                left: '92px',
+                top: '465px',
+                left: '16px',
                 width: '483px',
                 height: '252px'
               }}
             />
 
             {/* Tags - positioned ABOVE the wrapper */}
-            <div 
+            <div
               style={{
                 position: 'absolute',
-                top: '472px',
-                left: '108px',
+                top: '414px',
+                left: '32px',
                 display: 'flex',
                 gap: '16px',
                 zIndex: 10
               }}
             >
               {testimonials[currentTestimonial].tags.map((tag, idx) => (
-                <span 
+                <span
                   key={idx}
                   style={{
                     padding: '8px 18px',
@@ -299,18 +363,18 @@ export default function Signup() {
             </div>
 
             {/* Wrapper container for testimonial content inside Rectangle-15 */}
-            <div 
+            <div
               style={{
                 position: 'absolute',
-                top: '523px',
-                left: '91px',
+                top: '465px',
+                left: '15px',
                 width: '483px',
                 height: '252px',
                 zIndex: 2
               }}
             >
                 {/* Quote - positioned inside wrapper, moved up */}
-                <blockquote 
+                <blockquote
                   style={{
                     position: 'absolute',
                     top: '35%',
@@ -338,7 +402,7 @@ export default function Signup() {
                 </blockquote>
 
               {/* Author - positioned below quote inside wrapper */}
-              <div 
+              <div
                 style={{
                   position: 'absolute',
                   bottom: '8%',
@@ -349,7 +413,7 @@ export default function Signup() {
                   color: 'rgba(255, 255, 255, 0.9)'
                 }}
               >
-                <div 
+                <div
                   style={{
                     width: '48px',
                     height: '48px',
@@ -369,7 +433,7 @@ export default function Signup() {
                   }}
                 >
                   {testimonials[currentTestimonial].image ? (
-                    <img 
+                    <img
                       src={testimonials[currentTestimonial].image}
                       alt={testimonials[currentTestimonial].author}
                       style={{
@@ -395,12 +459,12 @@ export default function Signup() {
             </div>
 
               {/* Navigation Buttons - Positioned at bottom right of Rectangle-15 */}
-              <div 
-                style={{ 
-                  position: 'absolute', 
-                  top: '729px',
-                  left: '432px',
-                  display: 'flex', 
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '671px',
+                  left: '356px',
+                  display: 'flex',
                   gap: '10px',
                   zIndex: 15
                 }}
@@ -422,7 +486,7 @@ export default function Signup() {
                     padding: 0
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.02)';
+                    e.currentTarget.style.backgroundColor = '#f0f0f0';
                     e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.15)';
                   }}
                   onMouseLeave={(e) => {
@@ -430,8 +494,8 @@ export default function Signup() {
                     e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.1)';
                   }}
                 >
-                  <img 
-                    src="/assets/images/testimonials/arrowL.svg" 
+                  <img
+                    src="/assets/images/testimonials/arrowL.svg"
                     alt="Previous"
                     style={{ width: '24px', height: '24px' }}
                   />
@@ -453,7 +517,7 @@ export default function Signup() {
                     padding: 0
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.02)';
+                    e.currentTarget.style.backgroundColor = '#f0f0f0';
                     e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.15)';
                   }}
                   onMouseLeave={(e) => {
@@ -461,16 +525,17 @@ export default function Signup() {
                     e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.1)';
                   }}
                 >
-                  <img 
-                    src="/assets/images/testimonials/arrowR.svg" 
+                  <img
+                    src="/assets/images/testimonials/arrowR.svg"
                     alt="Next"
                     style={{ width: '24px', height: '24px' }}
                   />
                 </button>
               </div>
             </div>
+            </div>
         </div>
       </div>
     </>
   );
-} 
+}

@@ -1,12 +1,10 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Hero from "@/components/view4sight/secure/Hero";
 import Features from "@/components/view4sight/secure/Features";
-import Cta from "@/components/view4sight/secure/Cta";
+import CtaFinal from "@/components/view4sight/CtaFinal";
 
-export const metadata = {
-  title: "Sécurité - View4Sight | Données sécurisées et souveraines",
-  description: "Pendant que d'autres envoient vos données à l'étranger, View4Sight les garde à la maison. Certifié ISO, RGPD natif, approuvé par le secteur public.",
-};
+export const generateMetadata = pageMetadata("secure");
 
 export default function SecurePage({ params }) {
   const resolvedParams = React.use(params);
@@ -16,7 +14,7 @@ export default function SecurePage({ params }) {
     <>
       <Hero />
       <Features />
-      <Cta />
+      <CtaFinal />
     </>
   );
 } 

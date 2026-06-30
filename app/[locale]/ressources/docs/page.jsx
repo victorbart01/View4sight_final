@@ -1,12 +1,36 @@
-import Link from "next/link";
+import { pageMetadata } from "@/lib/pageMetadata";
+import React from "react";
 import CtaFinal from "@/components/view4sight/CtaFinal";
 
-export const metadata = {
-  title: "Documentation - View4Sight",
-  description: "Technical documentation and API reference for View4Sight platform.",
+export const generateMetadata = pageMetadata("docs");
+
+const DOCS_T = {
+  fr: {
+    badge: "Documentation",
+    title: "Documentation technique",
+    subtitle: "Guides techniques complets, référence API et documentation d'intégration pour la plateforme View4Sight.",
+    gettingStarted: "Prise en main",
+    gettingStartedDesc: "Guides de démarrage rapide et tutoriels de base pour bien débuter avec View4Sight.",
+    apiReference: "Référence API",
+    apiReferenceDesc: "Documentation API complète pour intégrer View4Sight à vos applications.",
+    comingSoon: "Bientôt disponible",
+  },
+  en: {
+    badge: "Documentation",
+    title: "Technical Documentation",
+    subtitle: "Complete technical guides, API reference, and integration documentation for the View4Sight platform.",
+    gettingStarted: "Getting Started",
+    gettingStartedDesc: "Quick start guides and basic tutorials to get you up and running with View4Sight.",
+    apiReference: "API Reference",
+    apiReferenceDesc: "Complete API documentation for integrating View4Sight with your applications.",
+    comingSoon: "Coming Soon",
+  },
 };
 
 export default function DocsPage({ params }) {
+  const resolvedParams = React.use(params);
+  const locale = resolvedParams?.locale === "fr" ? "fr" : "en";
+  const td = DOCS_T[locale];
   return (
     <div className="section panel overflow-hidden">
       {/* Hero Section */}
@@ -14,13 +38,13 @@ export default function DocsPage({ params }) {
         <div className="container max-w-4xl">
           <div className="section-inner panel text-center">
             <div className="hero-badge mx-auto">
-              Documentation
+              {td.badge}
             </div>
             <h1 className="h3 lg:h2 xl:h1 m-0 mt-3 mb-4">
-              Technical Documentation
+              {td.title}
             </h1>
             <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70 max-w-2xl mx-auto">
-              Complete technical guides, API reference, and integration documentation for View4Sight platform.
+              {td.subtitle}
             </p>
           </div>
         </div>
@@ -34,13 +58,13 @@ export default function DocsPage({ params }) {
               <div className="panel p-4 xl:p-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3 h-100">
                 <div className="vstack gap-4">
                   <h3 className="h5 text-dark dark:text-white m-0">
-                    Getting Started
+                    {td.gettingStarted}
                   </h3>
                   <p className="text-dark dark:text-white text-opacity-70 m-0">
-                    Quick start guides and basic tutorials to get you up and running with View4Sight.
+                    {td.gettingStartedDesc}
                   </p>
                   <div className="hstack gap-2 text-primary">
-                    <span className="fs-7 fw-medium">Coming Soon</span>
+                    <span className="fs-7 fw-medium">{td.comingSoon}</span>
                   </div>
                 </div>
               </div>
@@ -50,13 +74,13 @@ export default function DocsPage({ params }) {
               <div className="panel p-4 xl:p-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3 h-100">
                 <div className="vstack gap-4">
                   <h3 className="h5 text-dark dark:text-white m-0">
-                    API Reference
+                    {td.apiReference}
                   </h3>
                   <p className="text-dark dark:text-white text-opacity-70 m-0">
-                    Complete API documentation for integrating View4Sight with your applications.
+                    {td.apiReferenceDesc}
                   </p>
                   <div className="hstack gap-2 text-primary">
-                    <span className="fs-7 fw-medium">Coming Soon</span>
+                    <span className="fs-7 fw-medium">{td.comingSoon}</span>
                   </div>
                 </div>
               </div>

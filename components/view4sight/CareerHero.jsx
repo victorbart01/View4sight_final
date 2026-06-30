@@ -1,41 +1,21 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function CareerHero() {
+  const { t, isLoading } = useTranslation();
   return (
-    <div id="hero_header" className="hero-header section panel overflow-hidden">
-      <div className="position-absolute top-0 start-0 end-0 h-400px sm:h-500px lg:h-screen xl:h-screen bg-secondary dark:bg-gray-800 z-0" />
-      <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block"
-        data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
-      >
-        <div
-          className="position-absolute  rotate-45"
-          style={{ top: "20%", left: "18%" }}
-        >
-          <Image
-            className="w-24px text-gray-900 dark:text-white"
-            width={193}
-            height={216}
-            alt="star-1"
-            data-uc-svg=""
-            src="/assets/images/template/star-1.svg"
-          />
-        </div>
-        <div
-          className="position-absolute  rotate-45"
-          style={{ top: "15%", right: "18%" }}
-        >
-          <Image
-            className="w-32px text-gray-900 dark:text-white"
-            width={69}
-            height={95}
-            alt="star-2"
-            data-uc-svg=""
-            src="/assets/images/template/star-2.svg"
-          />
-        </div>
-      </div>
+    <div
+      id="hero_header"
+      className="hero-header section panel overflow-hidden"
+      style={{
+        backgroundColor: "#1C1C1E",
+        backgroundImage:
+          "radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px), linear-gradient(180deg, rgba(14,14,14,0) calc(100% - 160px), #0e0e0e 100%)",
+        backgroundSize: "24px 24px, 100% 100%",
+      }}
+    >
       <div className="section-outer panel pt-9 lg:pt-10 pb-4 sm:pb-6 xl:pb-9">
         <div className="container max-w-xl">
           <div
@@ -44,13 +24,10 @@ export default function CareerHero() {
           >
             <div className="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-850px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Join View4Sight.
+                {isLoading ? "" : t('careers.hero.title')}
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                We're revolutionizing how the surveying industry visualizes and shares 3D data. 
-                Join our team of passionate engineers and innovators building the future of 
-                geospatial technology. We value creativity, technical excellence, and collaborative 
-                problem-solving.
+                {isLoading ? "" : t('careers.hero.subtitle')}
               </p>
             </div>
             <div className="panel">
@@ -58,7 +35,7 @@ export default function CareerHero() {
                 <Image
                   className="media-cover image uc-transition-scale-up uc-transition-opaque"
                   alt="View4Sight Career"
-                  src="/assets/images/template/career.jpg"
+                  src="/assets/images/career.webp"
                   width="1500"
                   height="1000"
                 />

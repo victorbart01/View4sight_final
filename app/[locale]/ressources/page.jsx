@@ -1,11 +1,9 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import Link from "next/link";
 import Image from "next/image";
 import CtaFinal from "@/components/view4sight/CtaFinal";
 
-export const metadata = {
-  title: "Resources - View4Sight",
-  description: "Explore our use cases, tutorials, blog articles, and other resources to get the most out of View4Sight.",
-};
+export const generateMetadata = pageMetadata("resources");
 
 const resourceCategories = [
   {

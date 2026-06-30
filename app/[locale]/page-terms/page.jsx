@@ -1,10 +1,8 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Terms from "@/components/view4sight/Terms";
 
-export const metadata = {
-  title: "Terms of Service - View4Sight",
-  description: "View4Sight terms of service and conditions of use.",
-};
+export const generateMetadata = pageMetadata("terms");
 
 export default function TermsPage() {
   return (

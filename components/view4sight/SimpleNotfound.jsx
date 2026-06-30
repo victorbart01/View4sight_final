@@ -49,12 +49,14 @@ export default function SimpleNotfound() {
             >
               ← Retour à l'accueil
             </Link>
-            <Link
-              href="/sign-in"
+            <a
+              href="https://app.view4sight.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline-primary px-4 py-2"
             >
               Se connecter
-            </Link>
+            </a>
           </div>
 
           {/* Quick Links */}

@@ -1,10 +1,8 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Privacy from "@/components/view4sight/Privacy";
 
-export const metadata = {
-  title: "Privacy Policy - View4Sight",
-  description: "View4Sight privacy policy and data protection information.",
-};
+export const generateMetadata = pageMetadata("privacy");
 
 export default function PrivacyPage() {
   return (

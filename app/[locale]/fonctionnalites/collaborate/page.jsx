@@ -1,12 +1,10 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Hero from "@/components/view4sight/collaborate/Hero";
 import Features from "@/components/view4sight/collaborate/Features";
-import Cta from "@/components/view4sight/collaborate/Cta";
+import CtaFinal from "@/components/view4sight/CtaFinal";
 
-export const metadata = {
-  title: "Collaborer - View4Sight | Collaboration 3D en temps réel",
-  description: "Fini les emails, les photos et les versions qui se croisent. Une scène unique et des commentaires centralisés pour travailler plus vite, sans confusion.",
-};
+export const generateMetadata = pageMetadata("collaborate");
 
 export default function CollaboratePage({ params }) {
   const resolvedParams = React.use(params);
@@ -16,7 +14,7 @@ export default function CollaboratePage({ params }) {
     <>
       <Hero />
       <Features />
-      <Cta />
+      <CtaFinal />
     </>
   );
 } 

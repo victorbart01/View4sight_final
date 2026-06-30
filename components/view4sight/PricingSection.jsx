@@ -6,9 +6,9 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 // Function to handle Polar checkout
 const handleCheckout = async (tier, isYearly) => {
-  // Free tier redirects to sign-in
+  // Free tier redirects to the sign-up page
   if (tier.planKey === "starter") {
-    window.location.href = "/sign-in";
+    window.location.href = "/sign-up";
     return;
   }
 
@@ -289,24 +289,24 @@ export default function PricingSection() {
                    <div className="position-relative" style={{ marginTop: '2rem' }}>
                      <div className={`pricing-toggle ${isYearly ? 'yearly' : ''}`}>
                        <div className="pricing-toggle-bubble"></div>
-                       <div 
+                       <div
                          className={`pricing-toggle-option ${!isYearly ? 'active' : ''}`}
                          onClick={() => setIsYearly(false)}
                        >
-                         Mensuel
+                         {t('pricing.billing.monthly')}
                        </div>
-                       <div 
+                       <div
                          className={`pricing-toggle-option ${isYearly ? 'active' : ''}`}
                          onClick={() => setIsYearly(true)}
                        >
-                         Annuel
+                         {t('pricing.billing.yearly')}
                          <span className="pricing-badge">-20%</span>
                        </div>
                      </div>
-                     
+
                      <div className="save-message">
                        <div className="save-message-text text-center">
-                         Passez à l'annuel et économisez 20%
+                         {t('pricing.billing.save_message')}
                        </div>
                      </div>
                   </div>
@@ -330,18 +330,19 @@ export default function PricingSection() {
                         <div key={index}>
                           <div
                             className={`tier panel rounded-2 tier-card ${
-                              tier.highlight 
-                                ? "bg-white dark:bg-gray-800 position-relative tier-highlighted shadow-lg" 
-                                : "bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700"
+                              tier.highlight
+                                ? "position-relative tier-highlighted shadow-lg"
+                                : "border border-gray-300 dark:border-gray-700"
                             } text-dark h-100`}
-                            style={{ 
-                              display: 'grid', 
-                              gridTemplateRows: '200px 1fr auto'
+                            style={{
+                              display: 'grid',
+                              gridTemplateRows: '200px 1fr auto',
+                              backgroundColor: '#1C1C1E'
                             }}
                           >
                             {tier.highlight && (
                           <span className="position-absolute top-0 end-0 d-inline-flex py-narrow px-2 bg-primary rounded-pill text-white fs-8 fw-medium m-2">
-                                Populaire
+                                {t('pricing.popular')}
                               </span>
                             )}
                             <header className="tier-header p-3 lg:p-4 pb-0 d-flex flex-column justify-content-between" style={{ paddingBottom: '0 !important' }}>
@@ -359,7 +360,7 @@ export default function PricingSection() {
                             </header>
                             <div className="tier-body px-3 lg:px-4 pt-0 pb-3">
                               <h6 className="fs-7 fw-medium text-dark dark:text-white mb-2" style={{ marginTop: '-1rem !important' }}>
-                                Inclus :
+                                {t('pricing.included')}
                               </h6>
                               <ul className="nav-y gap-2 text-start">
                                 {planFeatures.map((feature, idx) => (
@@ -403,7 +404,7 @@ export default function PricingSection() {
                 {/* Enterprise section */}
                 <div 
                   className="panel mt-3"
-                  data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
+                  data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
                 >
                   <div className="bg-secondary dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2 p-4 lg:p-5 position-relative overflow-hidden">
                     <div className="position-absolute top-0 end-0 w-50 h-100 bg-gradient-45 from-primary to-transparent opacity-5 z-0"></div>

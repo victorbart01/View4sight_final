@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Resetpass1() {
   const [email, setEmail] = useState("");
@@ -58,9 +57,9 @@ export default function Resetpass1() {
             </button>
           </p>
 
-          <Link href="/sign-in" className="btn btn-outline-primary">
+          <a href="https://app.view4sight.com/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
             Retour à la connexion
-          </Link>
+          </a>
         </div>
       </div>
     );
@@ -103,9 +102,9 @@ export default function Resetpass1() {
         </form>
 
         <div className="text-center">
-          <Link href="/sign-in" className="text-decoration-none">
+          <a href="https://app.view4sight.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
             ← Retour à la connexion
-          </Link>
+          </a>
         </div>
       </div>
     </div>

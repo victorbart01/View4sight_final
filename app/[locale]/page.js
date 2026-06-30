@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Hero from "@/components/view4sight/Hero";
 import PainBenefits from "@/components/view4sight/PainBenefits";
@@ -9,10 +10,7 @@ import FaqShort from "@/components/view4sight/FaqShort";
 import CtaFinal from "@/components/view4sight/CtaFinal";
 import VideoComponent from "@/components/view4sight/VideoComponent";
 
-export const metadata = {
-  title: "View4Sight - 3D Point Cloud Visualization & Sharing",
-  description: "Share your 3D point clouds and BIM files in any browser. French SaaS solution for surveyors and engineering firms.",
-};
+export const generateMetadata = pageMetadata("home");
 
 export default function View4SightHomepage({ params }) {
   const resolvedParams = React.use(params);

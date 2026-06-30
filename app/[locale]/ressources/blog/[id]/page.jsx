@@ -1,12 +1,10 @@
+import { pageMetadata } from "@/lib/pageMetadata";
 import React from "react";
 import Newsletter from "@/components/view4sight/blog/Newsletter";
 import BlogDetails1 from "@/components/blog/BlogDetails1";
 import { allBlogs } from "@/data/blogs";
 
-export const metadata = {
-  title: "Blog Article - View4Sight",
-  description: "Read the latest insights on 3D visualization and surveying workflows.",
-};
+export const generateMetadata = pageMetadata("blogArticle");
 
 export default async function BlogDetailsPage({ params }) {
   const resolvedParams = await params;

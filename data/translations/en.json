@@ -28,7 +28,7 @@
   "navigation": {
     "home": "Home",
     "features": "Features",
-    "pricing": "Pricing", 
+    "pricing": "Pricing",
     "security": "Security",
     "resources": "Resources",
     "blog": "Blog",
@@ -54,7 +54,7 @@
       "description": "Customer stories"
     },
     "blog": {
-      "title": "Blog", 
+      "title": "Blog",
       "description": "Articles & news"
     },
     "careers": {
@@ -76,7 +76,10 @@
     "subtitle": "Turn massive point clouds into collaborative workspaces.<br />Real-time measurements, smart annotations, instant sharing.<br />Zero software required.",
     "cta_primary": "Get started",
     "cta_secondary": "See how it works",
-    "trust_text": "30-day free trial, no credit card required, 150GB storage included"
+    "trust_text": "30-day free trial, no credit card required, 150GB storage included",
+    "trust_free_trial": "30-day free trial",
+    "trust_no_credit_card": "No credit card required",
+    "trust_storage": "150GB storage included"
   },
   "features": {
     "badge": "Core Features",
@@ -87,7 +90,7 @@
       "description": "Navigate massive datasets"
     },
     "measure": {
-      "title": "Measure", 
+      "title": "Measure",
       "description": "Survey-grade precision"
     },
     "collaborate": {
@@ -117,9 +120,27 @@
     },
     "stats": {
       "time_saved": "Faster Client Approvals",
-      "site_visits": "Fewer Site Visits Required", 
+      "site_visits": "Fewer Site Visits Required",
       "communication": "Faster File Sharing"
-    }
+    },
+    "eyebrow": "What they say",
+    "results": [
+      {
+        "label": "Save up to",
+        "value": "50%",
+        "suffix": "in delivery time"
+      },
+      {
+        "label": "Reduce by up to",
+        "value": "70%",
+        "suffix": "in site visits"
+      },
+      {
+        "label": "Share in",
+        "value": "1",
+        "suffix": "click"
+      }
+    ]
   },
   "security": {
     "badge": "French Sovereignty",
@@ -191,9 +212,25 @@
     }
   },
   "cta_final": {
-    "title": "Ready to revolutionize your 3D workflows?",
-    "subtitle": "Start your 30-day free trial. No credit card required.",
-    "cta_primary": "Try View4Sight"
+    "badge": "Get started",
+    "title": "Ready to simplify your 3D projects and speed up your deliverables?",
+    "subtitle": "Join hundreds of surveying professionals already using View4Sight to turn their 3D data into clear, high-value deliverables.",
+    "cta_primary": "Free Trial",
+    "cta_secondary": "Request a Demo",
+    "trust_text": "30-day free trial • No credit card • Cancel anytime"
+  },
+  "features_overview": {
+    "title_before": "Discover everything",
+    "title_after": "can do for you",
+    "subtitle": "Visualize, measure, collaborate and secure your 3D data — on a single web platform.",
+    "btn_primary": "Start Free Trial",
+    "btn_secondary": "See a Demo",
+    "learn_more": "Learn more",
+    "cta_title": "Ready to revolutionize your 3D workflows?",
+    "cta_subtitle": "Start your free 30-day trial with full access to all features.",
+    "cta_primary": "Start Free Trial",
+    "cta_secondary": "Request a Demo",
+    "badge": "Features"
   },
   "footer": {
     "description": "The leading web-based platform for 3D point cloud visualization and collaboration. Transform your survey data into interactive experiences accessible from any browser.",
@@ -202,7 +239,7 @@
     "hosted_france": "Hosted in France",
     "sections": {
       "product": "Product",
-      "resources": "Resources", 
+      "resources": "Resources",
       "company": "Company"
     },
     "links": {
@@ -226,6 +263,13 @@
     "badge": "Pricing Plans",
     "title": "Simple, transparent pricing for every team size",
     "subtitle": "Choose the plan that fits your needs. Upgrade or downgrade at any time.",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save_message": "Switch to yearly and save 20%"
+    },
+    "popular": "Popular",
+    "included": "Included:",
     "plans": {
       "starter": {
         "name": "Starter",
@@ -241,7 +285,7 @@
         ]
       },
       "team": {
-        "name": "Team", 
+        "name": "Team",
         "price": "€79",
         "price_yearly": "€63",
         "period": "/month",
@@ -261,14 +305,14 @@
       "studio": {
         "name": "Studio",
         "price": "€199",
-        "price_yearly": "€159", 
+        "price_yearly": "€159",
         "period": "/month",
         "description": "For established firms with complex projects",
         "features": [
           "500 GB storage",
           "15 users",
           "Advanced analytics",
-          "50GB monthly uploads", 
+          "50GB monthly uploads",
           "1TB monthly downloads",
           "Embeddable viewer",
           "Custom branding",
@@ -427,7 +471,9 @@
         "title": "GDPR Compliance",
         "description": "Full compliance with European regulations from day one. No add-ons, no surprises."
       }
-    ]
+    ],
+    "trust_title": "European privacy by design, not as an afterthought",
+    "trust_subtitle": "Trusted by surveyors, public agencies, and infrastructure teams."
   },
   "kpi_strip": [
     {
@@ -447,6 +493,46 @@
       "description": "Free storage included"
     }
   ],
+  "careers": {
+    "hero": {
+      "title": "Join View4Sight.",
+      "subtitle": "We're revolutionizing how the surveying industry visualizes and shares 3D data. Join our team of passionate engineers and innovators building the future of geospatial technology. We value creativity, technical excellence, and collaborative problem-solving."
+    },
+    "openings_title": "Current openings",
+    "apply": "Apply now",
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Senior 3D Graphics Engineer",
+        "location": "Paris, France / Remote"
+      },
+      {
+        "id": 2,
+        "title": "Geospatial Data Scientist",
+        "location": "Remote"
+      },
+      {
+        "id": 3,
+        "title": "Frontend Developer, WebGL",
+        "location": "Paris, France"
+      },
+      {
+        "id": 4,
+        "title": "Product Manager - Surveying",
+        "location": "Paris, France / Remote"
+      },
+      {
+        "id": 5,
+        "title": "DevOps Engineer, Cloud Infrastructure",
+        "location": "Paris, France"
+      },
+      {
+        "id": 6,
+        "title": "Business Development Manager",
+        "location": "France / Remote"
+      }
+    ]
+  },
   "not_found": {
     "title": "Page not found",
     "description": "Sorry, the page you're looking for<br />has been moved, redirected or removed permanently.",
@@ -502,6 +588,15 @@
   "blog": {
     "title": "Blog & News",
     "subtitle": "Discover the latest news, technical guides and case studies on 3D visualization",
+    "latest_title": "Latest Articles",
+    "latest_subtitle": "Stay updated with the latest trends in 3D visualization, surveying workflows, and geospatial data management.",
+    "newsletter": {
+      "title": "Stay Updated with View4Sight",
+      "subtitle": "Get the latest insights on 3D visualization, surveying best practices, and platform updates delivered to your inbox.",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "privacy": "We respect your privacy. Unsubscribe at any time."
+    },
     "category": "Category",
     "categoryDescription": "Articles from the selected category",
     "author": "Author",
@@ -651,4 +746,4 @@
     "submit_button": "Schedule my demo",
     "description": "We'll tailor your demo to your immediate needs and answer all your questions. Get ready to see how it works!"
   }
-} 
+}
