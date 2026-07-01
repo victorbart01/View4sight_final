@@ -1,6 +1,27 @@
 import { getPolar } from "@/lib/polar";
 import { NextResponse } from "next/server";
 
+// TEMP DIAGNOSTIC — remove after debugging prod checkout. No secret values exposed.
+export async function GET() {
+  let polarOk = false;
+  let polarError = null;
+  try {
+    getPolar();
+    polarOk = true;
+  } catch (e) {
+    polarError = e?.message || String(e);
+  }
+  return NextResponse.json({
+    marker: "diag-2bdfab7",
+    hasToken: !!process.env.POLAR_ACCESS_TOKEN,
+    tokenLen: process.env.POLAR_ACCESS_TOKEN?.length || 0,
+    server: process.env.POLAR_SERVER ?? null,
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? null,
+    polarClientBuilds: polarOk,
+    polarError,
+  });
+}
+
 export async function POST(request) {
   try {
     // Debug des variables d'environnement
