@@ -27,7 +27,7 @@ export async function POST(request) {
       products: [productId],
       successUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/confirmation?checkout_id={CHECKOUT_ID}&plan=${planName}&billing=${isYearly ? "yearly" : "monthly"}`,
       metadata: {
-        plan_name: planName,
+        plan_name: planName || "unknown",
         billing_cycle: isYearly ? "yearly" : "monthly",
         source: "view4sight_website"
       }

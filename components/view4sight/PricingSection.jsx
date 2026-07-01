@@ -27,7 +27,7 @@ const handleCheckout = async (tier, isYearly) => {
       },
       body: JSON.stringify({
         productId: productId,
-        planName: tier.plan,
+        planName: tier.planKey,
         isYearly: isYearly,
       }),
     });
