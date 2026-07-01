@@ -13,8 +13,8 @@ export const view4sightTiers = [
     icon: "unicon-course",
     buttonKey: "get_started",
     highlight: true,
-    polarProductIdMonthly: "bb0aa3d0-61f9-426f-9005-277f2ab44700", // View4Sight - Team Monthly Plan
-    polarProductIdYearly: "598152cf-98fc-41ef-ad12-e6b2d29c5e69", // View4Sight - Team Annual Plan
+    polarProductIdMonthly: "5fc3924d-2e25-440e-974c-090d20f62adf", // View4Sight Team - Monthly
+    polarProductIdYearly: "c6de731d-6d27-4a55-a5c0-4692def2e057", // View4Sight Team - Annual Plan
   },
   {
     id: 3,
@@ -22,8 +22,8 @@ export const view4sightTiers = [
     icon: "unicon-building",
     buttonKey: "get_started",
     highlight: false,
-    polarProductIdMonthly: "a57d2cbc-9967-47e1-ac9c-e900fc02b992", // View4Sight - Studio Monthly Plan
-    polarProductIdYearly: "072f5a83-099b-4acb-bfa6-c2e3201e73ff", // View4Sight - Studio Annual Plan
+    polarProductIdMonthly: "f08772d3-5547-472d-88e3-2e7305cf5f8f", // View4Sight Studio - Monthly
+    polarProductIdYearly: "1bd82a15-b50d-496c-b7b6-82095e6b4c0d", // View4Sight Studio - Annual Plan
   },
 ];
 

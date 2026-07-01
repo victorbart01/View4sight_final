@@ -1,3 +1,8 @@
 node_modules
 .next/
 .DS_Store
+
+# Secrets — ne jamais committer
+.env
+.env.local
+.env*.local
