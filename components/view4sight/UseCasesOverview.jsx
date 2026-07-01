@@ -13,6 +13,7 @@ const sectors = [
   {
     key: "urbanisme",
     picto: "/assets/images/custom-icons/urbain.svg",
+    bg: "/assets/images/usecases-bg/urbanisme.jpg", bgPos: "center 52%",
     name: { fr: "Urbanisme", en: "Urban planning" },
     blurb: {
       fr: "Concertation citoyenne et projets d'aménagement partagés en 3D.",
@@ -28,6 +29,7 @@ const sectors = [
   {
     key: "infrastructure",
     picto: "/assets/images/custom-icons/Infrastructure.svg",
+    bg: "/assets/images/usecases-bg/infrastructure.jpg", bgPos: "center 55%",
     name: { fr: "Infrastructure", en: "Infrastructure" },
     blurb: {
       fr: "Inspection prédictive et gestion d'actifs, à distance.",
@@ -43,6 +45,7 @@ const sectors = [
   {
     key: "construction",
     picto: "/assets/images/custom-icons/construction.svg",
+    bg: "/assets/images/usecases-bg/construction.jpg", bgPos: "center 32%",
     name: { fr: "Construction", en: "Construction" },
     blurb: {
       fr: "Suivi de chantier comparé au BIM, semaine après semaine.",
@@ -58,6 +61,7 @@ const sectors = [
   {
     key: "patrimoine",
     picto: "/assets/images/custom-icons/Patrimoine.svg",
+    bg: "/assets/images/usecases-bg/patrimoine.jpg", bgPos: "center 48%",
     name: { fr: "Patrimoine", en: "Heritage" },
     blurb: {
       fr: "Numérisation et conservation des monuments au millimètre.",
@@ -73,6 +77,7 @@ const sectors = [
   {
     key: "industrie",
     picto: "/assets/images/custom-icons/Industrie.svg",
+    bg: "/assets/images/usecases-bg/industrie.jpg", bgPos: "center 58%",
     name: { fr: "Industrie", en: "Industry" },
     blurb: {
       fr: "Jumeaux numériques d'usines et planification d'implantations.",
@@ -88,6 +93,7 @@ const sectors = [
   {
     key: "securite",
     picto: "/assets/images/custom-icons/Safety.svg",
+    bg: "/assets/images/usecases-bg/securite.jpg", bgPos: "center 50%",
     name: { fr: "Sécurité", en: "Security" },
     blurb: {
       fr: "Hébergement français et conformité RGPD de bout en bout.",
@@ -127,7 +133,13 @@ function ClientLogo({ id }) {
     );
   }
   if (id === "eiffage") {
-    return <span className="uc2__logo uc2__logo--eiffage">eiffage</span>;
+    return (
+      <img
+        className="uc2__logo-img uc2__logo-img--eiffage"
+        src="/assets/images/clients/eiffage.svg"
+        alt="Eiffage"
+      />
+    );
   }
   if (id === "paris") {
     return (
@@ -183,26 +195,33 @@ export default function UseCasesOverview({ locale = "fr" }) {
           gap: 16px; min-height: 188px;
           background: #19191D; border: 1px solid rgba(255,255,255,0.08);
           border-radius: 12px; padding: 24px 26px;
+          position: relative; overflow: hidden;
         }
+        .uc2__card > div { position: relative; z-index: 2; }
+        .uc2__card-bg {
+          position: absolute; inset: 0; z-index: 0;
+          background-size: cover; background-repeat: no-repeat;
+          opacity: 0.6; transition: opacity .3s ease;
+        }
+        .uc2__card-shade {
+          position: absolute; inset: 0; z-index: 1;
+          background: linear-gradient(157deg, rgba(25,25,29,0.95) 0%, rgba(25,25,29,0.8) 40%, rgba(25,25,29,0.44) 74%, rgba(25,25,29,0.18) 100%);
+        }
+        .uc2__cell:hover .uc2__card-bg { opacity: 0.75; }
         .uc2-qmark { display: block; }
         .uc2__quote { font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.74); margin: 12px 0 0; }
         .uc2__proof-client {
           display: flex; justify-content: flex-end; align-items: center; min-height: 26px;
         }
-        .uc2__logo {
-          font-family: "Lexend", sans-serif; color: rgba(255,255,255,0.5);
-          display: inline-flex; align-items: center; line-height: 1; white-space: nowrap;
-          transition: color .18s ease;
-        }
-        .uc2__cell:hover .uc2__logo { color: rgba(255,255,255,0.7); }
-        .uc2__logo--eiffage { font-weight: 800; font-size: 22px; letter-spacing: -0.01em; }
         .uc2__logo-img {
           display: block; width: auto;
-          opacity: 0.5; transition: opacity .18s ease;
+          opacity: 0.82; transition: opacity .18s ease;
+          filter: drop-shadow(0 1px 6px rgba(0,0,0,0.55));
         }
-        .uc2__cell:hover .uc2__logo-img { opacity: 0.7; }
+        .uc2__cell:hover .uc2__logo-img { opacity: 1; }
         .uc2__logo-img--paris { height: 34px; }
         .uc2__logo-img--vinci { height: 30px; }
+        .uc2__logo-img--eiffage { height: 20px; }
         .uc2__proof-kpi { display: flex; align-items: baseline; gap: 8px; }
         .uc2__proof-num {
           font-family: "Lexend", sans-serif; font-size: 30px; font-weight: 700;
@@ -244,6 +263,16 @@ export default function UseCasesOverview({ locale = "fr" }) {
               <p className="uc2__blurb">{tx(s.blurb, locale)}</p>
 
               <div className="uc2__card">
+                {s.bg && (
+                  <>
+                    <span
+                      className="uc2__card-bg"
+                      style={{ backgroundImage: `url(${s.bg})`, backgroundPosition: s.bgPos || "center" }}
+                      aria-hidden="true"
+                    />
+                    <span className="uc2__card-shade" aria-hidden="true" />
+                  </>
+                )}
                 <div>
                   <QuoteMark />
                   <p className="uc2__quote">{tx(s.quote, locale)}</p>
