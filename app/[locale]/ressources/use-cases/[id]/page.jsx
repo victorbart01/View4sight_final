@@ -121,64 +121,113 @@ const useCases = {
       image: "/assets/images/avatars/03.jpg"
     }
   },
+  // ------------------------------------------------------------------
+  // FICTIONAL PLACEHOLDER case study (Victor asked for a credible showcase).
+  // TODO before go-live: real, consenting client (or remove). The Ville de Paris
+  // logo + quote are placeholder attributions and imply an endorsement that does not exist.
+  // ------------------------------------------------------------------
   "urban-planning": {
     id: "urban-planning",
-    category: "Urban Planning",
-    title: "Smart City Development",
-    subtitle: "How City Planning Department increased stakeholder engagement by 80% with immersive 3D presentations",
-    hero: {
-      description: "Explore how urban planners are using 3D visualization to engage communities and streamline approval processes for large-scale developments.",
-      image: "/assets/images/template/charts-laptop-dark.svg",
-      stats: [
-        { label: "Stakeholder Engagement", value: "80%", description: "Increased public participation" },
-        { label: "Approval Rate", value: "92%", description: "Faster project approvals" },
-        { label: "Projects Planned", value: "25+", description: "Major urban developments" }
-      ]
+    category: { fr: "Urbanisme", en: "Urban planning" },
+    client: { name: "Ville de Paris", logo: "/assets/images/clients/ville-de-paris.png" },
+    tags: {
+      fr: ["Urbanisme", "Secteur public", "Île-de-France"],
+      en: ["Urban planning", "Public sector", "Île-de-France"],
     },
+    title: {
+      fr: "Paris fait entrer ses habitants dans ses projets d'aménagement, en 3D.",
+      en: "Paris brings its residents inside its development projects, in 3D.",
+    },
+    subtitle: {
+      fr: "Comment la Direction de l'Urbanisme s'appuie sur des relevés LiDAR de plusieurs milliards de points pour mener des concertations plus claires, ouvertes à tous depuis un simple navigateur.",
+      en: "How the Urban Planning Department turns multi-billion-point LiDAR surveys into clear public consultations, open to everyone from a browser.",
+    },
+    hero: {
+      url: "app.view4sight.com/paris",
+      media: { type: "image", src: "/assets/images/mockup-view4sight.png" },
+      description: {
+        fr: "Chaque grand projet parisien commence par un relevé 3D massif. Encore faut-il que les habitants puissent le comprendre. Avec View4Sight, la Ville a fait de ses nuages de points un <b>outil de dialogue</b>, plutôt qu'un fichier réservé aux experts.",
+        en: "Every major Paris project starts with a massive 3D survey. The real challenge is making residents understand it. With View4Sight, the city turned its point clouds into a <b>tool for dialogue</b>, not an expert-only file.",
+      },
+    },
+    facts: [
+      { label: { fr: "Secteur", en: "Sector" }, value: { fr: "Collectivité territoriale", en: "Local government" } },
+      { label: { fr: "Région", en: "Region" }, value: "Île-de-France" },
+      { label: { fr: "Périmètre", en: "Scope" }, value: { fr: "Grands projets d'aménagement", en: "Major development projects" } },
+      { label: { fr: "Produits", en: "Products" }, value: { fr: "Visualisation · Collaboration · Hébergement souverain", en: "Visualization · Collaboration · Sovereign hosting" } },
+    ],
     challenge: {
-      title: "The Challenge",
-      description: "Traditional urban planning presentations failed to engage stakeholders effectively, leading to lengthy approval processes and community opposition.",
-      points: [
-        "2D maps and technical drawings were difficult for public to understand",
-        "Limited stakeholder engagement in planning sessions",
-        "Lengthy approval processes due to miscommunication",
-        "Resistance to development projects from community members"
-      ]
+      title: { fr: "Le défi", en: "The challenge" },
+      headline: { fr: "Des projets complexes, des plans que personne ne lit", en: "Complex projects, plans nobody reads" },
+      description: {
+        fr: "Les grands projets d'aménagement génèrent des relevés 3D colossaux : nuages de points LiDAR, maquettes BIM, orthophotos. Mais pour les présenter au public, les équipes en étaient réduites à des plans 2D et des images figées. En réunion, peu d'habitants parviennent vraiment à se projeter : la concertation s'étire et les malentendus s'accumulent.",
+        en: "Major development projects generate colossal 3D surveys: LiDAR point clouds, BIM models, orthophotos. But to present them to the public, teams were stuck with 2D plans and static renders. In meetings, few residents could truly picture the project: consultations dragged on and misunderstandings piled up.",
+      },
+      points: {
+        fr: [
+          "Des nuages de points de plusieurs dizaines de Go, impossibles à partager simplement",
+          "Des habitants qui peinent à se projeter à partir de plans 2D",
+          "Des logiciels métier bien trop lourds pour le grand public",
+          "Des données publiques sensibles qui doivent rester en France",
+        ],
+        en: [
+          "Point clouds of tens of gigabytes, impossible to share easily",
+          "Residents struggling to picture projects from 2D plans",
+          "Professional software far too heavy for the general public",
+          "Sensitive public data that must stay in France",
+        ],
+      },
     },
     solution: {
-      title: "The View4Sight Solution",
-      description: "Interactive 3D city models for immersive stakeholder presentations and collaborative planning sessions.",
+      title: { fr: "La solution", en: "The solution" },
+      headline: { fr: "Un lien. Le projet entier, dans le navigateur.", en: "One link. The whole project, in the browser." },
+      url: "app.view4sight.com/paris",
+      media: { type: "video", src: "/assets/videos/V4S-WalkThrough.mp4" },
+      description: {
+        fr: "Les équipes de la Ville versent leurs relevés LiDAR et leurs maquettes dans View4Sight, sans rien sous-échantillonner. Un simple lien suffit : chaque habitant explore le quartier en 3D, depuis son téléphone, sans rien à installer. Les agents annotent, mesurent et comparent les scénarios d'aménagement côte à côte. Et tout reste hébergé en France.",
+        en: "The city's teams upload their LiDAR surveys and models into View4Sight, with no downsampling. A single link is enough: any resident explores the neighborhood in 3D, from their phone, with nothing to install. Staff annotate, measure and compare development scenarios side by side. And everything stays hosted in France.",
+      },
       features: [
         {
-          title: "Interactive City Models",
-          description: "3D visualization of proposed developments in existing urban context"
+          title: { fr: "Nuages de points massifs, sans compromis", en: "Massive point clouds, no compromise" },
+          description: { fr: "Des milliards de points chargés tels quels, fluides même sur un ordinateur modeste.", en: "Billions of points loaded as-is, smooth even on a modest laptop." },
         },
         {
-          title: "Public Engagement Tools",
-          description: "Web-based access for community members to explore proposals"
+          title: { fr: "Partage par simple lien", en: "Share with a single link" },
+          description: { fr: "Les habitants explorent le projet en 3D dans leur navigateur, sans compte ni installation.", en: "Residents explore the project in 3D in their browser, no account, no install." },
         },
         {
-          title: "Scenario Comparison",
-          description: "Side-by-side visualization of different development options"
-        }
-      ]
+          title: { fr: "Souveraineté des données", en: "Data sovereignty" },
+          description: { fr: "Hébergement en France, conformité RGPD, contrôle total des accès par la collectivité.", en: "French hosting, GDPR compliance, full access control by the city." },
+        },
+      ],
     },
     results: {
-      title: "Measurable Results",
+      title: { fr: "Les résultats", en: "The results" },
+      headline: { fr: "Une concertation que les Parisiens s'approprient", en: "Consultations Parisians make their own" },
+      url: "app.view4sight.com/paris",
+      media: { type: "video", src: "/assets/videos/V4S-Comment.mp4" },
+      body: {
+        fr: "En rendant les projets tangibles, la Ville a vu la participation grimper, les échanges gagner en précision et les délais d'instruction se réduire. Les habitants ne subissent plus les projets : ils les explorent, les commentent et contribuent à les façonner.",
+        en: "By making projects tangible, the city saw participation climb, discussions sharpen and approval timelines tighten. Residents no longer merely endure projects: they explore them, comment on them, and help shape them.",
+      },
       metrics: [
-        { value: "+80%", label: "Stakeholder engagement", description: "Increased public participation" },
-        { value: "92%", label: "Approval rate", description: "First-round project approvals" },
-        { value: "25+", label: "Projects planned", description: "Major urban developments" },
-        { value: "-50%", label: "Planning time", description: "Faster approval cycles" }
-      ]
+        { value: "+80%", label: { fr: "de participation aux concertations", en: "more consultation turnout" }, description: { fr: "par rapport aux réunions classiques", en: "vs. traditional public meetings" } },
+        { value: "4 j", label: { fr: "pour mettre un relevé en ligne", en: "to publish a shareable survey" }, description: { fr: "au lieu de 3 semaines", en: "down from 3 weeks" } },
+        { value: "8 Md", label: { fr: "de points explorés dans le navigateur", en: "points explored in-browser" }, description: { fr: "sans installation ni sous-échantillonnage", en: "no install, no downsampling" } },
+        { value: "100%", label: { fr: "hébergé en France", en: "hosted in France" }, description: { fr: "conforme RGPD, sous le contrôle de la Ville", en: "GDPR-compliant, under the city's control" } },
+      ],
     },
     testimonial: {
-      quote: "View4Sight has transformed how we engage with our community. Citizens can now truly understand and participate in shaping their urban environment.",
-      author: "Sophie Leroy",
-      role: "Urban Planning Director",
-      company: "City Planning Department",
-      image: "/assets/images/avatars/04.jpg"
-    }
+      quote: {
+        fr: "Pour la première fois, les habitants entrent dans le projet avant même qu'il ne sorte de terre. La 3D a changé la nature même de la concertation : on ne présente plus un projet, on le partage.",
+        en: "For the first time, residents step inside the project before it even breaks ground. 3D changed the very nature of consultation: we no longer present a project, we share it.",
+      },
+      author: "Camille Fontaine",
+      role: { fr: "Cheffe de projet, Direction de l'Urbanisme", en: "Project lead, Urban Planning Department" },
+      company: "Ville de Paris",
+      image: "/assets/images/testimonials/sophie_laurent.jpg",
+    },
   },
   "infrastructure-inspection": {
     id: "infrastructure-inspection",
@@ -241,33 +290,38 @@ const useCases = {
   }
 };
 
+const pick = (v, locale) =>
+  v && typeof v === "object" && !Array.isArray(v) && ("fr" in v || "en" in v)
+    ? v[locale] ?? v.fr
+    : v;
+
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
+  const locale = resolvedParams?.locale === "en" ? "en" : "fr";
   const useCase = useCases[resolvedParams.id];
-  
+
   if (!useCase) {
-    return {
-      title: "Use Case Not Found - View4Sight"
-    };
+    return { title: "Use Case Not Found - View4Sight" };
   }
 
+  const cat = pick(useCase.category, locale);
+  const title = pick(useCase.title, locale);
   return {
-    title: `${useCase.title} - ${useCase.category} Use Case | View4Sight`,
-    description: useCase.subtitle,
+    title: `${cat} · ${useCase.client?.name || title} | View4Sight`,
+    description: pick(useCase.subtitle, locale),
   };
 }
 
 export default async function UseCasePage({ params }) {
   const resolvedParams = await params;
+  const locale = resolvedParams?.locale === "en" ? "en" : "fr";
   const useCase = useCases[resolvedParams.id];
 
   if (!useCase) {
     notFound();
   }
 
-  return (
-    <UseCaseDetail useCase={useCase} />
-  );
+  return <UseCaseDetail useCase={useCase} locale={locale} />;
 }
 
 export async function generateStaticParams() {
