@@ -1,4 +1,4 @@
-import { polar } from "@/lib/polar";
+import { getPolar } from "@/lib/polar";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -23,7 +23,7 @@ export async function POST(request) {
     console.log("Creating checkout for product:", productId);
 
     // Create checkout session with Polar
-    const checkout = await polar.checkouts.create({
+    const checkout = await getPolar().checkouts.create({
       products: [productId],
       successUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/confirmation?checkout_id={CHECKOUT_ID}&plan=${planName}&billing=${isYearly ? "yearly" : "monthly"}`,
       metadata: {
