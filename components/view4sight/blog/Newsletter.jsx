@@ -47,16 +47,9 @@ export default function Newsletter() {
               </div>
               <div className="md:col-auto d-none md:d-block">
                 <Image
-                  className="w-250px lg:w-300px xl:w-400px d-block dark:d-none"
+                  className="w-250px lg:w-300px xl:w-400px d-block"
                   alt="newsletter"
-                  src="/assets/images/template/newsletter.svg"
-                  width="500"
-                  height="372"
-                />
-                <Image
-                  className="w-250px lg:w-300px xl:w-400px d-none dark:d-block"
-                  alt="newsletter-dark"
-                  src="/assets/images/template/newsletter-dark.svg"
+                  src="/assets/images/newsletter.svg"
                   width="500"
                   height="372"
                 />

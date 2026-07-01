@@ -46,7 +46,10 @@ export default function FaqShort() {
                   hidden=""
                 />
                 <div className="panel vstack items-start gap-2 uc-sticky">
-                  <div className="cstack gap-1 py-1 px-3 border border-white border-opacity-30 rounded-pill">
+                  <div
+                    className="cstack gap-1 py-1 px-3 rounded-pill"
+                    style={{ boxShadow: "inset 0 0 0 1px rgba(255, 255, 255, 0.3)" }}
+                  >
                     <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
                     <span className="fs-8 fw-bold text-uppercase text-white">{t('faq_short.badge')}</span>
                   </div>

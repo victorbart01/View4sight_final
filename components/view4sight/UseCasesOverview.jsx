@@ -23,7 +23,7 @@ const sectors = [
       fr: "Les citoyens comprennent enfin nos projets et participent vraiment.",
       en: "Citizens finally understand our projects and truly take part.",
     },
-    proof: { type: "client", txt: { fr: "SERVICE URBANISME", en: "CITY PLANNING DEPT" } },
+    proof: { type: "client", logo: "paris" },
   },
   {
     key: "infrastructure",
@@ -38,7 +38,7 @@ const sectors = [
       fr: "On prévient les problèmes avant qu'ils ne coûtent cher.",
       en: "We prevent issues before they ever get costly.",
     },
-    proof: { type: "client", txt: { fr: "GROUPE INFRASTRUCTURE", en: "INFRASTRUCTURE CORP" } },
+    proof: { type: "client", logo: "vinci" },
   },
   {
     key: "construction",
@@ -53,7 +53,7 @@ const sectors = [
       fr: "On détecte les écarts tôt et on tient les délais.",
       en: "We catch deviations early and stay on schedule.",
     },
-    proof: { type: "client", txt: { fr: "CONSTRUCTION PLUS", en: "CONSTRUCTION PLUS" } },
+    proof: { type: "client", logo: "eiffage" },
   },
   {
     key: "patrimoine",
@@ -113,6 +113,34 @@ function QuoteMark() {
   );
 }
 
+// PLACEHOLDER client logos (fictional attribution) rendered as monochrome wordmarks.
+// TODO before go-live: replace with logos of real, consenting clients (or remove).
+// Displaying these brands as clients implies an endorsement that does not exist.
+function ClientLogo({ id }) {
+  if (id === "vinci") {
+    return (
+      <img
+        className="uc2__logo-img uc2__logo-img--vinci"
+        src="/assets/images/clients/vinci.png"
+        alt="VINCI"
+      />
+    );
+  }
+  if (id === "eiffage") {
+    return <span className="uc2__logo uc2__logo--eiffage">eiffage</span>;
+  }
+  if (id === "paris") {
+    return (
+      <img
+        className="uc2__logo-img uc2__logo-img--paris"
+        src="/assets/images/clients/ville-de-paris.png"
+        alt="Ville de Paris"
+      />
+    );
+  }
+  return null;
+}
+
 export default function UseCasesOverview({ locale = "fr" }) {
   return (
     <div className="uc2">
@@ -159,9 +187,22 @@ export default function UseCasesOverview({ locale = "fr" }) {
         .uc2-qmark { display: block; }
         .uc2__quote { font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.74); margin: 12px 0 0; }
         .uc2__proof-client {
-          text-align: right; font-family: "Lexend", sans-serif; font-size: 18px; font-weight: 700;
-          letter-spacing: 0.04em; color: rgba(255,255,255,0.16);
+          display: flex; justify-content: flex-end; align-items: center; min-height: 26px;
         }
+        .uc2__logo {
+          font-family: "Lexend", sans-serif; color: rgba(255,255,255,0.5);
+          display: inline-flex; align-items: center; line-height: 1; white-space: nowrap;
+          transition: color .18s ease;
+        }
+        .uc2__cell:hover .uc2__logo { color: rgba(255,255,255,0.7); }
+        .uc2__logo--eiffage { font-weight: 800; font-size: 22px; letter-spacing: -0.01em; }
+        .uc2__logo-img {
+          display: block; width: auto;
+          opacity: 0.5; transition: opacity .18s ease;
+        }
+        .uc2__cell:hover .uc2__logo-img { opacity: 0.7; }
+        .uc2__logo-img--paris { height: 34px; }
+        .uc2__logo-img--vinci { height: 30px; }
         .uc2__proof-kpi { display: flex; align-items: baseline; gap: 8px; }
         .uc2__proof-num {
           font-family: "Lexend", sans-serif; font-size: 30px; font-weight: 700;
@@ -208,7 +249,9 @@ export default function UseCasesOverview({ locale = "fr" }) {
                   <p className="uc2__quote">{tx(s.quote, locale)}</p>
                 </div>
                 {s.proof.type === "client" ? (
-                  <div className="uc2__proof-client">{tx(s.proof.txt, locale)}</div>
+                  <div className="uc2__proof-client">
+                    <ClientLogo id={s.proof.logo} />
+                  </div>
                 ) : (
                   <div className="uc2__proof-kpi">
                     <span className="uc2__proof-num">{s.proof.n}</span>
