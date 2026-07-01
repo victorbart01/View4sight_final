@@ -1,27 +1,6 @@
 import { getPolar } from "@/lib/polar";
 import { NextResponse } from "next/server";
 
-// TEMP DIAGNOSTIC — remove after debugging prod checkout. No secret values exposed.
-export async function GET() {
-  let polarOk = false;
-  let polarError = null;
-  try {
-    getPolar();
-    polarOk = true;
-  } catch (e) {
-    polarError = e?.message || String(e);
-  }
-  return NextResponse.json({
-    marker: "diag-2bdfab7",
-    hasToken: !!process.env.POLAR_ACCESS_TOKEN,
-    tokenLen: process.env.POLAR_ACCESS_TOKEN?.length || 0,
-    server: process.env.POLAR_SERVER ?? null,
-    baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? null,
-    polarClientBuilds: polarOk,
-    polarError,
-  });
-}
-
 export async function POST(request) {
   try {
     // Debug des variables d'environnement
@@ -43,10 +22,14 @@ export async function POST(request) {
 
     console.log("Creating checkout for product:", productId);
 
+    // Ensure the base URL is absolute (Polar rejects a successUrl without a scheme)
+    const rawBase = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const baseUrl = /^https?:\/\//i.test(rawBase) ? rawBase : `https://${rawBase}`;
+
     // Create checkout session with Polar
     const checkout = await getPolar().checkouts.create({
       products: [productId],
-      successUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/confirmation?checkout_id={CHECKOUT_ID}&plan=${planName}&billing=${isYearly ? "yearly" : "monthly"}`,
+      successUrl: `${baseUrl}/confirmation?checkout_id={CHECKOUT_ID}&plan=${planName}&billing=${isYearly ? "yearly" : "monthly"}`,
       metadata: {
         plan_name: planName || "unknown",
         billing_cycle: isYearly ? "yearly" : "monthly",
