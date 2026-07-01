@@ -28,6 +28,17 @@ export default function ZohoChat() {
       }
     };
 
+    // Masquer la bulle-tooltip qui s'ouvre toute seule à côté du bouton
+    // (ex. "Nous sommes hors ligne / Laisser un message" quand le support est
+    // déconnecté). On ne garde que le bouton flottant ; le clic ouvre toujours
+    // le chat / le formulaire de message.
+    if (!document.getElementById("v4s-zoho-style")) {
+      const style = document.createElement("style");
+      style.id = "v4s-zoho-style";
+      style.textContent = "#zs-fl-tip{display:none !important;}";
+      document.head.appendChild(style);
+    }
+
     // Charger le script Zoho avec votre widget code spécifique
     const script = document.createElement("script");
     script.type = "text/javascript";
@@ -45,6 +56,10 @@ export default function ZohoChat() {
       const existingScript = document.getElementById("zsiqscript");
       if (existingScript) {
         existingScript.remove();
+      }
+      const style = document.getElementById("v4s-zoho-style");
+      if (style) {
+        style.remove();
       }
     };
   }, []);
